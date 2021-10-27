@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:id="@+id/customer_recharge_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="- - - "
+        android:textSize="13sp"
+        android:textColor="@color/default_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/customer_recharge_available_quota_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#999999"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView46"
+        app:layout_constraintStart_toStartOf="@+id/customer_recharge_name_tv"
+        app:layout_constraintTop_toBottomOf="@+id/customer_recharge_name_tv" />
+
+    <Button
+        android:id="@+id/contact_now_btn"
+        android:layout_width="72dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/立即联系"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:background="@drawable/contact_now_selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#D8D8D8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

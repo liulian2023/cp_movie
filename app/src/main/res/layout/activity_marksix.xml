@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".uuuu.iuymn.mkjnb.activity.caizhong.XuanwuActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout11"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/caizhong_head1" />
+
+        <LinearLayout
+            android:id="@+id/marksix_tab_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <FrameLayout
+                android:id="@+id/fragment_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+
+                    <include layout="@layout/caizhong_head2" />
+
+                    <include layout="@layout/marksix_head3" />
+                    <include layout="@layout/loading_layout"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.tabs.TabLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:id="@+id/marksix_tab"
+                            app:tabSelectedTextColor="@color/blue_6he"
+                            app:tabIndicatorColor="@color/blue_6he"
+                            app:tabBackground="@color/white"
+                            android:visibility="gone"
+                            >
+                        </com.google.android.material.tabs.TabLayout>
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/marksix_recyclerview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <include layout="@layout/layout_bottom_touzhu"/>
+        </LinearLayout>
+
+        <include layout="@layout/layout_reload"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/fenpan_tv"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="@string/已封盘"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:background="@color/black_50"
+        android:textSize="16sp"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="@+id/linearLayout11"
+        app:layout_constraintRight_toRightOf="@+id/linearLayout11"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout11"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

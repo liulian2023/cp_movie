@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/shape_bkg_no_enable"
+        >
+        <TextView
+            android:id="@+id/item_head1recyclergrid_tv"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/图片描述"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

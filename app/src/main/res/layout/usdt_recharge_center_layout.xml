@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/转账教程"
+        android:textColor="@color/default_color"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recharge_tip_linear" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="14dp"
+        android:background="@drawable/transfer_tutorial_linear_shape"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <TextView
+            android:id="@+id/app_tutorial_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="12dp"
+            android:gravity="center"
+            android:text="@string/火币APP转账教程"
+            android:textColor="#2A1CC4"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/imtoken_tutorial_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:gravity="center"
+            android:text="@string/imToken转账教程"
+            android:textColor="#2A1CC4"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView57"
+        android:layout_width="0dp"
+        android:layout_height="6dp"
+        android:layout_marginTop="10dp"
+        android:background="#F3F7FA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView57">
+
+        <TextView
+            android:id="@+id/textView58"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="17dp"
+            android:text="@string/USDT收款地址"
+            android:textColor="@color/default_color"
+            android:textSize="15sp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/address_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="17dp"
+            android:maxWidth="169dp"
+            android:singleLine="true"
+            android:text="0x1bgghwhee862bb3b7669…"
+            android:textColor="@color/default_color"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView58"
+            app:layout_constraintTop_toBottomOf="@+id/textView58" />
+
+        <LinearLayout
+            android:id="@+id/qr_code_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="22dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ewm_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/二维码"
+                android:textColor="#307CF4"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/copy_address_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/qr_code_linear"
+            app:layout_constraintEnd_toStartOf="@+id/qr_code_linear"
+            app:layout_constraintTop_toTopOf="@+id/qr_code_linear">
+
+            <ImageView
+                android:id="@+id/imageView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/fzdz" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/复制地址"
+                android:textColor="#307CF4"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="6dp"
+        android:background="#F3F7FA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout12" />
+
+    <TextView
+        android:id="@+id/payer_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="13dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="@string/区块链交易ID"
+        android:textColor="@color/default_color"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_goneMarginTop="16dp" />
+
+    <EditText
+        android:id="@+id/usdt_id_etv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@null"
+        android:hint="@string/请输入后六位"
+        android:textColorHint="#999999"
+        android:imeOptions="actionNext"
+        android:textSize="12sp"
+        android:singleLine="true"
+        android:maxLength="6"
+        android:layout_marginLeft="12dp"
+        android:textColor="@color/default_color"
+        android:layout_marginRight="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/payer_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/payer_tv"
+        app:layout_constraintStart_toEndOf="@+id/payer_tv" />
+
+    <TextView
+        android:id="@+id/textView60"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="13dp"
+        android:background="#EBEBEB"
+        app:layout_constraintEnd_toEndOf="@+id/usdt_id_etv"
+        app:layout_constraintStart_toStartOf="@+id/payer_tv"
+        app:layout_constraintTop_toBottomOf="@+id/payer_tv" />
+
+    <TextView
+        android:id="@+id/currency_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="13dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="@string/货币数量"
+        android:textColor="@color/default_color"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView60"
+        app:layout_goneMarginTop="16dp" />
+
+    <EditText
+        android:id="@+id/currency_amount_etv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@null"
+        android:hint="@string/最小充值数量5"
+        android:textColorHint="#999999"
+        android:imeOptions="actionDone"
+        android:textSize="12sp"
+        android:singleLine="true"
+        android:inputType="numberDecimal"
+        android:layout_marginLeft="12dp"
+        android:textColor="@color/default_color"
+        android:layout_marginRight="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/currency_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/currency_tv"
+        app:layout_constraintStart_toEndOf="@+id/currency_tv" />
+
+    <TextView
+        android:id="@+id/textView61"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="13dp"
+        android:background="#EBEBEB"
+        app:layout_constraintEnd_toEndOf="@+id/currency_amount_etv"
+        app:layout_constraintStart_toStartOf="@+id/currency_tv"
+        app:layout_constraintTop_toBottomOf="@+id/currency_tv" />
+
+    <TextView
+        android:id="@+id/exchange_rate_tip_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="13dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="@string/存款汇率"
+        android:textColor="@color/default_color"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView61"
+        app:layout_goneMarginTop="16dp" />
+
+    <TextView
+        android:id="@+id/exchange_rate_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginLeft="12dp"
+        android:textColor="#999999"
+        android:text="6.60"
+        android:layout_marginRight="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/exchange_rate_tip_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/exchange_rate_tip_tv"
+        app:layout_constraintStart_toEndOf="@+id/exchange_rate_tip_tv" />
+
+    <TextView
+        android:id="@+id/textView62"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="13dp"
+        android:background="#EBEBEB"
+        app:layout_constraintEnd_toEndOf="@+id/exchange_rate_tv"
+        app:layout_constraintStart_toStartOf="@+id/exchange_rate_tip_tv"
+        app:layout_constraintTop_toBottomOf="@+id/exchange_rate_tip_tv" />
+
+    <TextView
+        android:id="@+id/transfer_amount_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="13dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="@string/转账金额"
+        android:textColor="@color/default_color"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView62"
+        app:layout_goneMarginTop="16dp" />
+
+    <TextView
+        android:id="@+id/transfer_amount_etv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textSize="12sp"
+        android:singleLine="true"
+        android:text="0.00"
+        android:gravity="center|left"
+        android:layout_marginLeft="12dp"
+        android:textColor="#999999"
+        android:layout_marginRight="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/transfer_amount_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/transfer_amount_tv"
+        app:layout_constraintStart_toEndOf="@+id/transfer_amount_tv" />
+
+    <TextView
+        android:id="@+id/textView66"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="13dp"
+        android:background="#EBEBEB"
+        app:layout_constraintEnd_toEndOf="@+id/exchange_rate_tv"
+        app:layout_constraintStart_toStartOf="@+id/exchange_rate_tip_tv"
+        app:layout_constraintTop_toBottomOf="@+id/transfer_amount_tv" />
+
+
+    <LinearLayout
+        android:id="@+id/recharge_tip_linear"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/recharge_tip_linear_shape"
+        android:gravity="center|left"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/czjl_icon" />
+
+        <TextView
+            android:id="@+id/reward_tip_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="@string/充值奖励最高送88888元占位"
+            android:textColor="#FB2279"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

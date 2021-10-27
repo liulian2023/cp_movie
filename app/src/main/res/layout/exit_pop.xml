@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/send_red_root"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/game_rule_wrap_shape">
+        <TextView
+            android:id="@+id/exit_pop_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="@string/退出"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp"
+            />
+        <TextView
+            android:id="@+id/common_tip_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/确定要退出吗"
+            android:textSize="14sp"
+            android:textColor="@color/default_color"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp"
+            />
+
+        <include layout="@layout/split_horizontal"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/取消"
+                    android:gravity="center"
+                    android:id="@+id/exit_cancel_tv"
+                    android:textColor="@color/default_color"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:background="@drawable/pop_cancel_selector"
+                    />
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                   android:background="@color/split"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/确定"
+                    android:textColor="#63a4e8"
+                    android:gravity="center"
+                    android:id="@+id/exit_sure_tv"
+                    android:background="@drawable/pop_sure_selector"
+                    />
+            </LinearLayout>
+        <!--</LinearLayout>-->
+    </LinearLayout>
+</RelativeLayout>

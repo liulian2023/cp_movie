@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F9F9F9"
+    android:orientation="vertical"
+    tools:context=".uuuu.iuymn.mkjnb.activity.live.DiamondFragment">
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/diamond_recycler"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:layout_marginTop="9dp"
+    />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottom_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFEAEA"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/bottom_tip_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="16dp"
+            android:textSize="12sp"
+            android:textColor="#666666"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/recharge_amount_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="#5F2A2F"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/bottom_tip_tv"
+            app:layout_constraintTop_toBottomOf="@+id/bottom_tip_tv" />
+
+
+
+        <Button
+            android:id="@+id/to_recharge_btn"
+            android:layout_width="116dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="13dp"
+            android:text="@string/立即充值"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:background="@drawable/login_btn_shape"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

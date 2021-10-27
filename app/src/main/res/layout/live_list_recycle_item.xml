@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp">
+
+
+
+    <LinearLayout
+        android:id="@+id/live_cover_linear"
+        android:layout_width="166dp"
+        android:layout_height="166dp"
+        android:orientation="vertical"
+        android:background="@drawable/live_cover_linear_shape"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/live_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView34"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:src="@drawable/renqi_bg"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/live_cover_linear"
+        app:layout_constraintEnd_toEndOf="@+id/live_cover_linear"
+        app:layout_constraintStart_toStartOf="@+id/live_cover_linear" />
+
+    <TextView
+        android:id="@+id/live_nickname_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/昵称"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView34"
+        app:layout_constraintTop_toTopOf="@+id/imageView34" />
+
+    <TextView
+        android:id="@+id/area_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/城市"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/live_nickname_tv"
+        app:layout_constraintStart_toEndOf="@+id/live_nickname_tv"
+        app:layout_constraintTop_toTopOf="@+id/live_nickname_tv" />
+
+    <TextView
+        android:id="@+id/live_title_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="2dp"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView74"
+        app:layout_constraintStart_toStartOf="@+id/live_nickname_tv"
+        app:layout_constraintTop_toBottomOf="@+id/live_nickname_tv" />
+
+    <ImageView
+        android:id="@+id/is_toll_iv"
+        android:layout_width="44dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/live_lottery_name_tv"
+        app:layout_constraintEnd_toEndOf="@+id/live_cover_linear"
+        app:layout_constraintTop_toTopOf="@+id/live_lottery_name_tv"
+        app:srcCompat="@drawable/sffj_icon" />
+
+    <ImageView
+        android:id="@+id/use_toy_iv"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/live_lottery_name_tv"
+        app:layout_constraintTop_toBottomOf="@+id/live_lottery_name_tv"
+        app:srcCompat="@drawable/tiaod_icon" />
+
+    <ImageView
+        android:id="@+id/textView74"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginEnd="2dp"
+        android:gravity="center"
+        android:src="@drawable/renqi_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/live_title_tv"
+        app:layout_constraintEnd_toStartOf="@+id/live_watch_num_tv"
+        app:layout_constraintTop_toTopOf="@+id/live_title_tv" />
+
+    <TextView
+        android:id="@+id/live_watch_num_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="@string/万"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView74"
+        app:layout_constraintEnd_toEndOf="@+id/live_cover_linear"
+        app:layout_constraintTop_toTopOf="@+id/textView74" />
+
+    <TextView
+        android:id="@+id/live_lottery_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/live_title_shape"
+        android:paddingLeft="8dp"
+        android:paddingTop="3dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="3dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="12sp"
+
+        app:layout_constraintStart_toStartOf="@+id/live_cover_linear"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <rotate
+        android:duration="2000"
+        android:fromDegrees="0.0"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:interpolator="@android:anim/linear_interpolator"
+        android:toDegrees="360" />
+
+  <!--  duration 动画持续时间
+    fromDegrees 动画开始时的角度
+    pivotX 动画相对于控件x轴的坐标
+    pivoty 动画相对于控件y轴的坐标
+    toDegrees 动画结束时的旋转角度
+    repeatCount 设置是否无限循环(infinite表示无限循环)-->
+</set>

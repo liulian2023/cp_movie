@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".uuuu.iuymn.mkjnb.activity.AgentCenter.RebateTableActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/linear"
+        android:background="@color/action_bar_color"
+        android:baselineAligned="false" android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/rebate_table_return"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="@string/返回"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_weight="1">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:text="@string/返点赔率表"
+               android:textSize="16sp"
+               android:gravity="center"
+               android:id="@+id/rebate_table"
+               android:textColor="@color/white" />
+      </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginRight="12dp"
+            android:id="@+id/choose_linear"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/choose_linear_tv"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/筛选"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="3dp"
+                android:contentDescription="TODO" android:src="@drawable/right_buttom"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/模式类型"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/chuantong"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:text="@string/传统类型" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/guangfang"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"
+                android:text="@string/官方类型" />
+        </RadioGroup>
+    </LinearLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/explain"
+    android:text="@string/该彩种以每注2元或2角3为基数奖金"
+    android:layout_marginLeft="5dp"
+    android:textSize="12sp"
+    android:background="#f5f2f2"
+    android:layout_marginBottom="12dp"
+    />
+    <include layout="@layout/loading_layout"/>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ptr_classic_frame_layout"
+    android:layout_weight="1"
+    >
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rebate_recycle">
+    </androidx.recyclerview.widget.RecyclerView>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/shouqi_linear"
+        android:orientation="horizontal"
+        android:layout_marginBottom="50dp"
+        android:layout_gravity="right"
+        android:visibility="gone"
+        android:layout_marginRight="12dp">
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:contentDescription="TODO" android:src="@drawable/shouqi"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/收起"
+            android:layout_marginLeft="3dp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+</LinearLayout>

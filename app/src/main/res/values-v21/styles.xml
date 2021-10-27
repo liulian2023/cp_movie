@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="qr_code_theme" parent="NoActionBarNoTitleTheme">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowBackground">@drawable/yaqm_bg</item>
+    </style>
+
+    <style name="fullStatusBarTheme" parent="NoActionBarNoTitleTheme">
+            <item name="android:windowTranslucentStatus">true</item>
+       <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:statusBarColor" tools:ignore="NewApi">@android:color/transparent</item>
+    </style>
+<!--    <item name="android:windowBackground">@drawable/beij</item>-->
+    <style name="StartingWindowTheme" parent="NoActionBarNoTitleTheme">
+        <item name="android:windowBackground">@drawable/main_bitmap_splash_bg</item>
+<!--        <item name="android:windowBackground">@drawable/splash</item>-->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+</resources>

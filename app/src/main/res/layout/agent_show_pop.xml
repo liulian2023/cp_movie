@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="47dp"
+        android:layout_marginLeft="47dp"
+        android:background="@drawable/agent_show_shape">
+        <TextView
+            android:id="@+id/title_iv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:text="@string/规则说明"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="#DDDDDD"
+            />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="254dp">
+            <TextView
+                android:id="@+id/agent_show_content_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:textSize="12sp"
+                android:layout_marginRight="14dp"
+                android:layout_marginLeft="14dp"
+                />
+        </ScrollView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="#DDDDDD"
+            />
+        <TextView
+            android:id="@+id/i_know_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/我知道了"
+            android:textColor="#007AF6"
+            android:textSize="14sp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="center"
+            android:background="@drawable/countdown_sure_selector"
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:id="@+id/col_item_setma_parent"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/click"
+            android:layout_gravity="center"
+            android:id="@+id/choose_chip_background_iv"
+            />
+        <ImageView
+            android:id="@+id/iv_item_sema"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/chouma1"
+            android:layout_gravity="center"
+            android:layout_marginBottom="6dp" />
+
+        <TextView
+            android:id="@+id/tv_item_setma_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="2"
+            android:textColor="#ff8c84"
+            android:layout_marginBottom="6dp"
+            android:textSize="14sp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/tv_item_setma_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="@string/当前筹码"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="5dp"
+            />
+    </FrameLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginTop="11dp">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/custom_amount_tv"
+                    android:layout_width="110dp"
+                    android:layout_height="40dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/default_color"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/recharge_head_item_check_shape"
+                    android:text="0"
+                    />
+                <ImageView
+                    android:id="@+id/custom_amount_iv"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/gouxuan_czxx"
+                    android:layout_gravity="bottom|right"
+                    />
+        </FrameLayout>
+
+
+</LinearLayout>

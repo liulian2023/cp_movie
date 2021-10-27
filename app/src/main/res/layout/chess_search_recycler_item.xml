@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    >
+    <FrameLayout
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        >
+        <ImageView
+            android:id="@+id/chess_search_iv"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            />
+        <ImageView
+            android:id="@+id/xian_iv"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/xian"
+            android:layout_gravity="top|right"
+            />
+    </FrameLayout>
+
+        <TextView
+            android:id="@+id/chess_search_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="@color/default_color"
+            android:text="@string/炸金花"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            />
+</LinearLayout>

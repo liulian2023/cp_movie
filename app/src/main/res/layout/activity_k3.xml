@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".uuuu.iuymn.mkjnb.activity.caizhong.K3Activity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout11"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/caizhong_head1" />
+
+        <LinearLayout
+            android:id="@+id/k3_tab_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <FrameLayout
+                android:id="@+id/fragment_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <include layout="@layout/caizhong_head2" />
+
+                    <include layout="@layout/k3_head3" />
+                    <include layout="@layout/loading_layout"/>
+                    <LinearLayout
+                        android:id="@+id/ll_k3_xy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/shape_itemparent"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="1dp"
+                            android:background="@color/itemtitle_bkg"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/k3_center_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/split" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/k3_xy_recyclerview"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                            </androidx.recyclerview.widget.RecyclerView>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_k3_gf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/k3_gf_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:textColorHint="@color/textcolor_head3"
+                            android:textSize="12dp"
+                            android:gravity="center" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/k3_gf_recyclerview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+            <include layout="@layout/layout_bottom_touzhu" />
+
+
+        </LinearLayout>
+
+        <include layout="@layout/layout_reload" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fenpan_tv"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="@string/已封盘"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:background="@color/black_50"
+        android:textSize="16sp"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="@+id/linearLayout11"
+        app:layout_constraintRight_toRightOf="@+id/linearLayout11"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout11"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

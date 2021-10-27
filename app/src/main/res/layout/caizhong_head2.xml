@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/head2_bkg"
+    >
+    <LinearLayout
+        android:id="@+id/ll_caizhong_head2_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="12dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/ll_caizhong_head2_left_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text=""
+            android:textColor="@color/white"
+            />
+        <ImageView
+            android:id="@+id/ll_caizhong_head2_left_iv"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="TODO" android:src="@mipmap/icon_spinner_down"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_caizhong_head2_center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:text="@string/余额:"
+            />
+
+        <TextView
+            android:id="@+id/ll_caizhong_head2_center_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:text="- - -"
+            android:textColor="@color/white" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:padding="5dp"
+            android:contentDescription="TODO" android:src="@mipmap/icon_money_refresh"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/rotate_image"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_caizhong_head2_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/ll_caizhong_head2_right_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:text="@string/信用玩法"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="TODO" android:src="@mipmap/icon_delegate_switch"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

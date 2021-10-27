@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2019.  ganzhe
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@color/white"
+    >
+    <TextView
+        android:id="@+id/item_touzhu_recyclerview_tv1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/default_color"
+        />
+    <TextView
+        android:id="@+id/item_touzhu_recyclerview_tv2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/default_color"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+        <EditText
+            android:id="@+id/item_touzhu_recyclerview_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxEms="7"
+            android:maxLength="8"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:inputType="number"
+            android:background="@drawable/shape_et_or_tv"
+            android:textColor="@color/default_color"
+            />
+        <TextView
+            android:id="@+id/multiple_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/red"
+            android:text="x1"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_touzhu_recyclerview_tv3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/default_color"
+        />
+
+
+</LinearLayout>

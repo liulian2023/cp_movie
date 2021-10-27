@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".uuuu.iuymn.mkjnb.activity.mine_fragment_activitys.TodayWinOrLoseActvity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/action_bar_color"
+        android:layout_height="45dp">
+
+        <TextView
+            android:id="@+id/action_bar_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:text="@string/返回"
+            android:textColor="@color/action_bar_return_textcolor_selecter"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/action_bar_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/action_bar_return_textcolor_selecter"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="12dp"
+            android:text="@string/分享"
+            android:id="@+id/action_bar_right"
+            android:textColor="@color/action_bar_return_textcolor_selecter"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@drawable/today_win_lose_backgruund_shape_gradient">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/today_win_lose_backgruund_shape_corners"
+            android:paddingTop="50dp"
+            android:paddingBottom="50dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:contentDescription="TODO" android:src="@drawable/winorlose_img"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:textSize="28sp"
+                android:id="@+id/win_price"
+                android:layout_marginLeft="8dp"
+                android:textColor="#f33a18"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/盈亏金额"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="12dp"
+                android:textColor="#9b9b9b"
+                />
+        </LinearLayout>
+    </FrameLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="25dp"
+    android:layout_marginBottom="30dp"
+    android:orientation="horizontal">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:contentDescription="TODO" android:src="@drawable/gantan"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textSize="14sp"
+            android:text="@string/盈亏公式"
+            />
+</LinearLayout>
+    <include layout="@layout/split_horizontal"/>
+    <include layout="@layout/loading_layout"/>
+    <include layout="@layout/error_lyaout"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/win_or_lose_recycle">
+
+    </androidx.recyclerview.widget.RecyclerView>
+<!--<WebView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:id="@+id/win_or_lose_webview"-->
+    <!--&gt;</WebView>-->
+</LinearLayout>

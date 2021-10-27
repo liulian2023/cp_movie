@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".uuuu.iuymn.mkjnb.activity.main_tab_activity.ChooseBaseUrlAvtivity">
+    <include layout="@layout/toolbar_layout"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F8F8F8"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/请选择线路"
+            android:textSize="14sp"
+            android:paddingLeft="15dp"
+            android:textColor="@color/default_color"
+            android:gravity="center_vertical"
+            />
+        <TextView
+            android:id="@+id/refresh_request_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/刷新"
+            android:textSize="14sp"
+            android:layout_alignParentRight="true"
+            android:paddingRight="15dp"
+            android:textColor="@color/default_color"
+            android:gravity="center_vertical"
+            />
+    </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/base_url_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+</LinearLayout>

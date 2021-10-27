@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    >
+    <include layout="@layout/action_bar_two"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/long_dragon_iv"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:contentDescription="TODO"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="8dp"
+            android:text="@string/长龙助手是对的概率为"
+            android:lineSpacingExtra="5dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="8dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="25dp"
+                android:contentDescription="TODO" android:src="@drawable/xiaoqizi" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/什么叫斩龙"
+                android:textColor="#dc3b40" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:lineSpacingExtra="5dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/如连续开斩龙" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="8dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="25dp"
+                android:contentDescription="TODO" android:src="@drawable/xiaoqizi" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/什么叫顺龙"
+                android:textColor="#dc3b40" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:lineSpacingExtra="5dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/如连续开顺龙" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="8dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="25dp"
+                android:contentDescription="TODO" android:src="@drawable/xiaoqizi" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/什么是倍投"
+                android:textColor="#dc3b40" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:lineSpacingExtra="5dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/倍投是指一种成倍的投注方式" />
+    </LinearLayout>
+
+</LinearLayout>

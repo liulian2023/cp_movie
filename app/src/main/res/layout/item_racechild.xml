@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2019.  ganzhe
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:descendantFocusability="blocksDescendants"
+    >
+    <LinearLayout
+        android:id="@+id/ll_item_racechild"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/shape_bkg_no_enable"
+        >
+        <TextView
+            android:id="@+id/item_racechild_tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/action_bar_color"
+            android:textSize="15sp"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/item_racechild_tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:textColor="@color/dimgray"
+            android:layout_marginBottom="3dp"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:id="@+id/item_racechild_tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="2.19"
+            android:textSize="8dp"
+            android:textColor="@color/dimgray"
+            android:visibility="gone"
+            android:gravity="center_horizontal"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

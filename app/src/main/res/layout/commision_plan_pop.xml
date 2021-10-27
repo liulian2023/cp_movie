@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="400dp"
+    >
+    <RelativeLayout
+        android:id="@+id/add_plan_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/white"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/选择方案"
+            android:textColor="#333333"
+            android:textSize="13sp"
+            android:layout_marginLeft="14dp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            />
+        <ImageView
+            android:id="@+id/add_plan_iv"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/next_right"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/添加方案"
+            android:textColor="#333333"
+            android:textSize="13sp"
+            android:layout_marginLeft="14dp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/add_plan_iv"
+            android:layout_marginRight="8dp"
+            />
+    </RelativeLayout>
+    <include layout="@layout/loading_layout"/>
+    <include layout="@layout/nodata_layout"/>
+    <include layout="@layout/error_lyaout"/>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/commision_plan_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#F5F5F5"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="#F5F5F5"
+            android:id="@+id/commision_plan_recycle"
+            />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/dp_10"
+    android:gravity="bottom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            >
+            <ImageView
+                android:id="@+id/toll_close_iv"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:padding="5dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/black_close" />
+
+            <TextView
+                android:id="@+id/count_down_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/该房间为收费房间"
+                android:textSize="15sp"
+                android:textColor="@color/default_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toll_close_iv" />
+
+            <TextView
+                android:id="@+id/live_price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="*******"
+                android:textColor="@color/default_color"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/count_down_tv" />
+
+            <Button
+                android:id="@+id/toll_amount_time_btn"
+                android:layout_width="120dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/login_btn_shape"
+                android:text="@string/分钟99010"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/live_price_tv" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toll_amount_time_btn"
+                app:srcCompat="@drawable/jinbi_icon" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/余额: "
+                android:textSize="12sp"
+                android:textColor="@color/default_color"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+                app:layout_constraintStart_toEndOf="@+id/imageView8"
+                app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+            <TextView
+                android:id="@+id/toll_amount_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="- - - "
+                android:textColor="@color/default_color"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView5"
+                app:layout_constraintStart_toEndOf="@+id/textView5"
+                app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+            <ImageView
+                android:id="@+id/toll_amount_iv"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/toll_amount_tv"
+                app:layout_constraintStart_toEndOf="@+id/toll_amount_tv"
+                app:layout_constraintTop_toTopOf="@+id/toll_amount_tv"
+                app:srcCompat="@drawable/right_hot" />
+
+            <Switch
+                android:id="@+id/pay_type_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="34dp"
+                android:thumb="@drawable/thumb"
+                android:track="@drawable/track"
+                app:layout_constraintBottom_toBottomOf="@+id/textView5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/toll_amount_tv" />
+
+            <TextView
+                android:id="@+id/toll_type_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:text="@string/自动续费"
+                android:textSize="12sp"
+                android:textColor="@color/default_color"
+                app:layout_constraintBottom_toBottomOf="@+id/pay_type_switch"
+                app:layout_constraintEnd_toStartOf="@+id/pay_type_switch"
+                app:layout_constraintTop_toTopOf="@+id/pay_type_switch" />
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="54dp"
+                android:text="@string/提示付费房间每10分钟扣费一次"
+                android:textSize="12sp"
+                android:textColor="#F84848"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pay_type_switch" />
+
+            <ImageView
+                android:id="@+id/toll_back_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                app:layout_constraintBottom_toBottomOf="@+id/toll_close_iv"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/toll_close_iv"
+                app:srcCompat="@drawable/back_icon" />
+
+            <TextView
+                android:id="@+id/toll_back_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/返回"
+                android:textColor="@color/default_color"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/toll_back_iv"
+                app:layout_constraintStart_toEndOf="@+id/toll_back_iv"
+                app:layout_constraintTop_toTopOf="@+id/toll_back_iv" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

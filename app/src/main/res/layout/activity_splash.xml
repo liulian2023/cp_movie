@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splash_wrap"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".uuuu.iuymn.mkjnb.activity.main_tab_activity.SplashActivity">
+
+    <ImageView
+        android:id="@+id/splash_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+
+    <LinearLayout
+        android:id="@+id/xtwh_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:background="@color/white"
+       >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:contentDescription="TODO"
+                android:src="@drawable/xtwh_1" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:contentDescription="TODO" android:src="@drawable/xtwh_2" />
+
+            <TextView
+                android:id="@+id/wh_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:text="@string/系统维护"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/refresh_tv"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/刷新看看"
+                android:textColor="@color/red80"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/online_kefu_tv"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/联系客服"
+                android:gravity="center"
+                android:textColor="#179DE3"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/layout_reload"/>
+    <TextView
+        android:id="@+id/test_change_url_tv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|left"
+        android:background="@color/transparent"
+        />
+    <LinearLayout
+        android:id="@+id/skip_linear"
+        android:layout_width="100dp"
+        android:layout_height="58dp"
+        android:visibility="gone"
+        android:layout_gravity="right|top"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginRight="10dp"
+        android:gravity="center|right|top">
+
+        <TextView
+            android:id="@+id/skip_tv"
+            android:layout_width="60dp"
+            android:layout_height="28dp"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:background="@drawable/bkg_live_tracorner50"
+            android:text="- - - " />
+    </LinearLayout>
+
+
+</FrameLayout>

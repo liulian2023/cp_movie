@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/six_wrap_linear"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minHeight="40dp"
+    android:padding="5dp"
+    android:gravity="center"
+    >
+    <TextView
+        android:id="@+id/tv_openno_marksix"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/tv_animal_marksix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue_6he"
+        android:textSize="12sp"
+        />
+
+</LinearLayout>

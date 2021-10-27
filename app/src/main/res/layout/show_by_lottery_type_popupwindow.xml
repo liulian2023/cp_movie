@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/big_linear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:background="@color/action_bar_color"
+            android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center"
+                android:contentDescription="TODO" android:src="@drawable/x"
+                />
+        </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:text="@string/按彩种查看"
+                android:textColor="@color/white"
+                />
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:id="@+id/x"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center"
+                android:contentDescription="TODO" android:src="@drawable/x" />
+        </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#eee"
+            android:padding="8dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/彩种名称"
+                android:gravity="center"
+                android:textSize="@dimen/size_14_tab"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/下注金额"
+                android:gravity="center"
+                android:textSize="@dimen/size_14_tab"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/中奖金额"
+                android:gravity="center"
+                android:textSize="@dimen/size_14_tab"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/盈亏"
+                android:gravity="center"
+                android:id="@+id/dingwei"
+                android:textSize="@dimen/size_14_tab"
+                />
+        </LinearLayout>
+    <include layout="@layout/split_horizontal"/>
+        <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@color/white"
+        android:id="@+id/show_by_lottery_type_recycle">
+    </androidx.recyclerview.widget.RecyclerView>
+  <include layout="@layout/nodata_layout"/>
+
+
+</LinearLayout>

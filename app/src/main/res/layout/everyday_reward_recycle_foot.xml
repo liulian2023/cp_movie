@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:contentDescription="TODO" android:src="@drawable/xiaoqizi"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/活动说明"
+            android:layout_marginLeft="8dp"
+            android:textColor="#dc3b40"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/每日加奖在次日1200后开放领取"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/加奖比例是根据会员等级以及昨日累计投注金额进行一定比例的加奖棋牌电子视讯捕鱼的投注金额不计入每日嘉奖"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/撤单和其他无效投注将不计算在内"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:lineSpacingExtra="3dp"
+        />
+
+</LinearLayout>

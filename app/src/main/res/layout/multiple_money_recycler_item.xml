@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/multiple_tv"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:textSize="12sp"
+            android:background="@drawable/multiple_money_selector"
+            android:text=""
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@color/multiple_money_item_textloler"
+            android:layout_margin="7dp"
+            />
+
+
+</LinearLayout>

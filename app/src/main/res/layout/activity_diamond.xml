@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".uuuu.iuymn.mkjnb.activity.live.DiamondActivity">
+    <com.androidkun.xtablayout.XTabLayout
+        android:id="@+id/diamond_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:xTabSelectedTextColor="@color/default_color"
+        app:xTabIndicatorColor="#FF3C6A"
+        app:xTabTextColor="#999999"
+        app:xTabBackgroundColor="@color/white"
+        app:xTabIndicatorHeight="4dp"
+        app:xTabIndicatorWidth="18dp"
+        app:xTabMode="fixed"
+        android:layout_alignParentTop="true"
+        >
+    </com.androidkun.xtablayout.XTabLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/diamond_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/diamond_tab">
+    </androidx.viewpager.widget.ViewPager>
+
+</RelativeLayout>

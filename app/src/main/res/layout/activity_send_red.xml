@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    tools:context=".uuuu.iuymn.mkjnb.Fragment.live_chat_fragment.SendRedActivity">
+   <include layout="@layout/toolbar_layout"/>
+    <TextView
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/send_red_tip_tv"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#999999"
+        android:text="@string/分享人数达到触发红包人数红包才能打开"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:textColor="@color/default_color"
+            android:text="@string/红包个数"
+            android:textSize="14sp"
+            android:layout_gravity="center_vertical"
+            />
+
+        <EditText
+            android:id="@+id/red_num_etv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="right|center"
+            android:hint="@string/填写个数"
+            android:inputType="number"
+            android:maxLength="5"
+            android:textColorHint="#A2A2A2"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="13dp"
+            android:textColor="@color/default_color"
+            android:text="@string/个"
+            android:textSize="14sp"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="13dp"
+            android:text="@string/总金额数"
+            android:singleLine="true"
+            android:textColor="#F91712"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/red_amount_etv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="right|center"
+            android:hint="@string/填写金额"
+            android:inputType="number"
+            android:singleLine="true"
+            android:maxLength="9"
+            android:textColorHint="#A2A2A2"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="13dp"
+            android:text="@string/元"
+            android:textColor="#F91712"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="13dp"
+            android:text="@string/有效时间"
+            android:singleLine="true"
+            android:textColor="@color/default_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/red_time_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:gravity="right|center"
+            android:text="@string/五分钟"
+            android:textColorHint="#A2A2A2"
+            android:layout_marginRight="12dp"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="13dp"
+            android:src="@drawable/right_hot"
+            android:visibility="gone"
+             />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:text="@string/发红包"
+        android:textColor="#FFE7C3"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:background="@drawable/send_red_btn_selector"
+        android:id="@+id/send_red_sure_btn"
+        />
+
+    <LinearLayout
+        android:id="@+id/recharge_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:src="@drawable/cz"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/充值红包金额"
+            android:textColor="#0C30B0"
+            android:textSize="13sp"
+            />
+    </LinearLayout>
+</LinearLayout>

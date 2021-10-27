@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".uuuu.iuymn.mkjnb.activity.chatRoomActivity.LongDragonActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/action_bar_color"
+        android:layout_height="45dp">
+        <TextView
+            android:id="@+id/changlong_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="@string/返回"
+            android:textColor="@color/action_bar_return_textcolor_selecter"
+            android:textSize="16sp" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:contentDescription="TODO" android:src="@drawable/help"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            />
+        <TextView
+            android:id="@+id/action_bar_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="@string/位置"
+            android:id="@+id/action_bar_right"
+            android:visibility="invisible"
+            android:textColor="@color/action_bar_return_textcolor_selecter"
+            android:textSize="16sp" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:contentDescription="TODO" android:src="@drawable/help"
+            android:layout_gravity="center"
+            android:layout_marginRight="12dp"
+            android:id="@+id/changlong_help"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/mtab"
+            app:tabSelectedTextColor="@color/white"
+            app:tabIndicatorColor="@color/white"
+            app:tabMode="scrollable"
+            app:tabTextColor="#fbb6b6"
+            android:background="#E53333"
+            >
+        </com.google.android.material.tabs.TabLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:background="#E53333">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:id="@+id/show_money_linear"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/余额"
+                    android:layout_gravity="center"
+                    android:textColor="#fbb6b6"
+                    android:textSize="14sp"
+                    android:id="@+id/yue_textview"
+                    />
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:contentDescription="TODO" android:src="@drawable/yincang"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="12dp"
+                    android:id="@+id/eye_img"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:id="@+id/money_textview"
+                android:visibility="gone"
+                android:layout_marginRight="20dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/changlong_fragment_content"
+        ></androidx.viewpager.widget.ViewPager>
+</LinearLayout>

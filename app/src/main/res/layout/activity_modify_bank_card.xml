@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".uuuu.iuymn.mkjnb.activity.safeCenter.ModifyBankCardActivity">
+    <include layout="@layout/toolbar_layout"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/choose_bank">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="12dp"
+            android:text="@string/选择银行    "
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/modify_bank_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="40dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:textSize="12sp"
+
+            />
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:contentDescription="TODO" android:src="@drawable/buttom_right"
+            android:visibility="invisible"
+            />
+    </LinearLayout>
+    <include layout="@layout/split_horizontal"/>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="@string/开户省市    "
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/modify_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/gray"
+            android:textSize="12sp"
+
+            />
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/buttom_right"
+            android:visibility="invisible"
+            />
+    </LinearLayout>
+    <include layout="@layout/split_horizontal"/>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="@string/开户人姓名"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/modify_card_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_weight="1"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:gravity="center_vertical"
+            android:background="@null"
+            android:textSize="12sp" />
+    </LinearLayout>
+    <include layout="@layout/split_horizontal"/>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="@string/银行卡号    "
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/modify_card_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_weight="1"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:gravity="center_vertical"
+            android:textSize="12sp" />
+    </LinearLayout>
+    <include layout="@layout/split_horizontal"/>
+
+    <Button
+        android:id="@+id/sure_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/game_rule_sure_shape"
+        android:text="@string/如需修改银行卡请联系客服"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+</LinearLayout>

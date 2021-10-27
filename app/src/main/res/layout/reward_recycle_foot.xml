@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:contentDescription="TODO" android:src="@drawable/xiaoqizi"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/晋级机制"
+            android:layout_marginLeft="8dp"
+            android:textColor="#dc3b40"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/会员每晋升一个等级都能获得奖励"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/充值1元可获得1成长积分"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/小明从VIP1直接晋升到VIP4他将能获得6元奖励"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:lineSpacingExtra="3dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/小红从VIP2直接晋升到VIP4他将能获得"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:lineSpacingExtra="3dp"
+        android:layout_marginBottom="20dp"
+        />
+
+</LinearLayout>

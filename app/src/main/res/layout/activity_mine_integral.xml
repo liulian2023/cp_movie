@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".uuuu.iuymn.mkjnb.activity.mine_fragment_activitys.MineIntegralActivity">
+    <include layout="@layout/action_bar_two"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:text="@string/累计积分"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:id="@+id/add_integral"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        android:textColor="#ff4239"
+        android:text=" - - -"
+        />
+    <include layout="@layout/split_horizontal"/>
+    <include layout="@layout/split_big"/>
+    <include layout="@layout/split_horizontal"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical"
+        android:id="@+id/no_data_linear"
+        android:visibility="gone"
+        >
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:contentDescription="TODO" android:src="@drawable/no_message"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="@string/暂无积分"
+            />
+    </LinearLayout>
+    <include layout="@layout/loading_layout"/>
+    <include layout="@layout/error_lyaout"/>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refresh_integral"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/integral_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </androidx.recyclerview.widget.RecyclerView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

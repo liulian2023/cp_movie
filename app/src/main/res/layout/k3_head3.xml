@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:baselineAligned="false"
+        android:layout_height="60dp">
+        <LinearLayout
+            android:id="@+id/ll1_k3_head3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/k3_head3_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/textcolor_head3"
+                android:textSize="12dp"
+                />
+
+            <TextView
+                android:id="@+id/k3_head3_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="00:00:00"
+                android:textColor="@color/red"
+                android:textSize="18dp"
+                android:visibility="gone"
+                />
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="15dp"
+                android:layout_height="25dp"
+                android:src="@drawable/loading"
+                android:layout_marginTop="5dp"
+                android:id="@+id/time_load_img"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll2_k3_head3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/k3_head3_tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textcolor_head3"
+                    android:textSize="12dp"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3dp"
+                    android:contentDescription="TODO" android:src="@mipmap/icon_arrow_down"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                >
+
+                <ImageView
+                    android:id="@+id/k3_head3_iv1"
+                    android:layout_width="25dp" android:contentDescription="TODO" 
+                    android:layout_height="25dp" />
+                <ImageView
+                    android:id="@+id/k3_head3_iv2"
+                    android:layout_width="25dp" android:contentDescription="TODO" 
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="5dp"
+                    />
+                <ImageView
+                    android:id="@+id/k3_head3_iv3"
+                    android:layout_width="25dp" android:contentDescription="TODO" 
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="5dp"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/split"
+        />
+
+
+
+</LinearLayout>

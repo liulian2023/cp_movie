@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--自定义圆角,背景textView的资源文件-->
+    <declare-styleable name="MyCornerTextView">
+        <attr name="borderWid" format="dimension"/>
+        <attr name="borderWidthColor" format="color"/>
+        <attr name="cornersize" format="dimension"/>
+        <!--<attr name="titleText" format="string" />-->
+        <!--<attr name="mbackground" format="color"/>-->
+        <!--<attr name="titleTextSize" format="dimension"/>-->
+        <!--<attr name="titleTextColor" format="color"/>-->
+        <!-- 1:边框的宽度 2：边框的颜色   3：边角的大小    4:控件内容   5:背景颜色   6;字体大小   7:  字体颜色  -->
+
+    </declare-styleable>
+
+    <declare-styleable name="InputConflictView">
+        <attr name="editText" format="reference"/>
+        <attr name="recycleview" format="reference"/>
+        <attr name="panelView" format="reference"/>
+        <attr name="switchBtn" format="reference"/>
+        <attr name="imageview" format="reference"/>
+        <attr name="linearActionBar" format="reference"/>
+        <attr name="linearPager" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name = "CustomPasswordInputView">
+    <attr name = "maxCount" format = "integer"/>
+    <attr name = "pwdcircleColor" format = "color"/>
+    <attr name = "pwdCircleRadius" format = "dimension"/>
+    <attr name = "strokeColor"  format = "color"/>
+    <attr name = "devideLineColor"  format = "color"/>
+    <attr name = "divideLineWidth"  format = "dimension"/>
+    <attr name = "divideLineColor"  format = "color"/>
+    <attr name = "rectAngle"  format = "dimension"/>
+</declare-styleable>
+
+
+    <declare-styleable name="PasswordInputView">
+        <attr name="passwordLength" format="integer"/>
+        <attr name="borderWidth" format="dimension"/>
+        <attr name="borderRadius" format="dimension"/>
+        <attr name="borderColor" format="color"/>
+        <attr name="passwordWidth" format="dimension"/>
+        <attr name="passwordColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="TagFlowLayout">
+        <attr name="auto_select_effect" format="boolean"></attr>
+        <attr name="max_select" format="integer"></attr>
+        <attr name="gravity">
+            <enum name="left" value="-1" />
+            <enum name="center" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+    </declare-styleable>
+
+
+    <!--支持圆角的TextView-->
+    <declare-styleable name="RoundTextView">
+        <attr name="rtvBgColor" format="color"/>
+        <attr name="rtvBorderWidth" format="dimension"/>
+        <attr name="rtvBorderColor" format="dimension"/>
+        <attr name="rtvRadius" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="EditPanel">
+        <attr name="roomId" format="string" />
+    </declare-styleable>
+
+
+
+    <!--文字描边-->
+    <declare-styleable name="StrokeTextView">
+        <attr name="outerColor" format="color|reference" />
+        <attr name="innnerColor" format="color|reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="wheelSurfView">
+        <!--类型 根据类型来加载资源 1 默认类型 用户需要提供文字和图片 2 暴力模式 用户只需要提供一张圆形的用来旋转的图片-->
+        <attr name="type" format="integer"/>
+        <!--最低圈数 默认值3 也就是说每次旋转都会最少转3圈-->
+        <attr name="minTimes" format="integer"/>
+        <!--扇形的数量 也就是奖品的份数-->
+        <attr name="typenum" format="integer"/>
+        <!--每一个扇形旋转消耗的时间-->
+        <attr name="vartime" format="integer"/>
+        <!--类型为1的时候 需要提供每个扇形上面的文字描述 长度必须和typenum一致-->
+        <attr name="deses" format="reference"/>
+        <!--类型为1的时候 需要提供每个扇形上面的图片展示 长度必须和typenum一致-->
+        <attr name="icons" format="reference"/>
+        <!--类型为1的时候 需要提供每个扇形背景颜色 长度必须和typenum一致-->
+        <attr name="colors" format="reference"/>
+        <!--中间图片的引用 有默认值 不填则使用默认值-->
+        <attr name="goImg" format="reference"/>
+        <!--圆环的图片引用 有默认值 不填则使用默认值-->
+        <attr name="huanImg" format="reference"/>
+        <!--如果类型为2 此值必填-->
+        <attr name="mainImg" format="reference"/>
+        <!--文字大小-->
+        <attr name="textSize" format="dimension"/>
+        <!--文字颜色-->
+        <attr name="textColor" format="reference|color"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="NetImageView">
+        <attr name="imageUrl" format="string" />
+    </declare-styleable>
+
+</resources>

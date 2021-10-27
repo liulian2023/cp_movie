@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/transparent"
+    tools:context=".uuuu.iuymn.mkjnb.activity.live.LiveWebViewActivity">
+    <TextView
+        android:id="@+id/place_holder_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/progressHorizontalStyle"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+    <!--网页显示区域-->
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </WebView>
+</LinearLayout>

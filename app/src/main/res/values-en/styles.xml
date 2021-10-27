@@ -1,0 +1,292 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/action_bar_color</item>
+        <!--<item name="colorPrimaryDark">#e6351a</item>//状态栏颜色-->
+        <item name="colorPrimaryDark">@color/action_bar_color</item>//状态栏颜色
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:listDivider">@drawable/recycle_splite_shape</item>//分割线
+    </style>
+    <style name="sendRedTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">#F74A11</item>
+        <!--<item name="colorPrimaryDark">#e6351a</item>//状态栏颜色-->
+        <item name="colorPrimaryDark">#F74A11</item>//状态栏颜色
+        <item name="colorAccent">#F74A11</item>
+        <item name="android:listDivider">@drawable/recycle_splite_shape</item>//分割线
+    </style>
+    <style name="AppTheme.Full" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--<item name="windowNoTitle">true</item>-->
+        <!--<item name="windowActionBar">false</item>-->
+        <!--是否全屏-->
+        <item name="android:windowFullscreen">true</item>
+        <!--<item name="android:windowContentOverlay">@null</item>-->
+        <!--<item name="android:windowBackground">@drawable/splash</item>//设置背景图-->
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <!--<item name="android:fitsSystemWindows">true</item>-->
+        <!--<item name="android:clipToPadding">false</item>-->
+        <!--状态栏颜色-->
+        <item name="colorPrimaryDark">@color/noColor</item>
+    </style>
+
+    <style name="NoTitle">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="demoStyle">
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="FontStyle" parent="AppTheme">
+        <!--<item name="android:fontFamily">@font/wryh</item>-->
+    </style>
+
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_buttom_out</item>
+    </style>
+    <style name="pop_bottom_to_top_150" parent="android:Animation">//从下往上0.15秒动画
+        <item name="android:windowEnterAnimation">@anim/pop_in_150</item>
+        <item name="android:windowExitAnimation">@anim/pop_out_150</item>
+
+    </style>
+    <!-- 应用启动页(StartingWindow)的theme -->
+    <style name="StartingWindowTheme" parent="NoActionBarNoTitleTheme"></style>
+    <!--<style name="UserInfoImageActicity" parent="android:Theme.Dialog">-->
+    <!--<item name="android:windowAnimationStyle">@style/AnimationActivity.Design.BottomSheetDialog</item>-->
+    <!--<item name="android:windowFrame">@null</item>-->
+    <!--;!&#45;&#45; 边框 &ndash;&gt;-->
+    <!--<item name="android:windowIsFloating">true</item>-->
+    <!--;!&#45;&#45; 是否浮现在activity之上 &ndash;&gt;-->
+    <!--<item name="android:windowIsTranslucent">false</item>-->
+    <!--;!&#45;&#45; 半透明 &ndash;&gt;-->
+    <!--<item name="android:windowNoTitle">true</item>-->
+    <!--;!&#45;&#45; 无标题 &ndash;&gt;-->
+    <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+    <!--;!&#45;&#45; 背景透明 &ndash;&gt;-->
+    <!--<item name="android:backgroundDimEnabled">false</item>-->
+    <!--;!&#45;&#45; 模糊 &ndash;&gt;-->
+    <!--</style>-->
+    <style name="popupAnimation" parent="android:Animation">//0秒动画
+        <item name="android:windowEnterAnimation">@anim/pop_in</item>
+        <item name="android:windowExitAnimation">@anim/pop_out</item>
+    </style>
+
+    <style name="popupAnimationNormol" parent="android:Animation">//普通0秒动画
+        <item name="android:windowEnterAnimation">@anim/pop_in</item>
+        <item name="android:windowExitAnimation">@anim/pop_out</item>
+    </style>
+
+    <style name="popupAnimationNormol2" parent="android:Animation">//普通0.5秒动画
+        <item name="android:windowEnterAnimation">@anim/pop_in_500</item>//从下往上动画
+        <!--<item name="android:windowEnterAnimation">@anim/alphaanim_in_500</item>//透明度动画-->
+        <!--<item name="android:windowEnterAnimation">@anim/scaleanim</item>-->//缩放动画
+        <item name="android:windowExitAnimation">@anim/pop_out_500</item>
+
+    </style>
+
+
+    <style name="fullStatusBarTheme" parent="NoActionBarNoTitleTheme"></style>
+    <style name="popupAnimationNormol150" parent="android:Animation">//普通0.15秒动画
+        <item name="android:windowEnterAnimation">@anim/pop_in_150</item>
+        <!--<item name="android:windowEnterAnimation">@anim/alphaanim_in_500</item>//透明度动画-->
+        <!--<item name="android:windowEnterAnimation">@anim/scaleanim</item>-->
+        <item name="android:windowExitAnimation">@anim/pop_out_150</item>
+
+    </style>
+
+    <style name="popAlphaanim0.5" parent="android:Animation">//透明0.5秒动画
+        <!--<item name="android:windowEnterAnimation">@anim/pop_in_500</item>//从下往上动画-->
+        <item name="android:windowEnterAnimation">@anim/alphaanim_in_500</item>//透明度动画
+        <!--<item name="android:windowEnterAnimation">@anim/scaleanim</item>-->//缩放动画
+        <!--<item name="android:windowExitAnimation">@anim/alphaanim_out_500</item>-->
+        <item name="android:windowExitAnimation">@anim/alphaanim_out_500</item>
+    </style>
+
+    <style name="popAlphaanim0.3" parent="android:Animation">//透明0.3秒动画
+        <!--<item name="android:windowEnterAnimation">@anim/pop_in_500</item>//从下往上动画-->
+        <item name="android:windowEnterAnimation">@anim/alphaanim_in_300</item>//透明度动画
+        <!--<item name="android:windowEnterAnimation">@anim/scaleanim</item>-->//缩放动画
+        <!--<item name="android:windowExitAnimation">@anim/alphaanim_out_500</item>-->
+        <item name="android:windowExitAnimation">@anim/alphaanim_out_300</item>
+    </style>
+
+    <style name="progressBarAnimation" parent="android:Animation">//进度条0秒动画
+        <item name="android:windowEnterAnimation">@anim/progress_bar_in</item>
+        <item name="android:windowExitAnimation">@anim/progress_bar_out</item>
+    </style>
+    <!--pop中间弹出动画-->
+    <style name="pop_scale_animation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/scale_pop_in</item>
+        <item name="android:windowExitAnimation">@anim/scale_pop_out</item>
+    </style>
+
+    <style name="pop_right_to_left_animation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_right_to_left_in</item>
+        <item name="android:windowExitAnimation">@anim/scale_pop_out</item>
+    </style>
+    <!--progressDialog style-->
+    <style name="CustomProgressDialog" parent="@android:style/Theme.Dialog">
+        <!-- Dialog的windowFrame框为无 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 是否显示title -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 设置dialog的背景 -->
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 用来控制灰度的值，当为1时，界面除了我们的dialog内容是高亮显示的，dialog以外的区域是黑色的，完全看不到其他内容，系统的默认值是0.5 -->
+        <item name="android:backgroundDimAmount">0.2</item>
+        <!-- 是否模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="CustomProgressDialogNoAlpha" parent="@android:style/Theme.Dialog">
+        <!-- Dialog的windowFrame框为无 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 是否显示title -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 设置dialog的背景 -->
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 用来控制灰度的值，当为1时，界面除了我们的dialog内容是高亮显示的，dialog以外的区域是黑色的，完全看不到其他内容，系统的默认值是0.5 -->
+        <item name="android:backgroundDimAmount">0</item>
+        <!-- 是否模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+    <style name="MoneyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/action_bar_color</item>
+        <item name="colorControlActivated">@color/action_bar_color</item>
+    </style>
+
+    <!--自定义dialog背景全透明无边框theme -->
+
+    <style name="MyDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <style name="notAnimation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+    </style>
+
+
+    <!--横向进度条样式-->
+    <style name="progressHorizontalStyle" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:maxHeight">5dip</item>
+        <item name="android:minHeight">5dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:progressDrawable">@drawable/progressbar_color_size</item>
+    </style>
+
+
+    <!--        定义tabLayout字体大小-->
+    <style name="TabLayoutTextSize">
+        <item name="android:textSize">12dp</item>
+    </style>
+
+
+    <style name="activityDialogTheme" parent="Base.Theme.AppCompat.Dialog">
+        <!--设置没有ActionBar-->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!-- Dialog的windowFrame框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上  居中显示 左右会留间距-->
+        <!--        <item name="android:windowIsFloating">true</item>-->
+        <!-- 是否半透明 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowDisablePreview">true</item>
+        <!-- 是否显示title -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 背景是否模糊显示 (背景变暗)-->
+        <!--        <item name="android:backgroundDimEnabled">true</item>-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+    <style name="line">
+        <item name="android:background">@color/line_color</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/line</item>
+    </style>
+
+<!--
+    <style name="Base.Widget.Design.TabLayout" parent="android:Widget">
+        <item name="tabBackground">@drawable/tab_betpop_background</item>
+    </style>
+-->
+
+
+    <!--透明状态栏-->
+    <style name="NoActionBarNoTitleTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/action_bar_color</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <!-- 直播页的theme -->
+    <style name="qr_code_theme" parent="NoActionBarNoTitleTheme">   </style>
+
+
+    <style name="LoginEditText" parent="Theme.AppCompat.Light">
+<!--        <item name="colorControlNormal">#D8D8D8</item>
+        <item name="colorControlActivated">#D8D8D8</item>-->
+        <item name="colorControlNormal">#D8D8D8</item>
+        <item name="colorControlActivated">@android:color/holo_orange_dark</item>
+    </style>
+
+<!--        圆角textView-->
+    <declare-styleable name="ColorTextView">
+        <attr name="ctvText" format="string" />
+        <attr name="ctvBackground" format="color"/>
+        <attr name="ctvTextSize" format="dimension"/>
+        <attr name="ctvTextColor" format="color"/>
+        <attr name="ctvCornerSize" format="integer"/>
+    </declare-styleable>
+
+
+
+
+
+</resources>

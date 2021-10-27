@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--开奖倒计时接口数组-->
+    <string-array name="countdown">
+        <item>/game/countdown</item>
+        <item>/sscai/countdown</item>
+        <item>/race/countdown</item>
+        <item>/marksix/countdown</item>
+        <item>/dan/countdown</item>
+        <item>/happy/countdown</item>
+        <item>/farm/countdown</item>
+        <item>/happyten/countdown</item>
+        <item>/xuanwu/countdown</item>
+    </string-array>
+    <!--开奖倒计时接口数组-->
+    <string-array name="countdown_cpmovie">
+        <item>game/countdown</item>
+        <item>sscai/countdown</item>
+        <item>race/countdown</item>
+        <item>marksix/countdown</item>
+        <item>dan/countdown</item>
+        <item>happy/countdown</item>
+        <item>farm/countdown</item>
+        <item>happyten/countdown</item>
+        <item>xuanwu/countdown</item>
+    </string-array>
+    <!--游戏规则数组-->
+    <string-array name="getgroup">
+         <item>/game/getgroup</item>
+         <item>/sscai/getgroupTwoWXAll</item>
+         <item>/race/getgroupAll</item>
+        <item>/marksix/getgroupAll</item>
+        <item>/dan/getgroup</item>
+        <item>/happy/getgroupAll</item>
+        <item>/farm/getgroupAll</item>
+        <item>/happyten/getgroupAll</item>
+        <item>/xuanwu/getgroupAll</item>
+    </string-array>
+    <!--上期开奖结果数组-->
+    <string-array name="lastLottery">
+        <item>/game/lastLottery</item>
+        <item>/sscai/lastLottery</item>
+        <item>/race/lastLottery</item>
+        <item>/marksix/lastLottery</item>
+        <item>/dan/lastLottery</item>
+        <item>/happy/lastLottery</item>
+        <item>/farm/lastLottery</item>
+        <item>/happyten/lastLottery</item>
+        <item>/xuanwu/lastLottery</item>
+    </string-array>
+    <!--上期开奖结果数组-->
+    <string-array name="lastLottery_cpmovie">
+        <item>game/lastLottery</item>
+        <item>sscai/lastLottery</item>
+        <item>race/lastLottery</item>
+        <item>marksix/lastLottery</item>
+        <item>dan/lastLottery</item>
+        <item>happy/lastLottery</item>
+        <item>farm/lastLottery</item>
+        <item>happyten/lastLottery</item>
+        <item>xuanwu/lastLottery</item>
+    </string-array>
+    <!--投注接口-->
+
+    <!--投注接口-->
+    <string-array name="cpmovie_touzhu">
+        <item>game/bet</item>
+        <item>sscai/bet</item>
+        <item>race/bet</item>
+        <item>marksix/bet</item>
+        <item>dan/bet</item>
+        <item>happy/bet</item>
+        <item>farm/bet</item>
+        <item>happyten/bet</item>
+        <item>xuanwu/bet</item>
+    </string-array>
+
+    <array name="shaizi">
+        <item>@drawable/shaizi001</item>
+        <item>@drawable/shaizi002</item>
+        <item>@drawable/shaizi003</item>
+        <item>@drawable/shaizi004</item>
+        <item>@drawable/shaizi005</item>
+        <item>@drawable/shaizi006</item>
+
+    </array>
+    <array name="raceQiu">
+        <item>@drawable/race_num_circle_1</item>
+        <item>@drawable/race_num_circle_2</item>
+        <item>@drawable/race_num_circle_3</item>
+        <item>@drawable/race_num_circle_4</item>
+        <item>@drawable/race_num_circle_5</item>
+        <item>@drawable/race_num_circle_6</item>
+        <item>@drawable/race_num_circle_7</item>
+        <item>@drawable/race_num_circle_8</item>
+        <item>@drawable/race_num_circle_9</item>
+        <item>@drawable/race_num_circle_10</item>
+    </array>
+
+    <array name="xuanwuQiu">
+        <item>@drawable/xuanwu_num_1</item>
+        <item>@drawable/xuanwu_num_2</item>
+        <item>@drawable/xuanwu_num_3</item>
+        <item>@drawable/xuanwu_num_4</item>
+        <item>@drawable/xuanwu_num_5</item>
+        <item>@drawable/xuanwu_num_6</item>
+        <item>@drawable/xuanwu_num_7</item>
+        <item>@drawable/xuanwu_num_8</item>
+        <item>@drawable/xuanwu_num_9</item>
+        <item>@drawable/xuanwu_num_10</item>
+        <item>@drawable/xuanwu_num_11</item>
+    </array>
+<!--    <array name="level_icon">
+        <item>@drawable/vip1</item>
+    </array>-->
+
+    <string-array name="turntable_name">
+        <item>苹果12pro max</item>
+        <item>18元现金劵x1</item>
+        <item>主播名片X1</item>
+        <item>魅力至尊荣誉称号X30天 </item>
+        <item>VIP发言权限x7天</item>
+        <item>188元现金劵x1</item>
+        <item>顶级超跑入场x7天</item>
+        <item>魅力新秀荣誉称号X30天</item>
+
+    </string-array>
+    <string-array name="names">
+        <item>苹果12pro max</item>
+        <item>18元现金劵*1</item>
+        <item>主播名片*1</item>
+        <item>魅力至尊荣誉称号*30天 </item>
+        <item>VIP发言权限*7天</item>
+        <item>188元现金劵*1</item>
+        <item>顶级超跑入场*7天</item>
+        <item>魅力新秀荣誉称号*30天</item>
+    </string-array>
+
+    <string-array name="icons">
+        <item>vip18</item>
+        <item>vip18</item>
+        <item>vip18</item>
+        <item>vip18</item>
+        <item>vip18</item>
+        <item>vip18</item>
+        <item>vip18</item>
+        <item>vip18</item>
+    </string-array>
+
+    <string-array name="colors">
+        <item>#fef9f7</item>
+        <item>#fbc6a9</item>
+        <item>#ffdecc</item>
+        <item>#fbc6a9</item>
+        <item>#ffdecc</item>
+        <item>#fbc6a9</item>
+        <item>#ffdecc</item>
+        <item>#ffdecc</item>
+    </string-array>
+</resources>

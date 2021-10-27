@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="11dp"
+    android:layout_marginLeft="4dp"
+    >
+<!--    <TextView
+        android:id="@+id/menu_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/为您推荐"
+        android:textSize="14sp"
+        android:textColor="@color/default_color"
+        android:gravity="center"
+        android:background="@drawable/shopping_menu_ripple"
+        />
+    <TextView
+        android:id="@+id/menu_left_tv"
+        android:layout_width="3dp"
+        android:layout_height="match_parent"
+        android:background="#FC434A"
+        />-->
+    <ImageView
+        android:id="@+id/menu_big_bg_iv"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@drawable/gamehall_menu_icon_n"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/menu_name_iv"
+        android:layout_width="34dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/menu_big_bg_iv"
+        app:layout_constraintStart_toStartOf="@+id/menu_big_bg_iv"
+        app:layout_constraintTop_toTopOf="@+id/menu_big_bg_iv" />
+
+    <TextView
+        android:id="@+id/menu_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/为您推荐"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/menu_big_bg_iv"
+        app:layout_constraintEnd_toEndOf="@+id/menu_big_bg_iv"
+        app:layout_constraintStart_toStartOf="@+id/menu_big_bg_iv"
+        app:layout_constraintTop_toBottomOf="@+id/menu_name_iv" />
+</androidx.constraintlayout.widget.ConstraintLayout>

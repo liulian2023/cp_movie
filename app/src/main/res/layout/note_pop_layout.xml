@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    android:id="@+id/tv_notepop_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:text="@string/基本功能"
+                    android:textColor="#333333"
+                    android:textSize="13sp"
+                    />
+                <View
+                    android:id="@+id/view_note_pop_split"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_notepop_title"
+                    android:background="@color/line_color"/>
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:scrollbars="none"
+                    app:layout_constraintTop_toBottomOf="@+id/view_note_pop_split">
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/iv_openjiang_record"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="25dp"
+                            android:src="@drawable/ic_openjiang_record"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/iv_bet_record"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="30dp"
+                            app:layout_constraintLeft_toRightOf="@+id/iv_openjiang_record"
+                            app:layout_constraintTop_toTopOf="@+id/iv_openjiang_record"
+                            android:src="@drawable/ic_bet_record"
+                            />
+
+                        <ImageView
+                            android:id="@+id/iv_recharge_center"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="30dp"
+                            app:layout_constraintLeft_toRightOf="@+id/iv_bet_record"
+                            app:layout_constraintTop_toTopOf="@+id/iv_bet_record"
+                            android:src="@drawable/ic_recharge_center"
+                            />
+
+                        <ImageView
+                            android:id="@+id/iv_station_privateletter"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="30dp"
+                            app:layout_constraintLeft_toRightOf="@+id/iv_recharge_center"
+                            app:layout_constraintTop_toTopOf="@+id/iv_recharge_center"
+                            android:src="@drawable/ic_station_privateletter"
+                            />
+
+                        <ImageView
+                            android:id="@+id/iv_task_center_iv"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="30dp"
+                            app:layout_constraintLeft_toRightOf="@+id/iv_station_privateletter"
+                            app:layout_constraintTop_toTopOf="@+id/iv_station_privateletter"
+                            android:src="@drawable/welfare_center"
+                            />
+
+                        <TextView
+                            android:id="@+id/iv_task_center_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            app:layout_constraintLeft_toLeftOf="@+id/iv_openjiang_record"
+                            app:layout_constraintTop_toBottomOf="@+id/iv_openjiang_record"
+                            app:layout_constraintRight_toRightOf="@+id/iv_openjiang_record"
+                            android:text="@string/开奖记录"
+                            android:textColor="@color/default_color"
+                            android:textSize="12sp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            app:layout_constraintLeft_toLeftOf="@+id/iv_bet_record"
+                            app:layout_constraintTop_toBottomOf="@+id/iv_bet_record"
+                            app:layout_constraintRight_toRightOf="@+id/iv_bet_record"
+                            android:text="@string/投注记录"
+                            android:textColor="@color/default_color"
+                            android:textSize="12sp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            app:layout_constraintLeft_toLeftOf="@+id/iv_recharge_center"
+                            app:layout_constraintTop_toBottomOf="@+id/iv_recharge_center"
+                            app:layout_constraintRight_toRightOf="@+id/iv_recharge_center"
+                            android:text="@string/充值中心"
+                            android:textColor="@color/default_color"
+                            android:textSize="12sp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            app:layout_constraintLeft_toLeftOf="@+id/iv_station_privateletter"
+                            app:layout_constraintTop_toBottomOf="@+id/iv_station_privateletter"
+                            app:layout_constraintRight_toRightOf="@+id/iv_station_privateletter"
+                            android:text="@string/站内私信"
+                            android:textColor="@color/default_color"
+                            android:textSize="12sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/welfare_center_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            app:layout_constraintLeft_toLeftOf="@+id/iv_task_center_iv"
+                            app:layout_constraintTop_toBottomOf="@+id/iv_task_center_iv"
+                            app:layout_constraintRight_toRightOf="@+id/iv_task_center_iv"
+                            android:text="@string/福利中心"
+                            android:textColor="@color/default_color"
+                            android:textSize="12sp"
+                            />
+
+                        <ImageView
+                            android:id="@+id/forbidden_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/iv_task_center_iv"
+                            app:layout_constraintStart_toEndOf="@+id/iv_task_center_iv"
+                            app:layout_constraintTop_toTopOf="@+id/iv_task_center_iv"
+                            app:srcCompat="@drawable/jylb_btn" />
+
+
+                        <TextView
+                            android:id="@+id/forbidden_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="@string/禁言列表"
+                            android:textSize="12sp"
+                            android:textColor="@color/default_color"
+                            app:layout_constraintEnd_toEndOf="@+id/forbidden_iv"
+                            app:layout_constraintLeft_toLeftOf="@+id/iv_task_center_iv"
+                            app:layout_constraintRight_toRightOf="@+id/iv_task_center_iv"
+                            app:layout_constraintStart_toStartOf="@+id/forbidden_iv"
+                            app:layout_constraintTop_toBottomOf="@+id/iv_task_center_iv" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </HorizontalScrollView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D8D8D8"
+                />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/take_diamond_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="17dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/lzs_icon" />
+
+                <TextView
+                    android:id="@+id/take_diamond_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="17dp"
+                    android:text="@string/领钻石"
+                    android:textColor="@color/default_color"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/take_diamond_iv"
+                    app:layout_constraintStart_toStartOf="@+id/take_diamond_iv"
+                    app:layout_constraintTop_toBottomOf="@+id/take_diamond_iv" />
+
+
+                <ImageView
+                    android:id="@+id/rorate_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+
+                    app:layout_constraintBottom_toBottomOf="@+id/take_diamond_iv"
+                    app:layout_constraintStart_toEndOf="@+id/take_diamond_iv"
+                    app:layout_constraintTop_toTopOf="@+id/take_diamond_iv"
+                    app:srcCompat="@drawable/zp_icon" />
+
+                <TextView
+                    android:id="@+id/rorate_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/转盘"
+                    android:textColor="@color/default_color"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/rorate_iv"
+                    app:layout_constraintStart_toStartOf="@+id/rorate_iv"
+                    app:layout_constraintTop_toTopOf="@+id/take_diamond_tv" />
+
+                <ImageView
+                    android:id="@+id/equipment_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/take_diamond_iv"
+                    app:layout_constraintStart_toEndOf="@+id/rorate_iv"
+                    app:layout_constraintTop_toTopOf="@+id/take_diamond_iv"
+                    app:layout_constraintVertical_bias="1.0"
+                    app:srcCompat="@drawable/zb_icon" />
+
+                <TextView
+                    android:id="@+id/equipment_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/装备"
+                    android:textColor="@color/default_color"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/equipment_iv"
+                    app:layout_constraintStart_toStartOf="@+id/equipment_iv"
+                    app:layout_constraintTop_toTopOf="@+id/take_diamond_tv" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+</LinearLayout>

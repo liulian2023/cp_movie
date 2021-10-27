@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2019.  ganzhe
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_item_raceofficialc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/item_raceofficialc_tv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/shape_circle_white"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/action_bar_color"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/all_type_tv"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:text="@string/全部"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:background="@drawable/white_normal_ripple"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/income_tv"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:text="@string/收入"
+            android:layout_below="@+id/all_type_tv"
+            android:background="@drawable/white_normal_ripple"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/expenditure_tv"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:text="@string/支出"
+            android:layout_below="@+id/income_tv"
+            android:background="@drawable/white_normal_ripple"
+            android:gravity="center"
+            />
+
+
+</LinearLayout>

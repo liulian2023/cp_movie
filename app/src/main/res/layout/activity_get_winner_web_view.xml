@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".uuuu.iuymn.mkjnb.activity.main_tab_activity.GetWinnerActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/user_info_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/action_bar_color">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="12dp"
+            android:gravity="center"
+            android:text="@string/返回"
+            android:textColor="@color/action_bar_return_textcolor_selecter"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/getwinner_return"
+        />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/m_radioGroup"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <RadioButton
+                android:id="@+id/get_winner_radio"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:textSize="16sp"
+                android:background="@drawable/user_info_selecter"
+                android:text="@string/中奖信息"
+                android:textColor="@drawable/user_info_text_color"
+                />
+
+            <RadioButton
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:id="@+id/yestoday_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:background="@drawable/user_info_selecter2"
+                android:textSize="16sp"
+                android:textColor="@drawable/user_info_text_color"
+                android:text="@string/昨日盈利" />
+        </RadioGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#f5f2f2"
+        app:layout_constraintTop_toBottomOf="@id/user_info_title"
+        />
+
+    <FrameLayout
+        app:layout_constraintTop_toBottomOf="@id/user_info_title"
+        android:id="@+id/get_winner_content"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

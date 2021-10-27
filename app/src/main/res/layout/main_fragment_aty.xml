@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="12dp"
+        android:id="@+id/aty_action_bar_linear"
+        android:visibility="gone"
+        android:background="@color/action_bar_color">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/活动中心"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <include layout="@layout/loading_layout"/>
+  <com.scwang.smartrefresh.layout.SmartRefreshLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/swipeRefreshLayout"
+      >
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/aty_recycleview"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+      </androidx.recyclerview.widget.RecyclerView>
+  </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

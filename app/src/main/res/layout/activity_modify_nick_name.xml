@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".uuuu.iuymn.mkjnb.activity.safeCenter.ModifyNickNameActivity">
+    <include layout="@layout/toolbar_layout"/>
+    <include layout="@layout/split_horizontal"/>
+    <include layout="@layout/split_big"/>
+    <include layout="@layout/split_horizontal"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/child_journaling_popupwindow_shape"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="@string/昵称"
+            android:textSize="14sp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="@string/请输入您要修改的昵称"
+            android:id="@+id/nick_name_edit"
+            android:inputType=""
+            android:paddingLeft="30dp"
+            android:textSize="14sp"
+            android:background="@null"
+            android:singleLine="true"
+            android:maxLength="10"
+
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/请输入3到10"
+        android:lineSpacingExtra="2dp"
+        android:gravity="center"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        />
+    <include layout="@layout/split_horizontal"/>
+    <Button
+        android:id="@+id/sure_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_button_shape"
+        android:text="@string/确定"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

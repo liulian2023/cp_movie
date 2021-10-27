@@ -1,0 +1,12 @@
+{
+  "giftNumList": [
+    {"num": 0,"des": "其他数量","isSelect": false},
+    {"num": 1314,"des": "一生一世","isSelect": false},
+    {"num": 999,"des": "永远守护你","isSelect": false},
+    {"num": 666,"des": "好运连连","isSelect": false},
+    {"num": 520,"des": "我爱你","isSelect": false},
+    {"num": 188,"des": "要抱抱","isSelect": false},
+    {"num": 1,"des": "一心一意","isSelect": true}
+  ]
+
+}

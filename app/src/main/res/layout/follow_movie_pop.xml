@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/collect_movie_linear_shape"
+        android:layout_marginLeft="58dp"
+        android:layout_marginRight="58dp">
+        <ImageView
+            android:id="@+id/more_iv"
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/more" />
+
+        <ImageView
+            android:id="@+id/collect_delete_iv"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginEnd="9dp"
+            app:layout_constraintBottom_toBottomOf="@+id/more_iv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/more_iv"
+            app:srcCompat="@drawable/collect_delete" />
+
+        <ImageView
+            android:id="@+id/collect_big_iv"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:layout_marginTop="17dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/more_iv"
+            app:srcCompat="@drawable/ac_icon1" />
+
+        <TextView
+            android:id="@+id/collect_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            app:layout_constraintEnd_toEndOf="@+id/collect_big_iv"
+            app:layout_constraintStart_toStartOf="@+id/collect_big_iv"
+            app:layout_constraintTop_toBottomOf="@+id/collect_big_iv" />
+
+        <TextView
+            android:id="@+id/follow_id_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="ID:- - - -"
+            android:textColor="#666666"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/collect_big_iv"
+            app:layout_constraintStart_toStartOf="@+id/collect_big_iv"
+            app:layout_constraintTop_toBottomOf="@+id/collect_title_tv" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView19">
+            <TextView
+                android:id="@+id/collect_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="11dp"
+                android:paddingBottom="11dp"
+                android:text="@string/加号关注"
+                android:textColor="#F54747"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:background="@drawable/pop_cancel_selector"
+                />
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#A3A3A3"
+                />
+            <TextView
+                android:id="@+id/calling_information_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="11dp"
+                android:paddingBottom="11dp"
+                android:text="@string/联系方式"
+                android:textColor="#2E5EFF"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:background="@drawable/pop_sure_selector"
+                />
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_marginTop="40dp"
+            android:background="#A3A3A3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/follow_id_tv" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+<!--    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/collect_movie_linear_shape"
+        android:layout_marginLeft="58dp"
+        android:layout_marginRight="58dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/more"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="6dp"
+                />
+            <ImageView
+                android:id="@+id/collect_delete_iv"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:padding="5dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginRight="9dp"
+                android:src="@drawable/collect_delete"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+            <TextView
+                android:id="@+id/collect_title_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/视频标题  视频标题 视频标题  视频标题 视频标题  视频标题"
+                android:maxLines="2"
+                android:textSize="14sp"
+                android:textColor="@color/default_color"
+                android:layout_marginRight="14dp"
+                />
+
+        </LinearLayout>
+        \<ImageView
+        android:id="@+id/collect_big_iv"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/ic_liveroom_avatar"
+        />
+        <Button
+            android:id="@+id/collect_btn"
+            android:layout_width="144dp"
+            android:layout_height="36dp"
+            android:textColor="@color/white"
+            android:text="@string/收藏"
+            android:background="@drawable/to_bet_selector"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>-->
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

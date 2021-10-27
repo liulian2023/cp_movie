@@ -1,0 +1,3336 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources tools:ignore="MissingTranslation" xmlns:tools="http://schemas.android.com/tools">
+	<string name="default_floatingview_channel_id" translatable="true">default_floatingview_channel</string>
+	<string name="default_floatingview_channel_name" translatable="true">Default Channel</string>
+
+	<string name="exit_again" translatable="true"> 再次点击退出应用</string>
+	<string name="chargeTip" translatable="true">温馨提示：<br>1.代充只负责充值，如果您有其他问题，请联系我们在线客服处理，代充如果向您骚扰或者其他行为，欢迎向我们举报，举报有奖。</br>
+			<br>2.代充人员不定期更换，为避免不必要的损失，每次支付请到平台提单，以官方为准，谢谢！</br>
+			<br>3.代充时请向代充人员提供您的会员账号（会员账号可以在代充页面复制），以及金额！</br>
+		</string>
+	<string name="三军" translatable="true">三军</string>
+	<string name="总和" translatable="true">总和</string>
+	<string name="短牌" translatable="true">短牌</string>
+	<string name="特码两面" translatable="true">特码两面</string>
+	<string name="特码生肖" translatable="true">特码生肖</string>
+	<string name="特码波色" translatable="true">特码波色</string>
+	<string name="第一球两面" translatable="true">第一球两面</string>
+	<string name="总和龙虎和" translatable="true">总和-龙虎和</string>
+	<string name="第一球" translatable="true">第一球</string>
+	<string name="前三" translatable="true">前三</string>
+	<string name="总和大小" translatable="true">总和大小</string>
+	<string name="龙虎" translatable="true">龙虎</string>
+	<string name="冠军单码" translatable="true">冠军单码</string>
+	<string name="冠军两面" translatable="true">冠军两面</string>
+	<string name="第二球" translatable="true">第二球</string>
+	<string name="第三球" translatable="true">第三球</string>
+	<string name="前后和" translatable="true">前后和</string>
+	<string name="五行" translatable="true">五行</string>
+	<string name="购彩问题" translatable="true">购彩问题</string>
+	<string name="赌神榜" translatable="true">赌神榜</string>
+	<string name="两面" translatable="true">两面</string>
+	<string name="第四球" translatable="true">第四球</string>
+	<string name="第五球" translatable="true">第五球</string>
+	<string name="该彩种已封盘" translatable="true">该彩种已封盘</string>
+	<string name="下注中" translatable="true">下注中</string>
+	<string name="下注成功" translatable="true">下注成功</string>
+	<string name="投注金额不能为空" translatable="true">投注金额不能为空</string>
+	<string name="第六球" translatable="true">第六球</string>
+	<string name="第七球" translatable="true">第七球</string>
+	<string name="第八球" translatable="true">第八球</string>
+	<string name="连码" translatable="true">连码</string>
+	<string name="期开奖号码" translatable="true">期开奖号码</string>
+	<string name="当前彩种已封盘" translatable="true">当前彩种已封盘</string>
+	<string name="请输入下注金额" translatable="true">请输入下注金额</string>
+	<string name="下注失败" translatable="true">下注失败</string>
+	<string name="单双和" translatable="true">单双和</string>
+	<string name="正码" translatable="true">正码</string>
+	<string name="投注" translatable="true">投注</string>
+	<string name="暂无官方彩" translatable="true">暂无官方彩</string>
+	<string name="任选二" translatable="true">任选二</string>
+	<string name="任选三" translatable="true">任选三</string>
+	<string name="任选四" translatable="true">任选四</string>
+	<string name="任选五" translatable="true">任选五</string>
+	<string name="选二连组" translatable="true">选二连组</string>
+	<string name="冠军" translatable="true">冠军</string>
+	<string name="第二名" translatable="true">第二名</string>
+	<string name="亚军" translatable="true">亚军</string>
+	<string name="第三名" translatable="true">第三名</string>
+	<string name="第四名" translatable="true">第四名</string>
+	<string name="申博国际" translatable="true">申博国际</string>
+	<string name="盈众彩票" translatable="true">盈众彩票</string>
+	<string name="下级投注明细" translatable="true">下级投注明细</string>
+	<string name="下级交易明细" translatable="true">下级交易明细</string>
+	<string name="已中奖" translatable="true">已中奖</string>
+	<string name="未中奖" translatable="true">未中奖</string>
+	<string name="全部彩票" translatable="true">全部彩票</string>
+	<string name="未中" translatable="true">未中</string>
+	<string name="返点" translatable="true">返点</string>
+	<string name="赔率" translatable="true">赔率</string>
+	<string name="快三" translatable="true">快三</string>
+	<string name="六合彩" translatable="true">六合彩</string>
+	<string name="pc蛋蛋" translatable="true">pc蛋蛋</string>
+	<string name="快乐10分" translatable="true">快乐10分</string>
+	<string name="十一选5" translatable="true">11选5</string>
+	<string name="官方玩法" translatable="true">官方玩法</string>
+	<string name="猜3个开奖号相加的和" translatable="true">猜3个开奖号相加的和,3-10为小,11-18为大。赔</string>
+	<string name="对所有相同的三个号码" translatable="true">对所有相同的三个号码(111、222、333、444、555、666)进行投注,任意号码开出,即为中奖。赔</string>
+	<string name="对相同的三个号码" translatable="true">对相同的三个号码(111、222、333、444、555、666)中的任意一个或多个进行投注,任意号码开出,即为中奖。赔</string>
+	<string name="对所有的3个相连号码" translatable="true">对所有的3个相连号码(123、234、345、456)进行投注,任意号码开出,即为中奖。赔</string>
+	<string name="所选号码与开奖号码的" translatable="true">从1-6中任选3个或多个号码，所选号码与开奖号码的3个号码相同,即为中奖。赔</string>
+	<string name="选号与奖号" translatable="true">从11-66中任选1个或多个号码,选号与奖号(包含11-66,不限顺序)相同即为中奖(不含豹子)。赔</string>
+	<string name="选择1对相同号码和1个不同号码投注" translatable="true">选择1对相同号码和1个不同号码投注,选号与奖号相同,即为中奖。赔</string>
+	<string name="所选号码与开奖号码任意2个号码相同" translatable="true">从1-6中任选2个或多个号码,所选号码与开奖号码任意2个号码相同,即为中奖。赔</string>
+	<string name="正特码" translatable="true">正特码</string>
+	<string name="正码1到6" translatable="true">正码1~6</string>
+	<string name="平特" translatable="true">平特</string>
+	<string name="自选不中" translatable="true">自选不中</string>
+	<string name="连肖连尾" translatable="true">连肖连尾</string>
+	<string name="三中二" translatable="true">三中二</string>
+	<string name="二全中" translatable="true">二全中</string>
+	<string name="三全中" translatable="true">三全中</string>
+	<string name="自选不中自选不中" translatable="true">[自选不中]自选不中</string>
+	<string name="二连肖" translatable="true">二连肖</string>
+	<string name="四连肖" translatable="true">四连肖</string>
+	<string name="五连肖" translatable="true">五连肖</string>
+	<string name="二连尾" translatable="true">二连尾</string>
+	<string name="三连肖" translatable="true">三连肖</string>
+	<string name="四全中" translatable="true">四全中</string>
+	<string name="三连尾" translatable="true">三连尾</string>
+	<string name="二中特" translatable="true">二中特</string>
+	<string name="四连尾" translatable="true">四连尾</string>
+	<string name="五连尾" translatable="true">五连尾</string>
+	<string name="括号连肖连尾" translatable="true">[连肖连尾]</string>
+	<string name="连肖" translatable="true">连肖</string>
+	<string name="特码" translatable="true">特码</string>
+	<string name="特肖" translatable="true">特肖</string>
+	<string name="特串" translatable="true">特串</string>
+	<string name="特码B" translatable="true">特码B</string>
+	<string name="色波" translatable="true">色波</string>
+	<string name="冠亚和" translatable="true">冠亚和</string>
+	<string name="第五名" translatable="true">第五名</string>
+	<string name="第六名" translatable="true">第六名</string>
+	<string name="第七名" translatable="true">第七名</string>
+	<string name="第八名" translatable="true">第八名</string>
+	<string name="第九名" translatable="true">第九名</string>
+	<string name="冠亚军组合" translatable="true">冠、亚军组合</string>
+	<string name="第十名" translatable="true">第十名</string>
+	<string name="官方投注成功" translatable="true">官方投注成功:</string>
+	<string name="最高10000倍" translatable="true">最高10000倍</string>
+	<string name="暂无该游戏官方玩法" translatable="true">暂无该游戏官方玩法</string>
+	<string name="liangmiandisiqiu" translatable="true">两面-第四球</string>
+	<string name="两面第六球" translatable="true">两面-第六球</string>
+	<string name="两面第七球" translatable="true">两面-第七球</string>
+	<string name="两面第八球" translatable="true">两面-第八球</string>
+	<string name="连码横杠" translatable="true">连码-</string>
+	<string name="开奖结果获取失败" translatable="true">开奖结果获取失败,请联系客服进行反馈</string>
+	<string name="一到五球" translatable="true">1-5球</string>
+	<string name="前中后" translatable="true">前中后</string>
+	<string name="前中后横杠" translatable="true">前中后-</string>
+	<string name="一到五球横杠" translatable="true">1-5球-</string>
+	<string name="两面总和龙虎和" translatable="true">两面-总和-龙虎和</string>
+	<string name="两面第一球" translatable="true">两面-第一球</string>
+	<string name="两面第二球" translatable="true">两面-第二球</string>
+	<string name="两面第三球" translatable="true">两面-第三球</string>
+	<string name="两面第四球" translatable="true">两面-第四球</string>
+	<string name="两面第五球" translatable="true">两面-第五球</string>
+	<string name="一到5球第一球" translatable="true">1-5球-第一球</string>
+	<string name="一到5球第二球" translatable="true">1-5球-第二球</string>
+	<string name="一到5球第三球" translatable="true">1-5球-第三球</string>
+	<string name="一到5球第四球" translatable="true">1-5球-第四球</string>
+	<string name="一到5球第五球" translatable="true">1-5球-第五球</string>
+	<string name="中三" translatable="true">中三</string>
+	<string name="后三" translatable="true">后三</string>
+	<string name="复式" translatable="true">复式</string>
+	<string name="逗号最高奖金" translatable="true">,最高奖金</string>
+	<string name="最高可中" translatable="true">最高可中</string>
+	<string name="大小单双" translatable="true">大小单双</string>
+	<string name="一星" translatable="true">一星</string>
+	<string name="前二" translatable="true">前二</string>
+	<string name="直选复式" translatable="true">直选复式</string>
+	<string name="直选和值" translatable="true">直选和值</string>
+	<string name="组选包胆" translatable="true">组选包胆</string>
+	<string name="组三" translatable="true">组三</string>
+	<string name="组六" translatable="true">组六</string>
+	<string name="二码不定位" translatable="true">二码不定位</string>
+	<string name="四星" translatable="true">四星</string>
+	<string name="组选12" translatable="true">组选12</string>
+	<string name="组选6" translatable="true">组选6</string>
+	<string name="组选4" translatable="true">组选4</string>
+	<string name="一码不定位" translatable="true">一码不定位</string>
+	<string name="组选120" translatable="true">组选120</string>
+	<string name="组选60" translatable="true">组选60</string>
+	<string name="组选20" translatable="true">组选20</string>
+	<string name="我要投注" translatable="true">我要投注</string>
+	<string name="最近投注" translatable="true">最近投注</string>
+	<string name="长龙说明" translatable="true">长龙说明</string>
+	<string name="请选择号码" translatable="true">请选择号码</string>
+	<string name="投注金额冒号" translatable="true">投注金额:</string>
+	<string name="投注内容冒号" translatable="true">投注内容:</string>
+	<string name="投注确认" translatable="true">投注确认</string>
+	<string name="投注成功" translatable="true">投注成功</string>
+	<string name="计划列表自动分享失败" translatable="true">计划列表自动分享失败</string>
+	<string name="计划列表自动分享成功" translatable="true">计划列表自动分享成功</string>
+	<string name="四期" translatable="true">4期</string>
+	<string name="大小" translatable="true">大小</string>
+	<string name="大" translatable="true">大</string>
+	<string name="双" translatable="true">双</string>
+	<string name="昨日奖金排行" translatable="true">昨日奖金排行</string>
+	<string name="验证提款密码" translatable="true">验证提款密码</string>
+	<string name="请输入提款密码" translatable="true">请输入提款密码</string>
+	<string name="打码" translatable="true">打码</string>
+	<string name="期" translatable="true">期</string>
+	<string name="立即投注" translatable="true">立即投注</string>
+	<string name="今日已打码" translatable="true">今日已打码</string>
+	<string name="元去投注" translatable="true">元,去投注</string>
+	<string name="直播购彩" translatable="true">直播购彩</string>
+	<string name="时时彩" translatable="true">时时彩</string>
+	<string name="赛车" translatable="true">赛车</string>
+	<string name="PC蛋蛋" translatable="true">PC蛋蛋</string>
+	<string name="快乐8" translatable="true">快乐8</string>
+	<string name="幸运农场" translatable="true">幸运农场</string>
+	<string name="快乐10" translatable="true">快乐10</string>
+	<string name="待开奖" translatable="true">待开奖</string>
+	<string name="两面长龙" translatable="true">两面长龙</string>
+	<string name="已打款" translatable="true">已打款</string>
+	<string name="佣金提现" translatable="true">佣金提现</string>
+	<string name="人工扣款余额" translatable="true">人工扣款-余额</string>
+	<string name="人工入款余额" translatable="true">人工入款-余额</string>
+	<string name="人工扣款佣金" translatable="true">人工扣款-佣金</string>
+	<string name="充值中" translatable="true">充值中</string>
+	<string name="充值成功" translatable="true">充值成功</string>
+	<string name="豹子" translatable="true">豹子</string>
+	<string name="和值" translatable="true">和值</string>
+	<string name="该玩法一期投注不能超过" translatable="true">该玩法一期投注不能超过</string>
+	<string name="当前筹码" translatable="true">当前筹码</string>
+	<string name="二重号位" translatable="true">二重号位</string>
+	<string name="三重号位" translatable="true">三重号位</string>
+	<string name="单号位" translatable="true">单号位</string>
+	<string name="四重号位" translatable="true">四重号位</string>
+	<string name="五星" translatable="true">五星</string>
+	<string name="富豪榜" translatable="true">富豪榜</string>
+	<string name="邀请榜" translatable="true">邀请榜</string>
+	<string name="专享榜" translatable="true">专享榜</string>
+	<string name="贡献榜" translatable="true">贡献榜</string>
+	<string name="明星榜" translatable="true">明星榜</string>
+	<string name="昨日充值" translatable="true">昨日充值</string>
+	<string name="昨日打码量" translatable="true">昨日打码量</string>
+	<string name="昨日送礼金额" translatable="true">昨日送礼金额</string>
+	<string name="今日充值" translatable="true">今日充值</string>
+	<string name="今日打码量" translatable="true">今日打码量</string>
+	<string name="今日送礼金额" translatable="true">今日送礼金额</string>
+	<string name="可抢普通红包由玩家随意" translatable="true">可抢普通红包，由玩家随意发送的红包，为营造良好的购彩氛围，我司鼓励各位赢钱多的玩家，可以发点普通红包，分享红包，传递幸福。</string>
+	<string name="可抢官方红包彩票直播不定时天降红包雨" translatable="true">可抢官方红包，彩票直播不定时天降红包雨，惊喜不断，好运连连，最高可抢5888元!</string>
+	<string name="投注限定玩法即可享受投注金额的" translatable="true">，投注限定玩法即可享受投注金额的</string>
+	<string name="昨日投注金额未达标" translatable="true">昨日投注金额未达标</string>
+	<string name="输入的筹码超出范围" translatable="true">输入的筹码超出范围</string>
+	<string name="输入的礼物数量超出范围" translatable="true">输入的礼物数量超出范围</string>
+	<string name="前中后前三" translatable="true">前中后-前三</string>
+	<string name="前中后中三" translatable="true">前中后-中三</string>
+	<string name="前中后后三" translatable="true">前中后-后三</string>
+	<string name="机选" translatable="true">机选</string>
+	<string name="重置" translatable="true">重置</string>
+	<string name="进入直播间" translatable="true">进入直播间</string>
+	<string name="退出直播间" translatable="true">退出直播间</string>
+	<string name="待打款" translatable="true">待打款</string>
+	<string name="余额提现" translatable="true">余额提现</string>
+	<string name="人工入款佣金" translatable="true">人工入款-佣金</string>
+	<string name="在线充值" translatable="true">在线充值</string>
+	<string name="前多" translatable="true">前(多)</string>
+	<string name="后多" translatable="true">后(多)</string>
+	<string name="不定位" translatable="true">不定位</string>
+	<string name="中下注了" translatable="true">中下注了</string>
+	<string name="更多彩票" translatable="true">更多彩票</string>
+	<string name="人工扣款" translatable="true">人工扣款</string>
+	<string name="人工入款" translatable="true">人工入款</string>
+	<string name="前台充值" translatable="true">前台充值</string>
+	<string name="人工充值" translatable="true">人工充值</string>
+	<string name="撤单" translatable="true">撤单</string>
+	<string name="已撤单" translatable="true">已撤单</string>
+	<string name="等待开奖" translatable="true">等待开奖</string>
+	<string name="中奖" translatable="true">中奖</string>
+	<string name="提现成功" translatable="true">提现成功</string>
+	<string name="代理充值" translatable="true">代理充值</string>
+	<string name="尾大" translatable="true">尾大</string>
+	<string name="半顺" translatable="true">半顺</string>
+	<string name="顺子" translatable="true">顺子</string>
+	<string name="对子" translatable="true">对子</string>
+	<string name="快三返点不能为空" translatable="true">快三返点不能为空</string>
+	<string name="时时彩返点不能为空" translatable="true">时时彩返点不能为空</string>
+	<string name="赛车返点不能为空" translatable="true">赛车返点不能为空</string>
+	<string name="六合彩返点不能为空" translatable="true">六合彩返点不能为空</string>
+	<string name="快乐8返点不能为空" translatable="true">快乐8返点不能为空</string>
+	<string name="重庆农场返点不能为空" translatable="true">重庆农场返点不能为空</string>
+	<string name="快乐十分返点不能为空" translatable="true">快乐十分返点不能为空</string>
+	<string name="十一选5返点不能为空" translatable="true">11选5返点不能为空</string>
+	<string name="pc蛋蛋返点不能为空" translatable="true">pc蛋蛋返点不能为空</string>
+	<string name="快三返点超出区间" translatable="true">快三返点超出区间,请重新输入</string>
+	<string name="时时彩返点超出区间" translatable="true">时时彩返点超出区间,请重新输入</string>
+	<string name="赛车返点超出区间" translatable="true">赛车返点超出区间,请重新输入</string>
+	<string name="六合彩返点超出区间" translatable="true">六合彩返点超出区间,请重新输入</string>
+	<string name="pc蛋蛋返点超出区间" translatable="true">pc蛋蛋返点超出区间,请重新输入</string>
+	<string name="快乐8返点超出区间" translatable="true">快乐8返点超出区间,请重新输入</string>
+	<string name="幸运农场返点超出区间" translatable="true">幸运农场返点超出区间,请重新输入</string>
+	<string name="快乐十分返点超出区间" translatable="true">快乐十分返点超出区间,请重新输入</string>
+	<string name="xuan5chaoqujian" translatable="true">11选5返点超出区间,请重新输入</string>
+	<string name="你的小姐姐正在赶来" translatable="true">你的小姐姐正在赶来~</string>
+	<string name="您还没有关注主播" translatable="true">您还没有关注主播</string>
+	<string name="暂无直播数据" translatable="true">暂无直播数据</string>
+	<string name="长龙助手" translatable="true">长龙助手</string>
+	<string name="主播已下播" translatable="true">主播已下播</string>
+	<string name="根据平台公约" translatable="true">根据平台公约，该主播联系方式无法透露，喜欢主播的可以点点关注。</string>
+	<string name="您已取消关注该主播" translatable="true">您已取消关注该主播</string>
+	<string name="会员每晋升一个等级" translatable="true">会员每晋升一个等级,都能获得奖励,最高可得88888元</string>
+	<string name="每日加奖是根据会员昨日投注金额" translatable="true">每日加奖是根据会员昨日投注金额,进行一定比例的加奖</string>
+	<string name="每日加奖" translatable="true">每日加奖</string>
+	<string name="晋级奖励" translatable="true">晋级奖励</string>
+	<string name="长龙" translatable="true">长龙</string>
+	<string name="我要赚钱" translatable="true">我要赚钱</string>
+	<string name="混合" translatable="true">混合</string>
+	<string name="波色" translatable="true">波色</string>
+	<string name="该房间为收费房间" translatable="true">该房间为收费房间</string>
+	<string name="后二" translatable="true">后二</string>
+	<string name="组选复式" translatable="true">组选复式</string>
+	<string name="组选和值" translatable="true">组选和值</string>
+	<string name="组选24" translatable="true">组选24</string>
+	<string name="组选30" translatable="true">组选30</string>
+	<string name="组选10" translatable="true">组选10</string>
+	<string name="组选5" translatable="true">组选5</string>
+	<string name="三码不定位" translatable="true">三码不定位</string>
+	<string name="一帆风顺" translatable="true">一帆风顺</string>
+	<string name="好事成双" translatable="true">好事成双</string>
+	<string name="三星报喜" translatable="true">三星报喜</string>
+	<string name="四季发财" translatable="true">四季发财</string>
+	<string name="请选择玩法" translatable="true">请选择玩法</string>
+	<string name="信用玩法" translatable="true">信用玩法</string>
+	<string name="奖金" translatable="true">奖金</string>
+	<string name="预览时间结束" translatable="true">预览时间结束</string>
+	<string name="该玩法只能同时下注" translatable="true">该玩法只能同时下注</string>
+	<!--
+	play_bet_pop_layout.xml
+	-->
+	<string name="重庆时时彩" translatable="true"> 重庆时时彩</string>
+	<string name="本期截止" translatable="true"> 本期截止</string>
+	<string name="本期截止冒号" translatable="true"> 本期截止:</string>
+	<!--
+	activity_search_actvity.xml
+	-->
+	<string name="请输入您要搜索的昵称或ID" translatable="true"> 请输入您要搜索的昵称或ID</string>
+	<string name="搜索" translatable="true"> 搜索</string>
+	<string name="历史记录" translatable="true"> 历史记录</string>
+	<string name="热门搜索" translatable="true"> 热门搜索</string>
+	<!--
+	manul_recharge_center_layout.xml
+	-->
+	<string name="充值金额" translatable="true"> 充值金额</string>
+	<string name="请输入充值金额" translatable="true"> 请输入充值金额</string>
+	<string name="人工只负责充值如有其他问题请联系在线客服如遇专员推荐其他游戏拍照并有奖励充值前点击最新入口" translatable="true"></string>
+	<string name="您的充值账号" translatable="true"> 您的充值账号:</string>
+	<string name="复制" translatable="true"> 复制</string>
+	<string name="充值奖励最高送88888元" translatable="true"> 充值奖励*%,最高送88888元!</string>
+	<!--
+	sure_chatroom_password_pop.xml
+	-->
+	<string name="输入房间密码" translatable="true"> 输入房间密码</string>
+	<string name="请输入密码" translatable="true"> 请输入密码</string>
+	<string name="取消" translatable="true"> 取消</string>
+	<string name="确定" translatable="true"> 确定</string>
+	<!--
+	activity_phone_password.xml
+	-->
+	<string name="手机号" translatable="true"> 手机号    </string>
+	<string name="请输入您要绑定的手机号码" translatable="true"> 请输入您要绑定的手机号码</string>
+	<string name="提款密码" translatable="true"> 提款密码</string>
+	<string name="请输入您的提款密码" translatable="true"> 请输入您的提款密码</string>
+	<string name="短信验证码" translatable="true"> 短信验证码</string>
+	<string name="请输入手机验证码" translatable="true"> 请输入手机验证码</string>
+	<string name="获取验证码" translatable="true"> 获取验证码</string>
+	<!--
+	main_fragment_home.xml
+	-->
+	<string name="注册" translatable="true"> 注册</string>
+	<string name="登录" translatable="true"> 登录</string>
+	<!--
+	noun_version_pupopwindow.xml
+	-->
+	<string name="名词解释" translatable="true"> 名词解释</string>
+	<string name="该代理的所有下级的投注总额" translatable="true"> 该代理的所有下级的投注总额</string>
+	<string name="该代理的所有下级的中奖总额" translatable="true"> 该代理的所有下级的中奖总额</string>
+	<string name="个人佣金冒号" translatable="true"> 个人佣金:</string>
+	<string name="该代理自身个人赚到的佣金" translatable="true"> 该代理自身个人赚到的佣金</string>
+	<string name="团队盈亏" translatable="true"> 团队盈亏:</string>
+	<string name="该代理的所有下级的盈亏总额" translatable="true"> 该代理的所有下级的盈亏总额</string>
+	<string name="团队返佣" translatable="true"> 团队返佣:</string>
+	<string name="该代理的所有下级赚取的佣金总额" translatable="true"> 该代理的所有下级赚取的佣金总额</string>
+	<string name="该代理的所有下级的充值总额" translatable="true"> 该代理的所有下级的充值总额</string>
+	<string name="提现金额冒号" translatable="true"> 提现金额:</string>
+	<string name="该代理的所有下级的提现总额" translatable="true"> 该代理的所有下级的提现总额</string>
+	<string name="团队余额" translatable="true"> 团队余额:</string>
+	<string name="该代理的所有下级总余额" translatable="true"> 该代理的所有下级总余额</string>
+	<string name="活动返点冒号" translatable="true"> 活动返点:</string>
+	<string name="该代理的所有活动赠送返点赠送" translatable="true"> 该代理的所有活动赠送+返点赠送</string>
+	<string name="活动赠送" translatable="true"> 活动赠送:</string>
+	<string name="注册红包生日红包活动红包晋级奖励天降红包专享红包邀请红包" translatable="true"> 注册红包+生日红包+活动红包+晋级奖励+天降红包+专享红包+邀请红包</string>
+	<string name="返点赠送" translatable="true"> 返点赠送:</string>
+	<string name="每日嘉奖充值返点" translatable="true"> 每日嘉奖+充值返点</string>
+	<!--
+	auto_pay_pop_layout.xml
+	-->
+	<string name="分钟99010" translatable="true"> 9.90/10分钟</string>
+	<string name="余额" translatable="true"> 余额: </string>
+	<string name="自动续费" translatable="true"> 自动续费</string>
+	<string name="提示付费房间每10分钟扣费一次" translatable="true"> 提示：付费房间每10分钟扣费一次</string>
+	<string name="返回" translatable="true"> 返回</string>
+	<!--
+	home_movie_recycle_item.xml
+	-->
+	<!--
+	item_head1recyclergrid.xml
+	-->
+	<string name="图片描述" translatable="true"> 图片描述</string>
+	<!--
+	main_fragment_aty.xml
+	-->
+	<string name="活动中心" translatable="true"> 活动中心</string>
+	<!--
+	ssc_official_item_one_recycle.xml
+	-->
+	<!--
+	item_dialog_jiangjin.xml
+	-->
+	<string name="元" translatable="true"> 元</string>
+	<!--
+	home_tab_view_layout.xml
+	-->
+	<string name="直播" translatable="true"> 直播</string>
+	<!--
+	xuanwu_bet_pop_layout.xml
+	-->
+	<string name="上期开奖" translatable="true"> 上期开奖</string>
+	<!--
+	reward_recycle_head.xml
+	-->
+	<string name="当前等级" translatable="true"> 当前等级:</string>
+	<string name="领取" translatable="true"> 领取</string>
+	<string name="晋级机制" translatable="true"> 晋级机制</string>
+	<!--
+	hongyun_recycle_head.xml
+	-->
+	<string name="红运有效份额" translatable="true"> 红运有效份额(元)</string>
+	<string name="七日年化" translatable="true"> 七日年化(%)</string>
+	<string name="万份收益" translatable="true"> 万份收益(%)</string>
+	<string name="红运收益说明" translatable="true"> 红运收益说明</string>
+	<string name="红运收益转入余额宝的资金次日可享红运收益之后不享受" translatable="true"> 红运收益：转入余额宝的资金，次日可享红运收益，之后不享受；</string>
+	<string name="结算公式红运收益红运有效份额红运万份收益10000" translatable="true"> 结算公式：红运收益=红运有效份额*红运万份收益/10000；</string>
+	<string name="发放时间早上0800后陆续发放到账" translatable="true"> 发放时间：早上08:00后陆续发放到账；</string>
+	<string name="红运有效份额说明" translatable="true"> 红运有效份额说明</string>
+	<string name="红运有效份额当日转入金额次日0800前转出" translatable="true"> 红运有效份额：当日转入金额-次日08:00前转出；</string>
+	<string name="例余额宝初始余额1W转入转出时红运有效份额变化如下" translatable="true"> 例：余额宝初始余额1W，转入转出时红运有效份额变化如下：</string>
+	<!--
+	mine_recycleview_item.xml
+	-->
+	<string name="个人信息" translatable="true"> 个人信息</string>
+
+
+	<!--
+	mine_recycleview_foot.xml
+	-->
+	<string name="退出登录" translatable="true"> 退出登录</string>
+	<!--
+	home_aty_popupwindow.xml
+	-->
+	<string name="平台公告" translatable="true"> 平台公告</string>
+	<!--
+	item_paihang.xml
+	-->
+	<string name="昨日收益冒号" translatable="true"> 昨日收益:</string>
+	<!--
+	banner_pack_layout.xml
+	-->
+	<string name="专享红包" translatable="true"> 专享红包</string>
+	<!--
+	home_gridview_item.xml
+	-->
+	<string name="北京赛车" translatable="true"> 北京赛车</string>
+	<string name="全天4I期" translatable="true"> 全天4I期</string>
+	<!--
+	pcdd_sure_bet_pop.xml
+	-->
+	<string name="下注清单" translatable="true"> 下注清单</string>
+	<string name="合计总注数" translatable="true"> 【合计】总注数: </string>
+	<string name="总金额" translatable="true"> 总金额: </string>
+	<!--
+	activity_quota_chanege.xml
+	-->
+	<string name="一键回收" translatable="true"> 一键回收</string>
+	<string name="余额自动转换" translatable="true"> 余额自动转换</string>
+	<!--
+	history_fralayout_item.xml
+	-->
+	<string name="最多播放" translatable="true"> 最多播放</string>
+	<!--
+	activity_sure_safe_password.xml
+	-->
+	<string name="请输入当前使用的提款密码" translatable="true"> 请输入当前使用的提款密码</string>
+	<!--
+	activity_agent_center.xml
+	-->
+	<string name="代理中心" translatable="true"> 代理中心</string>
+	<string name="返佣明细" translatable="true"> 返佣明细</string>
+	<string name="我的佣金" translatable="true"> 我的佣金</string>
+	<string name="我的下级0人" translatable="true"> 我的下级: 0人</string>
+	<string name="昨日返佣0.00" translatable="true"> 昨日返佣: 0.00</string>
+	<string name="今日返佣0.00" translatable="true"> 今日返佣: 0.00</string>
+	<!--
+	activity_modify_login_password.xml
+	-->
+	<string name="原密码" translatable="true"> 原密码    </string>
+	<string name="请输入当前所使用的登录密码" translatable="true"> 请输入当前所使用的登录密码</string>
+	<string name="新密码" translatable="true"> 新密码    </string>
+	<string name="字母数字组合616位" translatable="true"> 字母+数字组合(6-16位)</string>
+	<string name="确认密码" translatable="true"> 确认密码</string>
+	<string name="请再次输入新密码" translatable="true"> 请再次输入新密码</string>
+	<!--
+	activity_mine_bet_more.xml
+	-->
+	<string name="投注内容" translatable="true"> 投注内容</string>
+	<string name="投注金额" translatable="true"> 投注金额</string>
+	<string name="注单号" translatable="true"> 注单号&#160;&#160;&#160;    </string>
+	<string name="投注时间" translatable="true"> 投注时间</string>
+	<string name="赔率空格" translatable="true"> 赔率  &#160;&#160;&#160;      </string>
+	<string name="开奖号码" translatable="true"> 开奖号码</string>
+	<string name="状态空格" translatable="true"> 状态  &#160;&#160;&#160;      </string>
+	<string name="中奖金额" translatable="true"> 中奖金额</string>
+	<string name="盈亏空格" translatable="true"> 盈亏  &#160;&#160;&#160;      </string>
+	<string name="再来一注" translatable="true"> 再来一注</string>
+	<string name="盈亏" translatable="true"> 盈亏</string>
+	<string name="撤销注单" translatable="true"> 撤销注单</string>
+	<!--
+	all_tollery_recycleview_two.xml
+	-->
+	<string name="彩种名" translatable="true"> 彩种名</string>
+	<!--
+	turntable_result_recycler_item.xml
+	-->
+	<string name="现金劵1" translatable="true"> 188元现金劵*1</string>
+	<!--
+	yestoday_win_recycle_item_two.xml
+	-->
+	<string name="账号昵称" translatable="true"> 账号昵称</string>
+	<string name="昨日盈利" translatable="true"> 昨日盈利</string>
+	<!--
+	chat_edit_layout.xml
+	-->
+	<string name="来聊聊天..." translatable="true"> 来聊聊天...</string>
+	<string name="发送" translatable="true"> 发送</string>
+	<!--
+	reward_recycle_item.xml
+	-->
+	<string name="等级" translatable="true"> 等级</string>
+	<string name="成长积分" translatable="true"> 成长积分</string>
+	<string name="跳级奖励" translatable="true"> 跳级奖励</string>
+	<!--
+	reward_recycle_foot.xml
+	-->
+	<string name="会员每晋升一个等级都能获得奖励" translatable="true"> 1、会员每晋升一个等级，都能获得奖励；</string>
+	<string name="充值1元可获得1成长积分" translatable="true"> 2、充值1元可获得1成长积分；</string>
+	<string name="小明从VIP1直接晋升到VIP4他将能获得6元奖励" translatable="true"> 例1: 小明从VIP1直接晋升到VIP4,他将能获得1+5+10+16元奖励</string>
+	<string name="小红从VIP2直接晋升到VIP4他将能获得" translatable="true">例2：小红从VIP2直接晋升到VIP4，他将能获得5+10translatable="true">1元奖励。</string>
+	<!--
+	action_bar_two.xml
+	-->
+<string name="位置" translatable="true"> 位置</string>
+	<!--
+	layout_reload.xml
+	-->
+<string name="重新加载" translatable="true"> 重新加载</string>
+	<!--
+	sign_in_pop_layout.xml
+	-->
+<string name="月日月日" translatable="true"> --月--日 - --月--日</string>
+=
+	<!--
+	activity_child_open.xml
+	-->
+<string name="邀请码activity_child_open" translatable="true">      邀请码   </string>
+	<!--
+	happy10_today_open_result_popwindow.xml
+	-->
+<string name="期号" translatable="true"> 期号</string>
+<string name="查看更多" translatable="true"> 查看更多</string>
+	<!--
+	user_level_fragemnt.xml
+	-->
+<string name="等级机制" translatable="true"> 等级机制</string>
+
+	<!--
+	ssc_open_recycle_item.xml
+	-->
+<string name="期数" translatable="true"> 期数</string>
+	<!--
+	activity_forget_password2.xml
+	-->
+<string name="账号" translatable="true"> 账号</string>
+<string name="请输入手机号账号" translatable="true"> 请输入手机号/账号</string>
+<string name="请输入短信验证码" translatable="true"> 请输入短信验证码</string>
+<string name="设置密码" translatable="true"> 设置密码</string>
+<string name="请设置密码位字母和数字的组合" translatable="true"> 请设置密码6-16位字母和数字的组合</string>
+<string name="请确认密码" translatable="true"> 请确认密码</string>
+<string name="下一步" translatable="true"> 下一步</string>
+	<!--
+	activity_visitor_safe_center.xml
+	-->
+<string name="请输入要绑定的手机号" translatable="true"> 请输入要绑定的手机号</string>
+<string name="设置登录密码" translatable="true"> 设置登录密码</string>
+<string name="字母数字的组合" translatable="true"> 字母+数字的组合（6-16位）</string>
+<string name="设置提款密码" translatable="true"> 设置提款密码</string>
+<string name="验证码" translatable="true"> 验证码</string>
+<string name="认证" translatable="true"> 认证</string>
+
+	<!--
+	race_openresult_item.xml
+	-->
+<string name="单" translatable="true"> 单</string>
+
+	<!--
+	official_choose_three_recycle_item.xml
+	-->
+	<!--
+	hot2_head_layout.xml
+	-->
+<string name="为您推荐" translatable="true"> 为您推荐</string>
+	<!--
+	activity_game_note.xml
+	-->
+<string name="游戏注单" translatable="true"> 游戏注单</string>
+<string name="本月" translatable="true"> 本月</string>
+<string name="下注总金额" translatable="true"> 下注总金额</string>
+<string name="净输赢" translatable="true"> 净输赢</string>
+	<!--
+	rank_recycler_head.xml
+	-->
+<string name="日榜" translatable="true"> 日榜</string>
+<string name="周榜" translatable="true"> 周榜</string>
+<string name="月榜" translatable="true"> 月榜</string>
+<string name="总榜" translatable="true"> 总榜</string>
+<string name="礼物横杠" translatable="true"> 礼物:-&#160; - &#160;- &#160;</string>
+<string name="正在加载" translatable="true"> 正在加载</string>
+	<!--
+	betjoin_pop_layout.xml
+	-->
+<string name="确认投注" translatable="true"> 确认投注</string>
+<string name="共" translatable="true"> 共</string>
+	<!--
+	activity_chang_long.xml
+	-->
+	<!--
+	rank_recycler_item.xml
+	-->
+<string name="胜率" translatable="true"> 胜率:- - -</string>
+	<!--
+	send_red_pop.xml
+	-->
+<string name="发红包" translatable="true"> 发红包</string>
+<string name="填写个数" translatable="true"> 填写个数</string>
+<string name="留言" translatable="true"> 留言</string>
+<string name="恭喜发财大吉大利" translatable="true"> 恭喜发财,大吉大利!</string>
+	<!--
+	commsion_plan_recycle_item.xml
+	-->
+<string name="已邀请数" translatable="true"> 已邀请数</string>
+<string name="查看更多返点" translatable="true"> 查看更多返点</string>
+	<!--
+	manual_recharge_item.xml
+	-->
+<string name="可用额度1万" translatable="true"> 可用额度:1万+</string>
+<string name="立即联系" translatable="true"> 立即联系</string>
+	<!--
+	layout_bottom_touzhu.xml
+	-->
+<string name="已选中" translatable="true"> 已选中</string>
+<string name="请输入金额" translatable="true"> 请输入金额</string>
+<string name="下注" translatable="true"> 下注</string>
+	<!--
+	activity_login.xml
+	-->
+<string name="xx直播" translatable="true"> xx直播</string>
+<string name="一见倾心再见如故" translatable="true"> 一见倾心 再见如故</string>
+<string name="请输入手机号码" translatable="true"> 请输入手机号码~</string>
+<string name="密码" translatable="true"> 密码</string>
+<string name="立即登录" translatable="true"> 立即登录</string>
+<string name="登录注册遇到问题" translatable="true"> 登录/注册遇到问题?</string>
+<string name="联系客服" translatable="true"> 联系客服</string>
+<string name="账号登录" translatable="true"> 账号登录</string>
+<string name="免费注册" translatable="true"> 免费注册</string>
+<string name="忘记密码" translatable="true"> 忘记密码</string>
+<string name="短信验证码登录" translatable="true"> 短信验证码登录</string>
+<string name="版本号" translatable="true"> 版本号</string>
+	<!--
+	activity_bank_card_manage.xml
+	-->
+<string name="还未绑定银行卡.请点击下方按钮进行绑定" translatable="true"> 还未绑定银行卡.请点击下方按钮进行绑定。</string>
+<string name="建设银行" translatable="true"> 建设银行</string>
+<string name="查看" translatable="true"> 查看</string>
+<string name="您还可以绑定" translatable="true"> 您还可以绑定</string>
+<string name="张银行卡" translatable="true"> 张银行卡</string>
+<string name="添加银行卡" translatable="true"> 添加银行卡</string>
+<string name="如果您需要删除银行卡请联系在线客服" translatable="true"> 如果您需要删除银行卡,请联系在线客服</string>
+	<!--
+	diamond_pay_pop_layout.xml
+	-->
+
+<string name="购买" translatable="true"> 购买</string>
+	<!--
+	fragment_mine_deal.xml
+	-->
+<string name="统计" translatable="true"> 统计: </string>
+	<!--
+	red_rain_countdown_pop_layout.xml
+	-->
+<string name="倒计时" translatable="true"> 倒计时</string>
+	<!--
+	pop_activityrank.xml
+	-->
+<string name="活动榜单列表" translatable="true"> 活动榜单列表</string>
+<string name="可查看活动详情领取更多相关" translatable="true"> [查看更多]可查看活动详情，领取更多相关</string>
+	<!--
+	every_day_reward_recycle_head.xml
+	-->
+<string name="昨日投注" translatable="true"> 昨日投注:</string>
+<string name="加奖比例" translatable="true"> 加奖比例:</string>
+<string name="可得加奖" translatable="true"> 可得加奖:</string>
+<string name="嘉奖比例" translatable="true"> 嘉奖比例</string>
+	<!--
+	activity_modify_password.xml
+	-->
+<string name="请输入新密码" translatable="true"> 请输入新密码</string>
+	<!--
+	ssc_official_item_one.xml
+	-->
+<string name="万位" translatable="true"> 万位</string>
+	<!--
+	win_or_lose_recycle_foot.xml
+	-->
+<string name="报表备注" translatable="true"> 报表备注</string>
+	<!--
+	activity_mine_bet_fragment.xml
+	-->
+<string name="暂无相关数据" translatable="true"> --暂无相关数据--</string>
+<string name="去投注箭头" translatable="true"> 去投注 ></string>
+<string name="总计" translatable="true"> 总计</string>
+	<!--
+	activity_out_yue_bao.xml
+	-->
+<string name="转出金额" translatable="true"> 转出金额(元)</string>
+<string name="可转出余额0.00元" translatable="true"> 可转出余额0.00元</string>
+<string name="全部" translatable="true"> 全部</string>
+<string name="确认转出" translatable="true"> 确认转出</string>
+	<!--
+	activity_mine_integral.xml
+	-->
+<string name="累计积分" translatable="true"> 累计积分</string>
+<string name="暂无积分" translatable="true"> 暂无积分</string>
+	<!--
+	show_by_lottery_type_recycle_item.xml
+	-->
+<string name="香港六合彩" translatable="true"> 香港六合彩 </string>
+	<!--
+	premisssionx_floatview_pop.xml
+	-->
+<string name="为了您更好的使用体验需要获得悬浮权限是否开启" translatable="true"> 为了您更好的使用体验,需要获得悬浮权限,是否开启?</string>
+	<!--
+	slide_web_view_pop_layout.xml
+	-->
+<string name="安全认证" translatable="true"> 安全认证</string>
+	<!--
+	manul_recharge_center_layout3.xml
+	-->
+<string name="请输入汇款金额" translatable="true"> 请输入汇款金额</string>
+<string name="请输入付款人" translatable="true"> 请输入付款人</string>
+	<!--
+	game_report_recycler_item.xml
+	-->
+<string name="彩票游戏" translatable="true"> 彩票游戏</string>
+<string name="下注注量" translatable="true"> 下注注量</string>
+<string name="下注金额" translatable="true"> 下注金额</string>
+	<!--
+	take_camera_pop_layout.xml
+	-->
+<string name="拍照" translatable="true"> 拍照</string>
+<string name="从相册中选择" translatable="true"> 从相册中选择</string>
+	<!--
+	activity_mine_qrcode.xml
+	-->
+<string name="您的邀请码" translatable="true"> 您的邀请码</string>
+<string name="推广链接" translatable="true"> 推广链接 - - - - - - - -</string>
+<string name="佣金方案" translatable="true"> 佣金方案</string>
+<string name="保存海报" translatable="true"> 保存海报</string>
+<string name="复制链接" translatable="true"> 复制链接</string>
+<string name="直接推广" translatable="true"> 直接推广</string>
+	<!--
+	user_level_recycle_item.xml
+	-->
+<string name="头衔" translatable="true"> 头衔</string>
+	<!--
+	activity_pc_dan_open.xml
+	-->
+<string name="形态" translatable="true"> 形态</string>
+	<!--
+	play_lottery_recycle_item.xml
+	-->
+<string name="直播中" translatable="true"> 直播中</string>
+	<!--
+	manul_recharge_center_layout2.xml
+	-->
+<string name="付款人" translatable="true"> 付款人</string>
+	<!--
+	activity_forget_password.xml
+	-->
+<string name="请输入账号" translatable="true"> 请输入账号</string>
+<string name="请输入验证码" translatable="true"> 请输入验证码</string>
+	<!--
+	activity_ji_shu28.xml
+	-->
+<string name="暂停销售" translatable="true"> 暂停销售</string>
+<string name="已封盘" translatable="true"> 已封盘</string>
+	<!--
+	choose_bank_recylce_item.xml
+	-->
+<string name="光大银行" translatable="true"> 光大银行</string>
+	<!--
+	activity_user_info.xml
+	-->
+<string name="等级头衔" translatable="true">    等级头衔   </string>
+	<!--
+	item_cusgiftchildrecy.xml
+	-->
+<string name="爱心飞吻" translatable="true"> 爱心飞吻</string>
+	<!--
+	live_list_recycle_item.xml
+	-->
+<string name="昵称" translatable="true"> 昵称</string>
+<string name="城市" translatable="true"> 城市</string>
+	<!--
+	chatroom_bet_pop.xml
+	-->
+<string name="跟投确认" translatable="true"> 跟投确认</string>
+<string name="注" translatable="true"> 注,</string>
+	<!--
+	child_journaling_popupwindow.xml
+	-->
+<string name="今天" translatable="true"> 今天</string>
+<string name="昨天" translatable="true"> 昨天</string>
+<string name="七天" translatable="true"> 七天</string>
+<string name="排序" translatable="true"> 排序:</string>
+
+<string name="充值" translatable="true"> 充值</string>
+<string name="返佣" translatable="true"> 返佣</string>
+<string name="升序" translatable="true"> 升序</string>
+<string name="降序" translatable="true"> 降序</string>
+<string name="筛选" translatable="true"> 筛选</string>
+	<!--
+	everyday_reward_recycle_foot.xml
+	-->
+<string name="活动说明" translatable="true"> 活动说明</string>
+<string name="每日加奖在次日1200后开放领取" translatable="true"> 1、每日加奖在次日12:00后开放领取；</string>
+	<string name="加奖比例是根据会员等级以及昨日累计投注金额进行一定比例的加奖棋牌电子视讯捕鱼的投注金额不计入每日嘉奖" translatable="true">2、加奖比例是根据会员等级以及昨日累计投注金额进行一定比例的加奖,棋牌，电子，视讯，捕鱼的投注金额不计入每日嘉奖;</string>
+<string name="撤单和其他无效投注将不计算在内" translatable="true"> 3、撤单和其他无效投注将不计算在内；</string>
+	<!--
+	manual_recharge_pop_layout.xml
+	-->
+<string name="代充提示" translatable="true"> 代充提示</string>
+	<!--
+	animation.xml
+	-->
+<string name="库日天" translatable="true"> 库日天</string>
+<string name="送了超级无敌" translatable="true"> 送了超级无敌</string>
+	<!--
+	layout_testactivity.xml
+	-->
+<string name="输入想要搜索的题目" translatable="true"> 输入想要搜索的题目(支持模糊查询)</string>
+	<!--
+	home_aty_pop_layout.xml
+	-->
+<string name="我知道了" translatable="true"> 我知道了</string>
+	<!--
+	rebate_table_more_pupopwindow.xml
+	-->
+<string name="收起" translatable="true"> 收起</string>
+	<!--
+	pop_liveroompaihang.xml
+	-->
+<string name="中奖排行榜" translatable="true"> 中奖排行榜</string>
+	<!--
+	ssc_official_choose_item_two.xml
+	-->
+<string name="直选" translatable="true"> 直选</string>
+	<!--
+	fragment_live_bet_note.xml
+	-->
+<string name="暂无数据" translatable="true"> 暂无数据</string>
+	<!--
+	activity_account_find_password.xml
+	-->
+<string name="请输入您要找回密码的账号" translatable="true"> 请输入您要找回密码的账号</string>
+<string name="请重新设置位密码字母数字组合" translatable="true"> 请重新设置6-16位密码,字母+数字组合</string>
+<string name="立即修改" translatable="true"> 立即修改</string>
+	<!--
+	activity_live_gou_cai.xml
+	-->
+<string name="购彩大厅" translatable="true"> 购彩大厅</string>
+	<!--
+	dialog_confirm.xml
+	-->
+<string name="消息提示" translatable="true"> 消息提示</string>
+<string name="检测到可升级版本V1.4.3" translatable="true"> 检测到可升级版本V1.4.3</string>
+<string name="前往更新" translatable="true"> 前往更新</string>
+	<!--
+	roport_live_pop_list_layout.xml
+	-->
+<string name="广告欺骗" translatable="true"> 广告欺骗</string>
+<string name="态度消极" translatable="true"> 态度消极</string>
+<string name="言语谩骂" translatable="true"> 言语谩骂</string>
+<string name="其他内容" translatable="true"> 其他内容</string>
+	<!--
+	fragment_chennel.xml
+	-->
+<string name="最近更新" translatable="true"> 最近更新</string>
+<string name="最多喜欢" translatable="true"> 最多喜欢</string>
+	<!--
+	activity_register.xml
+	-->
+<string name="邀请码" translatable="true"> 邀请码</string>
+<string name="请输入邀请码38位数字" translatable="true"> 请输入邀请码3-8位数字(选填)</string>
+<string name="邀请码错误" translatable="true"> 邀请码错误</string>
+<string name="设置账号" translatable="true"> 设置账号</string>
+<string name="请设置账号611字母和数字的组合" translatable="true"> 请设置账号 6-11字母和数字的组合</string>
+<string name="请输入手机号" translatable="true"> 请输入手机号</string>
+<string name="该账号已被注册请重新输入" translatable="true"> 该账号已被注册,请重新输入</string>
+<string name="请再次输入密码" translatable="true"> 请再次输入密码</string>
+<string name="立即注册" translatable="true"> 立即注册</string>
+	<!--
+	agentcenter_head_layout.xml
+	-->
+<string name="邀请码1" translatable="true"> 邀请码:</string>
+<string name="今日" translatable="true"> 今日</string>
+	<!--
+	child_journaling_fragment_item.xml
+	-->
+<string name="个人盈亏" translatable="true"> 个人盈亏:</string>
+<string name="他的团队报表冒号" translatable="true"> 他的团队报表:</string>
+<string name="彩种查看" translatable="true">     彩种查看:    </string>
+	<!--
+	happy8_recycle_item_two.xml
+	-->
+<string name="赔1.850" translatable="true"> 赔1.850</string>
+	<!--
+	auto_follow_pop_layout.xml
+	-->
+<string name="关注主播不错过每一场直播" translatable="true"> 关注主播,不错过每一场直播</string>
+<string name="关注" translatable="true"> 关注</string>
+	<!--
+	activity_register_next.xml
+	-->
+<string name="为了给您提供更好的服务" translatable="true"> 为了给您提供更好的服务</string>
+<string name="请绑定手机号" translatable="true"> 请绑定手机号</string>
+<string name="手机验证码" translatable="true"> 手机验证码</string>
+	<!--
+	toolbar_layout.xml
+	-->
+<string name="标题" translatable="true"> 标题</string>
+<string name="返回保持" translatable="true"> 返回保持</string>
+	<!--
+	activity_ssc_bet.xml
+	-->
+<string name="点击刷新" translatable="true"> 点击刷新</string>
+<string name="倍" translatable="true"> 倍</string>
+<string name="最高可中0元" translatable="true"> 最高可中197.00元</string>
+<string name="角" translatable="true"> 角</string>
+<string name="确定投注" translatable="true"> 确定投注</string>
+	<!--
+	activity_happy_opent.xml
+	-->
+<string name="号码" translatable="true"> 号码</string>
+
+	<!--
+	marksix_head3.xml
+	-->
+<string name="投注截止" translatable="true"> 投注截止</string>
+	<!--
+	red_rain_count_down_pop.xml
+	-->
+<string name="抢到红包越多奖励越丰富哦" translatable="true"> 抢到红包越多,奖励越丰富哦!</string>
+	<!--
+	hot_top_recycler_item.xml
+	-->
+<string name="列表分类" translatable="true"> 列表分类</string>
+	<!--
+	activity_u_s_d_t_manage.xml
+	-->
+<string name="您还没有绑定任何USDT账户请点击下n方按钮进行绑定" translatable="true"> 您还没有绑定任何USDT账户，请点击下\n方按钮进行绑定。</string>
+<string name="添加USDT账户" translatable="true"> 添加USDT账户</string>
+	<string name="温馨提示绑定地址必须为USDTERC20地址请务必再三确认连接名称为" translatable="true">温馨提示:\n1.绑定地址必须为USDT-ERC20地址;\n2.请务必再三确认连接名称为：ERC20地址;\n3.如绑定地址遇到未知问题请及时联系客服。 </string>
+	<string name="请输入您的USDTERC20收款地址" translatable="true">请输入您的USDT-ERC20收款地址 </string>
+
+
+	<!--
+	mount_medal_item_layout.xml
+	-->
+<string name="赌神" translatable="true"> 赌神</string>
+<string name="x7天" translatable="true"> x7天</string>
+<string name="赌神专属勋章" translatable="true"> 赌神专属勋章</string>
+<string name="获取装备" translatable="true"> 获取装备</string>
+<string name="有效期" translatable="true"> 有效期: </string>
+	<!--
+	quota_change_recycler_item.xml
+	-->
+<string name="盛夏光年" translatable="true"> 盛夏光年</string>
+<string name="转入" translatable="true"> 转入</string>
+<string name="转出" translatable="true"> 转出</string>
+	<!--
+	activity_bei_jin_race_open.xml
+	-->
+<string name="单双" translatable="true"> 单双</string>
+<string name="亚冠龙虎" translatable="true"> 亚冠/龙虎</string>
+	<!--
+	yestoday_rank_head.xml
+	-->
+<string name="排名" translatable="true"> 排名</string>
+<string name="总收益" translatable="true"> 总收益(元)</string>
+
+	<!--
+	mine_problem_recycle_item.xml
+	-->
+<string name="我有意见" translatable="true"> 我有意见</string>
+	<!--
+	yu_e_bao_detailed_choose_popupwindow.xml
+	-->
+<string name="全部类型" translatable="true"> 全部类型</string>
+<string name="转出记录" translatable="true"> 转出记录</string>
+<string name="转入记录" translatable="true"> 转入记录</string>
+<string name="收益记录" translatable="true"> 收益记录</string>
+
+	<!--
+	activity_planlist.xml
+	-->
+<string name="计划列表" translatable="true"> 计划列表</string>
+<string name="计划期数" translatable="true"> 计划期数</string>
+<string name="冠亚大小" translatable="true"> 冠亚大小</string>
+<string name="计划结果" translatable="true"> 计划结果</string>
+<string name="清空" translatable="true"> 清空</string>
+
+	<!--
+	activity_modify_bank_card.xml
+	-->
+<string name="选择银行" translatable="true"> 选择银行    </string>
+<string name="开户省市" translatable="true"> 开户省市    </string>
+<string name="开户人姓名" translatable="true"> 开户人姓名</string>
+<string name="银行卡号" translatable="true"> 银行卡号    </string>
+<string name="如需修改银行卡请联系客服" translatable="true"> 如需修改银行卡,请联系客服!</string>
+	<!--
+	title_brand_item_layout.xml
+	-->
+<string name="获取条件后台设置" translatable="true"> 获取条件:后台设置</string>
+	<!--
+	chess_search_recycle_head_layout.xml
+	-->
+<string name="搜索结果" translatable="true"> 搜索结果</string>
+	<!--
+	mine_notice_fragment.xml
+	-->
+<string name="暂无消息" translatable="true"> 暂无消息</string>
+	<!--
+	activity_login3.xml
+	-->
+<string name="游客登录" translatable="true"> 游客登录</string>
+<string name="请输入账号手机号" translatable="true"> 请输入账号/手机号~</string>
+<string name="忘记密码问号" translatable="true"> 忘记密码?</string>
+	<!--
+	mine_integral_recycle_item.xml
+	-->
+	<!--
+	activity_open_invite_red.xml
+	-->
+<string name="恭喜你获得个红包" translatable="true"> 恭喜你获得- -个红包</string>
+	<!--
+	agent_center_recycle_foot.xml
+	-->
+<string name="简单做代理轻松赢收益" translatable="true"> 简单做代理,轻松赢收益</string>
+	<!--
+	activity_paihang.xml
+	-->
+<string name="排行榜" translatable="true"> 排行榜</string>
+<string name="距离No.1你还差一丢丢的努力" translatable="true"> 距离No.1你还差一丢丢的努力</string>
+	<!--
+	activity_splash.xml
+	-->
+<string name="系统维护" translatable="true"> 系统维护</string>
+<string name="刷新看看" translatable="true"> 刷新看看</string>
+	<!--
+	show_by_lottery_type_popupwindow.xml
+	-->
+<string name="按彩种查看" translatable="true"> 按彩种查看</string>
+<string name="彩种名称" translatable="true"> 彩种名称</string>
+	<!--
+	help_guide_popupwindow.xml
+	-->
+<string name="隐私说明" translatable="true"> 隐私说明</string>
+	<!--
+	activity_test_avtitivy.xml
+	-->
+<string name="发送命令通知" translatable="true"> 发送命令通知</string>
+<string name="搜索玩具" translatable="true"> 搜索玩具</string>
+<string name="停止搜索玩具" translatable="true"> 停止搜索玩具</string>
+<string name="保存玩具" translatable="true"> 保存玩具</string>
+<string name="取回已保存的玩具" translatable="true"> 取回已保存的玩具</string>
+<string name="断开玩具" translatable="true"> 断开玩具</string>
+<string name="向玩具发送命令" translatable="true"> 向玩具发送命令</string>
+	<!--
+	team_journaling_choose_popupwindow.xml
+	-->
+<string name="上月" translatable="true"> 上月</string>
+	<!--
+	agent_center_recycle_item.xml
+	-->
+<string name="代理说明" translatable="true"> 代理说明</string>
+	<!--
+	child_open_fragment.xml
+	-->
+<string name="请为下级设置类型和返点" translatable="true"> 请为下级设置类型和返点,</string>
+<string name="查看返点赔率表" translatable="true"> 查看返点赔率表</string>
+<string name="开户类型" translatable="true"> 开户类型</string>
+<string name="代理类型" translatable="true"> 代理类型</string>
+<string name="玩家类型" translatable="true"> 玩家类型</string>
+<string name="占位" translatable="true"> 占位</string>
+<string name="选5" translatable="true"> 11选5     </string>
+<string name="生成邀请码" translatable="true"> 生成邀请码</string>
+<string name="假设您拖动到0.5那任何下级投注1000元您将获得5元返佣" translatable="true"> 假设您拖动到0.5,那任何下级投注1000元,您将获得5元返佣</string>
+	<string name="您的佣金自身返点为下级设置的返点所有下级投注金额" translatable="true">您的佣金=(自身返点-为下级设置的返点)% x所有下级投注金额</string>
+<string name="举例自身返点6为下级设置返点5有效投注100万" translatable="true"> 举例:自身返点6,为下级设置返点5,有效投注100万</string>
+	<string name="您的佣金万" formatted="false"  translatable="true">您的佣金=(6-5)% x 100万=1% x 100万=1万</string>
+	<!--
+	recharge_recycler_head_view.xml
+	-->
+<string name="支付通道" translatable="true"> 支付通道</string>
+	<!--
+	single_login_pop.xml
+	-->
+<string name="当前账号在别处登录" translatable="true"> 当前账号在别处登录</string>
+<string name="您已被强制下线" translatable="true"> 您已被强制下线</string>
+	<!--
+	activity_happy_cai.xml
+	-->
+<string name="当前网络不可用" translatable="true"> 当前网络不可用</string>
+	<!--
+	countdown_end_pop.xml
+	-->
+<string name="期已截止" translatable="true"> 期已截止</string>
+<string name="当前期号" translatable="true"> 当前期号</string>
+<string name="投注时请注意期号" translatable="true"> 投注时请注意期号</string>
+	<!--
+	farm_open_recycle_item.xml
+	-->
+<string name="龙" translatable="true"> 龙</string>
+	<!--
+	activity_mine_message.xml
+	-->
+<string name="公告" translatable="true">         公告        </string>
+<string name="私信" translatable="true">         私信        </string>
+	<!--
+	fragment_want_to_feedback.xml
+	-->
+<string name="我遇到的问题" translatable="true"> 我遇到的问题</string>
+<string name="详细描述" translatable="true"> 详细描述(必填)</string>
+<string name="请详尽描述遇到的问题以便我们及时为您解决问题" translatable="true"> 请详尽描述遇到的问题,以便我们及时为您解决问题。\n(10-100字)</string>
+<string name="提交" translatable="true"> 提交</string>
+	<!--
+	marksix_today_open_result_popwindow.xml
+	-->
+<string name="开奖日期" translatable="true"> 开奖日期</string>
+	<!--
+	activity_modify_pay_password.xml
+	-->
+<string name="原提款密码" translatable="true"> 原提款密码</string>
+<string name="请输入当前所使用的密码" translatable="true"> 请输入当前所使用的密码</string>
+<string name="新提款密码" translatable="true"> 新提款密码</string>
+<string name="确认新密码" translatable="true"> 确认新密码</string>
+<string name="请再次输入提款密码" translatable="true"> 请再次输入提款密码</string>
+	<!--
+	forbidden_list_recycler_item.xml
+	-->
+<string name="解禁" translatable="true"> 解禁</string>
+	<!--
+	manual_recharge_foot_layout.xml
+	-->
+<string name="请阅读人工充值说明" translatable="true"> 请阅读人工充值说明:</string>
+	<!--
+	child_deal_choose_in_popupdows.xml
+	-->
+<string name="充值失败" translatable="true"> 充值失败</string>
+<string name="申请中" translatable="true"> 申请中</string>
+	<!--
+	invite_code_recycle_item.xml
+	-->
+
+<string name="查看返点" translatable="true"> 查看返点</string>
+<string name="复制邀请码" translatable="true"> 复制邀请码</string>
+<string name="立即邀请" translatable="true"> 立即邀请</string>
+	<!--
+	user_info_image_popup_window.xml
+	-->
+<string name="修改头像" translatable="true"> 修改头像</string>
+<string name="预览" translatable="true"> 预览</string>
+	<!--
+	activity_zhuang_xiang_red.xml
+	-->
+<string name="专享条件" translatable="true"> 专享条件:</string>
+<string name="我的等级" translatable="true"> 我的等级:</string>
+<string name="昨日投注1" translatable="true"> 昨日投注</string>
+<string name="昨日限定" translatable="true"> 昨日限定</string>
+<string name="昨日推荐投注" translatable="true"> 昨日推荐投注</string>
+<string name="专享比例" translatable="true"> 专享比例</string>
+<string name="专享金额" translatable="true"> 专享金额</string>
+<string name="活动规则" translatable="true"> 活动规则</string>
+<string name="本活动最终解释权归我司所有" translatable="true"> \@本活动最终解释权归我司所有</string>
+<string name="条件不符合暂时不能参与" translatable="true"> 条件不符合,暂时不能参与</string>
+<string name="达到" translatable="true"> 达到</string>
+<string name="还需充值500元" translatable="true"> , 还需充值500元</string>
+<string name="请及时领取下越多领越多" translatable="true"> 请及时领取,下越多领越多</string>
+<string name="提升等级" translatable="true"> 提升等级</string>
+	<!--
+	setma_pop_layout.xml
+	-->
+<string name="设置筹码" translatable="true"> 设置筹码</string>
+<string name="确认" translatable="true"> 确认</string>
+	<!--
+	activity_rebate_table.xml
+	-->
+<string name="返点赔率表" translatable="true"> 返点赔率表</string>
+<string name="模式类型" translatable="true"> 模式类型</string>
+<string name="传统类型" translatable="true"> 传统类型</string>
+<string name="官方类型" translatable="true"> 官方类型</string>
+<string name="每注" translatable="true"> 每注:</string>
+<string name="该彩种以每注2元或2角3为基数奖金" translatable="true">该彩种以每注2元或2角3为基数,奖金=赔率x2</string>
+	<!--
+	activity_mine_bet_acitivity.xml
+	-->
+<string name="投注明细" translatable="true"> 投注明细</string>
+	<!--
+	activity_today_win_lose.xml
+	-->
+<string name="输赢金额" translatable="true"> 输赢金额</string>
+<string name="总输赢22" translatable="true"> 总输赢:22</string>
+<string name="总笔数9" translatable="true"> 总笔数:9</string>
+	<!--
+	show_return_pupopwindow.xml
+	-->
+<string name="返点详情" translatable="true"> 返点详情</string>
+<string name="蛋蛋" translatable="true"> 蛋蛋</string>
+<string name="广东快乐十分" translatable="true"> 广东快乐十分</string>
+	<!--
+	sign_in_child_pop_layout.xml
+	-->
+<string name="连续签到可获取以上所有奖励" translatable="true"> 连续签到，可获取以上所有奖励</string>
+	<!--
+	mine_message_fragment.xml
+	-->
+<string name="暂无公告" translatable="true"> 暂无公告</string>
+	<!--
+	fragment_live_list.xml
+	-->
+<string name="不限" translatable="true"> 不限</string>
+
+	<!--
+	mine_message_recycle_item.xml
+	-->
+<string name="笑忘歌" translatable="true"> 笑忘歌</string>
+	<!--
+	activity_balance_bao.xml
+	-->
+<string name="余额宝" translatable="true"> 余额宝</string>
+<string name="总金额元" translatable="true"> 总金额(元)</string>
+<string name="今日收益" translatable="true"> 今日收益 </string>
+<string name="累计收益元" translatable="true"> 累计收益(元)</string>
+<string name="历史累计总收益" translatable="true"> 历史累计总收益</string>
+<string name="基准收益率" translatable="true"> 基准收益率(%)</string>
+<string name="近七日平均收益率的年化值" translatable="true"> 近七日平均收益率的年化值</string>
+<string name="红运收益率" translatable="true"> 红运收益率(%)</string>
+	<!--
+	team_journaling_fragment.xml
+	-->
+<string name="请输入下级代理账号" translatable="true"> 请输入下级代理账号</string>
+<string name="我的团队报表" translatable="true"> 我的团队报表</string>
+<string name="下级人数共人" translatable="true"> 下级人数共人</string>
+<string name="投注金额元" translatable="true"> 投注金额(元)</string>
+<string name="中奖金额元" translatable="true"> 中奖金额(元)</string>
+<string name="个人佣金元" translatable="true"> 个人佣金(元)</string>
+<string name="活动返点元" translatable="true"> 活动返点(元)</string>
+<string name="团队盈亏元" translatable="true"> 团队盈亏(元)</string>
+<string name="团队返佣元" translatable="true"> 团队返佣(元)</string>
+<string name="团队盈亏计算公式中奖" translatable="true"> 团队盈亏计算公式:中奖-投注+团队活动返点+团队返佣</string>
+<string name="充值金额元" translatable="true"> 充值金额(元)</string>
+<string name="提现金额元" translatable="true"> 提现金额(元)</string>
+<string name="团队余额元" translatable="true"> 团队余额(元)</string>
+<string name="首充人数人" translatable="true"> 首充人数(人)</string>
+<string name="注册人数人" translatable="true"> 注册人数(人)</string>
+<string name="投注人数人" translatable="true"> 投注人数(人)</string>
+<string name="以上是代理的团队数据即他的所有下级的数据汇总" translatable="true"> 以上是代理的团队数据(即他的所有下级的数据汇总)</string>
+	<!--
+	turntable_rule_pop_layout.xml
+	-->
+<string name="游戏规则" translatable="true"> 游戏规则</string>
+	<!--
+	item_setma_layout.xml
+	-->
+	<!--
+	bottom_switch_pop_layout.xml
+	-->
+<string name="手机相册" translatable="true"> 手机相册</string>
+<string name="系统图片" translatable="true"> 系统图片</string>
+	<!--
+	turntable_pop_layout.xml
+	-->
+<string name="有效邀请" translatable="true"> 有效邀请:</string>
+<string name="剩余次数" translatable="true"> 剩余次数:</string>
+<string name="马上邀请" translatable="true"> 马上邀请</string>
+	<!--
+	live_notice_message_item.xml
+	-->
+<string name="工商银行卡停止使用请勿充值" translatable="true"> 工商银行卡停止使用,请勿充值,</string>
+	<!--
+	activity_add_commision_plan.xml
+	-->
+<string name="增加方案" translatable="true"> 增加方案</string>
+<string name="选择返点方案" translatable="true"> 选择返点方案</string>
+	<!--
+	qr_code_popupwindow.xml
+	-->
+<string name="温馨提示" translatable="true"> 温馨提示:</string>
+<string name="打开微信扫描二维码或转账到银行卡进行充" translatable="true"> 1.打开微信扫描二维码或转账到银行卡进行充值；</string>
+<string name="可将二维码保存至相册用微信识别相册中的二维码每次充值时请在本页面获取最新二维码" translatable="true"> 2.可将二维码保存至相册，用微信识别相册中的二维码，每次充值时请在本页面获取最新二维码。</string>
+<string name="保存到相册" translatable="true"> 保存到相册</string>
+
+
+	<!--
+	activity_chess_search.xml
+	-->
+<string name="请输入游戏名称" translatable="true"> 请输入游戏名称</string>
+	<!--
+	ustd_qr_code_pop_layout.xml
+	-->
+<string name="USDT收款二维码" translatable="true"> USDT收款二维码</string>
+<string name="截屏或长按二维码保存" translatable="true"> 截屏或长按二维码保存</string>
+<string name="请使用APP扫描付款" translatable="true"> 请使用APP扫描付款</string>
+	<!--
+	share_bet_pop.xml
+	-->
+<string name="下注成功是否分享该注单" translatable="true"> 下注成功,是否分享该注单</string>
+	<!--
+	activity_luck_farm_open.xml
+	-->
+<string name="总和形态" translatable="true"> 总和/形态</string>
+	<!--
+	chess_search_recycler_item.xml
+	-->
+<string name="炸金花" translatable="true"> 炸金花</string>
+	<!--
+	item_headrecy1.xml
+	-->
+<string name="三码" translatable="true"> 三码</string>
+	<!--
+	activity_bind_u_s_d_t.xml
+	-->
+<string name="账号姓名" translatable="true"> 账号姓名</string>
+<string name="USDT地址" translatable="true"> USDT地址</string>
+<string name="请输入您的" translatable="true"> 请输入您的USDT-ERC20收款地址</string>
+<string name="提款密码冒号" translatable="true"> 提款密码：</string>
+<string name="提交信息" translatable="true"> 提交信息</string>
+	<!--
+	activity_invite_and_make_money.xml
+	-->
+<string name="邀请赚钱" translatable="true"> 邀请赚钱</string>
+<string name="推广二维码" translatable="true"> 推广二维码</string>
+<string name="直接邀请" translatable="true"> 直接邀请</string>
+<string name="领取奖励" translatable="true"> 领取奖励</string>
+	<!--
+	company_income_recycle_item.xml
+	-->
+<string name="通道" translatable="true"> 通道</string>
+	<!--
+	equipment_split_item_layout.xml
+	-->
+<string name="已获得" translatable="true"> 已获得</string>
+	<!--
+	activity_chatroom_user_info.xml
+	-->
+<string name="账号冒号" translatable="true"> 账号：</string>
+<string name="性别冒号" translatable="true"> 性别：</string>
+<string name="会员等级" translatable="true"> 会员等级</string>
+<string name="他喜欢的彩票" translatable="true"> 他喜欢的彩票</string>
+	<!--
+	live_qr_code_pop_layout.xml
+	-->
+<string name="若扫码无法打开请在浏览器输入以下网址" translatable="true"> 若扫码无法打开请在浏览器输入以下网址</string>
+<string name="保存" translatable="true"> 保存</string>
+	<!--
+	child_bet_dealall_choose_pupopwindow.xml
+	-->
+<string name="昨日" translatable="true"> 昨日</string>
+	<!--
+	dialog_jiangjin.xml
+	-->
+<string name="猜中" translatable="true"> 猜中</string>
+<string name="单注最高奖金" translatable="true"> 单注最高奖金</string>
+
+	<!--
+	changlong_shuoming_pop.xml
+	-->
+<string name="长龙助手是对的概率为" translatable="true"> 长龙助手是对“快3”，“时时彩”以及“PK10”的“大小单双”开奖结果进行统计监测，每期出现“大”、“小”、“单”、“双”的概率为1/2，如果连续3期及以上的开奖结果相同，将称之为“长龙”，通常会采用倍投的方式进行“斩龙”或“顺龙”。</string>
+<string name="什么叫斩龙" translatable="true"> 什么叫斩龙？</string>
+<string name="如连续开斩龙" translatable="true"> 如连续开6期“单”，可以选择“双”进行投注，这样的投注方案称之为“斩龙</string>
+<string name="什么叫顺龙" translatable="true"> 什么叫顺龙？</string>
+<string name="如连续开顺龙" translatable="true"> 如连续开6期“单”，继续选择“单”进行投注，这样的投注方案称之为“顺龙</string>
+<string name="什么是倍投" translatable="true"> 什么是倍投？</string>
+<string name="倍投是指一种成倍的投注方式" translatable="true"> 倍投是指一种成倍的投注方式，是为保障能够在“斩龙”或“顺龙”的过程中持续盈利的一种押注方式。</string>
+	<!--
+	item_raceofficialp.xml
+	-->
+<string name="全" translatable="true"> 全</string>
+<string name="小" translatable="true"> 小</string>
+<string name="清" translatable="true"> 清</string>
+	<!--
+	changlong_recycle_item.xml
+	-->
+<string name="开奖中" translatable="true"> 开奖中</string>
+	<!--
+	activity_modify_nick_name.xml
+	-->
+<string name="请输入您要修改的昵称" translatable="true"> 请输入您要修改的昵称</string>
+<string name="请输入3到10" translatable="true"> 请输入3-10位的纯中文或者 中文+5位内的数字或字母!</string>
+	<!--
+	fragment_game_report.xml
+	-->
+<string name="游戏盈亏" translatable="true"> 游戏盈亏</string>
+<string name="活动返点" translatable="true"> 活动返点</string>
+<string name="个人佣金" translatable="true"> 个人佣金</string>
+	<!--
+	changlong_recycle_foot.xml
+	-->
+<string name="显示最近20条投注记录" translatable="true"> 显示最近20条投注记录,</string>
+
+
+	<!--
+	activity_choose_base_url_avtivity.xml
+	-->
+<string name="请选择线路" translatable="true"> 请选择线路</string>
+<string name="刷新" translatable="true"> 刷新</string>
+	<!--
+	child_deal_choose_out_popupdows.xml
+	-->
+<string name="提现失败" translatable="true"> 提现失败</string>
+	<!--
+	dialog_custom_progress.xml
+	-->
+<string name="加载中..." translatable="true"> 加载中...</string>
+	<!--
+	activity_in_balance_bao.xml
+	-->
+<string name="转入金额元" translatable="true"> 转入金额(元)</string>
+<string name="可转入余额0.00元" translatable="true"> 可转入余额0.00元</string>
+<string name="确认转入" translatable="true"> 确认转入</string>
+	<!--
+	forbidden_time_pop.xml
+	-->
+<string name="一小时" translatable="true"> 1小时</string>
+<string name="六小时" translatable="true"> 6小时</string>
+<string name="十二小时" translatable="true"> 12小时</string>
+<string name="一天" translatable="true"> 一天</string>
+<string name="一周" translatable="true"> 一周</string>
+<string name="一月" translatable="true"> 一月</string>
+	<!--
+	roport_live_pop_layout.xml
+	-->
+<string name="举报" translatable="true"> 举报</string>
+<string name="封号" translatable="true"> 封号</string>
+	<!--
+	activity_rake_back.xml
+	-->
+<string name="日期区间返佣收益元" translatable="true"> 日期区间返佣收益(元)</string>
+	<!--
+	make_money_recycle_item.xml
+	-->
+<string name="已邀请好友" translatable="true"> 已邀请好友</string>
+<string name="人" translatable="true"> 人</string>
+	<!--
+	user_info_fragment.xml
+	-->
+<string name="头像" translatable="true"> 头像</string>
+<string name="手机" translatable="true"> 手机</string>
+<string name="性别" translatable="true"> 性别</string>
+<string name="生日" translatable="true"> 生日</string>
+	<!--
+	home_fragment_head1.xml
+	-->
+<string name="更多" translatable="true"> 更多</string>
+<string name="互动大厅" translatable="true"> 互动大厅</string>
+<string name="充值中心" translatable="true"> 充值中心</string>
+<string name="在线客服" translatable="true"> 在线客服</string>
+<string name="热门彩票" translatable="true"> 热门彩票</string>
+<string name="喜奖不断" translatable="true"> 喜奖不断</string>
+	<!--
+	commission_withfdraw_fragment.xml
+	-->
+<string name="账户佣金" translatable="true"> 账户佣金</string>
+<string name="提现到" translatable="true"> 提现到</string>
+<string name="提现金额" translatable="true"> 提现金额</string>
+<string name="请输入您要提现的金额" translatable="true"> 请输入您要提现的金额</string>
+<string name="提现汇率" translatable="true"> 提现汇率</string>
+<string name="货币数量" translatable="true"> 货币数量</string>
+<string name="提现后余额" translatable="true"> 提现后余额</string>
+	<!--
+	live_rank_recycler_item.xml
+	-->
+<string name="未上榜" translatable="true"> 未上榜</string>
+
+	<!--
+	activity_error.xml
+	-->
+<string name="暂无网络" translatable="true"> 暂无网络</string>
+
+	<!--
+	betjoinold_pop_layout.xml
+	-->
+<string name="玩法" translatable="true"> 玩法</string>
+<string name="注单金额" translatable="true"> 注单金额</string>
+<string name="金额" translatable="true"> 金额</string>
+<string name="快速金额" translatable="true"> 快速金额:</string>
+
+	<!--
+	activity_sava_center.xml
+	-->
+<string name="修改登录密码" translatable="true"> 修改登录密码</string>
+<string name="修改" translatable="true"> 修改</string>
+<string name="用于提现绑定银行卡" translatable="true"> 用于提现,绑定银行卡</string>
+<string name="银行卡管理" translatable="true"> 银行卡管理</string>
+<string name="设置" translatable="true"> 设置</string>
+	<!--
+	fragment_diamond.xml
+	-->
+<string name="立即充值" translatable="true"> 立即充值</string>
+	<!--
+	mine_fragment_head.xml
+	-->
+<string name="余额元" translatable="true"> 余额(元)</string>
+<string name="佣金元" translatable="true"> 佣金(元)</string>
+<string name="提现" translatable="true"> 提现</string>
+<string name="额度转换" translatable="true"> 额度转换</string>
+<string name="交易记录" translatable="true"> 交易记录</string>
+<string name="游戏详情" translatable="true"> 游戏详情</string>
+<string name="商城中心" translatable="true"> 商城中心</string>
+<string name="豪华座驾在等你" translatable="true"> 豪华座驾在等你</string>
+<string name="签到中心" translatable="true"> 签到中心</string>
+<string name="签到领好礼海量钻石礼物免费拿" translatable="true"> 签到领好礼，海量钻石礼物免费拿</string>
+	<!--
+	exit_sure_pop.xml
+	-->
+<string name="全部转入" translatable="true"> 全部转入</string>
+	<!--
+	mine_follow_recycle_item.xml
+	-->
+<string name="慧子是大王" translatable="true"> 慧子是大王</string>
+	<!--
+	reward_layout_pop.xml
+	-->
+<string name="打赏主播" translatable="true"> 打赏主播</string>
+
+	<!--
+	choose_time_pop.xml
+	-->
+<string name="七日" translatable="true"> 七日</string>
+	<!--
+	activity_child_deal.xml
+	-->
+<string name="交易明细" translatable="true"> 交易明细</string>
+<string name="请输入下级账号" translatable="true"> 请输入下级账号</string>
+	<!--
+	usdt_recharge_center_layout.xml
+	-->
+<string name="转账教程" translatable="true"> 转账教程</string>
+<string name="火币APP转账教程" translatable="true"> 1.火币APP转账教程</string>
+<string name="imToken转账教程" translatable="true"> 2.imToken转账教程</string>
+<string name="USDT收款地址" translatable="true"> USDT收款地址</string>
+<string name="二维码" translatable="true"> 二维码</string>
+<string name="复制地址" translatable="true"> 复制地址</string>
+<string name="区块链交易ID" translatable="true"> 区块链交易ID:</string>
+<string name="请输入后六位" translatable="true"> 请输入后六位</string>
+<string name="货币数量冒号" translatable="true"> 货币数量:</string>
+<string name="最小充值数量5" translatable="true"> 最小充值数量5</string>
+<string name="存款汇率" translatable="true"> 存款汇率:</string>
+<string name="转账金额" translatable="true"> 转账金额:</string>
+	<!--
+	jizhun_recycle_head.xml
+	-->
+<string name="基准有效份额元" translatable="true"> 基准有效份额(元)</string>
+<string name="基准收益说明" translatable="true"> 基准收益说明</string>
+<string name="基准收益转入余额宝的资金次日起可享基准收益" translatable="true"> 基准收益：转入余额宝的资金，次日起可享基准收益；</string>
+<string name="结算公式基准收益基准有效份额基准万份收益" translatable="true"> 结算公式：基准收益=基准有效份额*基准万份收益/10000；</string>
+<string name="基准有效份额说明" translatable="true"> 基准有效份额说明</string>
+<string name="基准有效份额当日余额宝余额次日0800前转出" translatable="true"> 基准有效份额：当日余额宝余额-次日08:00前转出</string>
+<string name="例余额宝初始余额1W转入转出时基准有效份额变化如下" translatable="true"> 例：余额宝初始余额1W，转入转出时基准有效份额变化如下：</string>
+	<!--
+	forbidden_list_pop_layout.xml
+	-->
+<string name="禁言列表" translatable="true"> 禁言列表</string>
+<string name="拉黑列表" translatable="true"> 拉黑列表</string>
+<string name="禁言昵称" translatable="true"> 禁言昵称</string>
+<string name="结束时间" translatable="true"> 结束时间</string>
+<string name="操作" translatable="true"> 操作</string>
+	<!--
+	fragment_shopping_two.xml
+	-->
+<string name="转换" translatable="true"> 转换</string>
+<string name="记录" translatable="true"> 记录</string>
+	<!--
+	activity_six_open.xml
+	-->
+<string name="开奖结果" translatable="true"> 开奖结果</string>
+	<!--
+	win_or_lose_popupwindow.xml
+	-->
+<string name="此处盈亏包含个人所得佣金请勿误算" translatable="true"> 此处盈亏包含个人所得佣金,请勿误算!</string>
+<string name="活动赠送返点赠送" translatable="true"> 活动赠送+返点赠送</string>
+	<!--
+	lottery_bet_pop_layout.xml
+	-->
+<string name="玩法说明" translatable="true"> 玩法说明</string>
+<string name="投注记录" translatable="true"> 投注记录</string>
+<string name="开奖记录" translatable="true"> 开奖记录</string>
+	<!--
+	pop_cuspack.xml
+	-->
+<string name="成功抢到一个红包金额随机" translatable="true"> 成功抢到一个红包，金额随机</string>
+<string name="查看游戏规则" translatable="true"> 查看游戏规则></string>
+<string name="SORRY只有达到100积分才能抢红包每推广1人可获得10积分哟" translatable="true"> SORRY,只有达到100积分才能抢红包，每推广1人可获得10积分哟</string>
+<string name="已抢过该红包" translatable="true"> 已抢过该红包</string>
+	<!--
+	activity_child_manage.xml
+	-->
+<string name="请输入邀请码" translatable="true"> 请输入邀请码</string>
+<string name="按邀请码搜索" translatable="true"> 按邀请码搜索↓</string>
+<string name="按下级账号搜索" translatable="true"> 按下级账号搜索↓</string>
+<string name="我的下级" translatable="true"> 我的下级</string>
+<string name="注册时间" translatable="true"> 注册时间↓</string>
+<string name="等级箭头" translatable="true"> 等级↓</string>
+	<!--
+	activity_touzhu.xml
+	-->
+<string name="确认下注" translatable="true"> 确认下注</string>
+	<!--
+	choose_area_pop_layout.xml
+	-->
+<string name="所有地区" translatable="true"> 所有地区</string>
+	<!--
+	fragment_live.xml
+	-->
+<string name="恭喜您在xxxx中奖xxxx元" translatable="true"> 恭喜您在xxxx中奖xxxx元</string>
+<string name="打赏主播3s" translatable="true"> 打赏主播3s</string>
+<string name="续费" translatable="true"> 续费</string>
+<string name="下载地址横杠" translatable="true"> 下载地址: - - - </string>
+<string name="邀请码横杠" translatable="true"> 邀请码:- - - </string>
+	<!--
+	child_bet_recycle_item.xml
+	-->
+	<!--
+	recharge_head_recycler_item.xml
+	-->
+<string name="公司入款" translatable="true"> 公司入款</string>
+<string name="热" translatable="true"> 热</string>
+	<!--
+	home_hot_lottery_recycle_item.xml
+	-->
+<string name="热门综艺" translatable="true"> 热门综艺</string>
+	<!--
+	yue_bao_right_pop.xml
+	-->
+<string name="余额宝明细" translatable="true"> 余额宝明细</string>
+<string name="余额宝说明" translatable="true"> 余额宝说明</string>
+
+
+	<!--
+	exit_pop.xml
+	-->
+<string name="退出" translatable="true"> 退出</string>
+<string name="确定要退出吗" translatable="true"> 确定要退出吗?</string>
+	<!--
+	activity_agent_journaling.xml
+	-->
+<string name="团队报表" translatable="true">  团队报表 </string>
+<string name="下级报表" translatable="true">  下级报表 </string>
+	<!--
+	choose_bank_popup_window_recycle.xml
+	-->
+<string name="请选择银行" translatable="true"> 请选择银行</string>
+	<!--
+	marksix_openresult_item.xml
+	-->
+<string name="羊" translatable="true"> 羊</string>
+<string name="兔" translatable="true"> 兔</string>
+<string name="猪" translatable="true"> 猪</string>
+<string name="马" translatable="true"> 马</string>
+<string name="牛" translatable="true"> 牛</string>
+<string name="蛇" translatable="true"> 蛇</string>
+<string name="猴" translatable="true"> 猴</string>
+	<!--
+	pcdandan_play_type_pop.xml
+	-->
+\
+	<!--
+	collect_movie_pop.xml
+	-->
+<string name="收藏" translatable="true"> 收藏</string>
+	<!--
+	commision_plan_pop.xml
+	-->
+<string name="选择方案" translatable="true"> 选择方案</string>
+<string name="添加方案" translatable="true"> 添加方案</string>
+	<!--
+	recharge_tip_pop_layout.xml
+	-->
+<string name="支付宝帐号已复制请前往支付宝联系代充完成付款" translatable="true"> 支付宝帐号已复制，请前往支付宝联系代充完成付款</string>
+<string name="三秒后将打开支付宝" translatable="true"> 3秒后将打开支付宝</string>
+	<!--
+	follow_movie_pop.xml
+	-->
+<string name="加号关注" translatable="true"> + 关注</string>
+<string name="联系方式" translatable="true"> 联系方式</string>
+	<!--
+	bet_menu_pop.xml
+	-->
+<string name="会员中心" translatable="true"> 会员中心</string>
+<string name="今日输赢" translatable="true"> 今日输赢</string>
+	<!--
+	agent_show_pop.xml
+	-->
+<string name="规则说明" translatable="true"> 规则说明</string>
+	<!--
+	wx_pay_recycle_foot.xml
+	-->
+<string name="收款人" translatable="true"> 收款人    </string>
+<string name="收款账号" translatable="true"> 收款账号</string>
+<string name="扫码支付" translatable="true"> 扫码支付</string>
+<string name="开户支行" translatable="true"> 开户支行</string>
+<string name="请输入金额50到10000" translatable="true"> 请输入金额(50-10000)</string>
+
+	<!--
+	live_collect_recycler_foot_layout.xml
+	-->
+<string name="换一换" translatable="true"> 换一换</string>
+	<!--
+	turntable_result_pop_layout.xml
+	-->
+<string name="恭喜获得以下奖品" translatable="true"> -  恭喜获得以下奖品  -</string>
+	<!--
+	make_money_headview.xml
+	-->
+<string name="我的邀请码" translatable="true"> 我的邀请码:</string>
+<string name="总共邀请人数" translatable="true"> 总共邀请人数:</string>
+<string name="有效邀请人数冒号" translatable="true"> 有效邀请人数:</string>
+<string name="邀请好友" translatable="true"> 邀请好友</string>
+<string name="好友注册下载登录APP" translatable="true"> 好友注册下载\n&#160;&#160;&#160;&#160;&#160;登录APP</string>
+<string name="解锁抢红包" translatable="true"> 解锁抢红包</string>
+<string name="本活动所有权归我司所有" translatable="true"> ◎本活动所有权归我司所有</string>
+	<!--
+	activity_open_red.xml
+	-->
+<string name="领取红包" translatable="true"> 领取红包</string>
+	<!--
+	red_rain_count_time_pop_layout.xml
+	-->
+<string name="距离红包雨开始还有" translatable="true"> 距离红包雨开始还有</string>
+	<!--
+	game_note_recycler_item.xml
+	-->
+<string name="下单金额" translatable="true"> 下单金额</string>
+	<!--
+	activity_set_pay_password.xml
+	-->
+<string name="请输入新提款密码" translatable="true"> 请输入新提款密码</string>
+<string name="确认新提款密码" translatable="true"> 确认新提款密码</string>
+<string name="请再次输入新提款密码" translatable="true"> 请再次输入新提款密码</string>
+	<!--
+	integral_details_pop.xml
+	-->
+<string name="积分详情" translatable="true"> 积分详情</string>
+	<!--
+	activity_bind_bank_card.xml
+	-->
+<string name="请选择地址" translatable="true"> 请选择地址</string>
+<string name="具体分行" translatable="true"> 具体分行    </string>
+<string name="请输入分行地址" translatable="true"> 请输入分行地址</string>
+<string name="请输入开户的姓名" translatable="true"> 请输入开户的姓名</string>
+<string name="请输入银行卡的卡号" translatable="true"> 请输入银行卡的卡号</string>
+<string name="确认卡号" translatable="true"> 确认卡号    </string>
+<string name="请再次输入银行卡的卡号" translatable="true"> 请再次输入银行卡的卡号</string>
+<string name="设置为默认卡" translatable="true"> 设置为默认卡</string>
+	<!--
+	activity_send_red.xml
+	-->
+<string name="分享人数达到触发红包人数红包才能打开" translatable="true"> 分享人数达到“触发红包人数”，红包才能打开。</string>
+<string name="个" translatable="true"> 个</string>
+<string name="总金额数" translatable="true"> 总金额数</string>
+<string name="填写金额" translatable="true"> 填写金额</string>
+<string name="有效时间" translatable="true"> 有效时间</string>
+<string name="五分钟" translatable="true"> 五分钟</string>
+<string name="充值红包金额" translatable="true"> 充值红包金额</string>
+	<!--
+	activity_chess_bet_more.xml
+	-->
+<string name="注单类型" translatable="true"> 注单类型</string>
+<string name="订单状态" translatable="true"> 订单状态</string>
+<string name="游戏类型" translatable="true"> 游戏类型</string>
+<string name="下注时间" translatable="true"> 下注时间</string>
+	<!--
+	choose_chip_amount_pop.xml
+	-->
+<string name="输入自定义筹码" translatable="true"> 输入自定义筹码</string>
+<string name="自定义范围1到10000" translatable="true"> 自定义范围1-10000</string>
+	<!--
+	get_winner_fragment_recycle_item.xml
+	-->
+<string name="喜中" translatable="true"> 喜中     </string>
+
+	<!--
+	forbidden_set_manager_pop.xml
+	-->
+<string name="禁言" translatable="true"> 禁言</string>
+	<!--
+	activity_main.xml
+	-->
+<string name="首页" translatable="true"> 首页</string>
+<string name="游戏" translatable="true"> 游戏</string>
+<string name="我的" translatable="true"> 我的</string>
+	<!--
+	bet_actionbar.xml
+	-->
+<string name="菜单" translatable="true"> 菜单</string>
+
+
+	<!--
+	note_pop_layout.xml
+	-->
+<string name="基本功能" translatable="true"> 基本功能</string>
+<string name="站内私信" translatable="true"> 站内私信</string>
+<string name="福利中心" translatable="true"> 福利中心</string>
+<string name="领钻石" translatable="true"> 领钻石</string>
+<string name="转盘" translatable="true"> 转盘</string>
+<string name="装备" translatable="true"> 装备</string>
+	<!--
+	activity_find_password_acticity.xml
+	-->
+<string name="通过提款密码" translatable="true"> 通过提款密码</string>
+	<!--
+	activity_agent_anvest.xml
+	-->
+<string name="会员账号" translatable="true"> 会员账号</string>
+<string name="请输入会员账号" translatable="true"> 请输入会员账号</string>
+<string name="佣金余额" translatable="true"> 佣金余额</string>
+	<!--
+	rake_back_time_choose_layout.xml
+	-->
+<string name="收入" translatable="true"> 收入</string>
+<string name="支出" translatable="true"> 支出</string>
+	<!--
+	recharge_recycler_foot_layout.xml
+	-->
+<string name="收款人冒号" translatable="true"> 收款人:</string>
+<string name="收款账号冒号" translatable="true"> 收款账号:</string>
+<string name="开户行冒号" translatable="true"> 开户行:</string>
+<string name="开户支行冒号" translatable="true"> 开户支行:</string>
+<string name="扫码支付冒号" translatable="true"> 扫码支付:</string>
+	<!--
+	activity_sure_login_password.xml
+	-->
+<string name="登录密码" translatable="true"> 登录密码</string>
+	<!--
+	activity_today_win_or_lose_actvity.xml
+	-->
+<string name="分享" translatable="true"> 分享</string>
+<string name="盈亏金额" translatable="true"> 盈亏金额</string>
+<string name="盈亏公式" translatable="true"> 盈亏公式 ：&#160;&#160; 中奖-投注+活动返点+个人佣金</string>
+	<!--
+	choose_date_pop.xml
+	-->
+<string name="近七日" translatable="true"> 近七日</string>
+
+	<!--
+	bankcard_recycler_item.xml
+	-->
+<string name="招商银行" translatable="true"> 招商银行</string>
+
+
+	<!--
+	no_internet.xml
+	-->
+<string name="网络出错啦请点击屏幕重新加载" translatable="true"> 网络出错啦，请点击屏幕重新加载</string>
+	<!--
+	activity_my_equipment.xml
+	-->
+<string name="坐骑" translatable="true"> 坐骑</string>
+<string name="勋章" translatable="true"> 勋章</string>
+<string name="称号牌" translatable="true"> 称号牌</string>
+	<!--
+	dialog_setma.xml
+	-->
+<string name="筹码范围1到10000" translatable="true"> 筹码范围1-10000</string>
+	<!--
+	activity_two_chang_long.xml
+	-->
+<string name="次数" translatable="true"> 次数</string>
+	<!--
+	pop_zx_more.xml
+	-->
+<string name="本活动最终解释权为我司所有" translatable="true"> /@本活动最终解释权为我司所有</string>
+<string name="邀请好友解锁" translatable="true"> 邀请好友解锁</string>
+<string name="解锁方式" translatable="true"> 解锁方式： 微信，微信朋友圈，QQ，抖音，微博，发短信，贴吧等任何方式都可以，面对面邀请您的亲朋好友成功注册，解锁即可马上抽奖。</string>
+<string name="每邀请一人成功注册" translatable="true">1.每邀请1人成功注册，可获得10积分，10积分可抽奖一次趣约红包，每包金额1-88元。 2.必须达到100积分，才可以解锁趣约红包功能，解锁后可以连续抢10次以上红包。 3.抢到红包的金额高达100%，每包最高可抽88元。 4.此活动为限制活动，每人只能参与一次。相同IP地址、相同设备码均视为同一个人注册，如未真实注册，重复注册，等非法行为均会取消活动资格。</string>
+	<!--
+	version_update_pop.xml
+	-->
+<string name="升级提示" translatable="true"> 升级提示</string>
+<string name="检测到可升级版本V1.0.1" translatable="true"> 检测到可升级版本V1.0.1</string>
+<string name="本次更新内容" translatable="true"> 本次更新内容</string>
+<string name="修复已知bug" translatable="true"> 修复已知bug</string>
+<string name="立即更新" translatable="true"> 立即更新</string>
+<string name="暂停" translatable="true"> 暂停</string>
+	<!--
+	home_winner_recycler_foot.xml
+	-->
+<string name="梦想福地一注即发" translatable="true"> 梦想福地，一注即发</string>
+	<!--
+	banlance_withfdraw_fragment.xml
+	-->
+<string name="账户余额" translatable="true"> 账户余额</string>
+<string name="可提余额" translatable="true"> 可提余额</string>
+<string name="提现账户" translatable="true"> 提现账户</string>
+<string name="请输入您的提现金额" translatable="true"> 请输入您的提现金额</string>
+<string name="未完成流水" translatable="true"> 未完成流水</string>
+	<!--
+	sign_in_recycler_item_layout.xml
+	-->
+<string name="豪华宝箱" translatable="true"> 豪华宝箱</string>
+<string name="第一天" translatable="true"> 第一天</string>
+<string name="已签到" translatable="true"> 已签到</string>
+	<!--
+	mine_recycler_item_layout.xml
+	-->
+<string name="主播认证" translatable="true"> 主播认证</string>
+	<!--
+	activity_get_winner_web_view.xml
+	-->
+<string name="中奖信息" translatable="true">中奖信息</string>
+	<!--
+	hot_head_layout.xml
+	-->
+<string name="热门游戏" translatable="true"> 热门游戏</string>
+<string name="热门直播" translatable="true"> 热门直播</string>
+	<!--
+	activity_yu_ebao_detailed.xml
+	-->
+<string name="我的余额宝" translatable="true"> 我的余额宝</string>
+
+	<!--
+	pop_pack_searchmore.xml
+	-->
+<string name="VIP3可抢普通红包" translatable="true"> 1.VIP3可抢普通红包，由玩家随意发送的红包，为营造良好的购彩氛围，我司鼓励各位赢钱多的玩家，可以发点普通红包，分享红包，传递幸福。 2.VIP4可抢官方红包，由平台每晚8点准时发送，最高可以抢到5888元。</string>
+<string name="解锁方式微信" translatable="true">解锁方式： 微信，微信朋友圈，QQ，抖音，微博，发短信，贴吧等任何方式都可以，面对面邀请您的亲朋好友成功注册，解锁即可马上抽奖。</string>
+<string name="只要您等级" formatted="false" translatable="true">1.只要您等级达到VIP5，投注限定玩法即可享受投注金额的1%专享回馈红包 2.达到VIP5的会员请每日12点登录领取，过期作废，没有领取的不累计。 3.此活动随时可能取消，千万回馈红包送完为止。 4.次活动只有投注限定玩法才能享受1%专享红包。 5.没有达到等级的请抓紧时间提升自己的等级。</string>
+	<!--
+	fragment_total_commision.xml
+	-->
+<string name="累计冒号" translatable="true"> 累计:</string>
+
+	<!--
+	home_message_num_pop.xml
+	-->
+<string name="您有未读消息请查看" translatable="true"> 您有未读消息,请查看</string>
+	<!--
+	child_manage_recycle_item.xml
+	-->
+<string name="下级人数" translatable="true"> 下级人数:</string>
+<string name="累计返佣" translatable="true"> 累计返佣:</string>
+<string name="当前余额" translatable="true"> 当前余额:</string>
+<string name="注册时间冒号" translatable="true"> 注册时间:</string>
+<string name="最后登录" translatable="true"> 最后登录:</string>
+<string name="玩家类型冒号" translatable="true"> 玩家类型:</string>
+<string name="三级代理" translatable="true"> 三级代理</string>
+<string name="查看下级" translatable="true"> 查看下级</string>
+
+	<!--
+	activity_want_to_withdraw.xml
+	-->
+	<!--
+	integral_details_recycle_item.xml
+	-->
+<string name="邀请好友DRD_PP成功注册" translatable="true"> 邀请好友DRD_PP成功注册</string>
+
+	<!--
+	action_bar_layout.xml
+	-->
+<string name="意见反馈" translatable="true"> 意见反馈</string>
+
+
+	<!--
+	ForbiddenPop.java
+	-->
+<string name="解封成功" translatable="true"> 解封成功</string>
+	<!--
+	RechargeSkipCountDownPop.java
+	-->
+<string name="微信" translatable="true"> 微信</string>
+<string name="支付宝" translatable="true"> 支付宝</string>
+<string name="秒后将打开" translatable="true"> %1$d秒后将打开%2$s</string>
+<string name="账号已复制请前往联系代充完成充值" translatable="true"> %1$s账号已复制,请前往%2$s联系代充完成充值</string>
+	<!--
+	ChooseAreaPop.java
+	-->
+<string name="未知" translatable="true"> 未知</string>
+<string name="保留" translatable="true"> 保留</string>
+	<!--
+	AutoTollPop.java
+	-->
+<string name="继续观看" translatable="true"> 继续观看</string>
+<string name="付费" translatable="true"> 付费</string>
+<string name="元10分钟" translatable="true"> 元/10分钟</string>
+<string name="该房间为收费房间预览时间剩余" translatable="true"> 该房间为收费房间,预览时间剩余</string>
+<string name="秒" translatable="true"> 秒</string>
+<string name="自动" translatable="true"> 自动</string>
+<string name="剩余观看时间" translatable="true"> 剩余观看时间</string>
+<string name="您的余额不足请先充值" translatable="true"> 您的余额不足,请先充值</string>
+<string name="没有更多收费直播间" translatable="true"> 没有更多收费直播间</string>
+<string name="自动续费已开启" translatable="true"> 自动续费已开启</string>
+<string name="自动续费已关闭" translatable="true"> 自动续费已关闭</string>
+<string name="自动续费开启失败" translatable="true"> 自动续费开启失败</string>
+<string name="自动续费关闭失败" translatable="true"> 自动续费关闭失败</string>
+<string name="十分钟" translatable="true"> 10分钟</string>
+	<!--
+	RewardAnchorPop.java
+	-->
+<string name="打赏成功" translatable="true"> 打赏成功</string>
+	<!--
+	DiamondPayPop.java
+	-->
+<string name="钻石永久" translatable="true"> %s钻石/永久</string>
+<string name="钻石天" translatable="true"> %1$s钻石/%2$s天</string>
+<string name="购买成功" translatable="true"> 购买成功</string>
+	<!--
+	SignInPop.java
+	-->
+<string name="今日已签到" translatable="true"> 今日已签到</string>
+<string name="签到规则" translatable="true"> 签到规则</string>
+<string name="签到成功" translatable="true"> 签到成功</string>
+	<!--
+	USTDQrCodePop.java
+	-->
+<string name="需要获取您的读写权限" translatable="true"> 需要获取您的读写权限</string>
+<string name="二维码保存成功" translatable="true"> 二维码保存成功</string>
+<string name="为了您的使用体验请同意相关权限否则功能无法实现" translatable="true"> 为了您的使用体验,请同意相关权限,否则功能无法实现</string>
+	<!--
+	RechargePop.java
+	-->
+<string name="全部转出" translatable="true"> 全部转出</string>
+	<!--
+	LiveQrCodePop.java
+	-->
+	<string name="APP下载地址" translatable="true"> APP下载地址</string>
+	<string name="请将网址复制到浏览器打开长按即可复制网" translatable="true"> 请将网址复制到浏览器打开（长按即可复制网址）</string>
+	<!--
+	SlideWebViewPop.java
+	-->
+<string name="滑动验证" translatable="true"> 滑动验证</string>
+	<!--
+	TurntablePop.java
+	-->
+<string name="苹果手机1" translatable="true"> 苹 果 手 机 * 1</string>
+<string name="十元现金劵1" translatable="true"> 18 元 现 金 劵*1</string>
+<string name="主播名片1" translatable="true"> 主 播 名 片 * 1</string>
+<string name="推广至尊称号30天" translatable="true"> 推 广 至 尊 称 号 * 30 天</string>
+<string name="VIP发言权限7天" translatable="true"> VIP 发 言 权 限* 7 天</string>
+<string name="一百八十八元现金劵1" translatable="true"> 188 元 现 金 劵 * 1</string>
+<string name="入场特效7天" translatable="true"> 入 场 特 效 * 7 天</string>
+<string name="魅力新秀荣誉称号30天" translatable="true"> 魅 力 新 秀 荣 誉 称 号 * 30 天</string>
+<string name="推广新秀称号30天" translatable="true"> 推 广 新 秀 称 号 * 30 天</string>
+<string name="恭喜" translatable="true"> 恭喜</string>
+<string name="获得" translatable="true"> 获得</string>
+<string name="推广新秀称号30" translatable="true"> 推 广 新 秀 称 号 * 30</string>
+<string name="推广至尊称号30" translatable="true"> 推 广 至 尊 称 号 * 30</string>
+<string name="rotateAgain下标" translatable="true"> rotateAgain下标:</string>
+
+
+
+
+	<!--
+	LiveRoomEntity.java
+	-->
+<string name="距离200米" translatable="true"> 距离200米</string>
+	<!--
+	HttpApiUtils.java
+	-->
+<string name="数据错误请重试" translatable="true"> 数据错误,请重试</string>
+	<!--
+	ChatHeadService.java
+	-->
+<string name="没有路径" translatable="true"> 没有路径</string>
+	<!--
+	DownloadService.java
+	-->
+<string name="下载中" translatable="true"> 下载中</string>
+<string name="下载完成" translatable="true"> 下载完成</string>
+<string name="下载失败" translatable="true"> 下载失败</string>
+<string name="onFailed下载失败" translatable="true"> onFailed:下载失败</string>
+<string name="更新包下载失败请重新下载" translatable="true"> 更新包下载失败,请重新下载</string>
+<string name="正在下载" translatable="true"> 正在下载!</string>
+	<!--
+	VerticalViewPager.java
+	-->
+<string name="红包雨期间不能切换直播间" translatable="true"> 红包雨期间不能切换直播间</string>
+	<!--
+	CusActivityRankPop.java
+	-->
+<string name="活动榜单Item查看更多点击" translatable="true"> 活动榜单Item查看更多点击:</string>
+	<!--
+	CusBetJoinOldPop.java
+	-->
+<string name="至少选中一项" translatable="true"> 至少选中一项</string>
+<string name="当前" translatable="true"> 当前</string>
+<string name="封盘空格" translatable="true"> 封盘 </string>
+	<!--
+	CusGiftPop.java
+	-->
+<string name="选择了礼物" translatable="true"> 选择了礼物:</string>
+<string name="礼物列表获取失败请重试" translatable="true"> 礼物列表获取失败,请重试</string>
+<string name="输入赠送礼物数量" translatable="true"> 输入赠送礼物数量</string>
+<string name="礼物数量1到10000" translatable="true"> 礼物数量1-10000</string>
+<string name="最高等级" translatable="true"> 最高等级</string>
+<string name="需" translatable="true"> 需</string>
+<string name="升级" translatable="true"> 升级</string>
+<string name="赠送成功" translatable="true"> 赠送成功</string>
+	<!--
+	CusPackMorePop.java
+	-->
+<string name="我要提升等级" translatable="true"> 我要提升等级</string>
+<string name="立即领取" translatable="true"> 立即领取</string>
+<string name="每邀请1人成功注册可获得" translatable="true"> 1.每邀请1人成功注册，可获得</string>
+<string name="积分逗号" translatable="true"> 积分，</string>
+<string name="积分可抽奖一次趣约红包每包金额" translatable="true"> 积分可抽奖一次趣约红包，每包金额</string>
+<string name="元必须积分达到" translatable="true"> 元。 2.必须积分达到</string>
+<string name="积分等级达到VIP" translatable="true"> 积分，等级达到VIP</string>
+<string name="才可以解锁趣约红包功能解锁后可以连续抢" translatable="true"> ，才可以解锁趣约红包功能，解锁后可以连续抢</string>
+<string name="次以上红包3抢到红包的金额高达100最高可抽" translatable="true"> 次以上红包。\n 3.抢到红包的金额高达100%，最高可抽</string>
+<string name="此活动为限制活动每人只能参与一次" translatable="true"> 4.此活动为限制活动，每人只能参与一次。相同IP地址、相同设备码均视为同一个人注册，如未真实注册，重复注册，等非法行为均会取消活动资格。</string>
+<string name="只要您等级达到VIP" translatable="true"> 1.只要您等级达到VIP</string>
+<string name="专享回馈红包达到VIP" translatable="true"> %专享回馈红包\n 2.达到VIP</string>
+<string name="的会员请第二天晚上12点前登录领取" translatable="true"> 的会员请第二天晚上12点前登录领取，过期作废，没有领取的不累计。\n3.此活动随时可能取消，千万回馈红包送完为止。\n4.此活动只有投注限定玩法才能享受</string>
+<string name="专享红包没有达到等级的请抓紧时间提升自己的等级" translatable="true"> %专享红包。\n 5.没有达到等级的请抓紧时间提升自己的等级。</string>
+<string name="参与条件A等级达到VIP" translatable="true"> \n 参与条件\n \n A.等级达到VIP%d，</string>
+<string name="参与条件" translatable="true"> 参与条件</string>
+<string name="即可参与参与条件等级达到VIP" translatable="true"> ,即可参与!\n 参与条件\n \n B.等级达到VIP%d，</string>
+<string name="即可参与等级达到VIP" translatable="true"> ,即可参与!\n B.等级达到VIP%d，</string>
+<string name="参与条件B等级达到VIP" translatable="true"> \n参与条件\n \n B.等级达到VIP%d，</string>
+<string name="B等级达到VIP" translatable="true"> \n B.等级达到VIP%d，</string>
+<string name="即可参与" translatable="true"> ,即可参与!</string>
+<string name="大于" translatable="true"> %1$s大于%2$d%3$s%4$s</string>
+<string name="您已达到最高等级VIP9已达到要求等级" translatable="true"> 您已达到最高等级VIP9,已达到要求等级</string>
+<string name="您已充值" translatable="true"> 您已充值</string>
+<string name="元距离VIP" translatable="true"> 元,距离VIP</string>
+<string name="还需充值" translatable="true"> 还需充值</string>
+<string name="您当前等级VIP" translatable="true"> 您当前等级VIP</string>
+<string name="已达到要求等级" translatable="true"> 已达到要求等级</string>
+<string name="可以领取红包了" translatable="true"> ,可以领取红包了</string>
+	<!--
+	RecycleViewDivider.java
+	-->
+<string name="请输入正确的参数" translatable="true"> 请输入正确的参数！</string>
+	<!--
+	WheelSurfPanView.java
+	-->
+<string name="找不到分类数量mTypeNum" translatable="true"> 找不到分类数量mTypeNum</string>
+<string name="找不到描述" translatable="true"> 找不到描述</string>
+<string name="找不到分类的图片资源" translatable="true"> 找不到分类的图片资源</string>
+<string name="找不到背景颜色" translatable="true"> 找不到背景颜色</string>
+<string name="找不到描述或图片或背景颜色资源" translatable="true"> 找不到描述或图片或背景颜色资源</string>
+<string name="资源或描述或背景颜色的长度和mTypeNum不一致" translatable="true"> 资源或描述或背景颜色的长度和mTypeNum不一致</string>
+<string name="颜色值有误" translatable="true"> 颜色值有误</string>
+<string name="类型为2必须要传大图mMainImgRes" translatable="true"> 类型为2必须要传大图mMainImgRes</string>
+<string name="类型type错误" translatable="true"> 类型type错误</string>
+<string name="Icons数量和Deses和Colors三者数量必须与mTypeNum一致" translatable="true"> Icons数量和Deses和Colors三者数量必须与mTypeNum一致</string>
+	<!--
+	ManualRechargeActivity.java
+	-->
+<string name="请先输入充值金额" translatable="true"> 请先输入充值金额</string>
+<string name="检查到您的手机未安装" translatable="true"> 检查到您的手机未安装</string>
+<string name="请安装后再试" translatable="true"> 请安装后再试</string>
+	<!--
+	BringForwardActivity.java
+	-->
+<string name="微信转银行卡教程" translatable="true"> 微信转银行卡教程</string>
+<string name="支付宝转银行卡教程" translatable="true"> 支付宝转银行卡教程</string>
+	<!--
+	VisitorSafeCenterActivity.java
+	-->
+<string name="安全中心" translatable="true"> 安全中心</string>
+<string name="认证成功" translatable="true"> 认证成功</string>
+<string name="请先输入手机号" translatable="true"> 请先输入手机号</string>
+<string name="请输入正确的手机号" translatable="true"> 请输入正确的手机号</string>
+<string name="请输入6到16位字母加数字的密码" translatable="true"> 请输入6-16位字母加数字的密码</string>
+<string name="验证码发送成功" translatable="true"> 验证码发送成功</string>
+<string name="s后重发" translatable="true"> s后重发</string>
+	<!--
+	MineIntegralActivity.java
+	-->
+<string name="积分" translatable="true"> 积分</string>
+	<!--
+	MyEquipmentActivity.java
+	-->
+<string name="取消成功" translatable="true"> 取消成功</string>
+<string name="穿戴成功" translatable="true"> 穿戴成功</string>
+
+	<!--
+	EqupmentSvgaMage.java
+	-->
+<string name="乘坐" translatable="true"> 乘坐 【</string>
+<string name="来了" translatable="true"> 】 来了</string>
+	<!--
+	NoticeMessageDetailsActivity.java
+	-->
+<string name="私信详情" translatable="true"> 私信详情</string>
+<string name="公告详情" translatable="true"> 公告详情</string>
+	<!--
+	HelpGuideActivity.java
+	-->
+<string name="帮助指南" translatable="true"> 帮助指南</string>
+	<!--
+	MineFollowActivity.java
+	-->
+<string name="我的关注" translatable="true"> 我的关注</string>
+<string name="取消关注成功" translatable="true"> 取消关注成功</string>
+<string name="关注成功" translatable="true"> 关注成功</string>
+	<!--
+	TodayWinOrLoseActvity.java
+	-->
+<string name="今日盈亏" translatable="true"> 今日盈亏</string>
+<string name="领普通红包" translatable="true"> 领普通红包</string>
+<string name="发普通红包" translatable="true"> 发普通红包</string>
+<string name="红包退回" translatable="true"> 红包退回</string>
+<string name="请等待数据加载完成" translatable="true"> 请等待数据加载完成</string>
+	<!--
+	FeedBackActivity.java
+	-->
+<string name="我要反馈" translatable="true"> 我要反馈</string>
+<string name="我的反馈" translatable="true"> 我的反馈</string>
+	<!--
+	AboutUsActivity.java
+	-->
+<string name="关于我们" translatable="true"> 关于我们</string>
+<string name="隐私声明" translatable="true"> 隐私声明</string>
+<string name="法律说明" translatable="true"> 法律说明</string>
+<string name="商务合作" translatable="true"> 商务合作</string>
+<string name="联系我们" translatable="true"> 联系我们</string>
+	<!--
+	JiZhunActivty.java
+	-->
+<string name="时间" translatable="true"> 时间</string>
+<string name="余额宝余额" translatable="true"> 余额宝余额</string>
+<string name="有效份额" translatable="true"> 有效份额</string>
+<string name="未转入" translatable="true"> 未转入</string>
+<string name="转入2W" translatable="true"> 转入2W</string>
+<string name="转出1W" translatable="true"> 转出1W</string>
+<string name="转入1W" translatable="true"> 转入1W</string>
+<string name="转出0.5W" translatable="true"> 转出0.5W</string>
+<string name="基准收益" translatable="true"> 基准收益</string>
+	<!--
+	HongYunActivity.java
+	-->
+<string name="红运收益" translatable="true"> 红运收益</string>
+	<!--
+	InYueBaoActivity.java
+	-->
+<string name="可转入余额" translatable="true"> 可转入余额</string>
+<string name="MM月dd日" translatable="true"> MM月dd日</string>
+<string name="现在转入预计" translatable="true"> 现在转入,预计</string>
+<string name="收益到账1万元1天可享收益" translatable="true"> 收益到账,1万元1天可享收益,¥</string>
+<string name="收益规则" translatable="true">  收益规则</string>
+<string name="转入余额宝" translatable="true"> 转入余额宝</string>
+<string name="可享收益" translatable="true"> 可享收益</string>
+	<!--
+	OutYueBaoActivity.java
+	-->
+<string name="可转出金额0.00" translatable="true"> 可转出金额0.00-</string>
+<string name="余额宝转出" translatable="true"> 余额宝转出</string>
+	<!--
+	YueBaoActivity.java
+	-->
+<string name="当前禁止转入" translatable="true"> 当前禁止转入</string>
+<string name="您当前余额宝账号暂无可转出金额" translatable="true"> 您当前余额宝账号暂无可转出金额</string>
+
+	<!--
+	ChildDealFragment.java
+	-->
+<string name="所有类型" translatable="true"> 所有类型</string>
+<string name="提现明细" translatable="true"> 提现明细</string>
+
+	<!--
+	AgentCenterActivity.java
+	-->
+<string name="当前佣金" translatable="true"> 当前佣金</string>
+<string name="累计佣金" translatable="true"> 累计佣金</string>
+<string name="下级开户" translatable="true"> 下级开户</string>
+<string name="代理报表" translatable="true"> 代理报表</string>
+<string name="下级管理" translatable="true"> 下级管理</string>
+<string name="昨天返佣" translatable="true"> 昨天返佣:</string>
+<string name="今日返佣" translatable="true"> 今日返佣:</string>
+<string name="我的下级冒号" translatable="true"> 我的下级:</string>
+	<!--
+	RakeBackActivity.java
+	-->
+<string name="佣金明细" translatable="true"> 佣金明细</string>
+<string name="开始时间" translatable="true"> 开始时间</string>
+<string name="年" translatable="true"> 年</string>
+<string name="月" translatable="true"> 月</string>
+<string name="日" translatable="true"> 日</string>
+<string name="时" translatable="true"> 时</string>
+<string name="分" translatable="true"> 分</string>
+<string name="设置生日" translatable="true"> 设置生日</string>
+	<!--
+	ChildManageActivity.java
+	-->
+<string name="的下级" translatable="true"> 的下级</string>
+<string name="零人" translatable="true"> 0人</string>
+<string name="未搜索到该下级请重新输入" translatable="true"> 未搜索到该下级,请重新输入</string>
+<string name="搜索结果如下" translatable="true"> 搜索结果如下</string>
+	<!--
+	AgentInvestActivity.java
+	-->
+<string name="明细" translatable="true"> 明细</string>
+<string name="已重置" translatable="true"> 已重置</string>
+<string name="暂无" translatable="true"> 暂无</string>
+<string name="姓名" translatable="true"> 姓名:</string>
+	<!--
+	ChildBetFragment.java
+	-->
+<string name="订单详情" translatable="true"> 订单详情</string>
+	<!--
+	AgentCenter2Activity.java
+	-->
+<string name="代理数据" translatable="true"> 代理数据</string>
+<string name="邀请人数" translatable="true"> 邀请人数</string>
+<string name="邀请红包收益" translatable="true"> 邀请红包收益</string>
+<string name="下级返佣" translatable="true"> 下级返佣</string>
+<string name="近7日" translatable="true"> 近7日</string>
+	<!--
+	ChildDealActivity.java
+	-->
+<string name="充值明细" translatable="true"> 充值明细</string>
+	<!--
+	AgentJournalingActivity.java
+	-->
+<string name="他的团队报表" translatable="true"> 他的团队报表</string>
+	<!--
+	OpenInviteRedActivity.java
+	-->
+<string name="恭喜您获得" translatable="true"> 恭喜您获得</string>
+<string name="个红包" translatable="true"> 个红包</string>
+	<!--
+	AgentShowPop.java
+	-->
+<string name="邀请活动规则" translatable="true"> 邀请活动规则</string>
+<string name="有效邀请说明" translatable="true"> 有效邀请说明</string>
+	<!--
+	IntegralDetailsDialog.java
+	-->
+<string name="消费积分" translatable="true"> 消费积分</string>
+	<!--
+	AddCommisionPlanActivity.java
+	-->
+<string name="自身返点" translatable="true"> 自身返点</string>
+<string name="可设置返点" translatable="true"> ,可设置返点</string>
+<string name="可设置返点0" translatable="true"> ,可设置返点0-</string>
+<string name="创建成功" translatable="true"> 创建成功</string>
+
+<string name="快三返点超出区间请重新输入" translatable="true"> 快三返点超出区间,请重新输入</string>
+<string name="时时彩返点超出区间请重新输入" translatable="true"> 时时彩返点超出区间,请重新输入</string>
+<string name="赛车返点超出区间请重新输入" translatable="true"> 赛车返点超出区间,请重新输入</string>
+<string name="六合彩返点超出区间请重新输入" translatable="true"> 六合彩返点超出区间,请重新输入</string>
+<string name="pc蛋蛋返点超出区间请重新输入" translatable="true"> pc蛋蛋返点超出区间,请重新输入</string>
+<string name="快乐8返点超出区间请重新输入" translatable="true"> 快乐8返点超出区间,请重新输入</string>
+<string name="幸运农场返点超出区间请重新输入" translatable="true"> 幸运农场返点超出区间,请重新输入</string>
+<string name="快乐十分返点超出区间请重新输入" translatable="true"> 快乐十分返点超出区间,请重新输入</string>
+<string name="十一选5返点超出区间请重新输入" translatable="true"> 11选5返点超出区间,请重新输入</string>
+	<!--
+	TotalCommisionFragment.java
+	-->
+<string name="累计" translatable="true"> 累计</string>
+<string name="剩余" translatable="true"> 剩余</string>
+	<!--
+	MineQRCodeActivity.java
+	-->
+<string name="app下载地址" translatable="true"> app下载地址:</string>
+<string name="海报保存成功" translatable="true"> 海报保存成功</string>
+	<!--
+	InviteAndMakeMoneyActivity.java
+	-->
+<string name="成功邀请会员注册获得红包" translatable="true"> 成功邀请会员注册,获得红包</string>
+<string name="每邀请1人成功注册可获得1个邀请红包每包金额" translatable="true"> 1.每邀请1人成功注册,可获得1个邀请红包,每包金额</string>
+<string name="有效邀请人数每满" translatable="true"> 2.有效邀请人数每满</string>
+<string name="人即可拆一轮红包等级要求必须达到VIP" translatable="true"> 人,即可拆一轮红包，等级要求必须达到VIP</string>
+<string name="才能参与" translatable="true"> 才能参与!</string>
+<string name="打开红包100获得奖金最高每包可以抢到" translatable="true"> 3.打开红包100%获得奖金,最高每包可以抢到</string>
+<string name="相同IP地相同设备码均视为同一个人注册如未真实注册重复注册等非法行为均会取消资格" translatable="true"> 4.相同IP地址、相同设备码均视为同一个人注册,如未真实注册,重复注册,等非法行为均会取消资格。</string>
+<string name="邀请朋友成为下级将获得平台给您的返佣下级投注后" translatable="true"> 邀请朋友成为下级，将获得平台给您的返佣，下级投注后，</string>
+<string name="您可以获得独家返佣朋友每下注1000元平台返您元" translatable="true"> 您可以获得%1$s%%独家返佣,(朋友每下注1000元平台返您%2$s元）！)</string>
+<string name="有效邀请人数" translatable="true"> 有效邀请人数</string>
+<string name="剩余积分" translatable="true"> 剩余积分</string>
+<string name="昨日收益" translatable="true"> 昨日收益</string>
+<string name="累计收益" translatable="true"> 累计收益</string>
+<string name="暂无可领奖励" translatable="true"> 暂无可领奖励</string>
+<string name="点击开红包" translatable="true"> 点击开红包</string>
+<string name="点击解锁" translatable="true"> 点击解锁</string>
+<string name="点击游戏规则" translatable="true"> 点击游戏规则</string>
+<string name="点击排行榜1" translatable="true"> 点击排行榜1</string>
+<string name="点击排行榜2" translatable="true"> 点击排行榜2</string>
+	<!--
+	MainActivity.java
+	-->
+<string name="拒绝必须权限后将无法正常使用app" translatable="true"> 拒绝必须权限后将无法正常使用app</string>
+<string name="更新提示" translatable="true"> 更新提示</string>
+<string name="app有新版本更新内容如下n" translatable="true"> app有新版本,更新内容如下:\n</string>
+<string name="再按一次退出程序" translatable="true"> 再按一次退出程序</string>
+	<!--
+	ShoppingWebViewActivity.java
+	-->
+<string name="账户已过期或账号被冻结请联系客服处理" translatable="true"> 账户已过期,或账号被冻结,请联系客服处理</string>
+	<!--
+	UpLevelRewardActivity.java
+	-->
+<string name="不可领取" translatable="true"> 不可领取</string>
+	<!--
+	ManualWebViewActivity.java
+	-->
+<string name="结束会话" translatable="true"> 结束会话</string>
+<string name="无法拍照" translatable="true"> 无法拍照</string>
+<string name="您未授予拍照权限" translatable="true"> 您未授予拍照权限</string>
+<string name="去设置" translatable="true"> 去设置</string>
+	<!--
+	RankActivity.java
+	-->
+<string name="说明" translatable="true"> 说明</string>
+<string name="排行榜内容每小时更新一次" translatable="true">    1、排行榜内容每小时更新一次，邀请榜，专享榜调取昨日数据，每天只刷新一次；\n2、日榜为当日排行榜信息的展示；\n3、周榜为本周排行榜信息的展示，即本周一至当日。\n4、月榜为本月排行榜信息的展示，即本月一号至当日；\n5、赌神榜参与彩票游戏场次小于100场的用户不进行显示。</string>
+	<!--
+	EveryDayRewardActivity.java
+	-->
+<string name="每日嘉奖" translatable="true"> 每日嘉奖</string>
+<string name="等级投注额" translatable="true"> 等级/投注额</string>
+	<!--
+	GetWinnerInfoActivity.java
+	-->
+<string name="玩家信息" translatable="true"> 玩家信息</string>
+	<!--
+	AccountFindPasswordActivity.java
+	-->
+<string name="密码找回成功" translatable="true"> 密码找回成功!</string>
+<string name="账号不能为空" translatable="true"> 账号不能为空</string>
+<string name="提款密码不能为空" translatable="true"> 提款密码不能为空</string>
+<string name="新密码不能为空" translatable="true"> 新密码不能为空</string>
+<string name="确认密码不能为空" translatable="true"> 确认密码不能为空</string>
+<string name="请输入字母开头6到11位字母加数字的账号" translatable="true"> 请输入字母开头6-11位字母加数字的账号</string>
+<string name="两次输入的密码不一致" translatable="true"> 两次输入的密码不一致</string>
+	<!--
+	SplashActivity.java
+	-->
+<string name="权限申请" translatable="true"> 权限申请</string>
+<string name="禁用权限会导致APP功能无法正常使用是否前往手动授予该权限" translatable="true"> 禁用权限会导致APP功能无法正常使用,是否前往手动授予该权限?</string>
+<string name="正在选择最优线路" translatable="true"> 正在选择最优线路</string>
+<string name="网络检测失败" translatable="true"> 网络检测失败</string>
+<string name="跳过" translatable="true"> 跳过(</string>
+<string name="跳过0S" translatable="true"> 跳过(0)S</string>
+<string name="系统提示" translatable="true"> 系统提示</string>
+<string name="线路访问出错请尝试切换线路" translatable="true"> 线路访问出错,请尝试切换线路</string>
+<string name="切换线路" translatable="true"> 切换线路</string>
+<string name="网络出错请尝试以下方法恢复网络" translatable="true"> 网络出错，请尝试以下方法恢复网络！\n1.检查手机网络,点击切换线路\n2.划掉APP重新进入\n如果您长时间无法访问，请进入官网</string>
+<string name="重新下载" translatable="true"> 重新下载！</string>
+<string name="系统维护中请稍后重试有问题请联系客服" translatable="true"> 系统维护中,请稍后重试,有问题请联系客服</string>
+<string name="紧急通知" translatable="true"> 紧急通知</string>
+	<!--
+	RegisterActivity.java
+	-->
+<string name="请输入邀请码必填" translatable="true"> 请输入邀请码(必填)</string>
+<string name="请输入邀请码选填" translatable="true"> 请输入邀请码(选填)</string>
+<string name="测试版版本号" translatable="true"> 测试版 版本号:%s</string>
+<string name="版本号占位" translatable="true"> 版本号:%s</string>
+<string name="注册成功正在登录" translatable="true"> 注册成功,正在登录</string>
+<string name="邀请码不能为空" translatable="true"> 邀请码不能为空</string>
+<string name="邀请码应为6到8位" translatable="true"> 邀请码应为6-8位</string>
+<string name="账号和密码不能一样" translatable="true"> 账号和密码不能一样</string>
+	<!--
+	SearchLiveActivity.java
+	-->
+<string name="搜索记录删除成功" translatable="true"> 搜索记录删除成功</string>
+
+	<!--
+	LoginActivity.java
+	-->
+<string name="正在进行游客登录" translatable="true"> 正在进行游客登录</string>
+<string name="Token无效" translatable="true"> Token无效</string>
+<string name="请重新登录" translatable="true"> 请重新登录</string>
+<string name="当前账号在另一地点登录" translatable="true"> 当前账号在另一地点登录</string>
+<string name="密码不能为空" translatable="true"> 密码不能为空</string>
+<string name="账号不符合规范请重新输入" translatable="true"> 账号不符合规范,请重新输入</string>
+<string name="手机号格式不正确" translatable="true"> 手机号格式不正确</string>
+<string name="登入成功" translatable="true"> 登入成功</string>
+<string name="账号或密码错误" translatable="true"> 账号或密码错误</string>
+<string name="请完成滑动验证" translatable="true"> 请完成滑动验证</string>
+<string name="登录中" translatable="true"> 登录中</string>
+<string name="手机号登录" translatable="true"> 手机号登录</string>
+	<!--
+	PhoneFindPasswordActivity.java
+	-->
+<string name="请输入手机号或者账号" translatable="true"> 请输入手机号或者账号</string>
+<string name="已绑定手机号" translatable="true"> 已绑定手机号</string>
+<string name="账号不存在" translatable="true"> 账号不存在!</string>
+<string name="请输入确认密码" translatable="true"> 请输入确认密码</string>
+<string name="两次输入的密码不一致请重新输入" translatable="true"> 两次输入的密码不一致,请重新输入</string>
+<string name="请先完成滑动验证" translatable="true"> 请先完成滑动验证</string>
+<string name="请完成滑动验证再获取验证码" translatable="true"> 请完成滑动验证再获取验证码</string>
+	<!--
+	ChessSearchActivity.java
+	-->
+<string name="请输入您要搜索的内容" translatable="true"> 请输入您要搜索的内容</string>
+	<!--
+	AliPayViewActivity.java
+	-->
+<string name="未安装支付宝" translatable="true"> 未安装支付宝</string>
+<string name="未安装微信" translatable="true"> 未安装微信</string>
+	<!--
+	UploadWebViewActivity.java
+	-->
+<string name="暂无应用打开此链接" translatable="true"> 暂无应用打开此链接</string>
+	<!--
+	ChooseBaseUrlAvtivity.java
+	-->
+<string name="选择线路" translatable="true"> 选择线路</string>
+	<!--
+	ChessTxWebViewActivity.java
+	-->
+<string name="立即旋转" translatable="true"> 立即旋转</string>
+<string name="此功能仅在无法正常游戏并提示旋转屏幕的情况使用若要恢复竖屏需要退出重进" translatable="true"> 此功能仅在无法正常游戏并提示旋转屏幕的情况使用，若要恢复竖屏需要退出重进"</string>
+<string name="刷新棋牌余额成功" translatable="true"> 刷新棋牌余额成功</string>
+	<!--
+	AtyActivity.java
+	-->
+<string name="会员每晋升一个等级都能获得奖励最高可得88888元" translatable="true"> 会员每晋升一个等级,都能获得奖励,最高可得88888元</string>
+<string name="每日加奖是根据会员昨日投注金额进行一定比例的加奖" translatable="true"> 每日加奖是根据会员昨日投注金额,进行一定比例的加奖</string>
+	<!--
+	RegisterNextActivity.java
+	-->
+<string name="绑定手机号" translatable="true"> 绑定手机号</string>
+<string name="请完成滑动验证获取验证码" translatable="true"> 请完成滑动验证获取验证码</string>
+	<!--
+	MineDealActivity.java
+	-->
+	<!--
+	GameReportActivity.java
+	-->
+<string name="近七天" translatable="true"> 近七天</string>
+<string name="开奖" translatable="true"> 开奖</string>
+<string name="频道" translatable="true"> 频道</string>
+	<!--
+	RechargeActivity.java
+	-->
+<string name="代充只负责充值" translatable="true"> 温馨提示：\n1.代充只负责充值，如果您有其他问题，请联系我们在线客服处理，代充如果向您骚扰或者其他行为，欢迎向我们举报，举报有奖。2.代充人员不定期更换，为避免不必要的损失，每次支付请到平台提单，以官方为准，谢谢！3.代充时请向代充人员提供您的会员账号（会员账号可以在代充页面复制），以及金额！</string>
+<string name="重要通知" translatable="true"> 重要通知</string>
+<string name="保存成功" translatable="true"> 保存成功</string>
+<string name="暂无充值通道" translatable="true"> 暂无充值通道</string>
+<string name="请输入货币数量" translatable="true"> 请输入货币数量</string>
+<string name="货币数量超出区间请重新输入" translatable="true"> 货币数量超出区间,请重新输入</string>
+<string name="请输入区块链交易ID" translatable="true"> 请输入区块链交易ID</string>
+<string name="充值金额超出区间请重新输入" translatable="true"> 充值金额超出区间,请重新输入</string>
+<string name="请转账到以上收款账户转账成功后工作人员将第一时间为您入款" translatable="true"> 请转账到以上收款账户,转账成功后工作人员将第一时间为您入款</string>
+<string name="打开微信扫描二维码或转账到银行卡进行充值" translatable="true">1.打开微信扫描二维码或转账到银行卡进行充值；2.可将二维码保存至相册，用微信识别相册中的二维码，每次充值时请在本页面获取最新二维码。</string>
+<string name="打开支付宝扫描二维码或转账到银行卡进行充值" translatable="true">1.打开支付宝扫描二维码或转账到银行卡进行充值；2.可将二维码保存至相册，用支付宝识别相册中的二维码，每次充值时请在本页面获取最新二维码。</string>
+<string name="温馨提示使用数字货币存取款" translatable="true">温馨提示:\n使用数字货币存取款，避免银行流水过大被风控，大额娱乐首选</string>
+	<!--
+	MineBetMoreActivity.java
+	-->
+<string name="第" translatable="true"> 第</string>
+<string name="撤单提示" translatable="true"> 撤单提示</string>
+<string name="是否撤单" translatable="true"> 是否撤单</string>
+<string name="数据读取错误请重试" translatable="true"> 数据读取错误,&#160;请重试</string>
+	<!--
+	QuotaChangeActivity.java
+	-->
+<string name="刷新成功" translatable="true"> 刷新成功</string>
+<string name="回收成功" translatable="true"> 回收成功</string>
+<string name="操作成功" translatable="true"> 操作成功</string>
+<string name="当前无可回收余额" translatable="true"> 当前无可回收余额</string>
+<string name="一键回收所有额度" translatable="true"> 一键回收所有额度?</string>
+<string name="开启自动余额转换失败请手动回收所有金额" translatable="true"> 开启自动余额转换失败,请手动回收所有金额</string>
+<string name="切换至自动额度转换前请先通过手动转换将额度转换为账户余额" translatable="true"> 切换至自动额度转换前,请先通过手动转换将额度转换为账户余额</string>
+	<!--
+	ChessBetMoreActivity.java
+	-->
+<string name="下注详情" translatable="true"> 下注详情</string>
+<string name="开元棋牌" translatable="true"> 开元棋牌</string>
+<string name="完成" translatable="true"> 完成</string>
+	<!--
+	MineBetFragment.java
+	-->
+<string name="去投注" translatable="true"> 去投注</string>
+<string name="下注冒号" translatable="true"> 下注:&#160;&#160;  </string>
+<string name="中奖冒号" translatable="true"> 中奖:&#160;&#160;  </string>
+	<!--
+	MineBetAcitivity.java
+	-->
+<string name="全部彩种" translatable="true"> 全部彩种</string>
+	<!--
+	PackType.java
+	-->
+<string name="趣约" translatable="true"> 趣约</string>
+<string name="天降" translatable="true"> 天降</string>
+<string name="专享" translatable="true"> 专享</string>
+	<!--
+	DiamondFragment.java
+	-->
+<string name="邀请" translatable="true"> 邀请</string>
+<string name="送礼" translatable="true"> 送礼</string>
+<string name="立即送礼" translatable="true"> 立即送礼</string>
+<string name="已领取全部礼物" translatable="true"> 已领取全部礼物!</string>
+<string name="再邀请" translatable="true"> 再邀请</string>
+<string name="人可领取更多礼物" translatable="true"> 人,可领取更多礼物</string>
+<string name="再充值" translatable="true"> 再充值</string>
+<string name="元可领取更多礼物" translatable="true"> 元,可领取更多礼物</string>
+<string name="再投注" translatable="true"> 再投注</string>
+<string name="再送礼" translatable="true"> 再送礼</string>
+<string name="我已邀请" translatable="true"> 我已邀请</string>
+<string name="人去邀请" translatable="true"> 人,去邀请</string>
+<string name="今日已充值" translatable="true"> 今日已充值</string>
+<string name="元去充值" translatable="true"> 元,去充值</string>
+<string name="今日已送礼" translatable="true"> 今日已送礼</string>
+<string name="元去送礼" translatable="true"> 元,去送礼</string>
+	<!--
+	DialogTouZhuActivity.java
+	-->
+<string name="金额请大于0" translatable="true"> 金额请大于0</string>
+	<!--
+	ZhuangXiangRedActivity.java
+	-->
+<string name="领取专享红包" translatable="true"> 领取专享红包</string>
+<string name="已领取" translatable="true"> 已领取</string>
+<string name="达到条件后投注推荐玩法即可享受投注金额的" translatable="true"> 达到条件后投注推荐玩法即可享受投注金额的</string>
+<string name="专享回馈红包" translatable="true"> %专享回馈红包</string>
+<string name="等级达到VIP" translatable="true"> 等级达到VIP</string>
+<string name="投注推荐玩法即可享受投注金额的" translatable="true"> ，投注推荐玩法即可享受投注金额的</string>
+<string name="的会员请第二天晚上12点前登录领取此活动只有投注推荐玩法才能享受" translatable="true"> 的会员请第二天晚上12点前登录领取，过期作废，没有领取的不累计。\n3.此活动随时可能取消，千万回馈红包送完为止。\n4.此活动只有投注推荐玩法才能享受</string>
+<string name="领取成功" translatable="true"> 领取成功</string>
+<string name="金额未达标" translatable="true"> 金额未达标</string>
+<string name="逗号还需充值" translatable="true"> ,还需充值</string>
+	<!--
+	RankTypeEnum.java
+	-->
+<string name="礼物榜" translatable="true"> 礼物榜</string>
+<string name="中奖榜" translatable="true"> 中奖榜</string>
+	<!--
+	PaihangActivity.java
+	-->
+<string name="趣约红包榜" translatable="true"> 趣约红包榜</string>
+<string name="专享红包榜" translatable="true"> 专享红包榜</string>
+	<!--
+	LiveFragment.java
+	-->
+<string name="全体禁言中" translatable="true">  &#160;全体禁言中&#160;</string>
+<string name="及以上才能发言" translatable="true"> 及以上才能发言&#160; </string>
+<string name="来聊聊天吧" translatable="true">  来聊聊天吧&#160;~</string>
+<string name="主播切换收费请重新进入直播间付费观看" translatable="true"> 主播切换收费,请重新进入直播间付费观看</string>
+<string name="下载" translatable="true"> 下载:</string>
+<string name="萌新" translatable="true"> 萌新</string>
+<string name="直播地址" translatable="true"> 直播地址&#160;</string>
+<string name="万" translatable="true"> 万</string>
+<string name="f人观看" translatable="true"> %1$.1f%1$3s人观看</string>
+<string name="d人观看" translatable="true"> %1d$人观看</string>
+<string name="网络波动数据初始化失败请退出直播间重试" translatable="true"> 网络波动,数据初始化失败,请退出直播间重试!</string>
+<string name="请选择投注玩法" translatable="true"> 请选择投注玩法</string>
+<string name="请选择筹码大小" translatable="true"> 请选择筹码大小</string>
+<string name="送出" translatable="true"> 送出</string>
+<string name="恭喜您在" translatable="true"> 恭喜您在</string>
+<string name="您存在违规在该聊天室中已被禁言" translatable="true"> 您存在违规，在该聊天室中已被禁言</string>
+	<!--
+	YesTodayRankActivity.java
+	-->
+<string name="请求昨日排行失败" translatable="true"> 请求昨日排行失败</string>
+	<!--
+	PlanListActivity.java
+	-->
+<string name="请填写金额" translatable="true"> 请填写金额</string>
+<string name="分享成功" translatable="true"> 分享成功</string>
+<string name="您已被禁言" translatable="true"> 您已被禁言</string>
+<string name="分享失败" translatable="true"> 分享失败</string>
+<string name="空格期" translatable="true">  &#160;期</string>
+	<!--
+	ChatroomUserInfoActivity.java
+	-->
+<string name="女" translatable="true"> 女</string>
+<string name="男" translatable="true"> 男</string>
+
+	<!--
+	TodayWinLoseActivity.java
+	-->
+<string name="总笔数" translatable="true"> 总笔数:</string>
+<string name="总输赢" translatable="true"> 总输赢</string>
+<string name="今日已结" translatable="true"> 今日已结</string>
+	<!--
+	FindPasswordActicity.java
+	-->
+<string name="找回密码" translatable="true"> 找回密码</string>
+	<!--
+	ForgetPasswordActivity.java
+	-->
+<string name="验证码不正确请重新输入" translatable="true"> 验证码不正确,请重新输入</string>
+	<!--
+	SscBetActivity.java
+	-->
+<string name="分号最高奖金" translatable="true"> ;最高奖金</string>
+<string name="正在下注" translatable="true"> 正在下注</string>
+<string name="当前网络不可用请检查网络" translatable="true"> 当前网络不可用,请检查网络</string>
+
+	<!--
+	LuckFarmBetActivity.java
+	-->
+<string name="横杠第一球" translatable="true"> -第一球</string>
+<string name="网络不给力" translatable="true"> 网络不给力</string>
+	<!--
+	MarksixActivity.java
+	-->
+<string name="网络不给力请检查网络" translatable="true"> 网络不给力，请检查网络</string>
+<string name="已结束" translatable="true"> 已结束</string>
+	<!--
+	K3Activity.java
+	-->
+<string name="请求数据错误" translatable="true"> 请求数据错误</string>
+	<!--
+	XuanwuActivity.java
+	-->
+
+<string name="奖金详情" translatable="true">  &#160;奖金详情</string>
+<string name="金额应大于1元" translatable="true"> 金额应大于1元</string>
+
+	<!--
+	Happy10BetActivity.java
+	-->
+	<!--
+	RaceActivity.java
+	-->
+<string name="一到10名" translatable="true"> 1-10名</string>
+
+	<!--
+	SafeCenterActivity.java
+	-->
+<string name="上次登录时间" translatable="true"> 上次登录时间:</string>
+<string name="修改提款密码" translatable="true"> 修改提款密码</string>
+<string name="已绑定密保手机" translatable="true"> 已绑定密保手机</string>
+<string name="设置密保手机" translatable="true"> 设置密保手机</string>
+<string name="您的账号安全级别为低" translatable="true"> 您的账号安全级别为低</string>
+<string name="您的账号安全级别为中" translatable="true"> 您的账号安全级别为中</string>
+<string name="您的账号安全级别为高" translatable="true"> 您的账号安全级别为高</string>
+<string name="提示" translatable="true"> 提示</string>
+<string name="未设置提款密码前去设置" translatable="true"> 未设置提款密码,前去设置!</string>
+<string name="您未设置密保手机请前往设置" translatable="true"> 您未设置密保手机,请前往设置</string>
+	<!--
+	PhonePasswordActivity.java
+	-->
+<string name="修改密保手机" translatable="true"> 修改密保手机</string>
+<string name="手机号不能为空" translatable="true"> 手机号不能为空</string>
+<string name="手机格式不规范请重新输入" translatable="true"> 手机格式不规范,请重新输入</string>
+<string name="请先获取手机验证码" translatable="true"> 请先获取手机验证码</string>
+<string name="安全密码错误请重新输入" translatable="true"> 安全密码错误,请重新输入</string>
+<string name="绑定手机成功正在登录" translatable="true"> 绑定手机成功,正在登录</string>
+<string name="绑定手机成功" translatable="true"> 绑定手机成功</string>
+	<!--
+	ModifyNickNameActivity.java
+	-->
+<string name="修改昵称" translatable="true"> 修改昵称</string>
+<string name="请输入您要修改的昵称剩余修改次数" translatable="true"> 请输入您要修改的昵称(剩余修改次数</string>
+<string name="次" translatable="true"> 次)</string>
+<string name="昵称仅限3到10个汉字" translatable="true"> 昵称仅限3-10个汉字</string>
+<string name="修改后的昵称不能与账户名相同" translatable="true"> 修改后的昵称不能与账户名相同</string>
+<string name="昵称不能包含萌新" translatable="true"> 昵称不能包含\'萌新\'</string>
+	<!--
+	ModifyPayPassword.java
+	-->
+<string name="原密码不能为空" translatable="true"> 原密码不能为空</string>
+<string name="前后输入的新密码不一致" translatable="true"> 前后输入的新密码不一致</string>
+<string name="新密码不能与旧密码相同" translatable="true"> 新密码不能与旧密码相同</string>
+	<!--
+	SureLoginPassword.java
+	-->
+<string name="登录密码验证" translatable="true"> 登录密码验证</string>
+<string name="请输入当前使用的登录密码" translatable="true"> 请输入当前使用的登录密码</string>
+	<!--
+	ModifyBankCardActivity.java
+	-->
+<string name="修改银行卡" translatable="true"> 修改银行卡</string>
+	<!--
+	BindUSDTActivity.java
+	-->
+<string name="添加USDT" translatable="true"> 添加USDT</string>
+<string name="添加成功" translatable="true"> 添加成功</string>
+	<!--
+	BindBankCardActivity.java
+	-->
+<string name="绑定银行卡" translatable="true"> 绑定银行卡</string>
+<string name="城市选择" translatable="true"> 城市选择</string>
+<string name="正在获取城市信息请稍后" translatable="true"> 正在获取城市信息,请稍后</string>
+<string name="选择城市" translatable="true"> 选择城市</string>
+<string name="省" translatable="true"> &#160;省:&#160; </string>
+<string name="市" translatable="true">  &#160;市:&#160; </string>
+<string name="区" translatable="true">  &#160;区: &#160;</string>
+<string name="请选择开户省市" translatable="true"> 请选择开户省市</string>
+<string name="请输入银行分行" translatable="true"> 请输入银行分行</string>
+<string name="请输入开户名姓名" translatable="true"> 请输入开户名姓名</string>
+<string name="请输入银行卡号" translatable="true"> 请输入银行卡号</string>
+<string name="银行卡格式不规范请重新输入" translatable="true"> 银行卡格式不规范,请重新输入</string>
+<string name="请再次输入银行卡号" translatable="true"> 请再次输入银行卡号</string>
+<string name="两次卡号输入不一致请重新输入" translatable="true"> 两次卡号输入不一致,请重新输入</string>
+<string name="安全密码不正确请重新输入" translatable="true"> 安全密码不正确,请重新输入</string>
+<string name="银行卡绑定成功" translatable="true"> 银行卡绑定成功</string>
+	<!--
+	USDTManageActivity.java
+	-->
+<string name="USDT账户管理" translatable="true"> USDT账户管理</string>
+<string name="温馨提示如需修改USDT地址请联系客服" translatable="true"> 温馨提示：\n如需修改USDT地址请联系客服。</string>
+	<!--
+	BankCardManageActivity.java
+	-->
+<string name="成功切换默认卡" translatable="true"> 成功切换默认卡</string>
+<string name="最多只能绑定张银行卡" translatable="true"> 最多只能绑定%s张银行卡</string>
+	<!--
+	ModifyLoginPasswordActivity.java
+	-->
+<string name="请输入原密码" translatable="true"> 请输入原密码</string>
+<string name="两次密码不一致" translatable="true"> 两次密码不一致</string>
+<string name="修改密码成功" translatable="true"> 修改密码成功</string>
+	<!--
+	SetPayPasswordActivity.java
+	-->
+<string name="提款密码不能与登录密码相同" translatable="true"> 提款密码不能与登录密码相同</string>
+<string name="前后密码不一致请重新输入" translatable="true"> 前后密码不一致,请重新输入</string>
+<string name="设置密码成功" translatable="true"> 设置密码成功</string>
+	<!--
+	BetNumUtil.java
+	-->
+<string name="千位" translatable="true"> 千位</string>
+<string name="百位" translatable="true"> 百位</string>
+<string name="十位" translatable="true"> 十位</string>
+
+
+	<!--
+	HttpUrlUtil.java
+	-->
+	<!--
+	TouXiangUtil.java
+	-->
+<string name="沒有头像" translatable="true"> 沒有头像</string>
+	<!--
+	ToastUtil.java
+	-->
+<string name="接口请求频繁" translatable="true"> 接口请求频繁</string>
+	<!--
+	MD5Utils.java
+	-->
+<string name="请求超时请重试" translatable="true"> 请求超时,请重试</string>
+<string name="异常" translatable="true"> 异常:</string>
+<string name="请求超时" translatable="true"> 请求超时</string>
+<string name="网络错误请检查网络" translatable="true"> 网络错误,请检查网络</string>
+<string name="出错" translatable="true"> 出错</string>
+<string name="复制成功" translatable="true"> 复制成功</string>
+<string name="此操作需要完成安全认证" translatable="true"> 此操作需要完成安全认证</string>
+<string name="立即认证" translatable="true"> 立即认证</string>
+	<!--
+	CustomPopupWindow.java
+	-->
+<string name="加拿大28" translatable="true"> 加拿大28</string>
+	<!--
+	OwnUncaughtExceptionHandler.java
+	-->
+<string name="全局异常" translatable="true"> 全局异常</string>
+	<!--
+	SaveChessLotteryUtil.java
+	-->
+<string name="啊哈哈" translatable="true"> 啊哈哈</string>
+
+	<!--
+	CommonStr.java
+	-->
+<string name="查看趣约红包排行榜" translatable="true"> 查看趣约红包排行榜</string>
+<string name="查看专享红包排行榜" translatable="true"> 查看专享红包排行榜</string>
+	<!--
+	RequestLoginUtils.java
+	-->
+<string name="网络不给力登录失败" translatable="true"> 网络不给力,登录失败</string>
+<string name="登录成功" translatable="true"> 登录成功</string>
+	<!--
+	RouteUtils.java
+	-->
+<string name="您存在违规行为已被封禁" translatable="true"> 您存在违规行为,已被封禁</string>
+<string name="直播间连接中请稍等" translatable="true"> 直播间连接中,请稍等</string>
+<string name="网络不可用" translatable="true"> 网络不可用</string>
+<string name="直播间token不正确重新登录或联系客服处理" translatable="true"> 直播间token不正确,重新登录或联系客服处理</string>
+<string name="直播间连接超时正在尝试重新连接请稍等" translatable="true"> 直播间连接超时,正在尝试重新连接,请稍等</string>
+<string name="网络不给力正在连接直播间请稍等" translatable="true"> 网络不给力,正在连接直播间,请稍等</string>
+<string name="未能成功获取直播间配置信息请退出APP重试" translatable="true"> 未能成功获取直播间配置信息,请退出APP重试!</string>
+<string name="选择分享应用" translatable="true"> 选择分享应用</string>
+<string name="请选择浏览器" translatable="true"> 请选择浏览器</string>
+<string name="链接错误或无浏览器" translatable="true"> 链接错误或无浏览器</string>
+	<!--
+	DiamondAdapter.java
+	-->
+<string name="邀请人礼包" translatable="true"> 邀请%s人礼包</string>
+<string name="每日充值元礼包" translatable="true"> 每日充值%s元礼包</string>
+<string name="每日打码元礼包" translatable="true"> 每日打码%s元礼包</string>
+<string name="每日送礼元礼包" translatable="true"> 每日送礼%s元礼包</string>
+<string name="未达到" translatable="true"> 未达到</string>
+<string name="天" translatable="true"> 天</string>
+<string name="钻石" translatable="true"> 钻石</string>
+	<!--
+	RankAdapter.java
+	-->
+<string name="等待上榜" translatable="true"> 等待上榜</string>
+<string name="场次零中零" translatable="true"> 场次: &#160;0中0</string>
+<string name="场次冒号" translatable="true"> 场次: &#160;</string>
+<string name="胜率0.00" translatable="true"> 胜率：&#160;&#160; 0.00%</string>
+<string name="胜率冒号" translatable="true"> 胜率:&#160; </string>
+	<!--
+	RechargeAdapter.java
+	-->
+<string name="充值奖励最高送88888元占位" translatable="true"> 充值奖励%s%%,最高送88888元!</string>
+<string name="充值数量范围" translatable="true"> 充值数量范围:%1$s-%2$s</string>
+<string name="百" translatable="true"> 百</string>
+<string name="千" translatable="true"> 千</string>
+<string name="请输入金额占位" translatable="true"> 请输入金额%1$s2$%3$s%4$s</string>
+<string name="可用额度二占位" translatable="true"> 可用额度:%1$d%2$s</string>
+<string name="可用额度三占位" translatable="true"> 可用额度:%1$d%2$s%3$s</string>
+	<!--
+	RechargeHeadAdapter.java
+	-->
+<string name="奖" translatable="true"> 奖</string>
+<string name="火" translatable="true"> 火</string>
+<string name="优" translatable="true"> 优</string>
+<string name="安" translatable="true"> 安</string>
+<string name="极" translatable="true"> 极</string>
+	<!--
+	GetWinnerAdapter.java
+	-->
+<string name="我在" translatable="true"> 我在</string>
+<string name="喜中了" translatable="true"> 喜中了</string>
+<string name="元感叹号" translatable="true"> 元！</string>
+	<!--
+	Happy8Adapter.java
+	-->
+<string name="赔" translatable="true"> 赔&#160; </string>
+
+	<!--
+	Happy8RecycleAdapter.java
+	-->
+<string name="金" translatable="true"> 金</string>
+<string name="木" translatable="true"> 木</string>
+<string name="单多" translatable="true"> 单(多)</string>
+<string name="双多" translatable="true"> 双(多)</string>
+<string name="单双括号和" translatable="true"> 单双(和)</string>
+	<!--
+	MineInfoAdapter.java
+	-->
+<string name="我的消息" translatable="true"> 我的消息</string>
+	<!--
+	GouCaiDaTingAdapter.java
+	-->
+<string name="停止销售" translatable="true"> 停止销售</string>
+	<!--
+	SignInAdapter.java
+	-->
+<string name="豪华宝箱一个" translatable="true"> 豪华宝箱一个</string>
+<string name="第二天" translatable="true"> 第二天</string>
+<string name="第三天" translatable="true"> 第三天</string>
+<string name="第四天" translatable="true"> 第四天</string>
+<string name="第五天" translatable="true"> 第五天</string>
+<string name="第六天" translatable="true"> 第六天</string>
+<string name="第七天" translatable="true"> 第七天</string>
+	<!--
+	ChipRecycleAdapter.java
+	-->
+<string name="自定义" translatable="true"> 自定义</string>
+<string name="修改筹码" translatable="true"> 修改筹码&#160; </string>
+	<!--
+	ChildDealRecycleAdapter.java
+	-->
+<string name="拒绝申请" translatable="true"> 拒绝申请</string>
+<string name="申请未通过" translatable="true"> 申请未通过</string>
+<string name="百汇付" translatable="true"> 百汇付</string>
+<string name="充值失败占位" translatable="true"> 充值失败%s</string>
+	<!--
+	ChildManegeRecycleAdapter.java
+	-->
+<string name="级代理" translatable="true"> 级代理</string>
+	<!--
+	MineDealRecycleAdapter.java
+	-->
+<string name="处理中" translatable="true"> 处理中</string>
+<string name="充值失败括号占位" translatable="true"> 充值失败(%s)</string>
+	<!--
+	InvestRecycleAdapter.java
+	-->
+<string name="单笔最低" translatable="true"> 单笔最低&#160; </string>
+<string name="元逗号" translatable="true"> &#160; 元, &#160;</string>
+<string name="最高" translatable="true"> 最高&#160; </string>
+<string name="元句号" translatable="true">  &#160;元。&#160;</string>
+	<!--
+	MyEquipmentAdapter.java
+	-->
+<string name="x永久" translatable="true"> x永久</string>
+<string name="x天" translatable="true"> x%s天</string>
+<string name="获取" translatable="true"> 获取</string>
+<string name="永久" translatable="true"> 永久</string>
+<string name="穿戴" translatable="true"> 穿戴</string>
+<string name="未获得" translatable="true"> 未获得</string>
+	<!--
+	BaseUrlAdapter.java
+	-->
+<string name="线路" translatable="true"> 线路</string>
+<string name="延迟" translatable="true"> 延迟:</string>
+<string name="网络状况不佳" translatable="true"> 网络状况不佳</string>
+	<!--
+	FarmOpenAdapter.java
+	-->
+<string name="尾" translatable="true"> 尾</string>
+
+	<!--
+	MineFeedbackRecycleAdapter.java
+	-->
+<string name="反馈时间" translatable="true"> 反馈时间:</string>
+<string name="反馈类型" translatable="true"> 反馈类型:</string>
+<string name="反馈内容" translatable="true"> 反馈内容:</string>
+<string name="官方回复暂无回复" translatable="true"> 官方回复:暂无回复</string>
+<string name="官方回复" translatable="true"> 官方回复:</string>
+	<!--
+	CusGiftChildRecyAdapter.java
+	-->
+<string name="来一场红包雨" translatable="true"> 来一场红包雨</string>
+	<!--
+	ActivityRankAdapter.java
+	-->
+<string name="参与人数10000" translatable="true"> 参与人数: &#160;10000+</string>
+<string name="中奖几率100" translatable="true"> 中奖几率:&#160; 100%</string>
+<string name="红包金额" translatable="true"> 红包金额:&#160; </string>
+<string name="红包金额888" translatable="true"> 红包金额:&#160; 888+</string>
+<string name="可抢玩家红包" translatable="true"> 可抢玩家红包</string>
+<string name="可抢官方红包" translatable="true"> 可抢官方红包</string>
+<string name="千万专享礼包真情回馈" translatable="true"> 千万专享礼包真情回馈</string>
+<string name="限制玩法VIP" translatable="true"> 限制玩法VIP</string>
+<string name="以上专享" translatable="true"> 以上专享</string>
+	<!--
+	K3RecyclerAdapter.java
+	-->
+<string name="点" translatable="true"> 点</string>
+	<!--
+	MarksixChildAdapter.java
+	-->
+<string name="蓝" translatable="true"> 蓝</string>
+<string name="绿" translatable="true"> 绿</string>
+<string name="不允许超过" translatable="true"> 不允许超过</string>
+<string name="个选项" translatable="true"> 个选项</string>
+
+<string name="不允许超过3个选项" translatable="true"> 不允许超过3个选项</string>
+<string name="不允许超过2个选项" translatable="true"> 不允许超过2个选项</string>
+<string name="不允许超过4个选项" translatable="true"> 不允许超过4个选项</string>
+	<!--
+	XuanwuGfPAdapter.java
+	-->
+<string name="逗号奖金详情" translatable="true">&#160; , &#160;奖金详情 &#160;</string>
+<string name="奖金逗号" translatable="true"> ,奖金&#160; </string>
+	<!--
+	IntegralDetailAdapter.java
+	-->
+<string name="成功注册" translatable="true"> 成功注册</string>
+	<!--
+	LiveChatAdapter.java
+	-->
+<string name="空格在" translatable="true"> &#160; 在 &#160;</string>
+<string name="元二空格" translatable="true"> 元 &#160;&#160; </string>
+<string name="二空格送了" translatable="true">  &#160;&#160; 送了</string>
+<string name="三空格恭喜" translatable="true">   &#160;&#160;&#160; 恭喜</string>
+<string name="在" translatable="true"> 在</string>
+<string name="中奖了" translatable="true"> 中奖了</string>
+<string name="空格关注了主播" translatable="true"> &#160; 关注了主播</string>
+<string name="将" translatable="true"> 将</string>
+<string name="了" translatable="true"> 了</string>
+<string name="设为" translatable="true"> 设为</string>
+<string name="房管" translatable="true"> 房管</string>
+<string name="直播间已切换为" translatable="true"> 直播间已切换为</string>
+<string name="免费" translatable="true"> 免费</string>
+<string name="收费" translatable="true"> 收费</string>
+<string name="弹幕连接成功" translatable="true"> 弹幕连接成功</string>
+<string name="弹幕连接断开正在重新连接" translatable="true"> 弹幕连接断开，正在重新连接</string>
+<string name="封禁" translatable="true"> 封禁</string>
+<string name="解除" translatable="true"> 解除</string>
+<string name="空格被系统" translatable="true"> &#160;被系统%1$s%2$s</string>
+
+
+	<string name="打赏主播元" translatable="true"> %1$s打赏主播%2$s元</string>
+<string name="空格恭喜本直播间空格" translatable="true">  &#160;恭喜本直播间&#160; </string>
+<string name="抢到了" translatable="true"> 抢到了</string>
+<string name="元邀请红包点击领取红包" translatable="true"> 元邀请红包。点击领取红包></string>
+<string name="元专享红包点击领取红包" translatable="true"> 元专享红包。点击领取红包></string>
+<string name="元天降红包" translatable="true"> 元天降红包。</string>
+<string name="元普通红包" translatable="true"> 元普通红包。</string>
+<string name="空格发了一个普通红包点击领取红包" translatable="true">  &#160;发了一个普通红包。点击领取红包></string>
+	<!--
+	ForbiddenAdapter.java
+	-->
+<string name="主播" translatable="true"> %s(主播)</string>
+<string name="解封" translatable="true"> 解封</string>
+	<!--
+	CashierInputFilter.java
+	-->
+<string name="最多200个" translatable="true"> 最多200个</string>
+	<!--
+	MyCountDownTimer.java
+	-->
+<string name="倒计时结束" translatable="true"> 倒计时结束</string>
+	<!--
+	TimeRunTextView.java
+	-->
+<string name="时间结束" translatable="true"> 时间结束</string>
+	<!--
+	FollowPop.java
+	-->
+<string name="取消关注" translatable="true"> 取消关注</string>
+<string name="无联系方式" translatable="true"> 无联系方式</string>
+<string name="暂无联系方式" translatable="true"> 暂无联系方式</string>
+<string name="马上去送礼" translatable="true"> 马上去送礼</string>
+	<!--
+	ReportPop.java
+	-->
+<string name="封号成功" translatable="true"> 封号成功</string>
+	<!--
+	ReportListPop.java
+	-->
+<string name="感谢您的举报我们会尽快核实处理" translatable="true"> 感谢您的举报,我们会尽快核实处理</string>
+	<!--
+	FollowPop.java
+	-->
+<string name="加号取消关注" translatable="true"> +取消关注</string>
+	<!--
+	EditPanel.java
+	-->
+<string name="请等待数据加载完毕" translatable="true"> 请等待数据加载完毕!</string>
+<string name="及以上即可发言" translatable="true"> 及以上即可发言</string>
+<string name="敏感词检测中" translatable="true">  &#160;敏感词检测中...</string>
+<string name="系统检测到敏感词您的账号已被封禁" translatable="true"> 系统检测到敏感词，您的账号已被封禁</string>
+<string name="发言过于频繁VIP的发言间隔为秒" translatable="true"> 发言过于频繁，VIP%1$d的发言间隔为%2$s秒</string>
+	<!--
+	SendRedActivity.java
+	-->
+<string name="请输入红包个数" translatable="true"> 请输入红包个数</string>
+<string name="请输入红包金额" translatable="true"> 请输入红包金额</string>
+<string name="普通红包" translatable="true"> 普通红包</string>
+<string name="发送成功" translatable="true"> 发送成功</string>
+<string name="红包个数" translatable="true"> 红包个数</string>
+	<!--
+	JoinSvgaMage.java
+	-->
+
+	<!--
+	LiveChatFragment.java
+	-->
+<string name="趣约红包领取次数已用完" translatable="true"> 趣约红包领取次数已用完</string>
+<string name="未读消息" translatable="true"> 未读消息:</string>
+	<!--
+	RongLibUtils.java
+	-->
+<string name="直播间初始化失败请退出重试" translatable="true"> 直播间初始化失败,请退出重试</string>
+	<!--
+	WantToFeedbackFragment.java
+	-->
+<string name="我有建议" translatable="true"> 我有建议</string>
+<string name="有杂音产生" translatable="true"> 有杂音产生</string>
+<string name="等待超时" translatable="true"> 等待超时</string>
+<string name="网络连接失败" translatable="true"> 网络连接失败</string>
+<string name="直播问题" translatable="true"> 直播问题</string>
+<string name="请描述您遇到的问题" translatable="true"> 请描述您遇到的问题</string>
+<string name="问题描述仅限10到100个字" translatable="true"> 问题描述仅限10-100个字</string>
+<string name="请选择问题分类方便我们更快为您解决问题" translatable="true"> 请选择问题分类,方便我们更快为您解决问题</string>
+<string name="图片上传中请稍后" translatable="true"> 图片上传中,请稍后</string>
+<string name="反馈成功" translatable="true"> 反馈成功</string>
+<string name="需要获取您的相机使用权限" translatable="true"> 需要获取您的相机使用权限</string>
+<string name="需要获取访问您相册的权限" translatable="true"> 需要获取访问您相册的权限</string>
+<string name="未知错误请重试" translatable="true"> 未知错误,请重试</string>
+<string name="系统出现错误请重试" translatable="true"> 系统出现错误,请重试</string>
+<string name="图片选取出错请重试" translatable="true"> 图片选取出错,请重试</string>
+<string name="请同意权限否则相关功能无法使用" translatable="true"> 请同意权限,否则相关功能无法使用</string>
+	<!--
+	DragonBetFragment.java
+	-->
+<string name="已清空" translatable="true"> 已清空</string>
+	<!--
+	InviteCodeFragment.java
+	-->
+<string name="注册左括号" translatable="true"> 注册(</string>
+<string name="删除邀请码" translatable="true"> 删除邀请码</string>
+<string name="确定删除" translatable="true"> 确定删除?</string>
+<string name="删除成功" translatable="true"> 删除成功</string>
+	<!--
+	TeamJournalingFragment.java
+	-->
+<string name="下级人数共" translatable="true"> 下级人数共</string>
+<string name="的团队报表" translatable="true"> 的团队报表</string>
+<string name="未搜索到该下级账号请重新输入" translatable="true"> 未搜索到该下级账号,请重新输入</string>
+	<!--
+	ChildJournalingFragment.java
+	-->
+<string name="未找到该下级请重新输入" translatable="true"> 未找到该下级,请重新输入</string>
+	<!--
+	UserLevelFragment.java
+	-->
+<string name="成长值" translatable="true"> 成长值</string>
+<string name="头衔冒号" translatable="true"> 头衔:</string>
+<string name="距离下一等级需要0分每充值1元加1分" translatable="true"> 距离下一等级需要0分,每充值1元加1分</string>
+<string name="距离下一等级需要" translatable="true"> 距离下一等级需要</string>
+<string name="分每充值1元加1分" translatable="true"> 分,每充值1元加1分</string>
+	<!--
+	UserInfoFragment.java
+	-->
+<string name="未绑定" translatable="true"> 未绑定</string>
+<string name="未设置提款密码前往设置" translatable="true"> 未设置提款密码.前往设置!!!</string>
+<string name="昵称只能修改一次" translatable="true"> 昵称只能修改一次</string>
+<string name="您需要达到达到vip才能使用本地图片" translatable="true"> 您需要达到达到vip%d，才能使用本地图片!</string>
+<string name="选择性别" translatable="true"> 选择性别</string>
+	<!--
+	ViewPagerFragemnt.java
+	-->
+<string name="距离第" translatable="true"> 距离第</string>
+<string name="期截止还有" translatable="true"> 期截止还有</string>
+	<!--
+	ShoppingContentRecommendFragment.java
+	-->
+<string name="浏览记录" translatable="true"> 浏览记录</string>
+	<!--
+	ShoppingTwoFragment.java
+	-->
+<string name="您的账号信息尚未完善请前往完善" translatable="true"> 您的账号信息尚未完善,请前往完善!</string>
+	<!--
+	HomeTwoFragment.java
+	-->
+<string name="热门" translatable="true"> 热门</string>
+<string name="活动" translatable="true"> 活动</string>
+<string name="附近" translatable="true"> 附近</string>
+	<!--
+	MineFragment.java
+	-->
+<string name="迅博彩票" translatable="true"> 迅博彩票</string>
+<string name="我的积分" translatable="true"> 我的积分</string>
+<string name="我的装备" translatable="true"> 我的装备</string>
+<string name="我的收藏" translatable="true"> 我的收藏</string>
+<string name="版本号冒号" translatable="true"> 版本号:</string>
+<string name="测试版空格" translatable="true"> 测试版&#160; </string>
+<string name="确定退出登录" translatable="true"> 确定退出登录?</string>
+<string name="提现前需先绑定银行卡是否前往绑定" translatable="true"> 提现前需先绑定银行卡，是否前往绑定</string>
+<string name="请先完成安全认证" translatable="true"> 请先完成安全认证</string>
+	<!--
+	LiveTabFragment.java
+	-->
+<string name="推荐" translatable="true"> 推荐</string>
+<string name="最新" translatable="true"> 最新</string>
+	<!--
+	HotFragment.java
+	-->
+<string name="点击安装" translatable="true"> 点击安装</string>
+<string name="正在下载..." translatable="true"> 正在下载...</string>
+<string name="红包领取成功" translatable="true"> 红包领取成功</string>
+	<!--
+	HotFragment2.java
+	-->
+<string name="未知类型无法跳转" translatable="true"> 未知类型, &#160;无法跳转</string>
+	<!--
+	RankFragment.java
+	-->
+<string name="礼物空格" translatable="true"> 礼物&#160; -&#160; - &#160;-</string>
+<string name="奖金星星" translatable="true"> 奖金:****</string>
+<string name="场次空格" translatable="true"> 场次&#160; -&#160; - &#160;-</string>
+<string name="胜率空格" translatable="true"> 胜率:&#160; - &#160;-&#160; -</string>
+<string name="红包空格" translatable="true"> 红包 &#160;- &#160;-&#160; -</string>
+<string name="礼物" translatable="true"> 礼物</string>
+<string name="礼物冒号" translatable="true"> 礼物: &#160;</string>
+<string name="场次横杠" translatable="true"> 场次:&#160; -&#160; -&#160; - </string>
+<string name="胜率横杠" translatable="true"> 胜率: &#160;-&#160; - &#160;- </string>
+<string name="领包横杠" translatable="true"> 领包: &#160;-&#160; - &#160;- </string>
+<string name="红包" translatable="true"> 红包</string>
+<string name="红包冒号" translatable="true"> 红包:&#160; </string>
+	<!--
+	LongDragonFragment.java
+	-->
+<string name="我要" translatable="true"> 我要</string>
+<string name="最近" translatable="true"> 最近</string>
+<string name="长龙列表已更新下拉获取最新长龙列表" translatable="true"> 长龙列表已更新,下拉获取最新长龙列表</string>
+	<!--
+	CommissionWithdrawFragment.java
+	-->
+<string name="USDT点击绑定USDT" translatable="true"> USDT(点击绑定USDT)</string>
+<string name="请输入提现金额" translatable="true"> 请输入提现金额</string>
+<string name="USDT提现通道已关闭" translatable="true"> USDT提现通道已关闭</string>
+<string name="我的余额" translatable="true"> 我的余额</string>
+	<!--
+	XuanWuFragment.java
+	-->
+<string name="开奖结果请求失败请退出界面重试" translatable="true"> 开奖结果请求失败,请退出界面重试</string>
+<string name="开奖结果请求失败正在重新请求" translatable="true"> 开奖结果请求失败,正在重新请求</string>
+<string name="期开奖" translatable="true"> 期开奖:</string>
+<string name="请输入筹码金额" translatable="true"> 请输入筹码金额</string>
+<string name="输入筹码金额超出范围" translatable="true"> 输入筹码金额超出范围</string>
+<string name="请至少选择一项" translatable="true"> 请至少选择一项</string>
+
+
+
+
+
+
+
+	<!--
+	SscOfiicialBetMedol.java
+	-->
+<string name="不是大小单双" translatable="true"> 不是大小单双</string>
+	<!--
+	WebServiceConstant.java
+	-->
+<string name="正确返回" translatable="true"> 正确返回</string>
+<string name="操作失败" translatable="true"> 操作失败</string>
+	<!--
+	MvpBaseFragment.java
+	-->
+<string name="点击重新加载" translatable="true"> 点击重新加载</string>
+	<!--
+	BaseActivity.java
+	-->
+<string name="是否要开启聊天室悬浮球" translatable="true"> 是否要开启聊天室悬浮球?</string>
+	<!--
+	LiveViewModel.java
+	-->
+<string name="我是有底线的" translatable="true"> 我是有底线的~</string>
+
+	<!--
+	RxExceptionUtils.java
+	-->
+<string name="网络连接超时" translatable="true"> 网络连接超时</string>
+<string name="数据解析错误" translatable="true"> 数据解析错误</string>
+<string name="服务器处理请求错误" translatable="true"> 服务器处理请求错误</string>
+<string name="服务器无法处理请求" translatable="true"> 服务器无法处理请求</string>
+	<!--
+	BaseStringObserver.java
+	-->
+<string name="返回数据为空" translatable="true"> 返回数据为空</string>
+	</resources>

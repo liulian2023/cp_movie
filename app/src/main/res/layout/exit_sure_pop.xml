@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/game_rule_wrap_shape">
+        <TextView
+            android:id="@+id/recharge_pop_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/转入"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="@color/alpha_80_black"
+            />
+        <include layout="@layout/split_horizontal"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            >
+
+            <EditText
+                android:id="@+id/recharge_etv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/请输入金额"
+                android:inputType="numberDecimal"
+                android:textColor="@color/default_color"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:textSize="14sp"
+                android:layout_marginLeft="35dp"
+                />
+            <Button
+                android:id="@+id/all_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/全部转入"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:background="@drawable/change_quota_sure_shape"
+                android:layout_marginRight="35dp"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@color/split"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="20dp"
+            android:baselineAligned="false" android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/recharge_cancel_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="35dp"
+                    android:paddingLeft="35dp"
+                    android:background="@drawable/game_rule_cancel_shape"
+                    android:text="@string/取消"
+
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/recharge_sure_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/确定"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="35dp"
+                    android:paddingLeft="35dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/game_rule_sure_shape"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

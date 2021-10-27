@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+    android:id="@+id/action_bar_wrap_linear"
+    android:layout_width="match_parent"
+    android:background="@color/action_bar_color"
+    android:layout_height="45dp">
+    <TextView
+        android:id="@+id/action_bar_return"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:text="@string/返回"
+        android:gravity="center"
+        android:textColor="@color/action_bar_return_textcolor_selecter"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/action_bar_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:text="@string/位置"
+        android:gravity="center"
+        android:id="@+id/action_bar_right"
+        android:visibility="invisible"
+        android:textColor="@color/action_bar_return_textcolor_selecter"
+        android:textSize="16sp"
+        />
+</LinearLayout>
+</LinearLayout>

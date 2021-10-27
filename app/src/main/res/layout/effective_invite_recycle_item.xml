@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/effective_person_num_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#333333"
+        android:textSize="12sp"
+        android:layout_marginBottom="5dp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+            <TextView
+                android:id="@+id/left_light_tv"
+                android:layout_width="19dp"
+                android:layout_height="4dp"
+                android:background="@drawable/effective_light_shape"
+                />
+            <TextView
+                android:id="@+id/left_dark_tv"
+                android:layout_width="19dp"
+                android:layout_height="4dp"
+                android:background="@drawable/effective_dark_shape"
+                />
+        </FrameLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="22dp"
+                android:layout_height="30dp"
+                android:src="@drawable/hb1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/red_num_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="x3"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView15" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+            <TextView
+                android:id="@+id/right_light_tv"
+                android:layout_width="19dp"
+                android:layout_height="4dp"
+                android:background="@drawable/effective_light_shape"
+                />
+            <TextView
+                android:id="@+id/right_dark_tv"
+                android:layout_width="19dp"
+                android:layout_height="4dp"
+                android:background="@drawable/effective_dark_shape"
+                />
+        </FrameLayout>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/get_red_iv"
+        android:layout_width="34dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/lq"
+        android:layout_gravity="center"
+        />
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2019.  ganzhe
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    >
+    <LinearLayout
+        android:id="@+id/ll_item_headrecy1"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="30dp"
+        android:orientation="vertical"
+        android:background="@drawable/shape_bkg_no_enable"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/item_headrecy1_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:text="@string/三码"
+            android:gravity="center_horizontal"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

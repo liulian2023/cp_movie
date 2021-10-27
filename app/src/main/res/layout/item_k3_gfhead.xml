@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2019.  ganzhe
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    >
+    <LinearLayout
+        android:id="@+id/ll_item_k3gfhead"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/shape_bkg_no_enable"
+        android:gravity="center_horizontal"
+        >
+        <TextView
+            android:id="@+id/item_k3gfhead_tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/textcolor_head3"
+            android:textSize="14dp"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/item_k3gfhead_tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="11dp"
+            android:textColor="@color/dimgray"
+            android:gravity="center_horizontal"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="5dp"
+            >
+            <ImageView
+                android:id="@+id/item_k3gfhead_iv1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:contentDescription="TODO" android:src="@drawable/shaizi001"
+                />
+            <ImageView
+                android:id="@+id/item_k3gfhead_iv2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:contentDescription="TODO" android:src="@drawable/shaizi001"
+                />
+            <ImageView
+                android:id="@+id/item_k3gfhead_iv3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:contentDescription="TODO" android:src="@drawable/shaizi001"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

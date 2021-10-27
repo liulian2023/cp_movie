@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    >
+    <RadioButton
+        android:id="@+id/choose_area_recycler_name_rbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/全部彩票"
+        android:gravity="center"
+        android:button="@null"
+        android:paddingTop="9dp"
+        android:paddingBottom="9dp"
+        android:background="@drawable/choose_area_btn_selector"
+        android:textColor="@color/bet_choose_pklay_type_textcolor_selector"
+        android:textSize="14sp" />
+</LinearLayout>

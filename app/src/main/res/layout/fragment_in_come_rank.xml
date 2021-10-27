@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--    <include layout="@layout/loading_layout"/>-->
+<!--    <include layout="@layout/nodata_layout"/>-->
+    <include layout="@layout/error_lyaout"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/rank_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rank_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                />
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+        <LinearLayout
+            android:id="@+id/radioGroup_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:gravity="center"
+            >
+            <RadioGroup
+                android:layout_width="244dp"
+                android:layout_height="32dp"
+                android:orientation="horizontal"
+                android:background="@drawable/rank_group_shape"
+                android:layout_gravity="center_horizontal"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RadioButton
+                    android:id="@+id/day_rank_rbt"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/date_choose_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/日榜"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/week_rank_rbt"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/date_choose_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/周榜"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/month_rank_rbt"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/date_choose_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/月榜"
+                    android:textSize="13sp" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

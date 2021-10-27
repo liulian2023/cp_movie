@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">rxHttp</string>
+
+    <string name="connect_error">网络连接失败,请检查网络</string>
+    <string name="connect_timeout">连接超时,请稍后再试</string>
+    <string name="bad_network">服务器异常</string>
+    <string name="parse_error">解析服务器响应数据失败</string>
+    <string name="unknown_error">未知错误</string>
+    <string name="response_return_error">服务器返回数据失败</string>
+
+    <string name="request_error">Failed to request server,error code：</string>
+    <string name="parameters_exception">Parameter exception</string>
+    <string name="token_expired">token失效</string>
+    <string name="refresh_token_expired">刷新token失效</string>
+    <string name="system_maintain">系统维护</string>
+    <string name="wrong_pwd_username">用户名或密码错误</string>
+    <string name="user_registered">该账户已存在</string>
+    <string name="wrong_password">密码错误</string>
+    <string name="remote_login">您的账号已在其它设备上登录，如非本人操作，请及时修改密码！</string>
+    <string name="invalid_status">登录状态已失效，请重新登录</string>
+</resources>

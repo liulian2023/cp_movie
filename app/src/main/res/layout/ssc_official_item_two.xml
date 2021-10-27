@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/组选24"
+            android:layout_gravity="center"
+            android:textColor="@color/alpha_80_black"
+            android:id="@+id/ssc_official_item_two_name"
+            />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:id="@+id/keyboard_linear"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:text="@string/全"
+                    android:id="@+id/quan"
+
+                    android:background="@drawable/official_bet_item_selector_two"
+                    android:textColor="@color/bet_recycle_item_type_textcolor_selector_two"
+                    />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/大"
+                    android:id="@+id/da"
+                    android:background="@drawable/official_bet_item_selector_two"
+                    android:textColor="@color/bet_recycle_item_type_textcolor_selector_two"
+                    />
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/小"
+                    android:id="@+id/xiao"
+                    android:background="@drawable/official_bet_item_selector_two"
+                    android:textColor="@color/bet_recycle_item_type_textcolor_selector_two"
+                    />
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/单"
+                    android:id="@+id/dan"
+                    android:background="@drawable/official_bet_item_selector_two"
+                    android:textColor="@color/bet_recycle_item_type_textcolor_selector_two"
+                    />
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/双"
+                    android:id="@+id/shuang"
+                    android:background="@drawable/official_bet_item_selector_two"
+                    android:textColor="@color/bet_recycle_item_type_textcolor_selector_two"
+                    />
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/清"
+                    android:id="@+id/qing"
+                    android:background="@drawable/official_bet_item_selector_two"
+                    android:textColor="@color/bet_recycle_item_type_textcolor_selector_two"
+                    />
+            </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/split"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ssc_official_bet_item_two_recycle"
+            ></androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

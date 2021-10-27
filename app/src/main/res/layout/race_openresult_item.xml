@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:baselineAligned="false" android:gravity="center"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="735524"
+                android:textSize="12sp"
+                android:id="@+id/qishu"
+                />
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14:53:34"
+                />
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/race_openresult_iv1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:contentDescription="TODO" android:src="@drawable/race_num_circle_1"
+                        />
+                    <ImageView
+                        android:id="@+id/race_openresult_iv2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="2dp"
+                        android:contentDescription="TODO" android:src="@drawable/race_num_circle_2"
+                        />
+                    <ImageView
+                        android:id="@+id/race_openresult_iv3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="2dp"
+                        android:contentDescription="TODO" android:src="@drawable/race_num_circle_3"
+                        />
+                    <ImageView
+                        android:id="@+id/race_openresult_iv4"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="2dp"
+                        android:contentDescription="TODO" android:src="@drawable/race_num_circle_4"
+                        />
+                    <ImageView
+                        android:id="@+id/race_openresult_iv5"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="2dp"
+                        android:contentDescription="TODO" android:src="@drawable/race_num_circle_5"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    >
+                    <ImageView
+                        android:id="@+id/race_openresult_iv6"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:contentDescription="TODO" android:src="@drawable/race_num_circle_1"
+                        />
+                    <ImageView
+                        android:id="@+id/race_openresult_iv7"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="2dp"
+                        android:contentDescription="TODO" android:src="@drawable/race_num_circle_7"
+                        />
+                    <ImageView
+                        android:id="@+id/race_openresult_iv8"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="2dp"
+                        android:contentDescription="TODO" android:src="@drawable/race_num_circle_8"
+                        />
+                    <ImageView
+                        android:id="@+id/race_openresult_iv9"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="2dp"
+                        android:contentDescription="TODO" android:src="@drawable/race_num_circle_9"
+                        />
+                    <ImageView
+                        android:id="@+id/race_openresult_iv10"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="2dp"
+                        android:contentDescription="TODO" android:src="@drawable/race_num_circle_10"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="19"
+                android:textColor="#f66f2b"
+                android:textSize="12sp"
+                android:id="@+id/race_hezhi_one"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/大"
+                android:textColor="#f66f2b"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:id="@+id/race_hezhi_two"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/单"
+                android:textColor="#f66f2b"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:id="@+id/race_hezhi_three"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <include layout="@layout/split_horizontal"/>
+</LinearLayout>

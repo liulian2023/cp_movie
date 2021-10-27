@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/rank_num_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="28dp"
+        android:text="4"
+        android:textColor="@color/default_color"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/rank_title_iv"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rank_num_tv"
+        app:layout_constraintStart_toEndOf="@+id/rank_num_tv"
+        app:layout_constraintTop_toTopOf="@+id/rank_num_tv" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout7"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rank_title_iv"
+        app:layout_constraintStart_toEndOf="@+id/rank_title_iv"
+        app:layout_constraintTop_toTopOf="@+id/rank_title_iv">
+
+        <TextView
+            android:id="@+id/rank_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tf16"
+            android:textColor="@color/default_color"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/rank_sex_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/rank_name_tv"
+            app:layout_constraintStart_toEndOf="@+id/rank_name_tv"
+            app:layout_constraintTop_toTopOf="@+id/rank_name_tv" />
+
+
+        <ImageView
+            android:id="@+id/rank_level_iv"
+            android:layout_width="41dp"
+            android:layout_height="15dp"
+            android:src="@drawable/daili"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/rank_name_tv" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/onlive_gif_iv"
+            android:visibility="gone"
+            android:layout_width="20dp"
+            android:layout_height="14dp"
+            android:src="@drawable/living_animate_origin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/rank_name_tv"
+            />
+        <TextView
+            android:id="@+id/onlive_tip_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF5454"
+            android:visibility="gone"
+            android:text="@string/直播中"
+            android:textSize="12sp"
+            app:layout_constraintTop_toTopOf="@id/onlive_gif_iv"
+            app:layout_constraintBottom_toBottomOf="@id/onlive_gif_iv"
+            app:layout_constraintLeft_toRightOf="@+id/onlive_gif_iv"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ImageView
+        android:id="@+id/rank_jinbi_iv"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout7"
+        app:srcCompat="@drawable/jinbi_icon" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#D8D8D8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/rank_num_tv" />
+
+    <TextView
+        android:id="@+id/rank_jinbi_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:text="- - - "
+        android:textColor="#666666"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout7"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/changci_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:text="@string/场次空格"
+        android:textSize="12sp"
+        android:textColor="#666666"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout7" />
+
+    <TextView
+        android:id="@+id/win_rate_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:text="@string/胜率空格"
+        android:textSize="12sp"
+        android:textColor="#666666"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout7"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

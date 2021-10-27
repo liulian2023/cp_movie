@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EBEBEB" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/recharge_foot_wrap_constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/recharge_head_item_check_shape">
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="14dp"
+            android:text="@string/收款人:"
+            android:textColor="#666666"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/payee_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:text="******"
+            android:textColor="@color/default_color"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView25"
+            app:layout_constraintStart_toEndOf="@+id/textView25"
+            app:layout_constraintTop_toTopOf="@+id/textView25" />
+
+        <TextView
+            android:id="@+id/payee_name_copy_tv"
+            android:layout_width="48dp"
+            android:layout_height="26dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:text="@string/复制"
+            android:textColor="#00AAEE"
+            android:textSize="13sp"
+            android:background="@drawable/recharge_copy_tv_shape"
+            app:layout_constraintBottom_toBottomOf="@+id/payee_name_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/payee_name_tv" />
+
+        <TextView
+            android:id="@+id/textView51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:text="@string/收款账号:"
+            android:textColor="#666666"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@+id/textView25"
+            app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+        <TextView
+            android:id="@+id/payee_account_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:text="******"
+            android:textColor="@color/default_color"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView51"
+            app:layout_constraintStart_toEndOf="@+id/textView51"
+            app:layout_constraintTop_toTopOf="@+id/textView51" />
+
+        <TextView
+            android:id="@+id/payee_account_copy_tv"
+            android:layout_width="48dp"
+            android:layout_height="26dp"
+            android:gravity="center"
+            android:text="@string/复制"
+            android:textColor="#00AAEE"
+            android:background="@drawable/recharge_copy_tv_shape"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/payee_account_tv"
+            app:layout_constraintEnd_toEndOf="@+id/payee_name_copy_tv"
+            app:layout_constraintTop_toTopOf="@+id/payee_account_tv" />
+
+        <TextView
+            android:id="@+id/textView53"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:text="@string/开户行:"
+            android:textColor="#666666"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@+id/textView51"
+            app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+        <TextView
+            android:id="@+id/bank_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:text="******"
+            android:textColor="@color/default_color"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView53"
+            app:layout_constraintStart_toEndOf="@+id/textView53"
+            app:layout_constraintTop_toTopOf="@+id/textView53" />
+
+        <TextView
+            android:id="@+id/bank_name_copy_tv"
+            android:layout_width="48dp"
+            android:layout_height="26dp"
+            android:text="@string/复制"
+            android:gravity="center"
+            android:textColor="#00AAEE"
+            android:textSize="13sp"
+            android:background="@drawable/recharge_copy_tv_shape"
+            app:layout_constraintBottom_toBottomOf="@+id/bank_name_tv"
+            app:layout_constraintEnd_toEndOf="@+id/payee_account_copy_tv"
+            app:layout_constraintTop_toTopOf="@+id/bank_name_tv" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/bank_name_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="bank_name_tv,textView53,bank_name_copy_tv"
+        />
+
+        <TextView
+            android:id="@+id/textView60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/开户支行:"
+            android:textColor="#666666"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView51"
+            app:layout_constraintTop_toBottomOf="@+id/textView53" />
+
+        <TextView
+            android:id="@+id/bank_name_two_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="******"
+            android:textColor="@color/default_color"
+            android:textSize="13sp"
+            android:layout_marginStart="13dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView60"
+            app:layout_constraintStart_toEndOf="@+id/textView60"
+            app:layout_constraintTop_toTopOf="@+id/textView60" />
+
+        <TextView
+            android:id="@+id/bank_name_two_copy_tv"
+            android:layout_width="48dp"
+            android:layout_height="26dp"
+            android:background="@drawable/recharge_copy_tv_shape"
+            android:gravity="center"
+            android:text="@string/复制"
+            android:textColor="#00AAEE"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/bank_name_two_tv"
+            app:layout_constraintEnd_toEndOf="@+id/bank_name_copy_tv"
+            app:layout_constraintTop_toTopOf="@+id/bank_name_two_tv" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/bank_name_two_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="bank_name_two_tv,textView60,bank_name_two_copy_tv"
+            />
+
+        <TextView
+            android:id="@+id/textView55"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:text="@string/扫码支付:"
+            android:textColor="#666666"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@+id/textView51"
+            app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+        <ImageView
+            android:id="@+id/qr_image_iv"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            app:layout_constraintTop_toTopOf="@+id/textView55"
+            app:layout_constraintLeft_toRightOf="@+id/textView55"
+            android:layout_marginLeft="5dp"
+            app:srcCompat="@drawable/dailishuoming"
+            tools:layout_editor_absoluteX="181dp"
+            tools:layout_editor_absoluteY="4dp" />
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/qr_image_group"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="qr_image_iv,textView55"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <WebView
+        android:id="@+id/recharge_tip_wbv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        />
+
+    <Button
+        android:id="@+id/recharge_sure_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="46dp"
+        android:background="@drawable/login_btn_shape"
+        android:text="@string/确定"
+        android:textStyle="bold"
+        android:layout_marginRight="48dp"
+        android:layout_marginLeft="48dp"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+</LinearLayout>

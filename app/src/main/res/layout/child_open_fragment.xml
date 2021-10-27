@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        >
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_gravity="center"
+            android:contentDescription="TODO"
+            android:src="@drawable/child_open_img"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/请为下级设置类型和返点"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/show_rebate_list"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:text="@string/查看返点赔率表"
+            android:textColor="@color/red"
+            android:textSize="14sp" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/开户类型"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/type_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="16sp"
+                    android:checked="true"
+                    android:text="@string/代理类型" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/type_user"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16sp"
+                    android:text="@string/玩家类型" />
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/占位"
+                android:visibility="invisible"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+        <com.xw.repo.BubbleSeekBar
+            android:id="@+id/seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+
+            app:bsb_auto_adjust_section_mark="true"
+            app:bsb_second_track_color="#FB2947"
+            app:bsb_section_count="5"
+            app:bsb_max="0.5"
+            app:bsb_min="0"
+            app:bsb_track_size="2dp"
+            app:bsb_section_text_position="below_section_mark"
+            app:bsb_show_section_mark="true"
+            app:bsb_show_section_text="true"
+            app:bsb_show_thumb_text="true"
+            app:bsb_touch_to_seek="true"
+            app:bsb_track_color="#D8D8D8"
+            app:bsb_thumb_text_size="2sp"
+            />
+        <include layout="@layout/split_big"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="@string/快三"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/k3Rate_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:inputType="number|numberDecimal"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <include layout="@layout/split_horizontal"/>
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="@string/时时彩"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/sscaiRate_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:inputType="number|numberDecimal"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <include layout="@layout/split_horizontal"/>
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="@string/赛车"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/raceRate_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:inputType="number|numberDecimal"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <include layout="@layout/split_horizontal"/>
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="@string/六合彩"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/sixRate_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:inputType="number|numberDecimal"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <include layout="@layout/split_horizontal"/>
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="@string/pc蛋蛋"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/danRate_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:inputType="number|numberDecimal"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <include layout="@layout/split_horizontal"/>
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="@string/快乐8"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/happy8Rate_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:inputType="number|numberDecimal"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <include layout="@layout/split_horizontal"/>
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="@string/幸运农场"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/farmRate_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:inputType="number|numberDecimal"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <include layout="@layout/split_horizontal"/>
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="@string/快乐10分"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/happytenRate_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:inputType="number|numberDecimal"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <include layout="@layout/split_horizontal"/>
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="@string/十一选5"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/xuanwuRate_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:inputType="number|numberDecimal"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <include layout="@layout/split_horizontal"/>
+            <Button
+                android:id="@+id/get_invite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/login_button_shape"
+                android:text="@string/生成邀请码"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#E04F5B"
+                android:textSize="16sp"
+                android:text="@string/温馨提示"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/red"
+                android:layout_marginTop="5dp"
+                android:text="@string/假设您拖动到0.5那任何下级投注1000元您将获得5元返佣"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="@string/您的佣金自身返点为下级设置的返点所有下级投注金额"
+                android:layout_marginTop="5dp"
+                android:lineSpacingExtra="5dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="@string/举例自身返点6为下级设置返点5有效投注100万"
+                android:layout_marginTop="5dp"
+                android:lineSpacingExtra="5dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="@string/您的佣金万"
+                android:layout_marginTop="5dp"
+                android:lineSpacingExtra="5dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

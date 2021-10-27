@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/white_8radio_rapple">
+        <TextView
+            android:id="@+id/forbidden_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:paddingTop="19dp"
+            android:paddingBottom="19dp"
+            android:background="@drawable/white_top_8radios_ripple"
+            android:text="@string/禁言"
+            android:textColor="#FF4F4F"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/split"
+            />
+        <TextView
+            android:id="@+id/block_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:paddingTop="19dp"
+            android:paddingBottom="19dp"
+            android:background="@drawable/white_top_8radios_ripple"
+            android:text="@string/封号"
+            android:textColor="#FF4F4F"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/forbidden_cancel_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:background="@drawable/white_8radio_rapple"
+        android:text="@string/取消"
+        android:gravity="center"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="19dp"
+
+        />
+</LinearLayout>

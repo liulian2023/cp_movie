@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/split_big" />
+    <include layout="@layout/split_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="12dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/账户余额"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/myBalance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:textColor="#fe4942"
+            android:textSize="@dimen/size_14_tab" />
+    </LinearLayout>
+
+    <include layout="@layout/split_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="12dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/可提余额"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/can_use_banlance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:textColor="#fe4942"
+            android:textSize="@dimen/size_14_tab" />
+    </LinearLayout>
+
+    <include layout="@layout/split_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="12dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/提现账户"
+            android:textSize="@dimen/size_14_tab" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:overlapAnchor="false"
+            android:id="@+id/banlance_spinner">
+        </Spinner>
+    </LinearLayout>
+
+    <include layout="@layout/split_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="12dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/提现金额"
+            android:textSize="@dimen/size_14_tab" />
+
+        <EditText
+            android:id="@+id/withdraw_price_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/请输入您的提现金额"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:inputType="number"
+            android:maxLength="9"
+            android:textColor="@color/textgray"
+            android:textColorHint="@color/lightgray1"
+            android:textSize="@dimen/size_14_tab" />
+    </LinearLayout>
+
+    <include layout="@layout/split_horizontal" />
+    <LinearLayout
+        android:id="@+id/rate_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="12dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/提现汇率"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:id="@+id/rate_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textSize="@dimen/size_14_tab" />
+        </LinearLayout>
+        <include layout="@layout/split_horizontal" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/usdt_num_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="12dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/货币数量"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:id="@+id/usdt_num_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textSize="@dimen/size_14_tab" />
+        </LinearLayout>
+        <include layout="@layout/split_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="12dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/提现后余额"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/now_balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:textColor="#fe4942"
+            android:textSize="@dimen/size_14_tab" />
+    </LinearLayout>
+
+    <include layout="@layout/split_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="12dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/提款密码"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/withdraw_password_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/请输入您的提款密码"
+            android:inputType="textPassword"
+            android:textColor="@color/textgray"
+            android:textColorHint="@color/lightgray1"
+            android:textSize="@dimen/size_14_tab"/>
+    </LinearLayout>
+    <include layout="@layout/split_horizontal" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="12dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/未完成流水"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/withdraw_stream_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textColor="@color/textgray"
+            android:textColorHint="@color/lightgray1"
+            android:textSize="@dimen/size_14_tab"/>
+    </LinearLayout>
+
+    <include layout="@layout/split_horizontal" />
+
+    <Button
+        android:id="@+id/withdraw_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/game_rule_sure_shape"
+        android:text="@string/确定"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/want_to_withdraw_shape"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="@string/余额提现"
+        android:textColor="#f47419" />
+</LinearLayout>

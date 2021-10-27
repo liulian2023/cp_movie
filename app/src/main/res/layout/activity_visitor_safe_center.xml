@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".uuuu.iuymn.mkjnb.activity.mine_fragment_activitys.VisitorSafeCenterActivity">
+
+    <include
+        android:id="@+id/include4"
+        layout="@layout/toolbar_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView80"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="19dp"
+        android:text="@string/手机号"
+        android:minWidth="80dp"
+        android:maxLength="11"
+        android:textSize="13sp"
+        android:textColor="#666666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include4" />
+
+    <EditText
+        android:id="@+id/phone_etv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:hint="@string/请输入要绑定的手机号"
+        android:textSize="14sp"
+        android:background="@null"
+        android:imeOptions="actionNext"
+        android:textColor="#666666"
+        android:textColorHint="#999999"
+        android:singleLine="true"
+        android:inputType="phone"
+        app:layout_constraintBottom_toBottomOf="@+id/textView80"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView80"
+        app:layout_constraintTop_toTopOf="@+id/textView80" />
+
+    <TextView
+        android:id="@+id/textView81"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="18dp"
+        android:text="TextView"
+        android:background="#D8D8D8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView80"
+        app:layout_constraintTop_toBottomOf="@+id/phone_etv" />
+
+    <TextView
+        android:id="@+id/login_password_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:maxLength="11"
+        android:text="@string/设置登录密码"
+        android:minWidth="80dp"
+        android:textColor="#666666"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/textView80"
+        app:layout_constraintTop_toBottomOf="@+id/textView81" />
+
+    <EditText
+        android:id="@+id/login_password_etv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:background="@null"
+        android:hint="@string/字母数字的组合"
+        android:imeOptions="actionNext"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textColor="#666666"
+        android:textColorHint="#999999"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/login_password_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/login_password_tv"
+        app:layout_constraintTop_toTopOf="@+id/login_password_tv" />
+
+    <TextView
+        android:id="@+id/textView84"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#D8D8D8"
+        android:text="TextView"
+        android:layout_marginTop="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView80"
+        app:layout_constraintTop_toBottomOf="@+id/login_password_etv" />
+
+
+    <TextView
+        android:id="@+id/pay_password_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:maxLength="11"
+        android:text="@string/设置提款密码"
+        android:minWidth="80dp"
+        android:textColor="#666666"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/login_password_tv"
+        app:layout_constraintTop_toBottomOf="@+id/textView84" />
+
+    <EditText
+        android:id="@+id/pay_password_etv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:background="@null"
+        android:hint="@string/请输入提款密码"
+        android:imeOptions="actionNext"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textColor="#666666"
+        android:textColorHint="#999999"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/pay_password_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pay_password_tv"
+        app:layout_constraintTop_toTopOf="@+id/pay_password_tv" />
+
+
+    <TextView
+        android:id="@+id/textView61"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="18dp"
+        android:text="TextView"
+        android:background="#D8D8D8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView80"
+        app:layout_constraintTop_toBottomOf="@+id/pay_password_etv" />
+
+    <TextView
+        android:id="@+id/sms_code_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:maxLength="11"
+        android:text="@string/验证码"
+        android:minWidth="80dp"
+        android:textColor="#666666"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/pay_password_tv"
+        app:layout_constraintTop_toBottomOf="@+id/textView61" />
+
+
+    <EditText
+        android:id="@+id/phone_code_etv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:background="@null"
+        android:hint="@string/请输入短信验证码"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textColor="#666666"
+        android:textColorHint="#999999"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/sms_code_tv"
+        app:layout_constraintEnd_toStartOf="@+id/phone_textView34"
+        app:layout_constraintStart_toEndOf="@+id/textView80"
+        app:layout_constraintTop_toTopOf="@+id/sms_code_tv" />
+
+    <TextView
+        android:id="@+id/phone_textView34"
+        android:layout_width="1dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="4dp"
+        android:background="#D8D8D8"
+        app:layout_constraintBottom_toBottomOf="@+id/phone_code_etv"
+        app:layout_constraintEnd_toStartOf="@+id/get_phone_code_tv"
+        app:layout_constraintTop_toTopOf="@+id/phone_code_etv" />
+
+    <TextView
+        android:id="@+id/get_phone_code_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="19dp"
+        android:gravity="center"
+        android:text="@string/获取验证码"
+        android:textColor="#048CF7"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/phone_code_etv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/phone_code_etv" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="18dp"
+        android:background="#D8D8D8"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView80"
+        app:layout_constraintTop_toBottomOf="@+id/phone_code_etv" />
+
+    <Button
+        android:id="@+id/visitor_sure_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/login_btn_shape"
+        android:text="@string/认证"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <ImageView
+        android:id="@+id/imageView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/youkebindphone_bottomtip" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

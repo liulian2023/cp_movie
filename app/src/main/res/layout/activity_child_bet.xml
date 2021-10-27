@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".uuuu.iuymn.mkjnb.activity.AgentCenter.ChildBetActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/linear"
+        android:background="@color/action_bar_color"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/agent_journaling_return"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="@string/返回"
+                android:layout_gravity="center"
+                android:textColor="@color/action_bar_return_textcolor_selecter"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="@string/投注明细"
+          android:textSize="16sp"
+          android:textColor="@color/white"
+          android:gravity="center"
+          android:layout_gravity="center"
+          />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginRight="12dp"
+            android:id="@+id/choose_linear_bet"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/筛选"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="3dp"
+                android:contentDescription="TODO"
+                android:src="@drawable/saixuan1"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:padding="12dp"
+        >
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/home_top_search"
+            android:contentDescription="TODO" android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_gravity="center"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/search_edit"
+            android:layout_marginLeft="8dp"
+            android:hint="@string/请输入下级账号"
+            android:inputType="" android:textSize="@dimen/size_15_lottery"
+            android:background="@null"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/搜索"
+            android:id="@+id/search_text"
+            android:textSize="16sp"
+            android:textColor="#4a95e4"
+            />
+    </LinearLayout>
+<com.google.android.material.tabs.TabLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ededed"
+    android:id="@+id/mtab"
+    app:tabSelectedTextColor="#f42023"
+    app:tabIndicatorColor="#f42023"
+    app:tabBackground="@color/white"
+    app:tabIndicatorHeight="2dp"
+    app:tabMode="fixed">
+</com.google.android.material.tabs.TabLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/view_pager"
+        >
+
+    </androidx.viewpager.widget.ViewPager>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:id="@+id/birthday_gift_linear"
+        android:background="@drawable/srhb_2">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:id="@+id/birthday_gift_price"
+            android:visibility="gone"
+            android:layout_marginTop="30dp"
+            android:text=""
+            />
+    </LinearLayout>
+    <!--<ImageView-->
+        <!--android:layout_width="35dp"-->
+        <!--android:layout_height="35dp"-->
+        <!--android:layout_below="@+id/aty_gift_linear"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:id="@+id/aty_gift_back"-->
+        <!--android:src="@drawable/x"-->
+        <!--/>-->
+</RelativeLayout>

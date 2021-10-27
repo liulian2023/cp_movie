@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/bankcard_big_iv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/blka"
+            app:layout_constraintDimensionRatio="h,330:113"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/bank_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="@string/招商银行"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/bankcard_big_iv"
+            app:layout_constraintTop_toTopOf="@+id/bankcard_big_iv"
+            app:layout_goneMarginLeft="6dp"
+            app:layout_goneMarginTop="26dp" />
+
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="17dp"
+            app:layout_constraintBottom_toBottomOf="@+id/bank_name_tv"
+            app:layout_constraintEnd_toEndOf="@+id/bankcard_big_iv"
+            app:layout_constraintTop_toTopOf="@+id/bank_name_tv"
+            app:srcCompat="@drawable/xuanz_moren" />
+
+        <ImageView
+            android:id="@+id/selector_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+            app:layout_constraintEnd_toEndOf="@+id/imageView6"
+            app:layout_constraintStart_toStartOf="@+id/imageView6"
+            app:layout_constraintTop_toTopOf="@+id/imageView6"
+            android:visibility="gone"
+            app:srcCompat="@drawable/xuanz_w" />
+
+        <TextView
+            android:id="@+id/bank_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6222 **** **** 2125"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/bankcard_big_iv"
+            app:layout_constraintStart_toStartOf="@+id/bank_name_tv"
+            app:layout_constraintTop_toTopOf="@+id/bankcard_big_iv" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

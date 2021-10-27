@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="300"
+    >
+    <scale
+        android:fromXScale="0.0"
+        android:fromYScale="0.0"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toXScale="1.0"
+        android:toYScale="1.0"
+        />
+
+  <!---->
+    <!--duration:即动画执行时长-->
+    <!--scale:缩放动画-->
+    <!--fromXScale:横向开始比例-->
+    <!--fromYScale:纵向开始比例-->
+    <!--pivotX:缩放的参照物横轴 一般为50%，即是横向的中间点-->
+    <!--pivotY:缩放的参照物纵轴 一半为50%，即是纵向的中间点-->
+    <!--toXScale:动画结束时横向的比例 float值 1即是保持正常大小-->
+    <!--toYScale:动画结束时纵向的比例-->
+
+</set>

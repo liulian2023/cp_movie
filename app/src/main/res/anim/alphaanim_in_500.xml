@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<alpha xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromAlpha="0.1"
+    android:toAlpha="1.0"
+    android:duration="500"
+    android:fillAfter="true">
+</alpha>
+    <!--fromAlpha：起始透明度  1为不透明 0为透明-->
+    <!--toAlpha：结束透明度-->
+    <!--duration：动画执行时间 单位毫秒-->
+    <!--fillAfter：是否保留结束后的状态-->
+
+    <!--fromAlpha、toAlpha都是比例 浮点类型 0.0-1.0  1为原样 0最透明看不见-->
+

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginBottom="9dp"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/sign_in_item_shape">
+
+        <ImageView
+            android:id="@+id/sign_in_iv"
+            android:layout_width="46dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="9dp"
+            android:src="@drawable/zs"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/sign_in_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/豪华宝箱"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="@+id/sign_in_iv"
+            app:layout_constraintStart_toStartOf="@+id/sign_in_iv"
+            app:layout_constraintTop_toBottomOf="@+id/sign_in_iv" />
+
+        <TextView
+            android:id="@+id/sign_in_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="6dp"
+            android:text="@string/第一天"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/sign_in_name_tv"
+            app:layout_constraintStart_toStartOf="@+id/sign_in_name_tv"
+            app:layout_constraintTop_toBottomOf="@+id/sign_in_name_tv" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/sign_in_bg_constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            android:background="@drawable/sign_in_item_bg_shape"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView33"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="23dp"
+                android:src="@drawable/yqd_icon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView76"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/已签到"
+                android:textColor="#FFDB17"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView33"
+                app:layout_constraintStart_toStartOf="@+id/imageView33"
+                app:layout_constraintTop_toBottomOf="@+id/imageView33" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

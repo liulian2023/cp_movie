@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/diamond_big_bg_iv"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/zb_bj"
+
+        />
+
+    <ImageView
+        android:id="@+id/diamond_iv"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        app:layout_constraintBottom_toBottomOf="@+id/diamond_big_bg_iv"
+        app:layout_constraintEnd_toEndOf="@+id/diamond_big_bg_iv"
+        app:layout_constraintStart_toStartOf="@+id/diamond_big_bg_iv"
+        app:layout_constraintTop_toTopOf="@+id/diamond_big_bg_iv" />
+
+    <TextView
+        android:id="@+id/diamont_count_tv"
+        android:layout_width="36dp"
+        android:layout_height="16dp"
+        android:background="@drawable/diamond_count_shape"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="-----"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/diamond_big_bg_iv"
+        app:layout_constraintTop_toTopOf="@+id/diamond_big_bg_iv" />
+
+    <ImageView
+        android:id="@+id/is_get_iv"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/diamond_big_bg_iv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/diamond_big_bg_iv"
+        app:srcCompat="@drawable/yhd_ys" />
+
+    <TextView
+        android:id="@+id/diamond_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="10dp"
+        android:text="TextView"
+        android:textColor="@color/default_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diamond_big_bg_iv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

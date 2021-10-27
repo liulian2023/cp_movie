@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#2C2523"
+    android:layout_height="500dp">
+
+
+    <ImageView
+        android:id="@+id/lottery_imageview"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lottery_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:text=""
+        android:textSize="15sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/lottery_imageview"
+        app:layout_constraintTop_toTopOf="@+id/lottery_imageview" />
+
+    <TextView
+        android:id="@+id/lottery_qishu_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lottery_imageview"
+        app:layout_constraintStart_toStartOf="@+id/lottery_name_tv" />
+
+    <ImageView
+        android:id="@+id/play_refresh_iv"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="6dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/lottery_name_tv"
+        app:layout_constraintStart_toEndOf="@+id/lottery_name_tv"
+        app:layout_constraintTop_toTopOf="@+id/lottery_name_tv"
+        app:srcCompat="@drawable/play_refresh" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/lottery_name_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lottery_name_tv">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/本期截止"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

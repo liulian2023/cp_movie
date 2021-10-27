@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="3dp"
+        android:textColor="#999999"
+        android:textSize="15sp"
+        android:text="@string/所有地区"
+        android:visibility="gone"
+        />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/choose_area_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="14dp"
+            />
+</LinearLayout>

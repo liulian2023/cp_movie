@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".uuuu.iuymn.mkjnb.activity.safeCenter.SafeCenterActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d7e8fb"
+        android:orientation="vertical">
+      <include layout="@layout/toolbar_layout"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:id="@+id/safe_level"
+                android:textSize="15sp"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/img_one"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:contentDescription="TODO" android:src="@drawable/safe_center_true" />
+
+                <ImageView
+                    android:id="@+id/img_two"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:contentDescription="TODO" android:src="@drawable/safe_center_true" />
+
+                <ImageView
+                    android:id="@+id/img_three"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:contentDescription="TODO" android:src="@drawable/safe_center_true" />
+
+                <ImageView
+                    android:id="@+id/img_four"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:contentDescription="TODO" android:src="@drawable/safe_center_true" />
+
+                <ImageView
+                    android:id="@+id/img_five"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/safe_center_true" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_time"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+    <include layout="@layout/split_big"/>
+    <include layout="@layout/split_horizontal"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:id="@+id/modify_login_password"
+        android:gravity="center"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:text="@string/修改登录密码"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:text="@string/修改"
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="12dp"
+            android:contentDescription="TODO" android:src="@drawable/right_hot"
+            />
+
+    </LinearLayout>
+    <include layout="@layout/split_horizontal"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:id="@+id/modify_safe_password"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/modifiPayPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:text="@string/用于提现绑定银行卡"
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="12dp"
+            android:contentDescription="TODO" android:src="@drawable/right_hot"
+            />
+
+    </LinearLayout>
+    <include layout="@layout/split_horizontal"/>
+    <LinearLayout
+        android:id="@+id/mobile_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/phonePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+
+            android:id="@+id/phonePassword1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="12dp"
+            android:contentDescription="TODO" android:src="@drawable/right_hot"
+            />
+
+    </LinearLayout>
+    <include layout="@layout/split_horizontal"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:id="@+id/bank_card"
+        android:gravity="center"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:text="@string/银行卡管理"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:text="@string/设置"
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="12dp"
+            android:contentDescription="TODO" android:src="@drawable/right_hot"
+            />
+
+    </LinearLayout>
+    <include layout="@layout/split_horizontal"/>
+</LinearLayout>

@@ -1,0 +1,37 @@
+R_DEF: Internal format may change without notice
+local
+drawable progress_1
+drawable progress_2
+drawable progress_3
+drawable progress_4
+drawable progress_5
+drawable progress_6
+drawable progress_7
+drawable progress_8
+drawable progress_round
+id loadingImageView
+id tv_loadingmsg
+layout dialog_progress
+raw cabks
+raw capk
+raw srca
+string app_name
+string bad_network
+string connect_error
+string connect_timeout
+string invalid_status
+string parameters_exception
+string parse_error
+string refresh_token_expired
+string remote_login
+string request_error
+string response_return_error
+string system_maintain
+string token_expired
+string unknown_error
+string user_registered
+string wrong_password
+string wrong_pwd_username
+style ProgressDialog
+style ProgressDialogStyle
+style SrcbDialog

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/香港六合彩 "
+            android:id="@+id/lottery_name"
+            android:gravity="center"
+            android:textSize="@dimen/size_14_tab"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="3251.02"
+            android:id="@+id/xiazhu"
+            android:gravity="center"
+            android:textSize="@dimen/size_14_tab"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="10.22"
+            android:id="@+id/zhongjiang"
+            android:gravity="center"
+            android:textSize="@dimen/size_14_tab"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-2123"
+            android:id="@+id/yingkui"
+            android:gravity="center"
+            android:textSize="@dimen/size_14_tab"
+            />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/action_bar_color"
+    android:id="@+id/rl_head1"
+    >
+
+    <TextView
+        android:id="@+id/caizhong_head1_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="12dp"
+        android:text="@string/返回"
+        android:textColor="@color/action_bar_return_textcolor_selecter"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_caizhong_head1_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="1"
+            android:text="@string/玩法"
+            android:textColor="@color/white"
+            />
+        <LinearLayout
+            android:id="@+id/ll_caizhong_head1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/caizhong_head1_shape"
+            android:orientation="horizontal"
+            android:layout_marginLeft="8dp"
+            >
+
+            <TextView
+                android:id="@+id/caizhong_head1_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text=""
+                android:textColor="@color/white" />
+           <ImageView
+               android:id="@+id/caizhong_head1_iv"
+               android:layout_width="12dp"
+               android:layout_height="12dp"
+               android:contentDescription="TODO" android:src="@drawable/pic_spinner_down"
+               android:layout_gravity="center_vertical"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/caizhong_head1_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/菜单"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/action_bar_return_textcolor_selecter"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:textSize="15sp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+ <item>
+     <shape>
+         <solid android:color="#f5f2f2"/>
+     </shape>
+ </item>
+    <item android:left="1.5dp">//上面一层布局距离下面一层布局左边1.5dp,实现左边1.5dp的分割线
+        <shape>
+            <solid android:color="@color/white"/>
+        </shape>
+    </item>
+</layer-list>

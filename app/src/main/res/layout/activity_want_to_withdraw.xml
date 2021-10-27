@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".uuuu.iuymn.mkjnb.activity.mine_top_activity.WantToWithdrawActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/withdraw_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/action_bar_color">
+        <TextView
+            android:id="@+id/withdraw_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/返回"
+            android:textColor="@color/action_bar_return_textcolor_selecter"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <RadioButton
+                android:id="@+id/withdraw_yue"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:textSize="16sp"
+                android:background="@drawable/user_info_selecter"
+                android:text="@string/余额提现"
+                android:textColor="@drawable/user_info_text_color"
+                />
+
+            <RadioButton
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:id="@+id/withdraw_commissition"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:background="@drawable/user_info_selecter2"
+                android:textSize="16sp"
+                android:textColor="@drawable/user_info_text_color"
+                android:text="@string/佣金提现" />
+        </RadioGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout
+        app:layout_constraintTop_toBottomOf="@id/withdraw_title"
+        android:id="@+id/withdraw_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="11dp"
+    android:layout_marginRight="11dp"
+    android:background="@drawable/white_normal_ripple">
+
+    <ImageView
+        android:id="@+id/type_iv"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wycz_icon" />
+
+    <TextView
+        android:id="@+id/typename_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/主播认证"
+        android:textSize="13sp"
+        android:textColor="@color/default_color"
+        app:layout_constraintBottom_toBottomOf="@+id/type_iv"
+        app:layout_constraintStart_toEndOf="@+id/type_iv"
+        app:layout_constraintTop_toTopOf="@+id/type_iv" />
+
+    <ImageView
+        android:id="@+id/skip_iv"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginEnd="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/right_hot" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#F2F2F2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/skip_iv"
+        app:layout_constraintStart_toStartOf="@+id/typename_tv" />
+    <com.uyt.ying.yuan.uuuu.iuymn.mkjnb.myView.MyTextView
+        android:id="@+id/un_read_tip_tv"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/skip_iv"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

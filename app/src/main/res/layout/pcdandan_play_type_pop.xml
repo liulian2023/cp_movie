@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/两面"
+            android:layout_gravity="center"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:background="@drawable/bet_choose_play_type_selector"
+            android:textColor="@color/bet_choose_pklay_type_textcolor_selector"
+            android:textSize="14sp"
+            android:button="@null"
+            android:id="@+id/happy8_liangmian"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/五行"
+            android:layout_gravity="center"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:textSize="14sp"
+            android:button="@null"
+            android:background="@drawable/bet_choose_play_type_selector"
+            android:textColor="@color/bet_choose_pklay_type_textcolor_selector"
+            android:id="@+id/happy8_wuxing"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/正码"
+            android:id="@+id/happy8_zhengma"
+            android:layout_gravity="center"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:textSize="14sp"
+            android:button="@null"
+            android:background="@drawable/bet_choose_play_type_selector"
+            android:textColor="@color/bet_choose_pklay_type_textcolor_selector"
+            />
+    </RadioGroup>
+
+
+
+</LinearLayout>

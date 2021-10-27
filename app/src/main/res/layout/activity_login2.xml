@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".uuuu.iuymn.mkjnb.activity.main_tab_activity.LoginActivity">
+    <com.uyt.ying.yuan.uuuu.iuymn.mkjnb.myView.CustomVideoView
+        android:id="@+id/videoview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/login_wrap_constrainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/logo_iv"
+                android:layout_width="138dp"
+                android:layout_height="50dp"
+
+                android:layout_marginTop="50dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:visibility="gone"
+        android:id="@+id/phone_login_constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/login_wrap_linear_shape"
+        app:layout_constraintBottom_toTopOf="@+id/kefu_linear"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_iv">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:layout_marginBottom="34dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView34"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="25dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/zhanghao_icon" />
+
+            <EditText
+                android:id="@+id/phone_login_phone_etv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="24dp"
+                android:background="@null"
+                android:hint="@string/请输入手机号码"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView34"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView34"
+                app:layout_constraintTop_toTopOf="@+id/imageView34" />
+            <!--        android:theme="@style/LoginEditText"-->
+            <TextView
+                android:id="@+id/textView82"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="#D8D8D8"
+                app:layout_constraintEnd_toEndOf="@+id/phone_login_phone_etv"
+                app:layout_constraintStart_toStartOf="@+id/imageView34"
+                app:layout_constraintTop_toBottomOf="@+id/phone_login_phone_etv" />
+
+            <ImageView
+                android:id="@+id/imageView36"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="35dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView82"
+                app:srcCompat="@drawable/mm" />
+
+            <TextView
+                android:id="@+id/get_phone_code_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:text="@string/获取验证码"
+                android:textColor="#8CD9FF"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView36"
+                app:layout_constraintEnd_toEndOf="@+id/phone_login_phone_etv"
+                app:layout_constraintTop_toTopOf="@+id/imageView36" />
+
+            <TextView
+                android:id="@+id/phone_textView_12"
+                android:layout_width="1dp"
+                android:layout_height="18dp"
+                android:layout_marginEnd="4dp"
+                android:background="#D8D8D8"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView36"
+                app:layout_constraintEnd_toStartOf="@+id/get_phone_code_tv"
+                app:layout_constraintTop_toTopOf="@+id/imageView36" />
+
+            <EditText
+                android:id="@+id/phone_code_etv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:background="@null"
+                android:hint="@string/请输入验证码"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="16"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView36"
+                app:layout_constraintEnd_toStartOf="@+id/phone_textView_12"
+                app:layout_constraintStart_toStartOf="@+id/phone_login_phone_etv"
+                app:layout_constraintTop_toTopOf="@+id/imageView36" />
+
+            <TextView
+                android:id="@+id/textView87"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="#D8D8D8"
+                app:layout_constraintEnd_toEndOf="@+id/get_phone_code_tv"
+                app:layout_constraintStart_toStartOf="@+id/imageView36"
+                app:layout_constraintTop_toBottomOf="@+id/phone_code_etv" />
+
+            <TextView
+                android:id="@+id/phone_login_btn"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="23dp"
+                android:background="@drawable/login_2_btn_selector"
+                app:layout_constraintEnd_toEndOf="@+id/get_phone_code_tv"
+                app:layout_constraintStart_toStartOf="@+id/imageView36"
+                app:layout_constraintTop_toBottomOf="@+id/textView87" />
+
+            <ImageView
+                android:id="@+id/imageView88"
+                android:layout_width="32dp"
+                android:layout_height="18dp"
+                android:src="@drawable/dengl_wz"
+                app:layout_constraintBottom_toBottomOf="@+id/phone_login_btn"
+                app:layout_constraintEnd_toEndOf="@+id/phone_login_btn"
+                app:layout_constraintStart_toStartOf="@+id/phone_login_btn"
+                app:layout_constraintTop_toTopOf="@+id/phone_login_btn" />
+
+
+            <Button
+                android:id="@+id/phone_login_change_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/change_login_btn_selector2"
+                android:text="@string/账号登录"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/phone_login_btn"
+                app:layout_constraintStart_toStartOf="@+id/phone_login_btn"
+                app:layout_constraintTop_toBottomOf="@+id/phone_login_btn" />
+
+            <Button
+                android:id="@+id/phone_register_btn"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/register_btn_selector1"
+                android:text="@string/注册"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/get_phone_code_tv"
+                app:layout_constraintStart_toStartOf="@+id/imageView36"
+                app:layout_constraintTop_toBottomOf="@+id/phone_login_change_btn" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/phone_visitor_login_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:padding="5dp"
+            android:text="@string/游客登录"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout15" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:id="@+id/account_login_constraintLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/login_wrap_linear_shape"
+            app:layout_constraintBottom_toTopOf="@+id/kefu_linear"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo_iv">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="34dp"
+                android:layout_marginBottom="34dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView31"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="25dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/zhanghao_icon" />
+
+                <EditText
+                    android:id="@+id/account_login_account_etv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@null"
+                    android:hint="@string/请输入账号手机号"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView31"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView31"
+                    app:layout_constraintTop_toTopOf="@+id/imageView31" />
+
+                <TextView
+                    android:id="@+id/textView77"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#D8D8D8"
+                    app:layout_constraintEnd_toEndOf="@+id/account_login_account_etv"
+                    app:layout_constraintStart_toStartOf="@+id/imageView31"
+                    app:layout_constraintTop_toBottomOf="@+id/account_login_account_etv" />
+
+
+                <ImageView
+                    android:id="@+id/imageView32"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="35dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView77"
+                    app:srcCompat="@drawable/mm" />
+
+                <TextView
+                    android:id="@+id/account_forget_passwoed_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/忘记密码问号"
+                    android:textColor="#8CD9FF"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView32"
+                    app:layout_constraintRight_toRightOf="@+id/textView77"
+                    app:layout_constraintTop_toTopOf="@+id/imageView32" />
+
+                <TextView
+                    android:id="@+id/account_textView34"
+                    android:layout_width="1dp"
+                    android:layout_height="18dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="#D8D8D8"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView32"
+                    app:layout_constraintEnd_toStartOf="@+id/account_forget_passwoed_tv2"
+                    app:layout_constraintTop_toTopOf="@+id/imageView32" />
+
+                <ImageView
+                    android:id="@+id/account_swich_password_iv"
+                    android:layout_width="20dp"
+                    android:layout_height="16dp"
+                    android:paddingRight="4dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView32"
+                    app:layout_constraintEnd_toStartOf="@+id/account_textView34"
+                    app:layout_constraintTop_toTopOf="@+id/imageView32"
+                    app:srcCompat="@drawable/mm_kej" />
+
+                <EditText
+                    android:id="@+id/account_login_password_etv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:background="@null"
+                    android:hint="@string/字母数字的组合"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:maxLength="16"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView32"
+                    app:layout_constraintEnd_toStartOf="@+id/account_swich_password_iv"
+                    app:layout_constraintStart_toStartOf="@+id/account_login_account_etv"
+                    app:layout_constraintTop_toTopOf="@+id/imageView32" />
+
+                <TextView
+                    android:id="@+id/textView79"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#D8D8D8"
+                    app:layout_constraintEnd_toEndOf="@+id/account_login_account_etv"
+                    app:layout_constraintStart_toStartOf="@+id/imageView31"
+                    app:layout_constraintTop_toBottomOf="@+id/account_login_password_etv" />
+
+                <TextView
+                    android:id="@+id/account_login_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="23dp"
+                    android:background="@drawable/login_2_btn_selector"
+                    app:layout_constraintEnd_toEndOf="@+id/account_login_account_etv"
+                    app:layout_constraintStart_toStartOf="@+id/imageView31"
+                    app:layout_constraintTop_toBottomOf="@+id/textView79" />
+
+                <ImageView
+                    android:id="@+id/imageView35"
+                    android:layout_width="32dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/dengl_wz"
+                    app:layout_constraintBottom_toBottomOf="@+id/account_login_btn"
+                    app:layout_constraintEnd_toEndOf="@+id/account_login_btn"
+                    app:layout_constraintStart_toStartOf="@+id/account_login_btn"
+                    app:layout_constraintTop_toTopOf="@+id/account_login_btn" />
+
+                <Button
+                    android:id="@+id/account_login_change_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/change_login_btn_selector2"
+                    android:text="@string/短信验证码登录"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="@+id/account_login_btn"
+                    app:layout_constraintStart_toStartOf="@+id/account_login_btn"
+                    app:layout_constraintTop_toBottomOf="@+id/account_login_btn" />
+
+
+                <Button
+                    android:id="@+id/register_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/register_btn_selector1"
+                    android:text="@string/注册"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="@+id/account_login_account_etv"
+                    app:layout_constraintStart_toStartOf="@+id/imageView31"
+                    app:layout_constraintTop_toBottomOf="@+id/account_login_change_btn" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/account_visitor_login_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:padding="5dp"
+                android:text="@string/游客登录"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout14" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+                android:id="@+id/account_textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="48dp"
+                android:text="@string/账号"
+                android:visibility="gone"
+                android:textSize="13sp"
+                android:textColor="@color/default_color"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/account_textView20" />
+
+
+        <LinearLayout
+            android:id="@+id/kefu_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/login_version_name_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/登录注册遇到问题"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/account_kefu_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/联系客服"
+                android:textColor="#2EECFE"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/login_version_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:text="@string/版本号"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</RelativeLayout>

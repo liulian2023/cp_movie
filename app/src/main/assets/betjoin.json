@@ -1,0 +1,22 @@
+{
+  "betJoinTimeModelList": [
+    {"times": 1,"isSelect": true},
+    {"times": 2,"isSelect": false},
+    {"times": 5,"isSelect": false},
+    {"times": 10,"isSelect": false},
+    {"times": 20,"isSelect": false}
+  ],
+  "betJoinMaModelList": [
+    {"danjia": 2,"isSelect": true,"isCurrent": true,"index": 0},
+    {"danjia": 5,"isSelect": false,"isCurrent": false,"index": 1},
+    {"danjia": 10,"isSelect": false,"isCurrent": false,"index": 2},
+    {"danjia": 20,"isSelect": false,"isCurrent": false,"index": 3},
+    {"danjia": 50,"isSelect": false,"isCurrent": false,"index": 4},
+    {"danjia": 100,"isSelect": false,"isCurrent": false,"index": 5},
+    {"danjia": 200,"isSelect": false,"isCurrent": false,"index": 6},
+    {"danjia": 500,"isSelect": false,"isCurrent": false,"index": 7},
+    {"danjia": 1000,"isSelect": false,"isCurrent": false,"index": 8},
+    {"danjia": 0,"isSelect": false,"isCurrent": false,"index": 9}
+  ]
+
+}

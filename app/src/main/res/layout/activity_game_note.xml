@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9"
+    android:orientation="vertical"
+    tools:context=".uuuu.iuymn.mkjnb.activity.mine_top_activity.GameNoteActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/action_bar_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/white"
+            >
+            <ImageView
+                android:id="@+id/game_note_back_iv"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/back_icon" />
+
+            <TextView
+                android:id="@+id/game_note_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/游戏注单"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:textColor="@color/default_color"
+                android:layout_centerInParent="true"
+                />
+
+            <TextView
+                android:id="@+id/game_note_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:text="@string/本月"
+                android:layout_toLeftOf="@+id/game_note_time_iv"
+                android:layout_centerVertical="true"
+                android:textSize="17sp"
+                android:textColor="@color/default_color" />
+
+            <ImageView
+                android:id="@+id/game_note_time_iv"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="17dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/xiala" />
+        </RelativeLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/zj_constraninlayout"
+            android:layout_width="150dp"
+            android:layout_height="72dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/xzzje_bg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/action_bar_linear">
+
+            <TextView
+                android:id="@+id/bet_amount_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="9dp"
+                android:text="¥0.00"
+                android:textColor="@color/default_color"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/下注总金额"
+                android:textColor="#666666"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="@+id/bet_amount_tv"
+                app:layout_constraintStart_toStartOf="@+id/bet_amount_tv"
+                app:layout_constraintTop_toBottomOf="@+id/bet_amount_tv" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="150dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="13dp"
+            android:background="@drawable/zongy_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/action_bar_linear">
+
+            <TextView
+                android:id="@+id/zj_amount_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="9dp"
+                android:text="¥0.00"
+                android:textColor="@color/default_color"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/zj_zongjine_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/净输赢"
+                android:textColor="#666666"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="@+id/zj_amount_tv"
+                app:layout_constraintStart_toStartOf="@+id/zj_amount_tv"
+                app:layout_constraintTop_toBottomOf="@+id/zj_amount_tv" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <include layout="@layout/error_lyaout" />
+        <include layout="@layout/nodata_layout" />
+        <include layout="@layout/loading_layout" />
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/game_note_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/game_note_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2019.  ganzhe
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false" android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/qishu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="735524"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/marksix_openresult_no_tv1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/shape_circle_red"
+                        android:gravity="center"
+                        android:text="29"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/marksix_openresult_sx_tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/羊"
+                        android:textColor="@color/textcolr_sx_6he"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/marksix_openresult_no_tv2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/shape_circle_green"
+                        android:gravity="center"
+                        android:text="33"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/marksix_openresult_sx_tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/兔"
+                        android:textColor="@color/textcolr_sx_6he"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/marksix_openresult_no_tv3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/shape_circle_red"
+                        android:gravity="center"
+                        android:text="13"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/marksix_openresult_sx_tv3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/猪"
+                        android:textColor="@color/textcolr_sx_6he"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/marksix_openresult_no_tv4"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/shape_circle_red"
+                        android:gravity="center"
+                        android:text="30"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/marksix_openresult_sx_tv4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/马"
+                        android:textColor="@color/textcolr_sx_6he"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/marksix_openresult_no_tv5"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/shape_circle_blue"
+                        android:gravity="center"
+                        android:text="47"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/marksix_openresult_sx_tv5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/牛"
+                        android:textColor="@color/textcolr_sx_6he"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/marksix_openresult_no_tv6"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/shape_circle_green"
+                        android:gravity="center"
+                        android:text="43"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/marksix_openresult_sx_tv6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/蛇"
+                        android:textColor="@color/textcolr_sx_6he"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:text="+" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/marksix_openresult_no_tv7"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/shape_circle_green"
+                        android:gravity="center"
+                        android:text="16"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/marksix_openresult_sx_tv7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/猴"
+                        android:textColor="@color/textcolr_sx_6he"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/marksix_openresult_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="19"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/split_horizontal" />
+</LinearLayout>

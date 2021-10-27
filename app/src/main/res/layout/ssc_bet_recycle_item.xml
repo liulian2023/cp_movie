@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginTop="8dp">
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="8dp"
+        android:gravity="center"
+        android:text="@string/大"
+        android:background="@drawable/official_bet_item_selector"
+        android:textColor="@color/bet_recycle_item_type_textcolor_selector"
+        android:id="@+id/ssc_bet_item_two"
+        />
+</LinearLayout>

@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll_live">
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <com.my.xunboplayerlib.CustomJzvd.MyJzvdStd
+                android:id="@+id/myjzvd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/linear_liveroom_tag"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@color/black">
+                <ImageView
+                    android:id="@+id/xiabo_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/yixiabo"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/live_cover_iv"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/drawwe_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:layout_gravity="end"
+            android:layout_marginRight="-65dp"
+            >
+            <com.opensource.svgaplayer.SVGAImageView
+                android:id="@+id/svga_imageview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                app:autoPlay="true" />
+            <com.uyt.ying.yuan.uuuu.iuymn.mkjnb.Fragment.live_chat_fragment.EditPanel
+                android:id="@+id/live_edit_panel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center|bottom"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <com.uyt.ying.yuan.uuuu.iuymn.mkjnb.Fragment.live_chat_fragment.gift.GiftView
+                android:id="@+id/giftView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="100dp"
+                app:layout_constraintBottom_toTopOf="@+id/live_chat_fragment"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <LinearLayout
+                android:id="@+id/reward_linear"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_marginLeft="10dp"
+                android:visibility="gone"
+                android:background="@drawable/reward_linear_shape"
+                app:layout_constraintBottom_toTopOf="@+id/join_svga_imageview"
+                app:layout_constraintStart_toStartOf="parent">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="19dp"
+                    android:src="@drawable/das_t"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:id="@+id/reward_content_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/恭喜您在xxxx中奖xxxx元"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:id="@+id/reward_countdown_tv"
+                    android:layout_width="82dp"
+                    android:layout_height="26dp"
+                    android:textSize="10sp"
+                    android:textColor="#68510B"
+                    android:text="@string/打赏主播3s"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/reward_countdown_selector"
+                    />
+            </LinearLayout>
+            <com.opensource.svgaplayer.SVGAImageView
+                android:id="@+id/join_svga_imageview"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginBottom="-20dp"
+                android:background="@color/transparent"
+                app:layout_constraintBottom_toTopOf="@+id/live_chat_fragment"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:autoPlay="true" />
+            <com.opensource.svgaplayer.SVGAImageView
+                android:id="@+id/test_svga_imageview"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginBottom="-20dp"
+                android:visibility="gone"
+                android:background="@color/transparent"
+                app:layout_constraintBottom_toTopOf="@+id/live_chat_fragment"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:autoPlay="true" />
+            <LinearLayout
+                android:id="@+id/ll_gift"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/bkg_live_tracorner50"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/top_linear">
+
+                <ImageView
+                    android:layout_width="17dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/gift_rank_icon" />
+
+                <TextView
+                    android:id="@+id/money_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:maxWidth="86dp"
+                    android:text="- - - "
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="9dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/btn_arrow_right" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/turntable_iv"
+                android:layout_width="84dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="19dp"
+                android:src="@drawable/dzprk"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/ll_gift"
+                app:layout_constraintStart_toEndOf="@+id/ll_gift"
+                app:layout_constraintTop_toTopOf="@+id/ll_gift" />
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/toll_constraintLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:background="@drawable/bkg_live_tracorner50"
+                app:layout_constraintStart_toStartOf="@+id/ll_gift"
+                app:layout_constraintTop_toBottomOf="@+id/live_notice_linear">
+
+                <ImageView
+                    android:id="@+id/toll_iv"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/jinbi_icon"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/toll_type_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:text="@string/续费"
+
+                    android:textColor="#FFDB16"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/toll_iv"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/toll_countdown_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00:00"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+
+                    android:layout_marginRight="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/toll_type_tv"
+                    app:layout_constraintTop_toTopOf="@+id/toll_type_tv"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/lottrry_open_result_constraintLayout"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bkg_live_tracorner8"
+                android:visibility="invisible"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toll_constraintLayout">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/open_result_top_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/open_result_open"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/tv_lottery_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:text="- - -"
+                        android:textColor="@color/white"
+                        android:textSize="11sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_lottery_qishu"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:gravity="right|center"
+                        android:text="@string/期开奖"
+                        android:textColor="@color/white"
+                        android:textSize="11sp"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_lottery_name"
+                        app:layout_constraintHorizontal_weight="1"
+                        app:layout_constraintRight_toLeftOf="@id/dismiss_open_result_iv"
+                        app:layout_constraintTop_toTopOf="@+id/tv_lottery_name" />
+
+                    <ImageView
+                        android:id="@+id/dismiss_open_result_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="6dp"
+                        android:src="@drawable/ic_delete_white"
+                        app:layout_constraintBottom_toBottomOf="@+id/tv_lottery_name"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/tv_lottery_name" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recy_lottery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/open_result_top_layout" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <LinearLayout
+                android:id="@+id/top_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/ll_userinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:background="@drawable/bkg_live_tracorner50"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:maxWidth="130dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_avatar"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/ic_defautavatar_live" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:maxWidth="80dp"
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="- - -"
+                            android:layout_marginRight="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+<!--                        <TextView
+                            android:maxWidth="80dp"
+                            android:singleLine="true"
+                            android:id="@+id/tv_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ID:- - -"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />-->
+
+                        <TextView
+                            android:id="@+id/tv_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="- - -"
+                            android:gravity="center"
+                            android:layout_marginRight="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_collect"
+                        android:layout_width="38dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/live_follow" />
+
+
+                </LinearLayout>
+
+                <com.uyt.ying.yuan.uuuu.iuymn.mkjnb.widget.MyRecycleView
+                    android:id="@+id/recy_renshu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1" />
+
+
+
+                <ImageView
+                    android:id="@+id/iv_close"
+                    android:layout_width="38dp"
+                    android:layout_height="31dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp"
+                    android:src="@drawable/ic_close" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/download_url_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="@string/下载地址横杠"
+                android:textColor="@color/white"
+                android:shadowColor="@color/black"
+                android:shadowRadius="10"
+                android:visibility="gone"
+                android:shadowDy="3"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@id/invite_code_tv"
+                app:layout_constraintRight_toLeftOf="@id/invite_code_tv"
+                app:layout_constraintTop_toTopOf="@id/invite_code_tv" />
+
+            <TextView
+                android:id="@+id/invite_code_tv"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="@string/邀请码横杠"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:shadowColor="@color/black"
+                android:shadowRadius="10"
+                android:shadowDy="3"
+                app:layout_constraintBottom_toBottomOf="@+id/ll_gift"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/ll_gift" />
+
+
+
+                <com.uyt.ying.yuan.uuuu.iuymn.mkjnb.widget.MyRecycleView
+                    android:id="@+id/recy_pack"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/lottery_linear_shape"
+                    app:layout_constraintLeft_toLeftOf="@+id/lottery_linear"
+                    app:layout_constraintRight_toRightOf="@+id/lottery_linear"
+                    app:layout_constraintTop_toBottomOf="@+id/lottery_linear"
+                    android:layout_marginTop="19dp"
+                    app:layout_goneMarginTop="0dp"
+                    >
+
+                </com.uyt.ying.yuan.uuuu.iuymn.mkjnb.widget.MyRecycleView>
+
+
+            <com.uyt.ying.yuan.uuuu.iuymn.mkjnb.widget.MyRecycleView
+                android:id="@+id/zsq_recycler_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/recy_pack"
+                app:layout_constraintLeft_toLeftOf="@id/recy_pack"
+                app:layout_constraintRight_toRightOf="@id/recy_pack"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                />
+
+            <com.uyt.ying.yuan.uuuu.iuymn.mkjnb.widget.MyRecycleView
+                android:id="@+id/recy_pack3"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/lottery_linear_shape"
+                app:layout_constraintLeft_toLeftOf="@+id/lottery_linear"
+                app:layout_constraintRight_toRightOf="@+id/lottery_linear"
+                app:layout_constraintTop_toBottomOf="@+id/zsq_recycler_2"
+                app:layout_goneMarginTop="0dp"
+                android:layout_marginTop="19dp">
+
+            </com.uyt.ying.yuan.uuuu.iuymn.mkjnb.widget.MyRecycleView>
+
+
+            <com.uyt.ying.yuan.uuuu.iuymn.mkjnb.widget.MyRecycleView
+                android:id="@+id/zsq_recycler_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/recy_pack3"
+                app:layout_constraintLeft_toLeftOf="@id/recy_pack"
+                app:layout_constraintRight_toRightOf="@id/recy_pack"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                />
+
+            <com.uyt.ying.yuan.uuuu.iuymn.mkjnb.widget.MyRecycleView
+                android:id="@+id/recy_pack4"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/lottery_linear_shape"
+                app:layout_constraintLeft_toLeftOf="@+id/lottery_linear"
+                app:layout_constraintRight_toRightOf="@+id/lottery_linear"
+                app:layout_constraintTop_toBottomOf="@+id/zsq_recycler_3"
+                app:layout_goneMarginTop="0dp"
+                android:layout_marginTop="19dp">
+
+            </com.uyt.ying.yuan.uuuu.iuymn.mkjnb.widget.MyRecycleView>
+
+
+            <com.uyt.ying.yuan.uuuu.iuymn.mkjnb.widget.MyRecycleView
+                android:id="@+id/zsq_recycler_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/recy_pack4"
+                app:layout_constraintLeft_toLeftOf="@id/recy_pack"
+                app:layout_constraintRight_toRightOf="@id/recy_pack"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                />
+
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/right_recycler_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:constraint_referenced_ids="zsq_recycler_4,recy_pack4,zsq_recycler_3,recy_pack3,zsq_recycler_2,recy_pack"
+                />
+            <LinearLayout
+                android:id="@+id/lottery_linear"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="12dp"
+                android:orientation="vertical"
+                android:background="@drawable/lottery_linear_shape"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/live_notice_linear">
+                <FrameLayout
+                    android:id="@+id/count_down_fall_frameLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:background="@color/white">
+                    <TextView
+                        android:id="@+id/fail_tip_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/default_color"
+                        android:text="@string/点击刷新"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        />
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/fail_loading_iv"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/loading"
+                        android:visibility="gone"
+                        />
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/frame_lottery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_lottery"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/xian_iv"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="right|top"
+                        android:src="@drawable/xian"
+                        />
+                </FrameLayout>
+                <TextView
+                    android:id="@+id/tv_countdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/count_down_tv_shape"
+                    android:gravity="center"
+                    android:text="-:-:- "
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                />
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent">
+
+                <ImageView
+                    android:id="@+id/iv_bottomgift"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:src="@drawable/lw_ic" />
+
+                <ImageView
+                    android:id="@+id/iv_game"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/yx_icon" />
+                <ImageView
+                    android:visibility="invisible"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/yx_icon" />
+                <ImageView
+                    android:id="@+id/iv_centre"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/gd_icon" />
+                <ImageView
+                    android:id="@+id/share_iv"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/fenx_icon" />
+                <ImageView
+                    android:id="@+id/iv_competition"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/ic_competition"
+                    android:visibility="gone" />
+
+
+
+
+            </LinearLayout>
+<!--            android:layout_width="@dimen/live_chat_dimen"-->
+            <fragment
+                android:id="@+id/live_chat_fragment"
+                android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.Fragment.live_chat_fragment.LiveChatFragment"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="5dp"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
+                app:layout_constraintEnd_toStartOf="@+id/lottery_linear"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+            <RelativeLayout
+                android:id="@+id/live_notice_linear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@drawable/live_notice_shape"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/ll_gift"
+                app:layout_constraintTop_toBottomOf="@+id/ll_gift">
+
+                <ImageView
+                    android:id="@+id/chatroom_laba"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/vol"
+                    android:visibility="gone"
+                    />
+                <!--
+                                <TextView
+                                    android:id="@+id/notice_textview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_toRightOf="@+id/chatroom_laba"
+                                    android:ellipsize="marquee"
+                                    android:gravity="center_vertical"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:minWidth="280dp"
+                                    android:scrollHorizontally="true"
+                                    android:singleLine="true"
+                                    android:text=""
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp" />-->
+                <com.dalong.marqueeview.MarqueeView
+                    android:id="@+id/notice_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/chatroom_laba"
+                    android:minWidth="280dp"
+                    app:direction="left"
+                    app:isRepeat="true"
+                    app:speed="200"
+                    app:startPoint="end"
+                    app:textSize="10sp"
+                    app:textcolor="@color/white" />
+                <!--                app:marqueebackground="@color/colorPrimaryDark"-->
+            </RelativeLayout>
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/clear_screen_iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/youhuaqingp"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+    <TextView
+        android:id="@+id/internet_speed_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:text="- - -"
+        android:textColor="@color/green"
+        android:textSize="10sp"
+        android:layout_gravity="top|right"
+        android:layout_marginTop="40dp"
+        />
+
+    <ImageView
+        android:id="@+id/can_not_play_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        />
+
+</FrameLayout>

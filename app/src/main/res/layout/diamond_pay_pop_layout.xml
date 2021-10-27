@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/diamond_amount_tv"
+        app:layout_constraintEnd_toStartOf="@+id/diamond_amount_tv"
+        app:layout_constraintTop_toTopOf="@+id/diamond_amount_tv"
+        app:srcCompat="@drawable/zs_icon" />
+
+    <TextView
+        android:id="@+id/diamond_amount_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:paddingEnd="13dp"
+        android:text="0.00"
+        android:textColor="@color/default_color"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/mount_big_iv"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="27dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/beig" />
+
+    <TextView
+        android:id="@+id/mount_name_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/default_color"
+        app:layout_constraintEnd_toEndOf="@+id/mount_big_iv"
+        app:layout_constraintStart_toStartOf="@+id/mount_big_iv"
+        app:layout_constraintTop_toBottomOf="@+id/mount_big_iv" />
+
+    <TextView
+        android:id="@+id/mount_amount_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:textSize="12sp"
+        android:textColor="#666666"
+        app:layout_constraintEnd_toEndOf="@+id/mount_big_iv"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/mount_big_iv"
+        app:layout_constraintTop_toBottomOf="@+id/mount_name_tv1" />
+
+    <Button
+        android:id="@+id/diamond_cancel_btn"
+        android:layout_width="124dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="29dp"
+        android:background="@drawable/diamond_cancel_shape"
+        android:text="@string/取消"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mount_amount_tv" />
+
+    <Button
+        android:id="@+id/diamond_buy_btn"
+        android:layout_width="124dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="22dp"
+        android:background="@drawable/login_btn_shape"
+        android:text="@string/购买"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/diamond_cancel_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/diamond_cancel_btn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

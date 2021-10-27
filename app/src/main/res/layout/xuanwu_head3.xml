@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent" android:baselineAligned="false" 
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll1_xuanwu_head3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/xuanwu_head3_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/textcolor_head3"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/xuanwu_head3_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="00:00:00"
+                android:textColor="@color/red"
+                android:visibility="gone"
+                android:textSize="18dp" />
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="15dp"
+                android:layout_height="30dp"
+                android:src="@drawable/loading"
+                android:id="@+id/xuanwu_time_load"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll2_xuanwu_head3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/xuanwu_head3_tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/期开奖"
+                    android:textColor="@color/textcolor_head3"
+                    android:textSize="12dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3dp"
+                    android:contentDescription="TODO" android:src="@mipmap/icon_arrow_down" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+                <ImageView
+                    android:id="@+id/xuanwu_head3_iv1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:contentDescription="TODO" android:src="@drawable/xuanwu_num_1" />
+
+                <ImageView
+                    android:id="@+id/xuanwu_head3_iv2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="2dp"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/xuanwu_num_2" />
+
+                <ImageView
+                    android:id="@+id/xuanwu_head3_iv3"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="2dp"
+                    android:contentDescription="TODO" android:src="@drawable/xuanwu_num_3" />
+
+                <ImageView
+                    android:id="@+id/xuanwu_head3_iv4"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="2dp"
+                    android:contentDescription="TODO" android:src="@drawable/xuanwu_num_4" />
+
+                <ImageView
+                    android:id="@+id/xuanwu_head3_iv5"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="2dp"
+                    android:contentDescription="TODO" android:src="@drawable/xuanwu_num_5" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/split" />
+</LinearLayout>

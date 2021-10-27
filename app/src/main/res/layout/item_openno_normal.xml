@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="3dp"
+    android:minHeight="40dp"
+    android:id="@+id/dandan_wrap_linear"
+    android:gravity="center"
+    >
+    <TextView
+        android:id="@+id/tv_openno_normal"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,3 @@
+include ':xunboplayerLib'
+include ':app',   ':rxhttp'
+include ':zxing'

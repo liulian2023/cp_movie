@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/mine_follow_itemview"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/mine_follow_title_iv"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+         />
+
+    <TextView
+        android:id="@+id/mine_follow_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/慧子是大王"
+        android:textColor="@color/default_color"
+        android:textSize="15dp"
+        android:maxWidth="140dp"
+        android:singleLine="true"
+        app:layout_constraintStart_toEndOf="@+id/mine_follow_title_iv"
+        app:layout_constraintTop_toTopOf="@+id/mine_follow_title_iv" />
+
+    <TextView
+        android:id="@+id/mine_follow_id_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID:1212"
+        android:textColor="#767676"
+        app:layout_constraintBottom_toBottomOf="@+id/mine_follow_title_iv"
+        app:layout_constraintStart_toStartOf="@+id/mine_follow_name_tv" />
+
+    <ImageView
+        android:id="@+id/mine_follow_live_iv"
+        android:layout_width="60dp"
+        android:layout_height="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/mine_follow_name_tv"
+        app:layout_constraintStart_toEndOf="@+id/mine_follow_name_tv"
+        app:layout_constraintTop_toTopOf="@+id/mine_follow_name_tv"
+        app:srcCompat="@drawable/live_now" />
+
+    <ImageView
+        android:id="@+id/mine_follow_isFollow_iv"
+        android:layout_width="64dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/mine_follow_title_iv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mine_follow_title_iv"
+        app:srcCompat="@drawable/follow_img" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="10dp"
+        android:background="#CACACA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mine_follow_title_iv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

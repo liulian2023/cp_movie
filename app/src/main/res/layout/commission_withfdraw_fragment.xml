@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+    <include layout="@layout/split_big"/>
+    <include layout="@layout/split_horizontal"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="12dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="@string/账户佣金"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/size_14_tab"
+            android:textColor="#fe4942"
+            android:text="0.00"
+            android:id="@+id/my_commission"
+            />
+    </LinearLayout>
+    <include layout="@layout/split_horizontal"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="12dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="14dp"
+            android:text="@string/提现到"
+            />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:overlapAnchor="false"
+            android:id="@+id/commission_spinner">
+        </Spinner>
+    </LinearLayout>
+    <include layout="@layout/split_horizontal"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="12dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="@string/提现金额"
+            />
+
+        <EditText
+            android:id="@+id/commission_draw_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/请输入您要提现的金额"
+            android:inputType="number"
+            android:maxLength="9"
+            android:textColorHint="@color/lightgray1"
+            android:textSize="14dp" />
+    </LinearLayout>
+    <include layout="@layout/split_horizontal"/>
+    <LinearLayout
+        android:id="@+id/rate_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="12dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/提现汇率"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:id="@+id/rate_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textSize="@dimen/size_14_tab" />
+        </LinearLayout>
+        <include layout="@layout/split_horizontal" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/usdt_num_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="12dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/货币数量"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:id="@+id/usdt_num_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textSize="@dimen/size_14_tab" />
+        </LinearLayout>
+        <include layout="@layout/split_horizontal" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="12dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="@string/提现后余额"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14dp"
+            android:textColor="#fe4942"
+            android:text="0.00"
+            android:id="@+id/my_amount"
+            />
+    </LinearLayout>
+    <include layout="@layout/split_horizontal"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="12dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="@string/提款密码"
+            />
+
+        <EditText
+            android:id="@+id/commission_password_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/请输入您的提款密码"
+            android:textColorHint="@color/lightgray1"
+            android:inputType="textPassword"
+            android:textColor="#fe4942"
+            android:textSize="14dp" />
+    </LinearLayout>
+    <include layout="@layout/split_horizontal"/>
+
+    <Button
+        android:id="@+id/commission_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/game_rule_sure_shape"
+        android:text="@string/确定"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="12dp"
+        android:text="@string/佣金提现"
+        android:padding="12dp"
+        android:textColor="#f47419"
+        android:gravity="center"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/want_to_withdraw_shape"
+        />
+</LinearLayout>

@@ -1,0 +1,67 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".uuuu.iuymn.mkjnb.Fragment.main_Tab_fragment.LiveTabFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/home_action_linear"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_height="45dp">
+            <include layout="@layout/loading_layout"/>
+            <com.androidkun.xtablayout.XTabLayout
+                android:id="@+id/live_tab"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:xTabSelectedTextColor="#FF2F81"
+                app:xTabIndicatorColor="#FF2F81"
+                android:background="@color/white"
+                app:xTabMode="scrollable"
+                app:xTabMaxWidth="100dp"
+                app:xTabMinWidth="30dp"
+                app:xTabPaddingStart="10dp"
+                app:xTabPaddingEnd="10dp"
+                app:xTabTextColor="#767676"
+                app:xTabIndicatorWidth="20dp"
+                android:layout_alignParentLeft="true"
+                app:xTabIndicatorHeight="4dp"
+                />
+            <!--        app:xTabIndicatorFullWidth="false"-->
+
+            <!--        android:layout_marginRight="80dp"-->
+
+            <ImageView
+                android:id="@+id/live_search_iv"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:src="@drawable/home_top_search"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+        <!--    <com.cambodia.zhanbang.xunbo.myView.NoSlidingViewPager
+                android:id="@+id/home_fragment_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>  -->
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/live_fragment_viewpager"
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <include layout="@layout/error_lyaout"/>
+
+
+
+</FrameLayout>

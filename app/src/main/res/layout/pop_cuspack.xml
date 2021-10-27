@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+   >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/coslayout_open"
+        android:layout_width="278dp"
+        android:layout_height="380dp"
+
+        android:background="@drawable/bkg_hb_open">
+        <TextView
+            android:id="@+id/tv_open_msg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="131dp"
+            android:textSize="14sp"
+            android:textColor="#FCDB0C"
+            android:text="@string/成功抢到一个红包金额随机"/>
+
+        <TextView
+            android:id="@+id/tv_open_msg2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_open_msg1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="@string/恭喜发财大吉大利"
+            android:textSize="16sp"
+            android:textColor="#FCDB0C"/>
+
+
+        <ImageView
+            android:id="@+id/iv_hb_open"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/ic_kai"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="64dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/coslayout_unclock"
+        android:visibility="gone"
+        android:layout_width="278dp"
+        android:layout_height="380dp"
+        android:background="@drawable/bkg_hb_open">
+
+        <TextView
+            android:id="@+id/tv_unclock_gamerules"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp"
+            android:text="@string/查看游戏规则"
+            android:textSize="14sp"
+            android:textColor="#FCDB0C"/>
+
+        <TextView
+            android:id="@+id/tv_unclock_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="100dp"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:textColor="#FCDB0C"
+            android:textSize="16sp"
+            android:text="@string/SORRY只有达到100积分才能抢红包每推广1人可获得10积分哟"/>
+
+        <TextView
+            android:id="@+id/tv_unclock_range"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="24dp"
+            android:textColor="#FCDB0C"
+            android:textSize="14sp"
+            android:text="@string/查看趣约红包排行榜"
+            />
+
+        <ImageView
+            android:id="@+id/iv_hb_unclock"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/ic_hb_liji"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="64dp"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:visibility="gone"
+        android:id="@+id/coslayout_pack"
+        android:layout_width="278dp"
+        android:layout_height="380dp"
+        android:background="@drawable/bkg_hb_pack">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="123dp"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥"
+                android:textColor="#FD3832"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tv_pack_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- - -"
+                android:textColor="#FD3832"
+                android:textSize="56sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_pack_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="@string/查看趣约红包排行榜"
+            android:textColor="#FCDB0C"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/get_already_tv"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/已抢过该红包"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/tv_pack_rank"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="245dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="337dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</LinearLayout>

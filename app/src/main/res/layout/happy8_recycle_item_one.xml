@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_margin="5dp"
+        android:text="@string/总和"
+        android:gravity="center"
+        android:background="@drawable/bet_play_type_shape"
+        android:id="@+id/type_item_text"
+        android:textColor="@color/alpha_80_black"
+        />
+</LinearLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".uuuu.iuymn.mkjnb.activity.AgentCenter.ChildManageActivity">
+<include layout="@layout/action_bar_two"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="12dp"
+        >
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/home_top_search"
+            android:contentDescription="TODO" android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_gravity="center"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/child_edit"
+            android:layout_marginLeft="8dp"
+            android:hint="@string/请输入下级账号"
+            android:inputType="" android:textSize="@dimen/size_15_lottery"
+            android:background="@null"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/invite_edit"
+            android:layout_marginLeft="8dp"
+            android:hint="@string/请输入邀请码"
+            android:visibility="gone"
+            android:inputType="" android:textSize="@dimen/size_15_lottery"
+            android:background="@null"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true" android:text="@string/按邀请码搜索"
+            android:clickable="true"
+            android:id="@+id/invite_text"
+            android:textSize="16sp"
+            android:textColor="#4a95e4"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true" android:text="@string/按下级账号搜索"
+            android:id="@+id/child_text"
+            android:clickable="true"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:textColor="#4a95e4"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/搜索"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/search"
+            android:textSize="16sp"
+            android:textColor="#4a95e4"
+            />
+    </LinearLayout>
+    <include layout="@layout/split_big"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="12dp">
+        <View
+            android:layout_width="8dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:background="#e2383c"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="12dp"
+            android:id="@+id/who_child"
+            android:paddingBottom="12dp"
+            android:text="@string/我的下级"
+            android:layout_marginLeft="12dp"
+            android:textSize="16sp"
+            />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:id="@+id/time"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:background="@drawable/child_manage_first"
+                android:text="@string/注册时间"
+
+                />
+            <RadioButton
+                android:padding="5dp"
+                android:id="@+id/level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:background="@drawable/child_manage_last"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:text="@string/等级箭头" />
+        </RadioGroup>
+    </LinearLayout>
+  <include layout="@layout/loading_layout"/>
+    <include layout="@layout/nodata_layout"/>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/refresh"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/child_manage_recycle">
+        </androidx.recyclerview.widget.RecyclerView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

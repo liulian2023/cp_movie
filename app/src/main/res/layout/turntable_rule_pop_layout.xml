@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/game_rule_wrap_shape">
+        <TextView
+            android:id="@+id/rule_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:gravity="center"
+            android:text="@string/游戏规则"
+            android:textSize="22sp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/default_color"
+            />
+        <WebView
+            android:id="@+id/rule_webview"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            />
+        <Button
+            android:id="@+id/sure_btn"
+            android:layout_width="185dp"
+            android:layout_height="50dp"
+            android:text="@string/我知道了"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/login_btn_shape"
+            />
+    </LinearLayout>
+</LinearLayout>

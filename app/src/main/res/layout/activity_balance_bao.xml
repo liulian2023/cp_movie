@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    tools:context=".uuuu.iuymn.mkjnb.activity.yueBao_activity.YueBaoActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/action_bar_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/action_bar"
+            >
+
+            <TextView
+                android:id="@+id/return_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:paddingLeft="12dp"
+                android:text="@string/返回"
+                android:gravity="center"
+                android:textColor="@color/action_bar_return_textcolor_selecter"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:paddingLeft="12dp"
+                android:src="@drawable/chatroom_right"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/action_bar_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/余额宝"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/action_bar_right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:paddingLeft="12dp"
+                android:text="@string/位置"
+                android:textColor="@color/action_bar_return_textcolor_selecter"
+                android:textSize="16sp"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/yuebao_right_img"
+                android:layout_width="34dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:paddingRight="12dp"
+                android:src="@drawable/chatroom_right" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/balance_bao_gradient">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/总金额元"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="-----"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:id="@+id/all_amount"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textSize="16sp"
+                    android:text="@string/今日收益 "
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textSize="20sp"
+                    android:text="-----"
+                    android:textColor="@color/white"
+                    android:id="@+id/today_price"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textSize="16sp"
+                    android:text="@string/元"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <include layout="@layout/split_horizontal"/>
+        <include layout="@layout/split_big"/>
+        <include layout="@layout/split_horizontal"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/leiji_layout"
+            android:background="@drawable/recycle_item_selector"
+            >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/leiji" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/累计收益元"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/历史累计总收益"
+                android:textColor="#999999"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                app:layout_constraintStart_toEndOf="@+id/imageView2" />
+
+            <TextView
+                android:id="@+id/leiji_shouyi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="----"
+                android:textColor="#e53333"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/right_hot" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <include layout="@layout/split_horizontal"/>
+        <include layout="@layout/split_big"/>
+        <include layout="@layout/split_horizontal"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/recycle_item_selector"
+            android:id="@+id/jizhun_layout"
+            >
+
+            <ImageView
+                android:id="@+id/imageView_jizun"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/jizhun" />
+
+            <TextView
+                android:id="@+id/textView_jizun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/基准收益率"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView_jizun"
+                app:layout_constraintTop_toTopOf="@+id/imageView_jizun" />
+
+            <TextView
+                android:id="@+id/jinqiri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/近七日平均收益率的年化值"
+                android:textColor="#999999"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView_jizun"
+                app:layout_constraintStart_toEndOf="@+id/imageView_jizun" />
+
+            <TextView
+                android:id="@+id/jizhun_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="----"
+                android:textColor="#e53333"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView5"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/right_hot" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <include layout="@layout/split_horizontal"/>
+        <include layout="@layout/split_big"/>
+        <include layout="@layout/split_horizontal"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/recycle_item_selector"
+            android:id="@+id/hongyun_layout"
+            >
+
+            <ImageView
+                android:id="@+id/imageView_hongyun"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/hongyun" />
+
+            <TextView
+                android:id="@+id/textView_hongyun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/红运收益率"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView_hongyun"
+                app:layout_constraintTop_toTopOf="@+id/imageView_hongyun" />
+
+            <TextView
+                android:id="@+id/jinqiri_hongyun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/近七日平均收益率的年化值"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView_hongyun"
+                app:layout_constraintStart_toEndOf="@+id/imageView_hongyun" />
+
+            <TextView
+                android:id="@+id/hongyun_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="----"
+                android:textColor="#e53333"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView6"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/right_hot" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/zhuanru_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/game_rule_sure_shape"
+            android:text="@string/转入"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <Button
+            android:id="@+id/zhuanchu_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/white_button_click_shape"
+            android:text="@string/转出"
+            android:textColor="#e53333"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/loading"
+        android:layout_marginBottom="45dp"
+        android:layout_gravity="center"
+        android:id="@+id/load_img"
+        android:visibility="gone"
+        />
+
+</FrameLayout>

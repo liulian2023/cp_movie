@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".uuuu.iuymn.mkjnb.activity.main_tab_activity.RegisterNextActivity">
+    <include layout="@layout/toolbar_layout"
+        android:id="@+id/register_next_toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F0F0F0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_next_toolbar" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/为了给您提供更好的服务"
+        android:textSize="12sp"
+        android:textColor="#666666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/请绑定手机号"
+        android:textSize="17sp"
+        android:textColor="@color/default_color"
+        app:layout_constraintStart_toStartOf="@+id/textView22"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:text="@string/手机号"
+        android:visibility="gone"
+        android:textSize="14sp"
+        android:textColor="@color/default_color"
+        app:layout_constraintStart_toStartOf="@+id/textView26"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <EditText
+        android:id="@+id/phone_etv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="37dp"
+        android:hint="@string/请输入手机号"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textColor="@color/default_color"
+        android:textColorHint="#999999"
+        android:textSize="12sp"
+        android:theme="@style/LoginEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView27"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/loading_iv"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/loading"
+        app:layout_constraintBottom_toBottomOf="@+id/register_slide_webView"
+        app:layout_constraintEnd_toEndOf="@+id/register_slide_webView"
+        app:layout_constraintStart_toStartOf="@+id/register_slide_webView"
+        app:layout_constraintTop_toTopOf="@+id/register_slide_webView" />
+
+    <WebView
+        android:id="@+id/register_slide_webView"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="13dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/phone_etv"
+        app:layout_constraintStart_toStartOf="@+id/phone_etv"
+        app:layout_constraintTop_toBottomOf="@+id/phone_etv" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/手机验证码"
+        android:textSize="14sp"
+        android:visibility="gone"
+        android:textColor="@color/default_color"
+        app:layout_constraintStart_toStartOf="@+id/register_slide_webView"
+        app:layout_constraintTop_toBottomOf="@+id/register_slide_webView" />
+
+    <EditText
+        android:id="@+id/phone_code_etv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:hint="@string/请输入手机验证码"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textColor="@color/default_color"
+        android:textColorHint="#999999"
+        android:textSize="12sp"
+        android:theme="@style/LoginEditText"
+        app:layout_constraintEnd_toEndOf="@+id/phone_etv"
+        app:layout_constraintStart_toStartOf="@+id/phone_etv"
+        app:layout_constraintTop_toBottomOf="@+id/register_slide_webView" />
+
+    <TextView
+        android:id="@+id/send_phone_code_tv"
+        android:layout_width="74dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/register_send_phone_code_shape"
+        android:gravity="center"
+        android:text="@string/获取验证码"
+        android:textColor="#FF4659"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/phone_code_etv"
+        app:layout_constraintEnd_toEndOf="@+id/phone_code_etv" />
+
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:background="@drawable/login_btn_shape"
+        android:text="@string/立即注册"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/phone_code_etv"
+        app:layout_constraintStart_toStartOf="@+id/phone_code_etv"
+        app:layout_constraintTop_toBottomOf="@+id/phone_code_etv" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="85dp"
+        android:gravity="center"
+
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/登录注册遇到问题"
+            android:textColor="@color/default_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/kefu_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/联系客服"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="#048CF7"
+            android:textSize="14sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

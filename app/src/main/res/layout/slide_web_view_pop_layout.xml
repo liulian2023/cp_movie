@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar_layout"/>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/progressHorizontalStyle"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <WebView
+        android:id="@+id/slide_webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:background="@drawable/game_rule_wrap_shape"
+        >
+        <!--      android:layout_marginLeft="32dp"
+              android:layout_marginRight="32dp"-->
+        <ImageView
+            android:id="@+id/slide_close_iv"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="12dp"
+            android:padding="6dp"
+            android:layout_gravity="right"
+            app:srcCompat="@drawable/ic_close" />
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/安全认证"
+            android:layout_gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/default_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/slide_close_iv" />
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="44dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            app:layout_constraintTop_toBottomOf="parent">
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/loading_iv"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/loading"
+                android:layout_gravity="center"
+                />
+            <WebView
+                android:id="@+id/slide_webView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible"
+                />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

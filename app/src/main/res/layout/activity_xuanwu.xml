@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".uuuu.iuymn.mkjnb.activity.caizhong.XuanwuActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <include layout="@layout/caizhong_head1" />
+        <LinearLayout
+            android:id="@+id/xuanwu_tab_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <FrameLayout
+                android:id="@+id/fragment_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <include layout="@layout/caizhong_head2" />
+                    <include layout="@layout/xuanwu_head3" />
+                    <include layout="@layout/loading_layout"/>
+                    <LinearLayout
+                        android:id="@+id/ll_xy_xuanwu_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/xuanwu_xy_recyclerview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ll_gf_xuanwu_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/xuanwu_gf_recyclerview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                        <LinearLayout
+                            android:id="@+id/ll_xuanwu_gf_recyclerview2"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_margin="10dp"
+                            android:background="@color/white"
+                            >
+                            <TextView
+                                android:id="@+id/xuanwu_gf_recyclerview2_tv1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:textSize="12dp"
+                                android:textColor="@color/textcolor_head3"
+                                />
+                            <TextView
+                                android:id="@+id/xuanwu_gf_recyclerview2_tv2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="10dp"
+                                android:text="@string/冠军"
+                                android:textColor="@color/textcolor_head3"
+                                />
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/split"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/xuanwu_gf_recyclerview2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_gravity="center"
+                                >
+
+                            </androidx.recyclerview.widget.RecyclerView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <include layout="@layout/layout_bottom_touzhu" />
+            <include layout="@layout/layout_touzhu_gf"/>
+        </LinearLayout>
+        <include layout="@layout/layout_reload"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/fenpan_tv"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="@string/已封盘"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:background="@color/black_50"
+        android:textSize="16sp"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="@+id/linearLayout"
+        app:layout_constraintRight_toRightOf="@+id/linearLayout"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

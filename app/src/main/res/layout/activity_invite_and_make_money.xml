@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".uuuu.iuymn.mkjnb.activity.make_money_activitiy.InviteAndMakeMoneyActivity">
+    <RelativeLayout
+                android:id="@+id/toolBar_wrap_relativelayout"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/main_color">
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/back_icon"
+                    android:id="@+id/money_back_iv"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="17sp"
+                    android:text="@string/邀请赚钱"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/money_actionbar_title"
+                    android:textColor="#333333"
+                    />
+                <ImageView
+                    android:id="@+id/money_right_iv"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/sm"
+                    android:layout_alignParentRight="true"
+                    />
+                    <ImageView
+                        android:visibility="invisible"
+                        android:id="@+id/integral_iv"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/jf"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/money_right_iv"
+                        android:layout_marginRight="22dp"
+                        />
+            </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/make_money_main_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="#FBE1E0"
+            android:layout_gravity="bottom"
+            >
+
+            <TextView
+                android:id="@+id/qr_code_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/papulation_selectot"
+                android:paddingLeft="16dp"
+                android:paddingTop="9dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="9dp"
+                android:text="@string/推广二维码"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/invite_tv"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/invite_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:background="@drawable/invite_button_selectot"
+                android:paddingLeft="16dp"
+                android:paddingTop="9dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="9dp"
+                android:text="@string/直接邀请"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toRightOf="@+id/qr_code_tv"
+                app:layout_constraintRight_toLeftOf="@+id/get_reward_tv"
+                app:layout_constraintTop_toTopOf="@+id/qr_code_tv" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/get_reward_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:background="@drawable/get_reward_button_selectot"
+                android:paddingLeft="16dp"
+                android:paddingTop="9dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="9dp"
+                android:text="@string/领取奖励"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/invite_tv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/invite_tv"
+                app:layout_constraintTop_toTopOf="@+id/invite_tv" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

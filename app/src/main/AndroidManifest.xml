@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.uyt.ying.yuan"
+    android:installLocation="auto">
+
+
+
+    <uses-permission android:name="android.permission.INTERNET" /><!--访问网络连接-->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" /><!--应用安装权限-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /><!--获取wifi状态-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /><!--监听wifi状态改变-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /><!--读写权限-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /><!--读写权限-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /><!--获取网络状态-->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" /><!--监听网络状态改变-->
+    <uses-permission android:name="android.permission.CAMERA" /><!--相机权限-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /><!--悬浮窗权限-->
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" /><!--允许装载和卸载文件系统权限-->
+
+
+    <!--                                     过滤第三方依赖库申请的用不上权限                                     -->
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"
+        tools:node="remove" /><!--定位 (友盟申请)-->
+
+    <application
+        android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.SophixStubApplication"
+        android:allowBackup="false"
+        android:appComponentFactory="sdsds"
+        android:exported="false"
+        android:extractNativeLibs="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:appComponentFactory,android:networkSecurityConfig,allowBackup">
+
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.main_tab_activity.SplashActivity"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/StartingWindowTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.test.TestActivity">
+
+            <!--
+                            <intent-filter>
+                            <action android:name="android.intent.action.MAIN" />
+
+                            <category android:name="android.intent.category.LAUNCHER" />
+                        </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.live.LiveWebViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activityDialogTheme" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.main_tab_activity.ChessTxWebViewActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.yueBao_activity.OutYueBaoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.yueBao_activity.YueBaoExplainActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.mine_fragment_activitys.VisitorSafeCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.main_tab_activity.BannerWebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.yueBao_activity.HongYunActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.yueBao_activity.JiZhunActivty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.yueBao_activity.YueBaoDetailedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.yueBao_activity.InYueBaoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.yueBao_activity.YueBaoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.main_tab_activity.UpLevelRewardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.main_tab_activity.EveryDayRewardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.chatRoomActivity.YesTodayRankActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.chatRoomActivity.LongDragonActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.MainActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.main_tab_activity.LoginActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:usesCleartextTraffic="true" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.main_tab_activity.LoginActivity2"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:usesCleartextTraffic="true" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.main_tab_activity.LoginActivity3"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:usesCleartextTraffic="true" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.mine_fragment_activitys.UserInfoActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.main_tab_activity.RegisterActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.safeCenter.SafeCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.safeCenter.ModifyLoginPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.safeCenter.SureLoginPassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.safeCenter.ModifyPayPassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.safeCenter.SetPayPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.safeCenter.PhonePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.safeCenter.BankCardManageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.safeCenter.BindBankCardActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.safeCenter.ModifyBankCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.AgentCenter.AgentCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.AgentCenter.AgentShowActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.AgentCenter.ChildOpenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.AgentCenter.RebateTableActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.AgentCenter.AgentJournalingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.AgentCenter.ChildManageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.AgentCenter.ChildBetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.AgentCenter.ChildDealActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.AgentCenter.AgentInvestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.AgentCenter.RakeBackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.mine_fragment_activitys.TodayWinOrLoseActvity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.mine_fragment_activitys.MineIntegralActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.mine_fragment_activitys.MineMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.mine_fragment_activitys.NoticeMessageDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.mine_fragment_activitys.HelpGuideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.main_tab_activity.AliPayViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.mine_fragment_activitys.AboutUsActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.mine_top_activity.WantToWithdrawActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.mine_top_activity.MineDealActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.mine_top_activity.MineBetAcitivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.main_tab_activity.AtyMoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.main_tab_activity.GetWinnerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.main_tab_activity.GetWinnerInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.main_tab_activity.ChangLongActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.main_tab_activity.ShoppingWebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.forget_password_activity.ForgetPasswordActivity"
+            android:screenOrientation="portrait"
+            android:usesCleartextTraffic="true" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.forget_password_activity.FindPasswordActicity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.forget_password_activity.SureSafePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.forget_password_activity.ModifyPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.mine_top_activity.MineBetMoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.want_to_invest_activitys.PayWebviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.want_to_invest_activitys.BringForwardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.caizhong.K3Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.caizhong.pcDanDan.PcDanDanBetActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.caizhong.TouzhuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.caizhong.RaceActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.caizhong.XuanwuActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.caizhong.MarksixActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.rightMenuActivity.openingResultActivity.Happy8OpentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.caizhong.happy8.Happy8Activity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.rightMenuActivity.openingResultActivity.KuaiSanOpenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.rightMenuActivity.openingResultActivity.RaceOpenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.rightMenuActivity.openingResultActivity.Happy10OpentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.caizhong.LuckFram.LuckFarmBetActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.rightMenuActivity.twoLongDragon.TwoLongDragonActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.rightMenuActivity.openingResultActivity.XuanWuOpenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.rightMenuActivity.openingResultActivity.SixOpenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.rightMenuActivity.openingResultActivity.SscOpenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.caizhong.Happy10.Happy10BetActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.caizhong.ssc.SscBetActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.rightMenuActivity.openingResultActivity.PcDanOpenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.caizhong.ErrorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.safeCenter.ModifyNickNameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.rightMenuActivity.openingResultActivity.LuckFarmOpenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.rightMenuActivity.today_win_lose.TodayWinLoseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.chatRoomActivity.PlanListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.main_tab_activity.OnLineKeFuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.live.PaihangActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.live.LiveActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.live.DiamondActivity"
+            android:theme="@style/activityDialogTheme" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.mine_fragment_activitys.FeedBackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.safeCenter.BindUSDTActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.safeCenter.USDTManageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.mine_fragment_activitys.MyEquipmentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.main_tab_activity.AccountFindPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.mine_top_activity.RechargeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.want_to_invest_activitys.ManualRechargeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.AgentCenter.AgentCenter2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.main_tab_activity.RankActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.main_tab_activity.ChooseBaseUrlAvtivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.mine_top_activity.USTDWebViewActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.main_tab_activity.PhoneFindPasswordActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.main_tab_activity.ManualWebViewActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.main_tab_activity.RegisterNextActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.mine_top_activity.ChessBetMoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.mine_top_activity.GameNoteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.mine_top_activity.GameReportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.main_tab_activity.ChessWebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.main_tab_activity.ChessSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.mine_top_activity.QuotaChangeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.live.ZhuangXiangRedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.make_money_activitiy.OpenRedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.make_money_activitiy.OpenInviteRedActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/fullStatusBarTheme" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.make_money_activitiy.AddCommisionPlanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.make_money_activitiy.MineQRCodeActivity"
+            android:hardwareAccelerated="true"
+            android:theme="@style/qr_code_theme" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.make_money_activitiy.InviteAndMakeMoneyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.mine_fragment_activitys.MineFollowActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.Fragment.live_chat_fragment.SendRedActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/sendRedTheme" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.main_tab_activity.UploadWebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.main_tab_activity.AtyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.live.LiveShoppingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.live.LiveBetNoteActivity"
+            android:theme="@style/activityDialogTheme" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.live.LiveMineBetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.live.DialogTouZhuActivity"
+            android:theme="@style/activityDialogTheme" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.main_tab_activity.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.main_tab_activity.SearchLiveActivity"
+            android:screenOrientation="portrait" />
+
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.taobao.android.hotfix.IDSECRET"
+            android:value="@string/ALIFIX_APPKEY" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.APPSECRET"
+            android:value="@string/ALIFIX_APPSECRET" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.RSASECRET"
+            android:value="@string/ALIFIX_RSA" />
+
+        <service
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.serevice.DownloadService"
+            android:enabled="true"
+            android:exported="true" /> <!-- 以下为基本配置信息，需要自行添加至您的AndroidManifest文件中 start -->
+        <service
+            android:name="com.taobao.accs.ChannelService"
+            android:exported="true"
+            android:process=":channel">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.SERVICE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.ELECTION" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.taobao.accs.data.MsgDistributeService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.taobao.accs.EventReceiver"
+            android:process=":channel">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.taobao.accs.ServiceReceiver"
+            android:process=":channel">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.COMMAND" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.START_FROM_AGOO" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.taobao.accs.internal.AccsJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:process=":channel" />
+        <service
+            android:name="com.taobao.accs.ChannelService$KernelService"
+            android:process=":channel" />
+        <service
+            android:name="org.android.agoo.accs.AgooService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.umeng.message.UmengIntentService"
+            android:exported="true"
+            android:process=":channel">
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.umeng.message.XiaomiIntentService"
+            android:exported="true"
+            android:process=":channel">
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.taobao.agoo.AgooCommondReceiver"
+            android:exported="true"
+            android:process=":channel">
+            <intent-filter>
+                <action android:name="${applicationId}.intent.action.COMMAND" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.umeng.message.UmengMessageIntentReceiverService"
+            android:exported="true"
+            android:process=":channel">
+            <intent-filter>
+                <action android:name="org.android.agoo.client.MessageReceiverService" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.umeng.message.NotificationProxyBroadcastReceiver"
+            android:exported="false" />
+
+        <service
+            android:name="com.umeng.message.UmengMessageCallbackHandlerService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE">
+            <intent-filter>
+                <action android:name="com.umeng.messge.registercallback.action" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.umeng.message.enablecallback.action" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.umeng.message.disablecallback.action" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.umeng.message.message.handler.action" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.umeng.message.message.sendmessage.action" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.umeng.message.UmengDownloadResourceService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name="com.uyt.ying.yuan.uuuu.iuymn.mkjnb.serevice.ChatHeadService"
+            android:exported="false" /> <!-- 蓝牙调试service -->
+        <provider
+            android:name="com.umeng.message.provider.MessageProvider"
+            android:authorities="${applicationId}.umeng.message"
+            android:exported="false">
+            <grant-uri-permission android:pathPattern=".*" />
+        </provider> <!-- 以下为基本配置信息，需要自行添加至您的AndroidManifest文件中 end -->
+        <!-- 解决刷机导致webView加载崩溃 -->
+        <meta-data
+            android:name="android.webkit.WebView.EnableSafeBrowsing"
+            android:value="true" />
+    </application>
+
+</manifest>

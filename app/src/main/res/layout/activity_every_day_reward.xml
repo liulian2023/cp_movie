@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:wheelSurfView="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".uuuu.iuymn.mkjnb.activity.main_tab_activity.UpLevelRewardActivity">
+    <include layout="@layout/toolbar_layout"/>
+    <include layout="@layout/loading_layout"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/every_reward_recycle"
+            android:background="@drawable/one_dp_stork"
+            ></androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>

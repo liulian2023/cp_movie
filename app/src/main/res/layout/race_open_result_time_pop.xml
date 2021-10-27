@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <include layout="@layout/split_horizontal"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2019 09-02-12"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+             android:paddingLeft="15dp"
+            android:id="@+id/time_one"
+            android:background="@drawable/recycle_item_selector"
+            />
+        <include layout="@layout/split_horizontal"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2019 09-02-12"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+             android:paddingLeft="15dp"
+            android:id="@+id/time_two"
+            android:background="@drawable/recycle_item_selector"
+            />
+        <include layout="@layout/split_horizontal"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2019 09-02-12"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+             android:paddingLeft="15dp"
+            android:id="@+id/time_three"
+            android:background="@drawable/recycle_item_selector"
+            />
+        <include layout="@layout/split_horizontal"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2019 09-02-12"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+             android:paddingLeft="15dp"
+            android:id="@+id/time_four"
+            android:background="@drawable/recycle_item_selector"
+            />
+        <include layout="@layout/split_horizontal"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2019 09-02-12"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+             android:paddingLeft="15dp"
+            android:id="@+id/time_five"
+            android:background="@drawable/recycle_item_selector"
+            />
+        <include layout="@layout/split_horizontal"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2019 09-02-12"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+             android:paddingLeft="15dp"
+            android:id="@+id/time_six"
+            android:background="@drawable/recycle_item_selector"
+            />
+        <include layout="@layout/split_horizontal"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2019 09-02-12"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+             android:paddingLeft="15dp"
+           
+            android:id="@+id/time_seven"
+            android:background="@drawable/recycle_item_selector"
+            />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/background_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#929292" />
+</LinearLayout>

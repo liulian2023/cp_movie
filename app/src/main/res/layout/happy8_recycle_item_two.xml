@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/bet_item_selector"
+        android:layout_margin="5dp"
+        android:id="@+id/pc_item_wrap">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/大"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/bet_recycle_item_type_textcolor_selector"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:id="@+id/bet_type"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/赔1.850"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:textSize="@dimen/bet_odds_size"
+            android:id="@+id/bet_rebate"
+            android:singleLine="true"
+            android:textColor="@color/bet_recycle_item_rebate_textcolor_selector"
+            />
+    </LinearLayout>
+</LinearLayout>

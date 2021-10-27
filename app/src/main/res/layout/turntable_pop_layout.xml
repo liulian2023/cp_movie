@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:wheelSurfView="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imageView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        wheelSurfView:srcCompat="@drawable/tongz_icon" />
+
+    <com.sunfusheng.marqueeview.MarqueeView
+        android:id="@+id/turntable_marquee_tv"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="3dp"
+        android:gravity="center"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView29"
+        app:layout_constraintStart_toEndOf="@+id/imageView29"
+        app:layout_constraintTop_toTopOf="@+id/imageView29"
+        app:mvAnimDuration="1000"
+        app:mvDirection="bottom_to_top"
+        app:mvGravity="left"
+        app:mvInterval="4000"
+        app:mvSingleLine="true"
+        app:mvTextSize="12sp"
+        app:mvTextColor="@color/white"
+        >
+
+    </com.sunfusheng.marqueeview.MarqueeView>
+
+    <TextView
+        android:id="@+id/turntable_rule_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:text="@string/游戏规则"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/turntable_marquee_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/turntable_marquee_tv" />
+
+    <ImageView
+        android:id="@+id/turntable_rule_iv"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/turntable_rule_tv"
+        app:layout_constraintEnd_toStartOf="@+id/turntable_rule_tv"
+        app:layout_constraintTop_toTopOf="@+id/turntable_rule_tv"
+        app:srcCompat="@drawable/youxguiz" />
+
+<!--    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="334dp"
+        android:layout_height="334dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/wy_dzp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/turntable_rule_tv">
+
+        <com.cambodia.zhanbang.xunbo.myView.RotateView
+            android:id="@+id/rv_rotateview"
+            android:layout_width="270dp"
+            android:layout_height="270dp"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:id="@+id/iv_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/zhen_zp" />
+
+    </RelativeLayout>-->
+    <com.uyt.ying.yuan.uuuu.iuymn.mkjnb.myView.turntableView.WheelSurfView
+        android:id="@+id/turntable_view"
+        android:layout_width="334dp"
+        android:layout_height="334dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/turntable_rule_tv"
+        wheelSurfView:typenum="-1">
+
+    </com.uyt.ying.yuan.uuuu.iuymn.mkjnb.myView.turntableView.WheelSurfView>
+
+
+
+    <LinearLayout
+        android:id="@+id/valid_invitation_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="23dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/remaining_times_linear"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/turntable_view">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/有效邀请:"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/invite_people_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="0"
+            android:textColor="#F23148"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/remaining_times_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/valid_invitation_linear"
+        app:layout_constraintEnd_toStartOf="@id/invite_now_linear"
+        app:layout_constraintStart_toEndOf="@+id/valid_invitation_linear"
+        app:layout_constraintTop_toTopOf="@+id/valid_invitation_linear">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/剩余次数:"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/remaining_times_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="0"
+            android:textColor="#F23148"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/invite_now_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/remaining_times_linear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/remaining_times_linear"
+        app:layout_constraintTop_toTopOf="@+id/remaining_times_linear">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/马上邀请"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text=">"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/lottery_one_iv"
+        android:layout_width="96dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="26dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/valid_invitation_linear"
+        app:layout_constraintStart_toStartOf="@+id/valid_invitation_linear"
+        app:layout_constraintTop_toBottomOf="@+id/valid_invitation_linear"
+        app:srcCompat="@drawable/cyic_btn" />
+
+    <ImageView
+        android:id="@+id/lottery_five_iv"
+        android:layout_width="96dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="26dp"
+        app:layout_constraintEnd_toEndOf="@+id/remaining_times_linear"
+        app:layout_constraintStart_toStartOf="@+id/remaining_times_linear"
+        app:layout_constraintTop_toBottomOf="@+id/valid_invitation_linear"
+        app:srcCompat="@drawable/cwc_btn" />
+
+    <ImageView
+        android:id="@+id/lottery_ten_iv"
+        android:layout_width="96dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="26dp"
+        app:layout_constraintEnd_toEndOf="@+id/invite_now_linear"
+        app:layout_constraintStart_toStartOf="@+id/invite_now_linear"
+        app:layout_constraintTop_toBottomOf="@+id/valid_invitation_linear"
+        app:srcCompat="@drawable/csc_btn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

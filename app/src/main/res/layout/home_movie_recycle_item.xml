@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/home_movie_wrap_linear"
+    android:gravity="center"
+    android:layout_marginBottom="16dp">
+    <FrameLayout
+        android:id="@+id/movie_image_wrap_linear"
+        android:layout_width="166dp"
+        android:layout_height="166dp"
+        android:background="@drawable/home_movio_wrap_shape"
+        android:layout_gravity="center">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/home_movie_iv"
+            android:scaleType="centerCrop"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/home_movie_lottery_name_tv"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:layout_marginTop="9dp"
+            android:padding="5dp"
+            android:background="@drawable/home_movie_lottery_name_shape"
+            android:layout_marginLeft="3dp"
+            android:layout_gravity="left"
+            />
+        <RelativeLayout
+            android:id="@+id/bottom_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:background="@drawable/home_movio_watch_linear_shape">
+
+            <TextView
+                android:id="@+id/home_movie_classfy_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/watch_num_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:text="2345"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_alignParentRight="true"
+                />
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_toLeftOf="@+id/watch_num_tv"
+                android:src="@drawable/watch"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="2dp"
+                />
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/home_movie_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/movie_image_wrap_linear"
+        android:layout_alignParentLeft="@+id/movie_image_wrap_linear"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="12dp"
+        android:gravity="center"
+        android:maxWidth="166dp"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/default_color"
+        android:textSize="14sp" />
+</RelativeLayout>

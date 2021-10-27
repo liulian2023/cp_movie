@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_history_rbt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:paddingLeft="11dp"
+    android:paddingRight="11dp"
+    android:layout_marginRight="7.5dp"
+    android:layout_marginBottom="16dp"
+    android:gravity="center"
+    android:background="@drawable/search_child_item_shape"
+    android:textColor="#FF7221"
+    android:text="@string/最多播放"
+    android:textSize="12sp"
+>
+</TextView>

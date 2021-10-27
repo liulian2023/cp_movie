@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/title_brand_iv"
+        android:layout_width="104dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/daili"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:text="@string/x7天"
+        android:textColor="#999999"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/title_brand_iv"
+        app:layout_constraintStart_toEndOf="@+id/title_brand_iv"
+        app:layout_constraintTop_toTopOf="@+id/title_brand_iv" />
+
+    <TextView
+        android:id="@+id/title_brand_remark_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/end_date_linear"
+        android:shadowColor="#999999"
+        android:text="@string/获取条件后台设置"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/title_brand_iv"
+        app:layout_constraintTop_toBottomOf="@+id/title_brand_iv" />
+
+    <LinearLayout
+        android:id="@+id/end_date_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:gravity="center"
+
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/title_brand_remark_tv"
+        app:layout_constraintTop_toBottomOf="@+id/title_brand_remark_tv">
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/有效期: "
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/end_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="- - - - - "
+            android:textColor="#FF4081"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView56"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="6dp"
+        android:background="#F5F5F5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/title_brand_remark_tv"
+        app:layout_constraintTop_toBottomOf="@+id/end_date_linear" />
+
+    <Button
+        android:id="@+id/title_get_btn"
+        android:layout_width="66dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="6dp"
+        android:background="@drawable/get_equipment_btn_shape"
+        android:text="@string/获取装备"
+        android:textColor="#FF4081"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

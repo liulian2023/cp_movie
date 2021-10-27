@@ -1,0 +1,23 @@
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".uuuu.iuymn.mkjnb.Fragment.home_fragment.HotFragment">
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/hot_top_recycler"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"/>
+
+            <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/hot_refresh">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/home_movie_recycle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

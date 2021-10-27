@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/wrap_linear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/qr_image"
+            android:contentDescription="TODO" android:src="@drawable/gantan" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="12sp"
+            android:text="@string/温馨提示"
+            android:layout_marginLeft="12dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:text="@string/打开微信扫描二维码或转账到银行卡进行充值"
+            android:layout_marginLeft="12dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="@string/保存到相册"
+            android:id="@+id/save_photo"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/child_journaling_popupwindow_shape"
+            />
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:contentDescription="TODO" android:src="@drawable/yuan_x"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/back_img"
+        />
+</LinearLayout>
