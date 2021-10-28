@@ -5,7 +5,9 @@ import android.os.CountDownTimer;
 import android.text.style.ForegroundColorSpan;
 import android.widget.TextView;
 
+import com.uyt.ying.yuan.R;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.TimerUtils;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
 
 
 import org.apache.commons.lang.time.DurationFormatUtils;

@@ -98,7 +98,7 @@ public class BindUSDTActivity extends BaseActivity {
 
     private boolean checkEtv() {
         if(StringMyUtil.isEmptyString(ustd_address_etv.getText().toString())){
-            showToast(Utils.getString(R.string.请输入您的USDT-ERC20收款地址));
+            showToast(Utils.getString(R.string.请输入您的USDTERC20收款地址));
             return false;
         }
         if(StringMyUtil.isEmptyString(ustd_psd_etv.getText().toString())){

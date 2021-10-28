@@ -16,6 +16,7 @@ import android.view.WindowManager;
 import com.uyt.ying.yuan.R;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.base.BaseActivity;
 import com.google.android.material.tabs.TabLayout;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
 
 import java.util.ArrayList;
 

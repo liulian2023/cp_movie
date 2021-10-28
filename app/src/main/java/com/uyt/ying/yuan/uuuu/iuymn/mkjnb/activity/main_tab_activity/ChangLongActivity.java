@@ -25,6 +25,7 @@ import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.base.BaseActivity;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.LoginIntentUtil;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.ProgressDialogUtil;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.SharePreferencesUtil;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
 
 import java.io.File;
 
@@ -173,7 +174,7 @@ public class ChangLongActivity extends BaseActivity {
                     finish();
                 }
                 if(url.contains("7")){
-                    showToast(Utils.getString(R.string.账户已过期或账号被冻结,请联系客服处理));
+                    showToast(Utils.getString(R.string.账户已过期或账号被冻结请联系客服处理));
                     LoginIntentUtil.toLogin(ChangLongActivity.this);
                     finish();
                 }

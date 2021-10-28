@@ -113,12 +113,12 @@ public class RankAdapter extends BaseQuickAdapter<RankEntity.RankingListBean, Ba
                 int zjNum = recordsBean.getZjNum();
                 int tzNum = recordsBean.getTzNum();
                 if(recordsBean.getNickname().equals(Utils.getString(R.string.等待上榜))){
-                    changci_tv.setText(Utils.getString(R.string.场次: 0中0));//设置中奖场次
+                    changci_tv.setText(Utils.getString(R.string.场次零中零));//设置中奖场次
                 }else {
-                    changci_tv.setText(Utils.getString(R.string.场次: )+ tzNum +Utils.getString(R.string.中)+ zjNum);//设置中奖场次
+                    changci_tv.setText(Utils.getString(R.string.场次冒号 )+ tzNum +Utils.getString(R.string.中奖)+ zjNum);//设置中奖场次
                 }
                 if(zjNum==0){
-                    win_rate_tv.setText(Utils.getString(R.string.胜率： 0.00%));
+                    win_rate_tv.setText(Utils.getString(R.string.胜率0_00));
                 }else {
                     win_rate_tv.setText(Utils.getString(R.string.胜率冒号)+new BigDecimal(Double.parseDouble(zjNum+"")/Double.parseDouble(tzNum+"")*100).setScale(2,BigDecimal.ROUND_HALF_DOWN)+"%");//设置中奖比例
                 }

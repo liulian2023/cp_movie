@@ -164,7 +164,7 @@ public class HotFragment2 extends BaseFragment implements View.OnClickListener {
     private static int REQUEST_PARAMETER=11;
     private static int REQUEST_CENTER_LIVE_DATA=12;
     private static String INSTALL_APP=Utils.getString(R.string.点击安装);
-    private static String DOWNING=Utils.getString(R.string.正在下载...);
+    private static String DOWNING=Utils.getString(R.string.正在下载);
 
     private int pageNo=1;
     private int pageSize = 16;
@@ -262,7 +262,7 @@ public class HotFragment2 extends BaseFragment implements View.OnClickListener {
                         LoginIntentUtil.toLogin(getActivity());
                     }
                 }else {
-                    showToast(Utils.getString(R.string.未知类型, 无法跳转));
+                    showToast(Utils.getString(R.string.未知类型无法跳转));
                 }
 
             }
@@ -1243,7 +1243,7 @@ public class HotFragment2 extends BaseFragment implements View.OnClickListener {
 
                         @Override
                         public void failed(MessageHead messageHead) {
-                            Utils.logE(TAG,Utils.getString(R.string.failed:获取注册红包列表失败));
+                            Utils.logE(TAG,"failed:获取注册红包列表失败");
                             Message message = Message.obtain();
                             message.what=REQUEST_UNREAD_MESSAGE;
                             handler.sendMessage(message);

@@ -11,6 +11,7 @@ import com.uyt.ying.yuan.R;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.model.BaseUrlEntity;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.viewholder.BaseViewHolder;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
 
 import java.util.List;
 
@@ -45,7 +46,7 @@ public class BaseUrlAdapter extends BaseQuickAdapter<BaseUrlEntity.AppRequestDom
             }else {
                 speed_tv.setTextColor(ContextCompat.getColor(getContext(),R.color.green));
             }
-            speed_tv.setText(Utils.getString(R.string.延迟:)+differenceTime+"ms");
+            speed_tv.setText(Utils.getString(R.string.延迟)+differenceTime+"ms");
         }else {
             speed_tv.setText(Utils.getString(R.string.网络状况不佳));
             speed_tv.setTextColor(ContextCompat.getColor(getContext(),R.color.red));

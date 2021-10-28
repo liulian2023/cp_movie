@@ -30,6 +30,7 @@ import com.scwang.smartrefresh.layout.footer.ClassicsFooter;
 import com.scwang.smartrefresh.layout.header.ClassicsHeader;
 import com.scwang.smartrefresh.layout.listener.OnRefreshLoadMoreListener;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.StatusBarUtil;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
 
 
 import org.greenrobot.eventbus.EventBus;
@@ -60,7 +61,7 @@ public class MineFollowActivity extends BaseActivity implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mine_follow);
-        CommonToolbarUtil.initToolbar(this,Utils.getString(R.string.我的关注));
+        CommonToolbarUtil.initToolbar(this, Utils.getString(R.string.我的关注));
         StatusBarUtil.setColor(this, Color.WHITE);
         StatusBarUtil.setDarkMode(this);
         if(EventBus.getDefault().isRegistered(this)){

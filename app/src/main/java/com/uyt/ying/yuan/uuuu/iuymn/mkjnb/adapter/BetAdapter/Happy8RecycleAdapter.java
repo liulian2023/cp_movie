@@ -88,15 +88,15 @@ public class Happy8RecycleAdapter extends CommonAdapter<Happy8RecycleAdapter.MyH
                 commonHolder.qinhouhe.setfilColor(Color.parseColor("#5191FF"));
             }else if(strings.get(4).equals(Utils.getString(R.string.后多))) {
                 commonHolder.qinhouhe.setfilColor(Color.parseColor("#FF6C00"));
-            }else if(strings.get(4).equals(Utils.getString(R.string.前后(和)))) {
+            }else if(strings.get(4).equals(Utils.getString(R.string.前后括号和))) {
                 commonHolder.qinhouhe.setfilColor(Color.parseColor("#53DB45"));
             }
 
             commonHolder.danshaunge.setText(strings.get(5));
             commonHolder.danshaunge.setCornerSize(10);
-            if(strings.get(5).equals(Utils.getString(R.string.单(多)))){
+            if(strings.get(5).equals(Utils.getString(R.string.单多))){
                 commonHolder.danshaunge.setfilColor(Color.parseColor("#5191FF"));
-            }else if(strings.get(5).equals(Utils.getString(R.string.双(多)))) {
+            }else if(strings.get(5).equals(Utils.getString(R.string.双多))) {
                 commonHolder.danshaunge.setfilColor(Color.parseColor("#FF6C00"));
             }else if(strings.get(5).equals(Utils.getString(R.string.单双括号和))) {
                 commonHolder.danshaunge.setfilColor(Color.parseColor("#53DB45"));

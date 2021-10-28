@@ -122,11 +122,11 @@ public class AtyActivity extends AppCompatActivity {
                 loadingLinear.setVisibility(View.GONE);
                 atyCenterArrayList.clear();
                 if(showMemberGradeAward==0){
-                    AtyCenter aty = new AtyCenter(R.drawable.ac_icon1, Utils.getString(R.string.晋级奖励), Utils.getString(R.string.会员每晋升一个等级,都能获得奖励,最高可得88888元),"weizhi",1,1,"");
+                    AtyCenter aty = new AtyCenter(R.drawable.ac_icon1, Utils.getString(R.string.晋级奖励), Utils.getString(R.string.会员每晋升一个等级都能获得奖励最高可得88888元),"weizhi",1,1,"");
                     atyCenterArrayList.add(aty);
                 }
                 if(showCodeAmountMyself==0){
-                    AtyCenter aty1 = new AtyCenter(R.drawable.ac_icon1, Utils.getString(R.string.每日加奖), Utils.getString(R.string.每日加奖是根据会员昨日投注金额,进行一定比例的加奖),"weizhi",1,1,"");
+                    AtyCenter aty1 = new AtyCenter(R.drawable.ac_icon1, Utils.getString(R.string.每日加奖), Utils.getString(R.string.每日加奖是根据会员昨日投注金额进行一定比例的加奖),"weizhi",1,1,"");
                     atyCenterArrayList.add(aty1);
                 }
                 JSONObject jsonObject1 = JSONObject.parseObject(content);

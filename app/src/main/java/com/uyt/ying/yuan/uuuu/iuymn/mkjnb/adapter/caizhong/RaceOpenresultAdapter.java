@@ -17,6 +17,7 @@ import android.widget.TextView;
 import com.uyt.ying.yuan.R;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.base.Const;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.model.RaceLottery;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;

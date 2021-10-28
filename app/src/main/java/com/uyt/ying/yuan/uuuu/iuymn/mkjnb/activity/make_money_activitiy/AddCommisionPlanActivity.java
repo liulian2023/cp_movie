@@ -21,6 +21,7 @@ import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.request.RequestUtil;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.request.StringMyUtil;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.DecimalDigitsInputFilter;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.StatusBarUtil;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
 import com.xw.repo.BubbleSeekBar;
 import java.math.BigDecimal;
 import java.util.HashMap;
@@ -108,34 +109,34 @@ public class AddCommisionPlanActivity extends BaseActivity implements View.OnCli
                 islimit = memberAgent.getString("islimit");  //是否限制
 
                 if ("1".equals(islimit)) {  //限制
-                    k3Rate_edit.setHint(Utils.getString(R.string.自身返点) + initFloat(k3Rate) + Utils.getString(R.string.,可设置返点) + (k3Rate - max > 0 ? initFloat(k3Rate - max) : 0) +
+                    k3Rate_edit.setHint(Utils.getString(R.string.自身返点) + initFloat(k3Rate) + Utils.getString(R.string.可设置返点) + (k3Rate - max > 0 ? initFloat(k3Rate - max) : 0) +
                             "-" +initFloat(k3Rate - min));
-                    sscaiRate_edit.setHint(Utils.getString(R.string.自身返点) + initFloat(sscaiRate) + Utils.getString(R.string.,可设置返点) + (sscaiRate - max > 0 ?initFloat(sscaiRate - max) : 0) +
+                    sscaiRate_edit.setHint(Utils.getString(R.string.自身返点) + initFloat(sscaiRate) + Utils.getString(R.string.可设置返点) + (sscaiRate - max > 0 ?initFloat(sscaiRate - max) : 0) +
                             "-" +initFloat(sscaiRate - min));
-                    raceRate_edit.setHint(Utils.getString(R.string.自身返点) + initFloat(raceRate) + Utils.getString(R.string.,可设置返点) + (raceRate - max > 0 ? initFloat(raceRate - max) : 0) +
+                    raceRate_edit.setHint(Utils.getString(R.string.自身返点) + initFloat(raceRate) + Utils.getString(R.string.可设置返点) + (raceRate - max > 0 ? initFloat(raceRate - max) : 0) +
                             "-" + initFloat(raceRate-min));
-                    sixRate_edit.setHint(Utils.getString(R.string.自身返点) + initFloat(sixRate) + Utils.getString(R.string.,可设置返点) + (sixRate - max > 0 ? initFloat(sixRate-max) : 0) +
+                    sixRate_edit.setHint(Utils.getString(R.string.自身返点) + initFloat(sixRate) + Utils.getString(R.string.可设置返点) + (sixRate - max > 0 ? initFloat(sixRate-max) : 0) +
                             "-" +initFloat(sixRate - min));
-                    happy8Rate_edit.setHint(Utils.getString(R.string.自身返点) + initFloat(happy8Rate) + Utils.getString(R.string.,可设置返点) + (happy8Rate - max > 0 ? initFloat(happy8Rate - max) : 0) +
+                    happy8Rate_edit.setHint(Utils.getString(R.string.自身返点) + initFloat(happy8Rate) + Utils.getString(R.string.可设置返点) + (happy8Rate - max > 0 ? initFloat(happy8Rate - max) : 0) +
                             "-" + initFloat(happy8Rate - min));
-                    farmRate_edit.setHint(Utils.getString(R.string.自身返点) + initFloat(farmRate) + Utils.getString(R.string.,可设置返点) + (farmRate - max > 0 ? initFloat(farmRate - max ): 0) +
+                    farmRate_edit.setHint(Utils.getString(R.string.自身返点) + initFloat(farmRate) + Utils.getString(R.string.可设置返点) + (farmRate - max > 0 ? initFloat(farmRate - max ): 0) +
                             "-" + initFloat(farmRate - min));
-                    happytenRate_edit.setHint(Utils.getString(R.string.自身返点) + initFloat(happytenRate) + Utils.getString(R.string.,可设置返点) + (happytenRate - max > 0 ?initFloat(happytenRate - max ) : 0) +
+                    happytenRate_edit.setHint(Utils.getString(R.string.自身返点) + initFloat(happytenRate) + Utils.getString(R.string.可设置返点) + (happytenRate - max > 0 ?initFloat(happytenRate - max ) : 0) +
                             "-" + initFloat(happytenRate - min));
-                    xuanwuRate_edit.setHint(Utils.getString(R.string.自身返点) + initFloat(xuanwuRate) + Utils.getString(R.string.,可设置返点) + (xuanwuRate - max > 0 ?initFloat(xuanwuRate - max) : 0) +
+                    xuanwuRate_edit.setHint(Utils.getString(R.string.自身返点) + initFloat(xuanwuRate) + Utils.getString(R.string.可设置返点) + (xuanwuRate - max > 0 ?initFloat(xuanwuRate - max) : 0) +
                             "-" +initFloat(xuanwuRate - min));
-                    danRate_edit.setHint(Utils.getString(R.string.自身返点) + initFloat(danRate) + Utils.getString(R.string.,可设置返点) + (danRate - max > 0 ? initFloat(danRate - max) : 0) +
+                    danRate_edit.setHint(Utils.getString(R.string.自身返点) + initFloat(danRate) + Utils.getString(R.string.可设置返点) + (danRate - max > 0 ? initFloat(danRate - max) : 0) +
                             "-" + initFloat(danRate - min));
                 } else {  //不限制
-                    k3Rate_edit.setHint(Utils.getString(R.string.自身返点) + initFloat(k3Rate) + Utils.getString(R.string.,可设置返点0-) + initFloat(k3Rate));
-                    sscaiRate_edit.setHint(Utils.getString(R.string.自身返点) + initFloat(sscaiRate) + Utils.getString(R.string.,可设置返点0-) + initFloat(sscaiRate));
-                    raceRate_edit.setHint(Utils.getString(R.string.自身返点) + initFloat(raceRate) + Utils.getString(R.string.,可设置返点0-) + initFloat(raceRate));
-                    sixRate_edit.setHint(Utils.getString(R.string.自身返点) + initFloat(sixRate) + Utils.getString(R.string.,可设置返点0-) + initFloat(sixRate));
-                    happy8Rate_edit.setHint(Utils.getString(R.string.自身返点) + initFloat(happy8Rate) + Utils.getString(R.string.,可设置返点0-) + initFloat(happy8Rate));
-                    farmRate_edit.setHint(Utils.getString(R.string.自身返点) + initFloat(farmRate) + Utils.getString(R.string.,可设置返点0-) + initFloat(farmRate));
-                    happytenRate_edit.setHint(Utils.getString(R.string.自身返点) + initFloat(happytenRate) + Utils.getString(R.string.,可设置返点0-) + initFloat(happytenRate));
-                    xuanwuRate_edit.setHint(Utils.getString(R.string.自身返点) + initFloat(xuanwuRate) + Utils.getString(R.string.,可设置返点0-) + initFloat(xuanwuRate));
-                    danRate_edit.setHint(Utils.getString(R.string.自身返点) + initFloat(xuanwuRate) + Utils.getString(R.string.,可设置返点0-) + initFloat(xuanwuRate));
+                    k3Rate_edit.setHint(Utils.getString(R.string.自身返点) + initFloat(k3Rate) + Utils.getString(R.string.可设置返点0) + initFloat(k3Rate));
+                    sscaiRate_edit.setHint(Utils.getString(R.string.自身返点) + initFloat(sscaiRate) + Utils.getString(R.string.可设置返点0) + initFloat(sscaiRate));
+                    raceRate_edit.setHint(Utils.getString(R.string.自身返点) + initFloat(raceRate) + Utils.getString(R.string.可设置返点0) + initFloat(raceRate));
+                    sixRate_edit.setHint(Utils.getString(R.string.自身返点) + initFloat(sixRate) + Utils.getString(R.string.可设置返点0) + initFloat(sixRate));
+                    happy8Rate_edit.setHint(Utils.getString(R.string.自身返点) + initFloat(happy8Rate) + Utils.getString(R.string.可设置返点0) + initFloat(happy8Rate));
+                    farmRate_edit.setHint(Utils.getString(R.string.自身返点) + initFloat(farmRate) + Utils.getString(R.string.可设置返点0) + initFloat(farmRate));
+                    happytenRate_edit.setHint(Utils.getString(R.string.自身返点) + initFloat(happytenRate) + Utils.getString(R.string.可设置返点0) + initFloat(happytenRate));
+                    xuanwuRate_edit.setHint(Utils.getString(R.string.自身返点) + initFloat(xuanwuRate) + Utils.getString(R.string.可设置返点0) + initFloat(xuanwuRate));
+                    danRate_edit.setHint(Utils.getString(R.string.自身返点) + initFloat(xuanwuRate) + Utils.getString(R.string.可设置返点0) + initFloat(xuanwuRate));
                 }
             }
 
@@ -293,7 +294,7 @@ public class AddCommisionPlanActivity extends BaseActivity implements View.OnCli
             return false;
         }
         if (StringMyUtil.isEmptyString(xuanwuRate_edit.getText().toString())) {
-            showToast(Utils.getString(R.string.11选5返点不能为空));
+            showToast(Utils.getString(R.string.十一选5返点不能为空));
             return false;
         }
         if (StringMyUtil.isEmptyString(danRate_edit.getText().toString())) {
@@ -305,61 +306,61 @@ public class AddCommisionPlanActivity extends BaseActivity implements View.OnCli
 
         if ("1".equals(islimit)) {
             if (Float.parseFloat(k3Rate_edit.getText().toString()) < (FloatsetScale(k3Rate - max,1) > 0 ? FloatsetScale(k3Rate - max ,1): 0) || Float.parseFloat(k3Rate_edit.getText().toString()) >(FloatsetScale(k3Rate - min,1))) {
-                showToast(Utils.getString(R.string.快三返点超出区间,请重新输入));
+                showToast(Utils.getString(R.string.快三返点超出区间请重新输入));
                 return false;
             } else if (Float.parseFloat(sscaiRate_edit.getText().toString()) < (FloatsetScale(sscaiRate - max,1) > 0 ? FloatsetScale(sscaiRate - max,1) : 0) || Float.parseFloat(sscaiRate_edit.getText().toString()) > (FloatsetScale(sscaiRate - min,1))) {
 
-                showToast(Utils.getString(R.string.时时彩返点超出区间,请重新输入));
+                showToast(Utils.getString(R.string.时时彩返点超出区间请重新输入));
                 return false;
             } else if (Float.parseFloat(raceRate_edit.getText().toString()) < (FloatsetScale(raceRate - max,1) > 0 ? FloatsetScale(raceRate - max,1) : 0) || Float.parseFloat(raceRate_edit.getText().toString()) > (FloatsetScale(raceRate - min,1))) {
-                showToast(Utils.getString(R.string.赛车返点超出区间,请重新输入));
+                showToast(Utils.getString(R.string.赛车返点超出区间请重新输入));
                 return false;
             } else if (Float.parseFloat(sixRate_edit.getText().toString()) < (FloatsetScale(sixRate - max,1) > 0 ? FloatsetScale(sixRate - max,1) : 0) || Float.parseFloat(sixRate_edit.getText().toString()) > FloatsetScale(sixRate - min,1)) {
-                showToast(Utils.getString(R.string.六合彩返点超出区间,请重新输入));
+                showToast(Utils.getString(R.string.六合彩返点超出区间请重新输入));
                 return false;
             } else if (Float.parseFloat(danRate_edit.getText().toString()) < (FloatsetScale(danRate - max,1) > 0 ? FloatsetScale(danRate - max,1) : 0) || Float.parseFloat(danRate_edit.getText().toString()) > FloatsetScale(danRate - min,1)) {
-                showToast(Utils.getString(R.string.pc蛋蛋返点超出区间,请重新输入));
+                showToast(Utils.getString(R.string.pc蛋蛋返点超出区间请重新输入));
                 return false;
             } else if (Float.parseFloat(happy8Rate_edit.getText().toString()) < (FloatsetScale(happy8Rate - max,1) > 0 ?FloatsetScale( happy8Rate - max,1) : 0) || Float.parseFloat(happy8Rate_edit.getText().toString()) > FloatsetScale(happy8Rate - min,1)) {
-                showToast(Utils.getString(R.string.快乐8返点超出区间,请重新输入));
+                showToast(Utils.getString(R.string.快乐8返点超出区间请重新输入));
                 return false;
             } else if (Float.parseFloat(farmRate_edit.getText().toString()) < (FloatsetScale(farmRate - max,1) > 0 ? FloatsetScale(farmRate - max ,1): 0) || Float.parseFloat(farmRate_edit.getText().toString()) > FloatsetScale(farmRate - min,1)) {
-                showToast(Utils.getString(R.string.幸运农场返点超出区间,请重新输入));
+                showToast(Utils.getString(R.string.幸运农场返点超出区间请重新输入));
                 return false;
             } else if (Float.parseFloat(happytenRate_edit.getText().toString()) < (FloatsetScale(happytenRate - max,1) > 0 ? FloatsetScale(happytenRate - max ,1): 0) || Float.parseFloat(happytenRate_edit.getText().toString()) > FloatsetScale(happytenRate - min,1)) {
-                showToast(Utils.getString(R.string.快乐十分返点超出区间,请重新输入));
+                showToast(Utils.getString(R.string.快乐十分返点超出区间请重新输入));
                 return false;
             } else if (Float.parseFloat(xuanwuRate_edit.getText().toString()) < (FloatsetScale(xuanwuRate - max,1) > 0 ? FloatsetScale(xuanwuRate - max,1) : 0) || Float.parseFloat(xuanwuRate_edit.getText().toString()) > FloatsetScale(xuanwuRate - min,1)) {
-                showToast(Utils.getString(R.string.11选5返点超出区间,请重新输入));
+                showToast(Utils.getString(R.string.十一选5返点超出区间请重新输入));
                 return false;
             }
         } else {
             if (Float.parseFloat(k3Rate_edit.getText().toString()) < 0 || Float.parseFloat(k3Rate_edit.getText().toString()) > (k3Rate)) {
-                showToast(Utils.getString(R.string.快三返点超出区间,请重新输入));
+                showToast(Utils.getString(R.string.快三返点超出区间请重新输入));
                 return false;
             } else if (Float.parseFloat(sscaiRate_edit.getText().toString()) < (0) || Float.parseFloat(sscaiRate_edit.getText().toString()) > (sscaiRate)) {
-                showToast(Utils.getString(R.string.时时彩返点超出区间,请重新输入));
+                showToast(Utils.getString(R.string.时时彩返点超出区间请重新输入));
                 return false;
             } else if (Float.parseFloat(raceRate_edit.getText().toString()) < (0) || Float.parseFloat(raceRate_edit.getText().toString()) > (raceRate)) {
-                showToast(Utils.getString(R.string.赛车返点超出区间,请重新输入));
+                showToast(Utils.getString(R.string.赛车返点超出区间请重新输入));
                 return false;
             } else if (Float.parseFloat(sixRate_edit.getText().toString()) < (0) || Float.parseFloat(sixRate_edit.getText().toString()) > (sixRate)) {
-                showToast(Utils.getString(R.string.六合彩返点超出区间,请重新输入));
+                showToast(Utils.getString(R.string.六合彩返点超出区间请重新输入));
                 return false;
             } else if (Float.parseFloat(danRate_edit.getText().toString()) < (0) || Float.parseFloat(danRate_edit.getText().toString()) > (danRate)) {
-                showToast(Utils.getString(R.string.pc蛋蛋返点超出区间,请重新输入));
+                showToast(Utils.getString(R.string.pc蛋蛋返点超出区间请重新输入));
                 return false;
             } else if (Float.parseFloat(happy8Rate_edit.getText().toString()) < (0) || Float.parseFloat(happy8Rate_edit.getText().toString()) > (happy8Rate)) {
-                showToast(Utils.getString(R.string.快乐8返点超出区间,请重新输入));
+                showToast(Utils.getString(R.string.快乐8返点超出区间请重新输入));
                 return false;
             } else if (Float.parseFloat(farmRate_edit.getText().toString()) < (0) || Float.parseFloat(farmRate_edit.getText().toString()) > (farmRate)) {
-                showToast(Utils.getString(R.string.幸运农场返点超出区间,请重新输入));
+                showToast(Utils.getString(R.string.幸运农场返点超出区间请重新输入));
                 return false;
             } else if (Float.parseFloat(happytenRate_edit.getText().toString()) < (0) || Float.parseFloat(happytenRate_edit.getText().toString()) > (happytenRate)) {
-                showToast(Utils.getString(R.string.快乐十分返点超出区间,请重新输入));
+                showToast(Utils.getString(R.string.快乐十分返点超出区间请重新输入));
                 return false;
             } else if (Float.parseFloat(xuanwuRate_edit.getText().toString()) < (0) || Float.parseFloat(xuanwuRate_edit.getText().toString()) > (xuanwuRate)) {
-                showToast(Utils.getString(R.string.11选5返点超出区间,请重新输入));
+                showToast(Utils.getString(R.string.十一选5返点超出区间请重新输入));
                 return false;
             }
         }

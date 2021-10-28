@@ -15,6 +15,7 @@ import com.uyt.ying.yuan.R;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.mine_top_activity.QuotaChangeActivity;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.model.QuotaModel;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.ProgressDialogUtil;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
 
 public class RechargePop extends PopupWindow implements View.OnClickListener {
     public enum PopType{

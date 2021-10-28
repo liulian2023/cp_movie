@@ -102,7 +102,7 @@ public class ChatroomUserInfoActivity extends BaseActivity {
                     }else{
                         sexStr=Utils.getString(R.string.保密);
                     }
-                    sexTv.setText(Utils.getString(R.string.性别: )+sexStr);
+                    sexTv.setText(Utils.getString(R.string.性别冒号 )+sexStr);
                     touxiantV.setText(getWinnerMedol.getTitle());
                     amountTv.setText(getWinnerMedol.getPrice().setScale(2, RoundingMode.HALF_UP)+"");
                     String grade = getWinnerMedol.getGrade();
@@ -134,7 +134,7 @@ public class ChatroomUserInfoActivity extends BaseActivity {
                     }else{
                         sexStr=Utils.getString(R.string.保密);
                     }
-                    sexTv.setText(Utils.getString(R.string.性别: )+sexStr);
+                    sexTv.setText(Utils.getString(R.string.性别冒号 )+sexStr);
                     touxiantV.setText(yestodayWinMedol.getTitle());
                     amountTv.setText(yestodayWinMedol.getPrice().setScale(2, RoundingMode.HALF_UP)+"");
                     String grade = yestodayWinMedol.getGrade();
@@ -192,7 +192,7 @@ public class ChatroomUserInfoActivity extends BaseActivity {
                     }else{
                         sexStr=Utils.getString(R.string.保密);
                     }
-                    sexTv.setText(Utils.getString(R.string.性别: )+sexStr);
+                    sexTv.setText(Utils.getString(R.string.性别冒号 )+sexStr);
                     touxiantV.setText(title);
                     amountTv.setText(totalAmount.setScale(2, RoundingMode.HALF_UP)+"");
                     dengjiTv.setText("VIP"+(pointGrade+1)+"");

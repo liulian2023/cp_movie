@@ -19,12 +19,37 @@
 	<string name="第一球" translatable="true">第一球</string>
 	<string name="前三" translatable="true">前三</string>
 	<string name="总和大小" translatable="true">总和大小</string>
+	<string name="总和大" translatable="true">总和大</string>
+	<string name="总和小" translatable="true">总和小</string>
+	<string name="总和单" translatable="true">总和单</string>
+	<string name="总和双" translatable="true">总和双</string>
+	<string name="冠亚大" translatable="true">冠亚大</string>
+	<string name="冠亚小" translatable="true">冠亚小</string>
+	<string name="冠亚单" translatable="true">冠亚单</string>
+	<string name="冠亚双" translatable="true">冠亚双</string>
+	<string name="特码色波" translatable="true">特码色波</string>
+	<string name="特大" translatable="true">特大</string>
+	<string name="特小" translatable="true">特小</string>
+	<string name="杂六" translatable="true">杂六</string>
+	<string name="特单" translatable="true">特单</string>
+	<string name="特双" translatable="true">特双</string>
+	<string name="鼠" translatable="true">鼠</string>
+	<string name="虎" translatable="true">虎</string>
+	<string name="鸡" translatable="true">鸡</string>
+	<string name="狗" translatable="true">狗</string>
+	<string name="红波" translatable="true">红波</string>
+	<string name="蓝波" translatable="true">蓝波</string>
+	<string name="绿波" translatable="true">绿波</string>
+	<string name="大单" translatable="true">大单</string>
+	<string name="小单" translatable="true">小单</string>
+	<string name="小双" translatable="true">小双</string>
 	<string name="龙虎" translatable="true">龙虎</string>
 	<string name="冠军单码" translatable="true">冠军单码</string>
 	<string name="冠军两面" translatable="true">冠军两面</string>
 	<string name="第二球" translatable="true">第二球</string>
 	<string name="第三球" translatable="true">第三球</string>
 	<string name="前后和" translatable="true">前后和</string>
+	<string name="前后括号和" translatable="true">前后(和)</string>
 	<string name="五行" translatable="true">五行</string>
 	<string name="购彩问题" translatable="true">购彩问题</string>
 	<string name="赌神榜" translatable="true">赌神榜</string>
@@ -614,6 +639,7 @@
 <string name="月榜" translatable="true"> 月榜</string>
 <string name="总榜" translatable="true"> 总榜</string>
 <string name="礼物横杠" translatable="true"> 礼物:-&#160; - &#160;- &#160;</string>
+<string name="红包横杠" translatable="true"> 红包:-&#160; - &#160;- &#160;</string>
 <string name="正在加载" translatable="true"> 正在加载</string>
 	<!--
 	betjoin_pop_layout.xml
@@ -626,7 +652,7 @@
 	<!--
 	rank_recycler_item.xml
 	-->
-<string name="胜率" translatable="true"> 胜率:- - -</string>
+
 	<!--
 	send_red_pop.xml
 	-->
@@ -1333,6 +1359,7 @@
 	chess_search_recycler_item.xml
 	-->
 <string name="炸金花" translatable="true"> 炸金花</string>
+<string name="和" translatable="true"> 和</string>
 	<!--
 	item_headrecy1.xml
 	-->
@@ -1391,6 +1418,7 @@
 <string name="什么叫顺龙" translatable="true"> 什么叫顺龙？</string>
 <string name="如连续开顺龙" translatable="true"> 如连续开6期“单”，继续选择“单”进行投注，这样的投注方案称之为“顺龙</string>
 <string name="什么是倍投" translatable="true"> 什么是倍投？</string>
+<string name="暂无两面长龙" translatable="true"> 暂无两面长龙</string>
 <string name="倍投是指一种成倍的投注方式" translatable="true"> 倍投是指一种成倍的投注方式，是为保障能够在“斩龙”或“顺龙”的过程中持续盈利的一种押注方式。</string>
 	<!--
 	item_raceofficialp.xml
@@ -2019,7 +2047,7 @@
 	<!--
 	DiamondPayPop.java
 	-->
-<string name="钻石永久" translatable="true"> %s钻石/永久</string>
+<string name="钻石永久" translatable="true"> %1$s钻石/永久</string>
 <string name="钻石天" translatable="true"> %1$s钻石/%2$s天</string>
 <string name="购买成功" translatable="true"> 购买成功</string>
 	<!--
@@ -2131,12 +2159,12 @@
 <string name="专享回馈红包达到VIP" translatable="true"> %专享回馈红包\n 2.达到VIP</string>
 <string name="的会员请第二天晚上12点前登录领取" translatable="true"> 的会员请第二天晚上12点前登录领取，过期作废，没有领取的不累计。\n3.此活动随时可能取消，千万回馈红包送完为止。\n4.此活动只有投注限定玩法才能享受</string>
 <string name="专享红包没有达到等级的请抓紧时间提升自己的等级" translatable="true"> %专享红包。\n 5.没有达到等级的请抓紧时间提升自己的等级。</string>
-<string name="参与条件A等级达到VIP" translatable="true"> \n 参与条件\n \n A.等级达到VIP%d，</string>
+<string name="参与条件A等级达到VIP" translatable="true"> \n 参与条件\n \n A.等级达到VIP%!$d，</string>
 <string name="参与条件" translatable="true"> 参与条件</string>
-<string name="即可参与参与条件等级达到VIP" translatable="true"> ,即可参与!\n 参与条件\n \n B.等级达到VIP%d，</string>
+<string name="即可参与参与条件等级达到VIP" translatable="true"> ,即可参与!\n 参与条件\n \n B.等级达到VIP%!$d，</string>
 <string name="即可参与等级达到VIP" translatable="true"> ,即可参与!\n B.等级达到VIP%d，</string>
-<string name="参与条件B等级达到VIP" translatable="true"> \n参与条件\n \n B.等级达到VIP%d，</string>
-<string name="B等级达到VIP" translatable="true"> \n B.等级达到VIP%d，</string>
+<string name="参与条件B等级达到VIP" translatable="true"> \n参与条件\n \n B.等级达到VIP%1$d，</string>
+<string name="B等级达到VIP" translatable="true"> \n B.等级达到VIP%!$d，</string>
 <string name="即可参与" translatable="true"> ,即可参与!</string>
 <string name="大于" translatable="true"> %1$s大于%2$d%3$s%4$s</string>
 <string name="您已达到最高等级VIP9已达到要求等级" translatable="true"> 您已达到最高等级VIP9,已达到要求等级</string>
@@ -2733,6 +2761,7 @@
 	SafeCenterActivity.java
 	-->
 <string name="上次登录时间" translatable="true"> 上次登录时间:</string>
+<string name="保密" translatable="true"> 保密</string>
 <string name="修改提款密码" translatable="true"> 修改提款密码</string>
 <string name="已绑定密保手机" translatable="true"> 已绑定密保手机</string>
 <string name="设置密保手机" translatable="true"> 设置密保手机</string>
@@ -2809,7 +2838,7 @@
 	BankCardManageActivity.java
 	-->
 <string name="成功切换默认卡" translatable="true"> 成功切换默认卡</string>
-<string name="最多只能绑定张银行卡" translatable="true"> 最多只能绑定%s张银行卡</string>
+<string name="最多只能绑定张银行卡" translatable="true"> 最多只能绑定%1$s张银行卡</string>
 	<!--
 	ModifyLoginPasswordActivity.java
 	-->
@@ -2891,10 +2920,10 @@
 	<!--
 	DiamondAdapter.java
 	-->
-<string name="邀请人礼包" translatable="true"> 邀请%s人礼包</string>
-<string name="每日充值元礼包" translatable="true"> 每日充值%s元礼包</string>
-<string name="每日打码元礼包" translatable="true"> 每日打码%s元礼包</string>
-<string name="每日送礼元礼包" translatable="true"> 每日送礼%s元礼包</string>
+<string name="邀请人礼包" translatable="true"> 邀请%1$s人礼包</string>
+<string name="每日充值元礼包" translatable="true"> 每日充值%1$s元礼包</string>
+<string name="每日打码元礼包" translatable="true"> 每日打码%1$s元礼包</string>
+<string name="每日送礼元礼包" translatable="true"> 每日送礼%1$s元礼包</string>
 <string name="未达到" translatable="true"> 未达到</string>
 <string name="天" translatable="true"> 天</string>
 <string name="钻石" translatable="true"> 钻石</string>
@@ -2909,11 +2938,11 @@
 	<!--
 	RechargeAdapter.java
 	-->
-<string name="充值奖励最高送88888元占位" translatable="true"> 充值奖励%s%%,最高送88888元!</string>
+<string name="充值奖励最高送88888元占位" translatable="true"> 充值奖励%1$s%%,最高送88888元!</string>
 <string name="充值数量范围" translatable="true"> 充值数量范围:%1$s-%2$s</string>
 <string name="百" translatable="true"> 百</string>
 <string name="千" translatable="true"> 千</string>
-<string name="请输入金额占位" translatable="true"> 请输入金额%1$s2$%3$s%4$s</string>
+<string name="请输入金额占位" translatable="true"> 请输入金额%1$s%2$s%3$s</string>
 <string name="可用额度二占位" translatable="true"> 可用额度:%1$d%2$s</string>
 <string name="可用额度三占位" translatable="true"> 可用额度:%1$d%2$s%3$s</string>
 	<!--
@@ -2940,6 +2969,7 @@
 	-->
 <string name="金" translatable="true"> 金</string>
 <string name="木" translatable="true"> 木</string>
+<string name="水" translatable="true"> 水</string>
 <string name="单多" translatable="true"> 单(多)</string>
 <string name="双多" translatable="true"> 双(多)</string>
 <string name="单双括号和" translatable="true"> 单双(和)</string>
@@ -2993,7 +3023,7 @@
 	MyEquipmentAdapter.java
 	-->
 <string name="x永久" translatable="true"> x永久</string>
-<string name="x天" translatable="true"> x%s天</string>
+<string name="x天" translatable="true"> x%1$s天</string>
 <string name="获取" translatable="true"> 获取</string>
 <string name="永久" translatable="true"> 永久</string>
 <string name="穿戴" translatable="true"> 穿戴</string>
@@ -3048,6 +3078,7 @@
 <string name="不允许超过3个选项" translatable="true"> 不允许超过3个选项</string>
 <string name="不允许超过2个选项" translatable="true"> 不允许超过2个选项</string>
 <string name="不允许超过4个选项" translatable="true"> 不允许超过4个选项</string>
+<string name="不允许超过5个选项" translatable="true"> 不允许超过5个选项</string>
 	<!--
 	XuanwuGfPAdapter.java
 	-->
@@ -3092,7 +3123,7 @@
 	<!--
 	ForbiddenAdapter.java
 	-->
-<string name="主播" translatable="true"> %s(主播)</string>
+<string name="主播" translatable="true"> %1$s(主播)</string>
 <string name="解封" translatable="true"> 解封</string>
 	<!--
 	CashierInputFilter.java
@@ -3208,7 +3239,7 @@
 <string name="未绑定" translatable="true"> 未绑定</string>
 <string name="未设置提款密码前往设置" translatable="true"> 未设置提款密码.前往设置!!!</string>
 <string name="昵称只能修改一次" translatable="true"> 昵称只能修改一次</string>
-<string name="您需要达到达到vip才能使用本地图片" translatable="true"> 您需要达到达到vip%d，才能使用本地图片!</string>
+<string name="您需要达到达到vip才能使用本地图片" translatable="true"> 您需要达到达到vip%1$d，才能使用本地图片!</string>
 <string name="选择性别" translatable="true"> 选择性别</string>
 	<!--
 	ViewPagerFragemnt.java

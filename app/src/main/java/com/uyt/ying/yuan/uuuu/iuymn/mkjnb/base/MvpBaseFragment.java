@@ -40,7 +40,7 @@ public abstract class MvpBaseFragment  <T extends IBasePresenter> extends Abstra
         super.onViewCreated(view, savedInstanceState);
         mPresenter = createPresenter();
         if(mPresenter != null){
-            Utils.logE(TAG,Utils.getString(R.string.=== mPresenter 不为空) + mPresenter.getClass());
+            Utils.logE(TAG,"=== mPresenter 不为空"+ mPresenter.getClass());
             mPresenter.onAttachView(this);
         }
     }

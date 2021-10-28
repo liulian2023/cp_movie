@@ -21,6 +21,7 @@ import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.net.api.HttpApiUtils;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.request.RequestUtil;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.request.StringMyUtil;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.StatusBarUtil;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -81,7 +82,7 @@ public class OpenInviteRedActivity extends BaseActivity implements View.OnClickL
         open_red_iv=findViewById(R.id.open_red_iv);
         back_iv.setOnClickListener(this);
         open_red_iv.setOnClickListener(this);
-        red_num_tv.setText(Utils.getString(R.string.恭喜您获得)+redNum+Utils.getString(R.string.个红包));
+        red_num_tv.setText(Utils.getString(R.string.恭喜您获得)+redNum+ Utils.getString(R.string.个红包));
     }
     private void resOpenQyRed() {
         HashMap<String, Object> data = new HashMap<>();

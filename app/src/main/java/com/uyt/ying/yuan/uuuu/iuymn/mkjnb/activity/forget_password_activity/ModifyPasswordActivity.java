@@ -66,7 +66,7 @@ public class ModifyPasswordActivity extends BaseActivity implements View.OnClick
                     showToast(Utils.getString(R.string.请再次输入提款密码));
                 }
                 else if(!newPasswordEdit.getText().toString().equals(surePasswordEdit.getText().toString())){
-                    showToast(Utils.getString(R.string.两次输入的密码不一致,请重新输入));
+                    showToast(Utils.getString(R.string.两次输入的密码不一致请重新输入));
                 }
                 else {
                     HashMap<String, Object> data = new HashMap<>();

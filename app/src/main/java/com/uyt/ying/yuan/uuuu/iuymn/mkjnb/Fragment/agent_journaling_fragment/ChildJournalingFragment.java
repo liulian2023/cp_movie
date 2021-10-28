@@ -135,7 +135,7 @@ public class ChildJournalingFragment extends BaseFragment implements View.OnClic
         });
         refreshLayout.setOnLoadMoreListener(new OnLoadMoreListener() {
             @Override
-            public void onLoadMore(@NonNull RefreshLayout refreshLayout) {zzz
+            public void onLoadMore(@NonNull RefreshLayout refreshLayout) {
                pageNum++;
 //                initOrder();
                getChildInfo(pageNum+"",pageSize+"",start,end,initEdit(),orderBy,"0",true,false);
@@ -459,7 +459,7 @@ public class ChildJournalingFragment extends BaseFragment implements View.OnClic
                         initOrder(true);
                     }
                 }else {
-                    showToast(Utils.getString(R.string.未找到该下级,请重新输入));
+                    showToast(Utils.getString(R.string.未找到该下级请重新输入));
                 }
                 break;
         }

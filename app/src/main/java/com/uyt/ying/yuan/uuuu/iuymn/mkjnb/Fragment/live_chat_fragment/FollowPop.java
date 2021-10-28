@@ -38,8 +38,8 @@ public class FollowPop extends PopupWindow {
     String liveName;//标题
     int liveId;//主播id
     String imageUrl; //封面图
-    static  String CANEL_FOLLOW=Utils.getString(R.string.+取消关注);
-    static  String FOLLOW=Utils.getString(R.string.+关注);
+    static  String CANEL_FOLLOW=Utils.getString(R.string.加号取消关注);
+    static  String FOLLOW=Utils.getString(R.string.加号关注);
 
 
     public FollowPop(Context context, Fragment fragment, int isCollect, String liveName,String imageUrl,int liveId) {

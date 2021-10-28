@@ -57,7 +57,6 @@ public class RequetInterceptor implements Interceptor {
           for (int i = 0; i < body.size(); i++) {
             jsonObject.put(body.encodedName(i), body.encodedValue(i));
           }
-          Utils.logE("TAG",Utils.getString(R.string.入参JSON= ) + jsonObject.toString());
         }
       } catch (JSONException e) {
         e.printStackTrace();
@@ -70,10 +69,8 @@ public class RequetInterceptor implements Interceptor {
      * 因为response.body().string()之后，response中的流会被关闭，程序会报错，我们需要创建出一个新的response给应用层处理
      */
     ResponseBody responseBody = response.peekBody(1024 * 1024);
-    Utils.logE("TAG",Utils.getString(R.string.出参JSON=) + responseBody.string());
     long endTime = System.currentTimeMillis();
     long duration = endTime - startTime;
-    Utils.logE("TAG","----------" + Utils.getString(R.string.耗时:) + duration + Utils.getString(R.string.毫秒----------));
     return response;
 
 

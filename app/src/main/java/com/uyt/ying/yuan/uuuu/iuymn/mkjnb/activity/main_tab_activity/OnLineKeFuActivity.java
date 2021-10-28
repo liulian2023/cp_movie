@@ -37,6 +37,7 @@ import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.request.StringMyUtil;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.CommonToolbarUtil;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.SharePreferencesUtil;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.StatusBarUtil;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
 
 import java.io.File;
 import java.util.UUID;
@@ -76,7 +77,7 @@ public class OnLineKeFuActivity extends BaseActivity {
         ButterKnife.bind(this);
         StatusBarUtil.setColor(this, Color.WHITE);
         StatusBarUtil.setDarkMode(this);
-        CommonToolbarUtil.initToolbar(this,Utils.getString(R.string.在线客服));
+        CommonToolbarUtil.initToolbar(this, Utils.getString(R.string.在线客服));
         mContext = this;
         //进度条初始化
         initProgressBar();

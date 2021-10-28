@@ -75,7 +75,7 @@ public class ForgetPasswordActivity extends BaseActivity implements View.OnClick
                 showToast(Utils.getString(R.string.请输入验证码));
             }
             else if(!code.getText().equals(codeEdit.getText().toString())){
-                showToast(Utils.getString(R.string.验证码不正确,请重新输入));
+                showToast(Utils.getString(R.string.验证码不正确请重新输入));
                 code.setText(RandomCode.code());
             }
             else{

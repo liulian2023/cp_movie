@@ -673,70 +673,50 @@ public class MineFragment extends BaseFragment implements View.OnClickListener {
                 MineInfoEntity mineInfoEntity = mineInfoEntityArrayList.get(position);
                 String remark = mineInfoEntity.getRemark();
                 String isTest = SharePreferencesUtil.getString(MyApplication.getInstance(), "isTest", "");//0是测试用户 1是正式用户 -1 游客
-                switch (remark){
-                    case  Utils.getString(R.string.个人信息):
-                        //跳转个人信息后,如果用户更换的头像,返回时需要刷新头像
-                        Intent intent1 = new Intent(getContext(), UserInfoActivity.class);
-                        startActivityForResult(intent1,1);
-                        //  startActivity(new Intent(getContext(), K3Activity.class));
-                        break;
-                    case Utils.getString(R.string.余额宝):
-                        YueBaoActivity.actionStart(getContext(),SharePreferencesUtil.getInt(getContext(),"yueBaoStatus",0));
-                        break;
-                    case Utils.getString(R.string.安全中心)://点击跳转安全中心
-                        if(isTest.equals("-1")){
-                            startActivity(new Intent(getContext(), VisitorSafeCenterActivity.class));
-                        }else if(Utils.passwordIsEmpty()){
-                            RouteUtils.skipVisitorSafeCenter(getContext());
-                        }else {
-                            startActivity(new Intent(getContext(), SafeCenterActivity.class));
-                        }
-                        break;
-                    case Utils.getString(R.string.代理中心)://点击跳转代理中心
-                        if(SharePreferencesUtil.getString(getContext(),"isInfiniteAgent","").equals("0")){//无限代理
-                            startActivity(new Intent(getContext(), AgentCenterActivity.class));
-                        }else {//非无限代理
-                            startActivity(new Intent(getContext(), AgentCenter2Activity.class));
-                        }
-                        break;
-                    case Utils.getString(R.string.今日盈亏)://点击跳转今日盈亏
-                        startActivity(new Intent(getContext(), TodayWinOrLoseActvity.class));
-                        break;
-                    case Utils.getString(R.string.我的积分)://点击跳转我的积分
-                        startActivity(new Intent(getContext(), MineIntegralActivity.class));
-                        break;
-                    case Utils.getString(R.string.我的消息)://点击跳转我的消息
-                        Intent intent = new Intent(getContext(), MineMessageActivity.class);
-                        //有未读消息时跳转,选中消息页面(默认选中消息)
-                        if(letterUnreadNum!=0){
-                            intent.putExtra("toMessage",true);
-                        }
-                        startActivity(intent);
-                        break;
-                    case Utils.getString(R.string.帮助指南)://点击跳转帮助指南
-                        startActivity(new Intent(getContext(), HelpGuideActivity.class));
-                        break;
-                    case Utils.getString(R.string.关于我们)://点击跳转关于我们
-                        startActivity(new Intent(getContext(), AboutUsActivity.class));
-                        break;
-                    case Utils.getString(R.string.我的收藏):
-                        //       startActivity(new Intent(getContext(), CollectActivity.class));
-                        break;
-                    case Utils.getString(R.string.我的关注):
-                        startActivity(new Intent(getContext(), MineFollowActivity.class));
-                        break;
-                    case Utils.getString(R.string.意见反馈):
-                        startActivity(new Intent(getContext(), FeedBackActivity.class));
-                        break;
-                    case Utils.getString(R.string.我要赚钱):
-//                        startActivity(new Intent(getContext(),InviteAndMakeMoneyActivity.class));
-                        InviteAndMakeMoneyActivity.startAty(getContext(),"");
-                        break;
-                    case Utils.getString(R.string.我的装备):
-                        startActivity(new Intent(getContext(), MyEquipmentActivity.class));
-                        break;
-                    default:
-                        break;
+                if (Utils.getString(R.string.个人信息).equals(remark)) {//跳转个人信息后,如果用户更换的头像,返回时需要刷新头像
+                    Intent intent1 = new Intent(getContext(), UserInfoActivity.class);
+                    startActivityForResult(intent1, 1);
+                    //  startActivity(new Intent(getContext(), K3Activity.class));
+                } else if (Utils.getString(R.string.余额宝).equals(remark)) {
+                    YueBaoActivity.actionStart(getContext(), SharePreferencesUtil.getInt(getContext(), "yueBaoStatus", 0));
+                } else if (Utils.getString(R.string.安全中心).equals(remark)) {//点击跳转安全中心
+                    if (isTest.equals("-1")) {
+                        startActivity(new Intent(getContext(), VisitorSafeCenterActivity.class));
+                    } else if (Utils.passwordIsEmpty()) {
+                        RouteUtils.skipVisitorSafeCenter(getContext());
+                    } else {
+                        startActivity(new Intent(getContext(), SafeCenterActivity.class));
+                    }
+                } else if (Utils.getString(R.string.代理中心).equals(remark)) {//点击跳转代理中心
+                    if (SharePreferencesUtil.getString(getContext(), "isInfiniteAgent", "").equals("0")) {//无限代理
+                        startActivity(new Intent(getContext(), AgentCenterActivity.class));
+                    } else {//非无限代理
+                        startActivity(new Intent(getContext(), AgentCenter2Activity.class));
+                    }
+                } else if (Utils.getString(R.string.今日盈亏).equals(remark)) {//点击跳转今日盈亏
+                    startActivity(new Intent(getContext(), TodayWinOrLoseActvity.class));
+                } else if (Utils.getString(R.string.我的积分).equals(remark)) {//点击跳转我的积分
+                    startActivity(new Intent(getContext(), MineIntegralActivity.class));
+                } else if (Utils.getString(R.string.我的消息).equals(remark)) {//点击跳转我的消息
+                    Intent intent = new Intent(getContext(), MineMessageActivity.class);
+                    //有未读消息时跳转,选中消息页面(默认选中消息)
+                    if (letterUnreadNum != 0) {
+                        intent.putExtra("toMessage", true);
+                    }
+                    startActivity(intent);
+                } else if (Utils.getString(R.string.帮助指南).equals(remark)) {//点击跳转帮助指南
+                    startActivity(new Intent(getContext(), HelpGuideActivity.class));
+                } else if (Utils.getString(R.string.关于我们).equals(remark)) {//点击跳转关于我们
+                    startActivity(new Intent(getContext(), AboutUsActivity.class));
+                } else if (Utils.getString(R.string.我的收藏).equals(remark)) {//       startActivity(new Intent(getContext(), CollectActivity.class));
+                } else if (Utils.getString(R.string.我的关注).equals(remark)) {
+                    startActivity(new Intent(getContext(), MineFollowActivity.class));
+                } else if (Utils.getString(R.string.意见反馈).equals(remark)) {
+                    startActivity(new Intent(getContext(), FeedBackActivity.class));
+                } else if (Utils.getString(R.string.我要赚钱).equals(remark)) {//                        startActivity(new Intent(getContext(),InviteAndMakeMoneyActivity.class));
+                    InviteAndMakeMoneyActivity.startAty(getContext(), "");
+                } else if (Utils.getString(R.string.我的装备).equals(remark)) {
+                    startActivity(new Intent(getContext(), MyEquipmentActivity.class));
                 }
             }
         });
@@ -749,9 +729,9 @@ public class MineFragment extends BaseFragment implements View.OnClickListener {
         version_name_tv = footView.findViewById(R.id.version_name_tv);
         exit_login_btn.setOnClickListener(this);
         StringBuffer sbf = new StringBuffer();
-        sbf.append(Utils.getString(R.string.版本号:));
+        sbf.append(Utils.getString(R.string.版本号冒号));
         if (BuildConfig.DEBUG){
-            sbf.append(Utils.getString(R.string.测试版 ));
+            sbf.append(Utils.getString(R.string.测试版空格));
         }
         sbf.append(BuildConfig.VERSION_NAME);
         version_name_tv.setText(sbf.toString());
@@ -805,7 +785,7 @@ public class MineFragment extends BaseFragment implements View.OnClickListener {
             case  R.id.exit_login_btn:
                 AlertDialog isExit = new AlertDialog.Builder(getContext()).create();
                 isExit.setTitle(Utils.getString(R.string.退出登录));
-                isExit.setMessage(Utils.getString(R.string.确定退出登录?));
+                isExit.setMessage(Utils.getString(R.string.确定退出登录));
                 isExit.setButton(DialogInterface.BUTTON_NEGATIVE, Utils.getString(R.string.取消), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -885,7 +865,7 @@ public class MineFragment extends BaseFragment implements View.OnClickListener {
     private void initDialog(boolean skip2SafeCenter) {
         String content;
         if(skip2SafeCenter){
-            content = Utils.getString(R.string.提现前需先绑定银行卡，是否前往绑定);
+            content = Utils.getString(R.string.提现前需先绑定银行卡是否前往绑定);
         }else {
             content=Utils.getString(R.string.请先完成安全认证);
         }

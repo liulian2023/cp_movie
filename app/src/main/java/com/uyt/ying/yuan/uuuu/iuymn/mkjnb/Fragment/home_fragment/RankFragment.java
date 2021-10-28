@@ -184,9 +184,9 @@ public class RankFragment extends BaseFragment {
                 day_rank_rbt.setTextColor(colorStateList);
                 week_rank_rbt.setTextColor(colorStateList);
                 month_rank_rbt.setTextColor(colorStateList);
-                one_amount_tv.setText(Utils.getString(R.string.礼物 - - -));
-                two_amount_tv.setText(Utils.getString(R.string.礼物 - - -));
-                three_amount_tv.setText(Utils.getString(R.string.礼物 - - -));
+                one_amount_tv.setText(Utils.getString(R.string.礼物横杠));
+                two_amount_tv.setText(Utils.getString(R.string.礼物横杠));
+                three_amount_tv.setText(Utils.getString(R.string.礼物横杠));
 
                 one_onlive_linear.setVisibility(View.VISIBLE);
                 two_onlive_linear.setVisibility(View.VISIBLE);
@@ -224,9 +224,9 @@ public class RankFragment extends BaseFragment {
                 one_level_iv.setVisibility(View.VISIBLE);
                 two_level_iv.setVisibility(View.VISIBLE);
                 three_level_iv.setVisibility(View.VISIBLE);
-                one_amount_tv.setText(Utils.getString(R.string.礼物 - - -));
-                two_amount_tv.setText(Utils.getString(R.string.礼物 - - -));
-                three_amount_tv.setText(Utils.getString(R.string.礼物 - - -));
+                one_amount_tv.setText(Utils.getString(R.string.礼物横杠));
+                two_amount_tv.setText(Utils.getString(R.string.礼物横杠));
+                three_amount_tv.setText(Utils.getString(R.string.礼物横杠));
                 three_guideline.setGuidelinePercent(0.428f);
                 two_guideline.setGuidelinePercent(0.428f);
                 one_guideline.setGuidelinePercent(0.376f);
@@ -249,9 +249,9 @@ public class RankFragment extends BaseFragment {
                 one_level_iv.setVisibility(View.VISIBLE);
                 two_level_iv.setVisibility(View.VISIBLE);
                 three_level_iv.setVisibility(View.VISIBLE);
-                one_amount_tv.setText(Utils.getString(R.string.奖金:****));
-                two_amount_tv.setText(Utils.getString(R.string.奖金:****));
-                three_amount_tv.setText(Utils.getString(R.string.奖金:****));
+                one_amount_tv.setText(Utils.getString(R.string.奖金星星));
+                two_amount_tv.setText(Utils.getString(R.string.奖金星星));
+                three_amount_tv.setText(Utils.getString(R.string.奖金星星));
                 three_guideline.setGuidelinePercent(0.428f);
                 two_guideline.setGuidelinePercent(0.428f);
                 one_guideline.setGuidelinePercent(0.376f);
@@ -280,13 +280,13 @@ public class RankFragment extends BaseFragment {
                 two_level_iv.setVisibility(View.VISIBLE);
                 three_level_iv.setVisibility(View.VISIBLE);
                 //礼物  红包 场次初始化
-                one_amount_tv.setText(Utils.getString(R.string.场次 - - -));
-                two_amount_tv.setText(Utils.getString(R.string.场次 - - -));
-                three_amount_tv.setText(Utils.getString(R.string.场次 - - -));
+                one_amount_tv.setText(Utils.getString(R.string.场次横杠));
+                two_amount_tv.setText(Utils.getString(R.string.场次横杠));
+                three_amount_tv.setText(Utils.getString(R.string.场次横杠));
 
-                three_win_rate_tv.setText(Utils.getString(R.string.胜率: - - -));
-                two_win_rate_tv.setText(Utils.getString(R.string.胜率: - - -));
-                one_win_rate_tv.setText(Utils.getString(R.string.胜率: - - -));
+                three_win_rate_tv.setText(Utils.getString(R.string.胜率横杠));
+                two_win_rate_tv.setText(Utils.getString(R.string.胜率横杠));
+                one_win_rate_tv.setText(Utils.getString(R.string.胜率横杠));
                 //专享 邀请 布局高度初始化
                 three_guideline.setGuidelinePercent(0.428f);
                 two_guideline.setGuidelinePercent(0.428f);
@@ -307,9 +307,9 @@ public class RankFragment extends BaseFragment {
                 one_level_iv.setVisibility(View.VISIBLE);
                 two_level_iv.setVisibility(View.VISIBLE);
                 three_level_iv.setVisibility(View.VISIBLE);
-                one_amount_tv.setText(Utils.getString(R.string.红包 - - -));
-                two_amount_tv.setText(Utils.getString(R.string.红包 - - -));
-                three_amount_tv.setText(Utils.getString(R.string.红包 - - -));
+                one_amount_tv.setText(Utils.getString(R.string.红包横杠));
+                two_amount_tv.setText(Utils.getString(R.string.红包横杠));
+                three_amount_tv.setText(Utils.getString(R.string.红包横杠));
 
 
                 three_guideline.setGuidelinePercent(0.328f);
@@ -328,9 +328,9 @@ public class RankFragment extends BaseFragment {
                 two_onlive_linear.setVisibility(View.GONE);
                 three_onlive_linear.setVisibility(View.GONE);
 
-                one_amount_tv.setText(Utils.getString(R.string.红包 - - -));
-                two_amount_tv.setText(Utils.getString(R.string.红包 - - -));
-                three_amount_tv.setText(Utils.getString(R.string.红包 - - -));
+                one_amount_tv.setText(Utils.getString(R.string.红包横杠));
+                two_amount_tv.setText(Utils.getString(R.string.红包横杠));
+                three_amount_tv.setText(Utils.getString(R.string.红包横杠));
                 three_guideline.setGuidelinePercent(0.328f);
                 two_guideline.setGuidelinePercent(0.328f);
                 one_guideline.setGuidelinePercent(0.276f);
@@ -613,7 +613,7 @@ public class RankFragment extends BaseFragment {
         if(title.equals(MINGXING)){
             GlideLoadViewUtil.FLoadTitleView(RankFragment.this, Utils.checkLiveImageUrl(threeBean.getImage()) , three_title_iv);
             three_name_tv.setText(threeBean.getNickname());
-            three_amount_tv.setText(threeBean.getRedPrice().contains(Utils.getString(R.string.礼物))?threeBean.getRedPrice():Utils.getString(R.string.礼物: )+threeBean.getRedPrice());
+            three_amount_tv.setText(threeBean.getRedPrice().contains(Utils.getString(R.string.礼物))?threeBean.getRedPrice():Utils.getString(R.string.礼物冒号 )+threeBean.getRedPrice());
             if(threeBean.getStatus().equals("1")){
                 three_onlive_linear.setVisibility(View.VISIBLE);
             }else {
@@ -623,36 +623,36 @@ public class RankFragment extends BaseFragment {
             GlideLoadViewUtil.FLoadTitleView(RankFragment.this,Utils.checkImageUrl(threeBean.getImage()), three_title_iv);
             if(title.equals(GONGXIAN)){
                 three_name_tv.setText(threeBean.getUserNickName());
-                three_amount_tv.setText(threeBean.getAnchorGift().contains(Utils.getString(R.string.礼物))?threeBean.getAnchorGift():Utils.getString(R.string.礼物: )+threeBean.getAnchorGift());
+                three_amount_tv.setText(threeBean.getAnchorGift().contains(Utils.getString(R.string.礼物))?threeBean.getAnchorGift():Utils.getString(R.string.礼物冒号)+threeBean.getAnchorGift());
                 int pointGrade =Integer.parseInt(threeBean.getPointGrade());
                 setHeadLevelIv(pointGrade,three_level_iv);
             }else if(title.equals(FUHAO)){
                 three_name_tv.setText(threeBean.getNickname());
-                three_amount_tv.setText(Utils.getString(R.string.奖金:****));
+                three_amount_tv.setText(Utils.getString(R.string.奖金星星));
                 setHeadLevelIv(threeBean.getGrade(),three_level_iv);
             }else if(title.equals(DUSHEN)){
                 three_name_tv.setText(threeBean.getNickname());
                 int zjNum = threeBean.getZjNum();
                 int tzNum = threeBean.getTzNum();
                 if(StringMyUtil.isEmptyString(zjNum)){
-                    three_amount_tv.setText(Utils.getString(R.string.场次: - - - ));
-                    three_win_rate_tv.setText(Utils.getString(R.string.胜率: - - - ));
+                    three_amount_tv.setText(Utils.getString(R.string.场次横杠 ));
+                    three_win_rate_tv.setText(Utils.getString(R.string.胜率横杠 ));
                 }else {
-                    three_amount_tv.setText(Utils.getString(R.string.场次: )+ tzNum +Utils.getString(R.string.中)+ zjNum);//设置中奖场次
+                    three_amount_tv.setText(Utils.getString(R.string.场次冒号 )+ tzNum +Utils.getString(R.string.中奖)+ zjNum);//设置中奖场次
                     if(zjNum==0){
-                        three_win_rate_tv.setText(Utils.getString(R.string.胜率： 0.00%));
+                        three_win_rate_tv.setText(Utils.getString(R.string.胜率0_00));
                     }else {
-                        three_win_rate_tv.setText(Utils.getString(R.string.胜率: )+new BigDecimal(Double.parseDouble(zjNum+"")/Double.parseDouble(tzNum+"")*100).setScale(2,BigDecimal.ROUND_HALF_DOWN)+"%");//设置中奖比例
+                        three_win_rate_tv.setText(Utils.getString(R.string.胜率冒号 )+new BigDecimal(Double.parseDouble(zjNum+"")/Double.parseDouble(tzNum+"")*100).setScale(2,BigDecimal.ROUND_HALF_DOWN)+"%");//设置中奖比例
                     }
                 }
                 setHeadLevelIv(threeBean.getGrade(),three_level_iv);
             }else if(title.equals(YAOQING)){
                 three_name_tv.setText(threeBean.getNickname());
-                three_amount_tv.setText(threeBean.getTotalQuYueHBPrice().contains(Utils.getString(R.string.红包))?threeBean.getTotalQuYueHBPrice():Utils.getString(R.string.红包: )+threeBean.getTotalQuYueHBPrice());
+                three_amount_tv.setText(threeBean.getTotalQuYueHBPrice().contains(Utils.getString(R.string.红包))?threeBean.getTotalQuYueHBPrice():Utils.getString(R.string.红包冒号)+threeBean.getTotalQuYueHBPrice());
                 setHeadLevelIv(threeBean.getGrade(),three_level_iv);
             }else if(title.equals(ZHUANXIANG)){
                 three_name_tv.setText(threeBean.getNickname());
-                three_amount_tv.setText(threeBean.getTotalZxHBPrice().contains(Utils.getString(R.string.红包))?threeBean.getTotalZxHBPrice():Utils.getString(R.string.红包: )+threeBean.getTotalZxHBPrice());
+                three_amount_tv.setText(threeBean.getTotalZxHBPrice().contains(Utils.getString(R.string.红包))?threeBean.getTotalZxHBPrice():Utils.getString(R.string.红包冒号 )+threeBean.getTotalZxHBPrice());
                 setHeadLevelIv(threeBean.getGrade(),three_level_iv);
             }
         }
@@ -678,7 +678,7 @@ public class RankFragment extends BaseFragment {
         if(title.equals(MINGXING)){
             GlideLoadViewUtil.FLoadTitleView(RankFragment.this, Utils.checkLiveImageUrl(twobean.getImage()) , two_title_iv);
             two_name_tv.setText(twobean.getNickname());
-            two_amount_tv.setText(twobean.getRedPrice().contains(Utils.getString(R.string.礼物))?twobean.getRedPrice():Utils.getString(R.string.礼物: )+twobean.getRedPrice());
+            two_amount_tv.setText(twobean.getRedPrice().contains(Utils.getString(R.string.礼物))?twobean.getRedPrice():Utils.getString(R.string.礼物冒号 )+twobean.getRedPrice());
             if(twobean.getStatus().equals("1")){
                 two_onlive_linear.setVisibility(View.VISIBLE);
             }else {
@@ -688,36 +688,36 @@ public class RankFragment extends BaseFragment {
             GlideLoadViewUtil.FLoadTitleView(RankFragment.this,Utils.checkImageUrl(twobean.getImage()), two_title_iv);
             if(title.equals(GONGXIAN)){
                 two_name_tv.setText(twobean.getUserNickName());
-                two_amount_tv.setText(twobean.getAnchorGift().contains(Utils.getString(R.string.礼物))?twobean.getAnchorGift():Utils.getString(R.string.礼物: )+twobean.getAnchorGift());
+                two_amount_tv.setText(twobean.getAnchorGift().contains(Utils.getString(R.string.礼物))?twobean.getAnchorGift():Utils.getString(R.string.礼物冒号 )+twobean.getAnchorGift());
                 setHeadLevelIv(Integer.parseInt(twobean.getPointGrade()),two_level_iv);
             }else if(title.equals(FUHAO)){
                 two_name_tv.setText(twobean.getNickname());
 //                two_amount_tv.setText(twobean.getZjPrice());
-                two_amount_tv.setText(Utils.getString(R.string.奖金:****));
+                two_amount_tv.setText(Utils.getString(R.string.奖金星星));
                 setHeadLevelIv(twobean.getGrade(),two_level_iv);
             }else if(title.equals(DUSHEN)){
                 two_name_tv.setText(twobean.getNickname());
                 int zjNum = twobean.getZjNum();
                 int tzNum = twobean.getTzNum();
                 if(StringMyUtil.isEmptyString(zjNum)){
-                    two_amount_tv.setText(Utils.getString(R.string.场次: - - - ));
-                    two_win_rate_tv.setText(Utils.getString(R.string.胜率: - - - ));
+                    two_amount_tv.setText(Utils.getString(R.string.场次横杠 ));
+                    two_win_rate_tv.setText(Utils.getString(R.string.胜率横杠 ));
                 }else {
-                    two_amount_tv.setText(Utils.getString(R.string.场次: )+ tzNum +Utils.getString(R.string.中)+ zjNum);//设置中奖场次
+                    two_amount_tv.setText(Utils.getString(R.string.场次冒号 )+ tzNum +Utils.getString(R.string.中奖)+ zjNum);//设置中奖场次
                     if(zjNum==0){
-                        two_win_rate_tv.setText(Utils.getString(R.string.胜率： 0.00%));
+                        two_win_rate_tv.setText(Utils.getString(R.string.胜率0_00));
                     }else {
-                        two_win_rate_tv.setText(Utils.getString(R.string.胜率: )+new BigDecimal(Double.parseDouble(zjNum+"")/Double.parseDouble(tzNum+"")*100).setScale(2,BigDecimal.ROUND_HALF_DOWN)+"%");//设置中奖比例
+                        two_win_rate_tv.setText(Utils.getString(R.string.胜率冒号 )+new BigDecimal(Double.parseDouble(zjNum+"")/Double.parseDouble(tzNum+"")*100).setScale(2,BigDecimal.ROUND_HALF_DOWN)+"%");//设置中奖比例
                     }
                 }
                 setHeadLevelIv(twobean.getGrade(),two_level_iv);
             }else if(title.equals(YAOQING)){
                 two_name_tv.setText(twobean.getNickname());
-                two_amount_tv.setText(twobean.getTotalQuYueHBPrice().contains(Utils.getString(R.string.红包))?twobean.getTotalQuYueHBPrice():Utils.getString(R.string.红包: )+twobean.getTotalQuYueHBPrice());
+                two_amount_tv.setText(twobean.getTotalQuYueHBPrice().contains(Utils.getString(R.string.红包))?twobean.getTotalQuYueHBPrice():Utils.getString(R.string.红包)+twobean.getTotalQuYueHBPrice());
                 setHeadLevelIv(twobean.getGrade(),two_level_iv);
             }else if(title.equals(ZHUANXIANG)){
                 two_name_tv.setText(twobean.getNickname());
-                two_amount_tv.setText(twobean.getTotalZxHBPrice().contains(Utils.getString(R.string.红包))?twobean.getTotalZxHBPrice():Utils.getString(R.string.红包: )+twobean.getTotalZxHBPrice());
+                two_amount_tv.setText(twobean.getTotalZxHBPrice().contains(Utils.getString(R.string.红包))?twobean.getTotalZxHBPrice():Utils.getString(R.string.红包冒号 )+twobean.getTotalZxHBPrice());
                 setHeadLevelIv(twobean.getGrade(),two_level_iv);
             }
         }
@@ -730,7 +730,7 @@ public class RankFragment extends BaseFragment {
         if(title.equals(MINGXING)){
             GlideLoadViewUtil.FLoadTitleView(RankFragment.this, Utils.checkLiveImageUrl(oneBeen.getImage()) , one_title_iv);
             one_name_tv.setText(oneBeen.getNickname());
-            one_amount_tv.setText(oneBeen.getRedPrice().contains(Utils.getString(R.string.礼物))?oneBeen.getRedPrice():Utils.getString(R.string.礼物: )+oneBeen.getRedPrice());
+            one_amount_tv.setText(oneBeen.getRedPrice().contains(Utils.getString(R.string.礼物))?oneBeen.getRedPrice():Utils.getString(R.string.礼物冒号 )+oneBeen.getRedPrice());
             if(oneBeen.getStatus().equals("1")){
                 one_onlive_linear.setVisibility(View.VISIBLE);
             }else {
@@ -740,35 +740,35 @@ public class RankFragment extends BaseFragment {
             GlideLoadViewUtil.FLoadTitleView(RankFragment.this,Utils.checkImageUrl(oneBeen.getImage()), one_title_iv);
             if(title.equals(GONGXIAN)){
                 one_name_tv.setText(oneBeen.getUserNickName());
-                one_amount_tv.setText(oneBeen.getAnchorGift().contains(Utils.getString(R.string.礼物))?oneBeen.getAnchorGift():Utils.getString(R.string.礼物: )+oneBeen.getAnchorGift());
+                one_amount_tv.setText(oneBeen.getAnchorGift().contains(Utils.getString(R.string.礼物))?oneBeen.getAnchorGift():Utils.getString(R.string.礼物冒号 )+oneBeen.getAnchorGift());
                 setHeadLevelIv(Integer.parseInt(oneBeen.getPointGrade()),one_level_iv);
             }else if(title.equals(FUHAO)){
                 one_name_tv.setText(oneBeen.getNickname());
-                one_amount_tv.setText(Utils.getString(R.string.奖金:****));
+                one_amount_tv.setText(Utils.getString(R.string.奖金星星));
                 setHeadLevelIv(oneBeen.getGrade(),one_level_iv);
             }else if(title.equals(DUSHEN)){
                 one_name_tv.setText(oneBeen.getNickname());
                 int zjNum = oneBeen.getZjNum();
                 int tzNum = oneBeen.getTzNum();
                 if(StringMyUtil.isEmptyString(zjNum)){
-                    one_amount_tv.setText(Utils.getString(R.string.场次: - - - ));
-                    one_win_rate_tv.setText(Utils.getString(R.string.胜率: - - - ));
+                    one_amount_tv.setText(Utils.getString(R.string.场次横杠 ));
+                    one_win_rate_tv.setText(Utils.getString(R.string.胜率横杠 ));
                 }else {
-                    one_amount_tv.setText(Utils.getString(R.string.场次: )+ tzNum +Utils.getString(R.string.中)+ zjNum);//设置中奖场次
+                    one_amount_tv.setText(Utils.getString(R.string.场次冒号 )+ tzNum +Utils.getString(R.string.中奖)+ zjNum);//设置中奖场次
                     if(zjNum==0){
-                        one_win_rate_tv.setText(Utils.getString(R.string.胜率： 0.00%));
+                        one_win_rate_tv.setText(Utils.getString(R.string.胜率0_00));
                     }else {
-                        one_win_rate_tv.setText(Utils.getString(R.string.胜率: )+new BigDecimal(Double.parseDouble(zjNum+"")/Double.parseDouble(tzNum+"")*100).setScale(2,BigDecimal.ROUND_HALF_DOWN)+"%");//设置中奖比例
+                        one_win_rate_tv.setText(Utils.getString(R.string.胜率冒号)+new BigDecimal(Double.parseDouble(zjNum+"")/Double.parseDouble(tzNum+"")*100).setScale(2,BigDecimal.ROUND_HALF_DOWN)+"%");//设置中奖比例
                     }
                 }
                 setHeadLevelIv(oneBeen.getGrade(),one_level_iv);
             }else if(title.equals(YAOQING)){
                 one_name_tv.setText(oneBeen.getNickname());
-                one_amount_tv.setText(oneBeen.getTotalQuYueHBPrice().contains(Utils.getString(R.string.红包))?oneBeen.getTotalQuYueHBPrice():Utils.getString(R.string.红包: )+oneBeen.getTotalQuYueHBPrice());
+                one_amount_tv.setText(oneBeen.getTotalQuYueHBPrice().contains(Utils.getString(R.string.红包))?oneBeen.getTotalQuYueHBPrice():Utils.getString(R.string.红包冒号 )+oneBeen.getTotalQuYueHBPrice());
                 setHeadLevelIv(oneBeen.getGrade(),one_level_iv);
             }else if(title.equals(ZHUANXIANG)){
                 one_name_tv.setText(oneBeen.getNickname());
-                one_amount_tv.setText(oneBeen.getTotalZxHBPrice().contains(Utils.getString(R.string.红包))?oneBeen.getTotalZxHBPrice():Utils.getString(R.string.红包: )+oneBeen.getTotalZxHBPrice());
+                one_amount_tv.setText(oneBeen.getTotalZxHBPrice().contains(Utils.getString(R.string.红包))?oneBeen.getTotalZxHBPrice():Utils.getString(R.string.红包冒号 )+oneBeen.getTotalZxHBPrice());
                 setHeadLevelIv(oneBeen.getGrade(),one_level_iv);
             }
         }

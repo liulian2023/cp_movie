@@ -257,7 +257,7 @@ public class UserInfoFragment extends BaseFragment implements View.OnClickListen
                 uploadImg(s);
             } else {
                 //压缩失败
-                showToast(Utils.getString(R.string.系统出现错误,请重试));
+                showToast(Utils.getString(R.string.系统出现错误请重试));
             }
 
         }
@@ -272,7 +272,7 @@ public class UserInfoFragment extends BaseFragment implements View.OnClickListen
             }
             uploadImg(s);
         }else {
-            showToast(Utils.getString(R.string.未知错误,请重试));
+            showToast(Utils.getString(R.string.未知错误请重试));
         }
     }
     }
@@ -347,7 +347,7 @@ public class UserInfoFragment extends BaseFragment implements View.OnClickListen
                 if(havaePaypassword==null||havaePaypassword==""){
                     AlertDialog isExit = new AlertDialog.Builder(getContext()).create();
                     isExit.setTitle(Utils.getString(R.string.温馨提示));
-                    isExit.setMessage(Utils.getString(R.string.未设置提款密码.前往设置!!!));
+                    isExit.setMessage(Utils.getString(R.string.未设置提款密码前往设置));
                     isExit.setButton(DialogInterface.BUTTON_NEGATIVE, Utils.getString(R.string.取消), new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
@@ -542,7 +542,7 @@ public class UserInfoFragment extends BaseFragment implements View.OnClickListen
                             checkCameraPermission();
                             bottomSwitchPop.dismiss();
                         }else {
-                            showToast(String.format(Utils.getString(R.string.您需要达到达到vip%d，才能使用本地图片!),editNicknameLevel));
+                            showToast(String.format(Utils.getString(R.string.您需要达到达到vip才能使用本地图片),editNicknameLevel));
                         }
                         break;
                     case 1://相册
@@ -550,7 +550,7 @@ public class UserInfoFragment extends BaseFragment implements View.OnClickListen
                             checkPhotoPermissions();
                             bottomSwitchPop.dismiss();
                         }else {
-                            showToast(String.format(Utils.getString(R.string.您需要达到达到vip%d，才能使用本地图片!),editNicknameLevel));
+                            showToast(String.format(Utils.getString(R.string.您需要达到达到vip才能使用本地图片),editNicknameLevel));
                         }
                         break;
                     case 2://系统图片

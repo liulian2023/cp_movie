@@ -77,7 +77,6 @@ public abstract class AbstractRootFragment extends SupportFragment {
      */
     @Override
     public boolean onBackPressedSupport() {
-        Utils.logE(TAG,Utils.getString(R.string.===onBackPressedSupport  调用));
         return super.onBackPressedSupport();
     }
 

@@ -60,12 +60,12 @@ public class USDTManageActivity extends BaseActivity {
             usdt_card_group.setVisibility(View.GONE);
             no_bind_tv.setVisibility(View.VISIBLE);
             add_button.setVisibility(View.VISIBLE);
-            usdt_tip_tv.setText(Utils.getString(R.string.温馨提示:\n1.绑定地址必须为USDT-ERC20地址;\n2.请务必再三确认连接名称为：ERC20地址;\n3.如绑定地址遇到未知问题请及时联系客服。));
+            usdt_tip_tv.setText(Utils.getString(R.string.温馨提示绑定地址必须为USDTERC20地址请务必再三确认连接名称为));
         }else {
             usdt_card_group.setVisibility(View.VISIBLE);
             no_bind_tv.setVisibility(View.GONE);
             add_button.setVisibility(View.GONE);
-            usdt_tip_tv.setText(Utils.getString(R.string.温馨提示：\n如需修改USDT地址请联系客服。));
+            usdt_tip_tv.setText(Utils.getString(R.string.温馨提示如需修改USDT地址请联系客服));
             requestUserInfo();
             Utils.RequestUsingEquipment(this,null);
         }

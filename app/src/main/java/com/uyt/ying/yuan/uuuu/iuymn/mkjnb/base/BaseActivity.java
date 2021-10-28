@@ -20,6 +20,7 @@ import android.view.Gravity;
 import android.view.KeyEvent;
 
 import com.hjq.toast.ToastUtils;
+import com.uyt.ying.yuan.R;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.receiver.NetWorkStateReceiver;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.request.StringMyUtil;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.ActivityUtil;
@@ -171,7 +172,7 @@ public abstract class BaseActivity extends MySupportActivity   implements NetWor
             MyApplication.setBackNoPermission(false);
             AlertDialog isExit = new AlertDialog.Builder(this).create();
             isExit.setTitle(Utils.getString(R.string.温馨提示));
-            isExit.setMessage(Utils.getString(R.string.是否要开启聊天室悬浮球?));
+            isExit.setMessage(Utils.getString(R.string.是否要开启聊天室悬浮球));
             isExit.setButton(DialogInterface.BUTTON_NEGATIVE, Utils.getString(R.string.取消), new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
@@ -296,7 +297,7 @@ public abstract class BaseActivity extends MySupportActivity   implements NetWor
         // 移除Activity
         ActivityUtil.getInstance().removeActivity(this);
         unregisterReceiver(netWorkStateReceiver);
-        Utils.logE("",Utils.getString(R.string.注销));
+        Utils.logE("","注销");
         ProgressDialogUtil.stop(this);
 //        ActivityStack.getInstance().remove(this);
         MemoryLeakUtil.fixLeak(this);

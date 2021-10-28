@@ -241,7 +241,7 @@ public class BindBankCardActivity extends BaseActivity implements View.OnClickLi
                     pvOptions.setPicker(options1Items, options2Items, options3Items);//三级选择器
                     pvOptions.show();
                 }else {
-                    showToast(Utils.getString(R.string.正在获取城市信息,请稍后));
+                    showToast(Utils.getString(R.string.正在获取城市信息请稍后));
                 }
 
               /*  CityPickerView mCityPickerView = new CityPickerView(this);
@@ -308,11 +308,11 @@ public class BindBankCardActivity extends BaseActivity implements View.OnClickLi
                 }else if(StringMyUtil.isEmptyString(cardNum.getText().toString())){
                     showToast(Utils.getString(R.string.请输入银行卡号));
                 }else if(cardNum.getText().toString().length()<16){
-                    showToast(Utils.getString(R.string.银行卡格式不规范,请重新输入));
+                    showToast(Utils.getString(R.string.银行卡格式不规范请重新输入));
                 } else if(StringMyUtil.isEmptyString(sureCardNum.getText().toString())){
                     showToast(Utils.getString(R.string.请再次输入银行卡号));
                 }else if(!cardNum.getText().toString().equals(sureCardNum.getText().toString())){
-                    showToast(Utils.getString(R.string.两次卡号输入不一致,请重新输入));
+                    showToast(Utils.getString(R.string.两次卡号输入不一致请重新输入));
                 }else if(StringMyUtil.isEmptyString(payPassword.getText().toString())){
                     showToast(Utils.getString(R.string.请输入提款密码));
                 }/*else if(!.equals(Password)){

@@ -91,7 +91,7 @@ public class EditPanel extends LinearLayout {
                 int mineGrade = SharePreferencesUtil.getInt(getContext(), CommonStr.GRADE, 1);
                 ManagerTypeEntity managerTypeEntity = liveFragment.managerTypeEntity;
                 if(managerTypeEntity==null){
-                    ToastUtil.showToast(Utils.getString(R.string.请等待数据加载完毕!));
+                    ToastUtil.showToast(Utils.getString(R.string.请等待数据加载完毕));
                     return;
                 }
                 int isLevel = managerTypeEntity.getIsLevel();//发言等级限制
@@ -131,7 +131,7 @@ public class EditPanel extends LinearLayout {
                     }
                 }
                 if(forbiddenSelf&&liveFragment!=null){
-                    ProgressDialogUtil.show(liveFragment.getContext(),Utils.getString(R.string. 敏感词检测中...));
+                    ProgressDialogUtil.show(liveFragment.getContext(),Utils.getString(R.string. 敏感词检测中));
                     //输入框中包含敏感词 封禁自己并返回首页
                     HashMap<String, Object> data = new HashMap<>();
                     data.put("anchorAccount",liveFragment.getmLiveData().getAnchorAccount());
@@ -140,7 +140,7 @@ public class EditPanel extends LinearLayout {
                         @Override
                         public void onSuccess(String result, Headers headers) {
                             ProgressDialogUtil.stop(liveFragment.getContext());
-                            CommonSurePop commonSurePop = new CommonSurePop(liveFragment.getContext(),false,Utils.getString(R.string.系统提示),Utils.getString(R.string.系统检测到敏感词，您的账号已被封禁));
+                            CommonSurePop commonSurePop = new CommonSurePop(liveFragment.getContext(),false,Utils.getString(R.string.系统提示),Utils.getString(R.string.系统检测到敏感词您的账号已被封禁));
                             commonSurePop.showAtLocation(liveFragment.drawerlayout, Gravity.CENTER,0,0);
                             ProgressDialogUtil.darkenBackground(liveFragment.getActivity(),0.5f);
                             commonSurePop.setOnPopClickListener(new BasePopupWindow2.OnPopClickListener() {
@@ -234,7 +234,7 @@ public class EditPanel extends LinearLayout {
             if(StringMyUtil.isNotEmpty(speechIntervalSeconds)){
                 long l = new Date().getTime() - lastSendTime;
                 if( l <Long.parseLong(speechIntervalSeconds)*1000&&l!=0){
-                    ToastUtil.showToast(String.format(Utils.getString(R.string.发言过于频繁，VIP%d的发言间隔为%s秒),mineGrade,speechIntervalSeconds));
+                    ToastUtil.showToast(String.format(Utils.getString(R.string.发言过于频繁VIP的发言间隔为秒),mineGrade,speechIntervalSeconds));
                     return true;
                 }
             }

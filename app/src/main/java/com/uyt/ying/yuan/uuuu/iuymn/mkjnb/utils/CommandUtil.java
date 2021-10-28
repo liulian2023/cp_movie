@@ -75,7 +75,7 @@ public class CommandUtil {
                 if (lineStr.contains("avg")) {
                     int i = lineStr.indexOf("/", 20);
                     int j = lineStr.indexOf(".", i);
-                    Utils.logE(TAG, Utils.getString(R.string.ping success 延迟:: )+ lineStr.substring(i + 1, j) );
+                    Utils.logE(TAG, "ping success 延迟::"+ lineStr.substring(i + 1, j) );
                     delay = lineStr.substring(i + 1, j);
                     return Long.parseLong(StringMyUtil.isEmptyString(delay)?"10000":delay);
                 }

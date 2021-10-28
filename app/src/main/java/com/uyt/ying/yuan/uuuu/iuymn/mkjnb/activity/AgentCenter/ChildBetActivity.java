@@ -131,8 +131,8 @@ public class ChildBetActivity extends BaseActivity implements View.OnClickListen
             public void success(String content) {
                 childBetAndDealAllPopArrayList.clear();
                 JSONObject jsonObject1 = JSONObject.parseObject(content);
-                JSONArray gameClassList = jsonObject1.getJSONArray("gameClassListUtils.getString(R.string.);
-                ChildBetAndDealAllPop child = new ChildBetAndDealAllPop(getString(R.string.全部彩票), )", "", "");
+                JSONArray gameClassList = jsonObject1.getJSONArray("gameClassListUtils");
+                ChildBetAndDealAllPop child = new ChildBetAndDealAllPop(getString(R.string.全部彩票), "", "", "");
                 child.setStatus(1);//默认点击
                 childBetAndDealAllPopArrayList.add(child);
                 for (int i=0;i<gameClassList.size();i++) {

@@ -99,12 +99,12 @@ public class AtyFragment extends BaseFragment {
             HttpApiUtils.CPnormalRequest(getActivity(), this, RequestUtil.WATCH_MINUTES, data, new HttpApiUtils.OnRequestLintener() {
                 @Override
                 public void onSuccess(String result, Headers headers) {
-                    Utils.logE(TAG, Utils.getString(R.string.onSuccess: 用户行为统计成功 page =)+page );
+                    Utils.logE(TAG, "onSuccess: 用户行为统计成功 page ="+page );
                 }
 
                 @Override
                 public void onFailed(String msg) {
-                    Utils.logE(TAG, Utils.getString(R.string.onSuccess: 用户行为统计失败 page =)+page+ msg );
+                    Utils.logE(TAG, "onSuccess: 用户行为统计失败 page ="+page+ msg );
                 }
             });
         }
@@ -185,8 +185,8 @@ public class AtyFragment extends BaseFragment {
                     atyCenterArrayList.add(aty);
                 }
                 if(showCodeAmountMyself==0){
-                    String liveIcon6 = Utils.getHomeLogo("liveIcon6Utils.getString(R.string.);
-                    AtyCenter aty1 = new AtyCenter(R.drawable.ac_icon1, getString(R.string.每日加奖), getString(R.string.每日加奖是根据会员昨日投注金额),liveIcon6,1,1,)");
+                    String liveIcon6 = Utils.getHomeLogo("liveIcon6");
+                    AtyCenter aty1 = new AtyCenter(R.drawable.ac_icon1, getString(R.string.每日加奖), getString(R.string.每日加奖是根据会员昨日投注金额),liveIcon6,1,1,"");
                     atyCenterArrayList.add(aty1);
                 }
                 JSONObject jsonObject1 = JSONObject.parseObject(content);

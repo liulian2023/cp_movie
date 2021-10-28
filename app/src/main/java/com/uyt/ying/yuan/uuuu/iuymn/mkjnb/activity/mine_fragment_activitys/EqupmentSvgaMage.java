@@ -69,7 +69,7 @@ public class EqupmentSvgaMage {
         svgaImageView.setCallback(new SVGACallback() {
             @Override
             public void onPause() {
-                Utils.logE(TAG, Utils.getString(R.string.onFinished: 动画暂停播放));
+                Utils.logE(TAG, "onFinished: 动画暂停播放");
 
             }
 
@@ -78,7 +78,7 @@ public class EqupmentSvgaMage {
              */
             @Override
             public void onFinished() {
-                Utils.logE(TAG, Utils.getString(R.string.onFinished: 动画播放结束));
+                Utils.logE(TAG, "onFinished: 动画播放结束");
                 if(svgaList!=null && svgaList.size()>0){
                     svgaList.remove(0);
                     if(svgaList!=null && svgaList.size()>0){
@@ -154,7 +154,7 @@ public class EqupmentSvgaMage {
                                     0.0f,//行距增加值，默认是0
                                     false//文本顶部和底部是否留白
                             ), "content1");
-                            SpannableStringBuilder joinStringBuilder = new SpannableStringBuilder(Utils.getString(R.string.乘坐 【)+mountName+Utils.getString(R.string.】 来了));
+                            SpannableStringBuilder joinStringBuilder = new SpannableStringBuilder(Utils.getString(R.string.乘坐)+mountName+Utils.getString(R.string.来了));
 //                            joinStringBuilder.setSpan(new ForegroundColorSpan(Color.WHITE), 0, joinStringBuilder.length(), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
                             TextPaint joinTextPaint = new TextPaint();
                             joinTextPaint.setColor(Color.WHITE);
@@ -191,7 +191,7 @@ public class EqupmentSvgaMage {
 
                     @Override
                     public void onError() {
-                        Utils.logE(TAG, Utils.getString(R.string.onError: 礼物特效播放失败) );
+                        Utils.logE(TAG, "onError: 礼物特效播放失败" );
                         hideView(true);
                         //如果动画数组列表大于0,移除第一位的动画,继续循环解析
                         if (svgaList.size() > 0) {

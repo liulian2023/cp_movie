@@ -273,13 +273,13 @@ public class LiveActivity extends MvpBaseActivity {
             HttpApiUtils.CPnormalRequest(this, null, RequestUtil.WATCH_MINUTES, data, new HttpApiUtils.OnRequestLintener() {
                 @Override
                 public void onSuccess(String result, Headers headers) {
-                    Utils.logE(TAG, Utils.getString(R.string.onSuccess: 观看直播次数+时长统计成功 次数)+watchTimes);
+                    Utils.logE(TAG, "onSuccess: 观看直播次数+时长统计成功 次数"+watchTimes);
 //                requestWatchMinutes();
                 }
 
                 @Override
                 public void onFailed(String msg) {
-                    Utils.logE(TAG, Utils.getString(R.string.onFailed: 观看直播次数+时长统计失败)+msg );
+                    Utils.logE(TAG, "onFailed: 观看直播次数+时长统计失败"+msg );
                 }
             });
         }
@@ -298,13 +298,13 @@ public class LiveActivity extends MvpBaseActivity {
             HttpApiUtils.CPnormalRequest(this, null, RequestUtil.WATCH_MINUTES, data, new HttpApiUtils.OnRequestLintener() {
                 @Override
                 public void onSuccess(String result, Headers headers) {
-                    Utils.logE(TAG, Utils.getString(R.string.观看时长统计成功 分钟数:)+ data.get("minutes"));
+                    Utils.logE(TAG, "观看时长统计成功 分钟数:"+ data.get("minutes"));
                     enterTime= System.currentTimeMillis();
                 }
 
                 @Override
                 public void onFailed(String msg) {
-                    Utils.logE(TAG, Utils.getString(R.string.观看时长统计失败 )+msg);
+                    Utils.logE(TAG, "观看时长统计失败"+msg);
                 }
             });
         }
@@ -372,12 +372,12 @@ public class LiveActivity extends MvpBaseActivity {
             RongLibUtils.quitChatRoom(joinChatroomId, new RongIMClient.OperationCallback() {
                 @Override
                 public void onSuccess() {
-                    Utils.logE(TAG, Utils.getString(R.string. rongLog onSuccess:  退出聊天室成功 + roomId: ) + joinChatroomId);
+                    Utils.logE(TAG, "rongLog onSuccess:   " + joinChatroomId);
                 }
 
                 @Override
                 public void onError(RongIMClient.ErrorCode errorCode) {
-                    Utils.logE(TAG, Utils.getString(R.string.rongLog  onError:  退出聊天室失败 + roomId: ) + joinChatroomId);
+                    Utils.logE(TAG, "rongLog  onError:  退出聊天室失败 + roomId: " + joinChatroomId);
                 }
             });
         }

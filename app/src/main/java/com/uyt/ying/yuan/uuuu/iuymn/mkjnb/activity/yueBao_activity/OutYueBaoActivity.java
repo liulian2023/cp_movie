@@ -54,7 +54,7 @@ public class OutYueBaoActivity extends BaseActivity implements View.OnClickListe
                 String amount = yueBaoVo.getString("amount");
                 userAmount=amount;
                 amountEt.setText("");
-                amountEt.setHint(Utils.getString(R.string.可转出金额0.00-)+userAmount);
+                amountEt.setHint(Utils.getString(R.string.可转出金额0_00)+userAmount);
 
             }
 

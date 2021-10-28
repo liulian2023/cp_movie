@@ -13,6 +13,7 @@ import com.uyt.ying.yuan.R;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.adapter.main_tab_adapter.UpLevelRewardRecycleAdapter;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.base.BaseActivity;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.model.UpLevelRewardModel;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
 
 import java.util.ArrayList;
 
@@ -71,7 +72,7 @@ public class HongYunActivity extends BaseActivity {
         upLevelRewardModelArrayList.add(new UpLevelRewardModel("23:50",Utils.getString(R.string.转入2W),"3W","2W"));
         upLevelRewardModelArrayList.add(new UpLevelRewardModel("23:55",Utils.getString(R.string.转出1W),"2W","2W"));
         upLevelRewardModelArrayList.add(new UpLevelRewardModel("00:05",Utils.getString(R.string.转入1W),"3W","2W"));
-        upLevelRewardModelArrayList.add(new UpLevelRewardModel("00:10",Utils.getString(R.string.转出0.5W),"2.5W","2W"));
+        upLevelRewardModelArrayList.add(new UpLevelRewardModel("00:10",Utils.getString(R.string.转出0_5W),"2.5W","2W"));
         upLevelRewardModelArrayList.add(new UpLevelRewardModel("00:15",Utils.getString(R.string.转出1W),"1.5W","1.5W"));
     }
     private void bindView() {

@@ -55,7 +55,7 @@ public class BalanceWithdrawFragment extends BaseFragment implements AdapterView
     private String moneyString;
     private ArrayList<String> bankCardList =new ArrayList<>();
     private ArrayList<UserInfoEntity.MemberInfoBean.memberBankInfoVoListBean>bankCardBeanList = new ArrayList<>();
-    static final  String  BIND_USDT=Utils.getString(R.string.USDT(点击绑定USDT));
+    static final  String  BIND_USDT=Utils.getString(R.string.USDT点击绑定USDT);
     private LinearLayout rate_linear;
     private LinearLayout usdt_num_linear;
     private TextView rate_tv;

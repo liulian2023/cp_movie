@@ -83,6 +83,6 @@ public class CommonStr {
     public static String RONG_ID_STR="java.lang.String";
 
     public static String kChatRoomForbiddenStrings = "①②③④⑤⑥⑦⑧⑨⑩➀➁➂➃➄➅➆➇➈➉➊➋➌➍➎➏➐➑➒➓㊀㊁㊂㊃㊄㊅㊆㊇㊈㊉ⒶⒷⒸⒹⒺⒻⒼⒽⒾⒿⓀⓁⓂⓃⓄⓅⓆⓇⓈⓉⓊⓋⓌⓍⓎⓏⓐⓑⓒⓓⓔⓕⓖⓗⓘⓙⓚⓛⓜⓝⓞⓟⓠⓡⓢⓣⓤⓥⓦⓧⓨⓩ⒜⒝⒞⒟⒠⒡⒢⒣⒤⒥⒦⒧⒨⒩⒪⒫⒬⒭⒮⒯⒰⒱⒲⒳⒴⒵①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳㊀㊁㊂㊃㊄㊅㊆㊇㊈㊉㈠㈡㈢㈣㈤㈥㈦㈧㈨㈩⑴⑵⑶⑷⑸⑹⑺⑻⑼⑽⑾⑿⒀⒁⒂⒃⒄⒅⒆⒇⒈⒉⒊⒋⒌⒍⒎⒏⒐⒑⒒⒓⒔⒕⒖⒗⒘⒙⒚⒛ⒶⒷⒸⒹⒺⒻⒼⒽⒾⒿⓀⓁⓂⓃⓄⓅⓆⓇⓈⓉⓊⓋⓌⓍⓎⓏⓐⓑⓒⓓⓔⓕⓖⓗⓘⓙⓚⓛⓜⓝⓞⓟⓠⓡⓢⓣⓤⓥⓦⓧⓨⓩ⒜⒝⒞⒟⒠⒡⒢⒣⒤⒥⒦⒧⒨⒩⒪⒫⒬⒭⒮⒯⒰⒱⒲⒳⒴⒵㊀㊁㊂㊃㊄㊅㊆㊇㊈㊉℃¢€£ℂℍℕℙℚℝℤℬℰℯℱℊℋℎℐℒℓℳℴ℘ℛℭ℮ℌℑℜ♭☪ⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩⅪⅫⅰⅱⅲⅳⅴⅵⅶⅷⅸⅹⅺⅻⅼ⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻⁼⁽⁾ⁿ₀₁₂₃₄₅₆₇₈₉₊₋ₐₑₒₓₔ￠€£₰¢₳₵₣₱฿¤₮₭₩ރ₢₥₫₦zł﷼₠₧₯₨Kčर₹ƒ₸￠☾♭ΓΧΨΩαβγδεζνξοπρσηθικλμτυφχψωāáǎàōóǒòēéěèīíǐìūúǔùǖǘǚǜüêɑńňↃↅㄈяᵃᵇᶜᵈᵉᵍʰⁱʲᵏˡᵐⁿᵒᵖʳˢᵗᵘᵛʷˣʸᴬᴮᴰᴱᴳᴴᴵᴶᴷᴸᴹᴺ";
-    public static String  kChatRoomLimitStrings = Utils.getString(R.string.ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789零一二三四五六七八九十+-壹贰叁肆伍陆柒捌玖拾);
+    public static String  kChatRoomLimitStrings = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789零一二三四五六七八九十+-壹贰叁肆伍陆柒捌玖拾";
     public static String  fuhao ="[`~!@#$^&*()=|{}':;',[].<>/?~！@#￥……&*（）——|{}【】‘；：”“'。，、？]";
 }

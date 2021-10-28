@@ -104,7 +104,7 @@ public class ReportListPop extends PopupWindow implements View.OnClickListener {
         HttpApiUtils.CpRequest((Activity) context,fragment, RequestUtil.REPORT_ANCHOR, data, new HttpApiUtils.OnRequestLintener() {
             @Override
             public void onSuccess(String result, Headers headers) {
-                ToastUtil.showToast(Utils.getString(R.string.感谢您的举报,我们会尽快核实处理));
+                ToastUtil.showToast(Utils.getString(R.string.感谢您的举报我们会尽快核实处理));
                 ReportListPop.this.dismiss();
             }
 

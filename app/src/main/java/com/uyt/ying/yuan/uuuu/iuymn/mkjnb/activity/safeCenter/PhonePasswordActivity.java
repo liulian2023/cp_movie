@@ -110,12 +110,11 @@ public class PhonePasswordActivity extends BaseActivity implements View.OnClickL
                 if (StringMyUtil.isEmptyString(phone)) {
                     showToast(Utils.getString(R.string.手机号不能为空));
                 } else if (phone.length() != 11) {
-                    showToast(Utils.getString(R.string.手机格式不规范,请重新输入));
+                    showToast(Utils.getString(R.string.手机格式不规范请重新输入));
                 } else if (StringMyUtil.isEmptyString(Password)) {
                     showToast(Utils.getString(R.string.提款密码不能为空));
                 } else if(StringMyUtil.isEmptyString(tencent_randstr)&&appSlidingCheck.equals("0")){
                     if(BuildConfig.DEBUG){
-                        showToast(Utils.getString(R.string.滑动验证失败, DEBUG 放行));
                         requestBindPhone(phone,Password);
                     }else {
                         showToast(Utils.getString(R.string.请先获取手机验证码));
@@ -144,7 +143,7 @@ public class PhonePasswordActivity extends BaseActivity implements View.OnClickL
             public void success(String content) {
                 SharePreferencesUtil.putString(PhonePasswordActivity.this,"phone",phone);//修改成功,重新存入phone的值(个人中心和安全中心需要用到)
                 if(fromLogin){
-                    showToast(Utils.getString(R.string.绑定手机成功,正在登录));
+                    showToast(Utils.getString(R.string.绑定手机成功正在登录));
                     RequestLoginUtils.requestSuccess(PhonePasswordActivity.this,loginResult,account,password,"");
                 }else {
                     showToast(Utils.getString(R.string.绑定手机成功));

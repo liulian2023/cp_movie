@@ -179,7 +179,7 @@ public class AgentInvestActivity extends BaseActivity implements View.OnClickLis
                                if(StringMyUtil.isEmptyString(realname)){
                                    userNametext.setText(Utils.getString(R.string.暂无));
                                }else {
-                                   userNametext.setText(Utils.getString(R.string.姓名:)+realname);
+                                   userNametext.setText(Utils.getString(R.string.姓名)+realname);
                                }
                                userNametext.setVisibility(View.VISIBLE);
                        }

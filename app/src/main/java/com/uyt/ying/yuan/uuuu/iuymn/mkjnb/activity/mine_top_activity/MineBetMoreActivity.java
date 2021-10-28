@@ -310,7 +310,7 @@ public class MineBetMoreActivity extends BaseActivity implements View.OnClickLis
                  */
             case R.id.one_more_time:
                 if(game == null || type_id == null){
-                    showToast(Utils.getString(R.string.数据读取错误, 请重试));
+                    showToast(Utils.getString(R.string.数据读取错误请重试));
                 return;
                 }
                 ToBetAtyUtils.toBetActivity(MineBetMoreActivity.this,game,typename,type_id,isopenOffice,isStart);

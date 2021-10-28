@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import com.uyt.ying.yuan.R;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.base.BaseActivity;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
 
 public class FindPasswordActicity extends BaseActivity implements View.OnClickListener {
     private TextView actionBarCenter;

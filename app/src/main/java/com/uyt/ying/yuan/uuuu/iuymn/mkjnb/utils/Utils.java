@@ -34,6 +34,7 @@ import android.webkit.WebView;
 import android.widget.EditText;
 import android.widget.ImageView;
 
+import com.uyt.ying.yuan.R;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.Fragment.live_chat_fragment.rongyun.message.LiveShareBetMessage;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.mine_fragment_activitys.VisitorSafeCenterActivity;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.model.NavigateSingleEntity;
@@ -383,7 +384,7 @@ public class Utils {
 
                             MessageHead messageHead = new MessageHead();
                             String localizedMessage = e.getLocalizedMessage();
-                            Utils.logE(TAG, Utils.getString(R.string.异常:)+localizedMessage +url);
+                            Utils.logE(TAG, "异常:"+localizedMessage +url);
                             if (localizedMessage !=null&& localizedMessage.length()>10){
                                 if(localizedMessage.contains("timeout")||localizedMessage.contains("after")){
 //                                    messageHead.setInfo(Utils.getString(R.string.请求超时));
@@ -1540,7 +1541,7 @@ public class Utils {
                     }
                 }else if(liveShareBetMessage.getGame().equals("2")){
                     //时时彩
-                    if(groupname.equals(Utils.getString(R.string.第一球两面)) || groupname.equals(Utils.getString(R.string.总和-龙虎和)) || groupname.equals(Utils.getString(R.string.前三)) ){
+                    if(groupname.equals(Utils.getString(R.string.第一球两面)) || groupname.equals(Utils.getString(R.string.总和龙虎和)) || groupname.equals(Utils.getString(R.string.前三)) ){
                         if(groupname.equals(Utils.getString(R.string.第一球两面))){
                             int passCount = 0;
                             for (int i = 0; i < nameList.size(); i++) {
@@ -1554,7 +1555,7 @@ public class Utils {
                             }
                         }
 
-                        if(groupname.equals(Utils.getString(R.string.总和-龙虎和))){
+                        if(groupname.equals(Utils.getString(R.string.总和龙虎和))){
                             int passCount = 0;
                             for (int i = 0; i < nameList.size(); i++) {
                                 String name = nameList.get(i);

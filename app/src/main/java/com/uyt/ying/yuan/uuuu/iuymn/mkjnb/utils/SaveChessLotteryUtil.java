@@ -6,6 +6,7 @@ package com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils;
 
 import com.alibaba.fastjson.JSONObject;
 import com.uyt.ying.rxhttp.sp.SharedPreferenceHelperImpl;
+import com.uyt.ying.yuan.R;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.model.NavigateEntity;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.model.ShoppingContentChessModel;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.request.StringMyUtil;

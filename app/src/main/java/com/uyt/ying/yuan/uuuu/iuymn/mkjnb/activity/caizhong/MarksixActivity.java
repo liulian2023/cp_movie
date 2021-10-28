@@ -259,7 +259,7 @@ public class MarksixActivity extends BaseActivity implements CustomPopupWindow.O
             marksix_tab_main.setVisibility(View.GONE);
             ll_caizhong_head1_parent.setVisibility(View.GONE);
             ll_reload.setVisibility(View.VISIBLE);
-            showToast(Utils.getString(R.string.网络不给力，请检查网络));
+            showToast(Utils.getString(R.string.网络不给力请检查网络));
         }
 
     }
@@ -1753,7 +1753,7 @@ public class MarksixActivity extends BaseActivity implements CustomPopupWindow.O
                     }
                 }
                 if(kjCountDown ==null){
-                    showToast(Utils.getString(R.string.数据读取错误, 请重试));
+                    showToast(Utils.getString(R.string.数据读取错误请重试));
                     return;
                 }
                 Intent intent = new Intent();

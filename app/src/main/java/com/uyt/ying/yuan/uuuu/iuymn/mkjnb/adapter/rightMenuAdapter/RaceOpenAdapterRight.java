@@ -12,6 +12,7 @@ import com.uyt.ying.yuan.R;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.model.BeiJinOpenResultModel2;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.myView.MyCornerTextView;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.LotteryNumColorUtil;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
 
 import java.util.ArrayList;
 

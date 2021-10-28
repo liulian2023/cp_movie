@@ -22,6 +22,7 @@ import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.caizhong.XuanwuActivity;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.model.IsClickModel;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.model.XuanwuGroupBean;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.StrUtil;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
 
 import java.util.List;
 

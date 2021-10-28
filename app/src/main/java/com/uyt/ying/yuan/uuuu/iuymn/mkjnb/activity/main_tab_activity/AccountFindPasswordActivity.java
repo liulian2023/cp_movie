@@ -63,7 +63,7 @@ public class AccountFindPasswordActivity extends BaseActivity {
                     HttpApiUtils.CpRequest(AccountFindPasswordActivity.this,null, RequestUtil.FORGET_PASSWORD2, data, new HttpApiUtils.OnRequestLintener() {
                         @Override
                         public void onSuccess(String result, Headers headers) {
-                            showToast(Utils.getString(R.string.密码找回成功!));
+                            showToast(Utils.getString(R.string.密码找回成功));
                             finish();
                         }
 
@@ -98,10 +98,10 @@ public class AccountFindPasswordActivity extends BaseActivity {
             return false;
         }
         if (!Utils.checkAccount(account)){
-            showToast(Utils.getString(R.string.请输入字母开头6-11位字母加数字的账号));
+            showToast(Utils.getString(R.string.请输入字母开头6到11位字母加数字的账号));
             return false;
         } else  if (!Utils.checkPsw(newPassword)){
-            showToast(Utils.getString(R.string.请输入6-16位字母加数字的密码));
+            showToast(Utils.getString(R.string.请输入6到16位字母加数字的密码));
             return false;
         } else if(!newPassword.equals(surePassword)){
             showToast(Utils.getString(R.string.两次输入的密码不一致));

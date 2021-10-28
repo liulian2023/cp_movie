@@ -25,6 +25,7 @@ import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.SharePreferencesUtil;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.StatusBarUtil;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.listener.OnItemClickListener;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -53,7 +54,7 @@ public class BankCardManageActivity extends BaseActivity implements View.OnClick
         setContentView(R.layout.activity_bank_card_manage);
         StatusBarUtil.setColor(this, Color.WHITE);
         StatusBarUtil.setDarkMode(this);
-        CommonToolbarUtil.initToolbar(this,Utils.getString(R.string.银行卡管理));
+        CommonToolbarUtil.initToolbar(this, Utils.getString(R.string.银行卡管理));
         ininView();
 //        toolbar_right_tv.setText(Utils.getString(R.string.添加银行卡));
 //        toolbar_right_tv.setVisibility(View.VISIBLE);
@@ -174,7 +175,7 @@ public class BankCardManageActivity extends BaseActivity implements View.OnClick
                 if(canBind){
                     startActivity(new Intent(BankCardManageActivity.this,BindBankCardActivity.class));
                 }else {
-                    showToast(String.format(Utils.getString(R.string.最多只能绑定%s张银行卡),num+""));
+                    showToast(String.format(Utils.getString(R.string.最多只能绑定张银行卡),num+""));
                 }
                 finish();
                 break;

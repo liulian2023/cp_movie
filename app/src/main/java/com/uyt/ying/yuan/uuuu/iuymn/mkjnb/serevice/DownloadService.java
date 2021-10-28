@@ -7,6 +7,7 @@ import android.os.Binder;
 import android.os.Environment;
 import android.os.IBinder;
 
+import com.uyt.ying.yuan.R;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.MyApplication;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.ToastUtil;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
@@ -58,8 +59,8 @@ public class DownloadService extends Service {
             if(onDownLoadLintener!=null){
                 onDownLoadLintener.onFailed();
             }
-            Utils.logE("DownloadService", Utils.getString(R.string.onFailed:下载失败));
-            ToastUtil.showToast(Utils.getString(R.string.更新包下载失败,请重新下载));
+            Utils.logE("DownloadService", "onFailed:下载失败");
+            ToastUtil.showToast(Utils.getString(R.string.更新包下载失败请重新下载));
         }
 
         @Override

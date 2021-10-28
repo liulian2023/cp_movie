@@ -241,7 +241,7 @@ public class Happy10OpentActivity extends BaseActivity implements View.OnClickLi
             String markqhh = happy8OpenResultMedol.getMarkqhh();
             String markds = happy8OpenResultMedol.getMarkds();
             String markwu = happy8OpenResultMedol.getMarkwu();
-            if(type.equals(Utils.getString(R.string.总和/形态))){
+            if(type.equals(Utils.getString(R.string.总和形态))){
                 happy8OpenResultMedol.setZongHe(true);
                 happy8OpenResultMedol.setLotteryNo(lotteryCopy);
             }else {
@@ -304,14 +304,14 @@ public class Happy10OpentActivity extends BaseActivity implements View.OnClickLi
                 refreshLayout.resetNoMoreData();
 //                getDada(1, 15, chooseTimeText.getText().toString(), type_id, false, false);
 //                getDada(1,15,chooseTimeText.getText().toString(),type_id,true,false,false,false,false);
-                initSwich(Utils.getString(R.string.别管我是啥));
+                initSwich("别管我是啥");
                 break;
             case R.id.radio_button_zonghe://大小按钮
                 pageNum=1;
                 refreshLayout.resetNoMoreData();
 //                getDada(1, 15, chooseTimeText.getText().toString(), type_id, true, false);
 //                getDada(1,15,chooseTimeText.getText().toString(),type_id,false,true,false,false,false);
-                initSwich(Utils.getString(R.string.反正不是总和/形态));
+                initSwich("反正不是总和/形态");
                 break;
             case R.id.time_choose_linear://点击弹出时间选择pop
                 ChooseTimePop.showTimePop(Happy10OpentActivity.this,chooseTimeLinear,choosetimeIma);

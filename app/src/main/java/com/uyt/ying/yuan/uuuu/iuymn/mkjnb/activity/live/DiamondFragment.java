@@ -130,41 +130,41 @@ public class DiamondFragment extends BaseFragment {
                 }
                 if(StringMyUtil.isEmptyString(nextPrice)){
                     //为空即为全部完成
-                    bottom_tip_tv.setText(Utils.getString(R.string.已领取全部礼物!));
+                    bottom_tip_tv.setText(Utils.getString(R.string.已领取全部礼物));
                 }else {
                     if(nextPrice.contains(".")||price.contains(".")){
                         BigDecimal nextNum = new BigDecimal(nextPrice);
                         BigDecimal num = new BigDecimal(price);
                         if(type == 0){
-                            bottom_tip_tv.setText(Utils.getString(R.string.再邀请)+(nextNum.subtract(num))+Utils.getString(R.string.人,可领取更多礼物));
+                            bottom_tip_tv.setText(Utils.getString(R.string.再邀请)+(nextNum.subtract(num))+Utils.getString(R.string.人可领取更多礼物));
                         }else if(type == 1){
-                            bottom_tip_tv.setText(Utils.getString(R.string.再充值)+(nextNum.subtract(num))+Utils.getString(R.string.元,可领取更多礼物));
+                            bottom_tip_tv.setText(Utils.getString(R.string.再充值)+(nextNum.subtract(num))+Utils.getString(R.string.元可领取更多礼物));
                         }else if(type == 2){
-                            bottom_tip_tv.setText(Utils.getString(R.string.再投注)+(nextNum.subtract(num))+Utils.getString(R.string.元,可领取更多礼物));
+                            bottom_tip_tv.setText(Utils.getString(R.string.再投注)+(nextNum.subtract(num))+Utils.getString(R.string.元可领取更多礼物));
                         }else if(type == 3){
-                            bottom_tip_tv.setText(Utils.getString(R.string.再送礼)+(nextNum.subtract(num))+Utils.getString(R.string.元,可领取更多礼物));
+                            bottom_tip_tv.setText(Utils.getString(R.string.再送礼)+(nextNum.subtract(num))+Utils.getString(R.string.元可领取更多礼物));
                         }
                     }else {
                         int nextNum = Integer.parseInt(nextPrice);
                         int num = Integer.parseInt(price);
                         if(type == 0){
-                            bottom_tip_tv.setText(Utils.getString(R.string.再邀请)+(nextNum-num)+Utils.getString(R.string.人,可领取更多礼物));
+                            bottom_tip_tv.setText(Utils.getString(R.string.再邀请)+(nextNum-num)+Utils.getString(R.string.人可领取更多礼物));
                         }else if(type == 1){
-                            bottom_tip_tv.setText(Utils.getString(R.string.再充值)+(nextNum-num)+Utils.getString(R.string.元,可领取更多礼物));
+                            bottom_tip_tv.setText(Utils.getString(R.string.再充值)+(nextNum-num)+Utils.getString(R.string.元可领取更多礼物));
                         }else if(type == 2){
-                            bottom_tip_tv.setText(Utils.getString(R.string.再投注)+(nextNum-num)+Utils.getString(R.string.元,可领取更多礼物));
+                            bottom_tip_tv.setText(Utils.getString(R.string.再投注)+(nextNum-num)+Utils.getString(R.string.元可领取更多礼物));
                         }else if(type == 3){
-                            bottom_tip_tv.setText(Utils.getString(R.string.再送礼)+(nextNum-num)+Utils.getString(R.string.元,可领取更多礼物));
+                            bottom_tip_tv.setText(Utils.getString(R.string.再送礼)+(nextNum-num)+Utils.getString(R.string.元可领取更多礼物));
                         }
                     }
 
                 }
                 if(type == 0){
-                    SpannableString spannableString = new SpannableString(Utils.getString(R.string.我已邀请) + price + Utils.getString(R.string.人,去邀请));
+                    SpannableString spannableString = new SpannableString(Utils.getString(R.string.我已邀请) + price + Utils.getString(R.string.人去邀请));
                     setTextSpan(price, spannableString,4);
 
                 }else if(type == 1){
-                    SpannableString spannableString = new SpannableString(Utils.getString(R.string.今日已充值) + price + Utils.getString(R.string.元,去充值));
+                    SpannableString spannableString = new SpannableString(Utils.getString(R.string.今日已充值) + price + Utils.getString(R.string.元去充值));
                     setTextSpan(price, spannableString,5);
 
                 }else if(type == 2){
@@ -172,7 +172,7 @@ public class DiamondFragment extends BaseFragment {
                     setTextSpan(price, spannableString,5);
 
                 }else if(type == 3){
-                    SpannableString spannableString = new SpannableString(Utils.getString(R.string.今日已送礼) + price + Utils.getString(R.string.元,去送礼));
+                    SpannableString spannableString = new SpannableString(Utils.getString(R.string.今日已送礼) + price + Utils.getString(R.string.元去送礼));
                     setTextSpan(price, spannableString,5);
                 }
             }

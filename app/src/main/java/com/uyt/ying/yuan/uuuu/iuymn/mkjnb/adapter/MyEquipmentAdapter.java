@@ -96,7 +96,7 @@ public class MyEquipmentAdapter extends BaseDelegateMultiAdapter<Object, BaseVie
                    if(useDays.equals("0")){
                        time_tv.setText(Utils.getString(R.string.x永久));
                    }else {
-                       time_tv.setText(String.format(Utils.getString(R.string.x%s天), useDays));
+                       time_tv.setText(String.format(Utils.getString(R.string.x天), useDays));
                    }
                    mount_remark_tv.setText(medalInfo.getConditions());
                    baseViewHolder.setText(R.id.mount_get_btn,Utils.getString(R.string.获取));
@@ -164,7 +164,7 @@ public class MyEquipmentAdapter extends BaseDelegateMultiAdapter<Object, BaseVie
                    if(useDays.equals("0")){
                        time_tv.setText(Utils.getString(R.string.永久));
                    }else {
-                       time_tv.setText(String.format(Utils.getString(R.string.x%s天), useDays));
+                       time_tv.setText(String.format(Utils.getString(R.string.x天), useDays));
                    }
                    title_brand_remark_tv.setText(medalInfo.getConditions());
                    baseViewHolder.setText(R.id.title_get_btn,Utils.getString(R.string.获取));
@@ -221,7 +221,7 @@ public class MyEquipmentAdapter extends BaseDelegateMultiAdapter<Object, BaseVie
             end_date_linear.setVisibility(View.GONE);
             time_tv.setVisibility(View.VISIBLE);
             title_brand_remark_tv.setVisibility(View.VISIBLE);
-            time_tv.setText(String.format(Utils.getString(R.string.x%s天), medalInfo.getUseDays()));
+            time_tv.setText(String.format(Utils.getString(R.string.x天), medalInfo.getUseDays()));
             title_brand_remark_tv.setText(medalInfo.getConditions());
         } else if (endDate==0) {
             //已获得 显示有效时间 隐藏图片右边的天数 隐藏获取条件 (时间永久)

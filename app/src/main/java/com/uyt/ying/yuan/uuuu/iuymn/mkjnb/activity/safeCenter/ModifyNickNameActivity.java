@@ -16,6 +16,7 @@ import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.request.StringMyUtil;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.CommonToolbarUtil;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.SharePreferencesUtil;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.StatusBarUtil;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
 
 import java.util.HashMap;
 
@@ -29,7 +30,7 @@ public class ModifyNickNameActivity extends BaseActivity implements View.OnClick
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_modify_nick_name);
-        CommonToolbarUtil.initToolbar(this,Utils.getString(R.string.修改昵称));
+        CommonToolbarUtil.initToolbar(this, Utils.getString(R.string.修改昵称));
         StatusBarUtil.setColor(this, Color.WHITE);
         StatusBarUtil.setDarkMode(this);
         bindView();
@@ -45,7 +46,7 @@ public class ModifyNickNameActivity extends BaseActivity implements View.OnClick
                 Integer userNickNameNums = memberInfo.getInteger("userNickNameNums");//昵称可修改次数
                 Integer userNickNameUseNum = memberInfo.getInteger("userNickNameUseNum");//昵称已修改次数
                 int count = userNickNameNums - userNickNameUseNum;
-                 userNameEdit.setHint(Utils.getString(R.string.请输入您要修改的昵称(剩余修改次数)+count+Utils.getString(R.string.次)));
+                 userNameEdit.setHint(Utils.getString(R.string.请输入您要修改的昵称剩余修改次数)+count+Utils.getString(R.string.次));
             }
 
             @Override

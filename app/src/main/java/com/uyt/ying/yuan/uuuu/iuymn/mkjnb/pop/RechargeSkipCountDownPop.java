@@ -8,6 +8,7 @@ import android.widget.TextView;
 import com.uyt.ying.yuan.R;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.want_to_invest_activitys.ManualRechargeActivity;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.base.BasePopupWindow2;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
 
 public class RechargeSkipCountDownPop extends BasePopupWindow2 {
     private TextView tip_tv;
@@ -48,7 +49,7 @@ public class RechargeSkipCountDownPop extends BasePopupWindow2 {
         public void run() {
             if(countTime>=0){
                 countTime--;
-                countDown_tv.setText(String.format(Utils.getString(R.string.%d秒后将打开%s),countTime,appName));
+                countDown_tv.setText(String.format(Utils.getString(R.string.秒后将打开),countTime,appName));
                 if(countTime==0){
                     handler.removeCallbacks(this);
                     RechargeSkipCountDownPop.this.dismiss();
@@ -60,9 +61,9 @@ public class RechargeSkipCountDownPop extends BasePopupWindow2 {
     };
     private void initStr() {
         String tipContent;
-        tipContent=String.format(Utils.getString(R.string.%s账号已复制,请前往%s联系代充完成充值),appName,appName);
+        tipContent=String.format(Utils.getString(R.string.账号已复制请前往联系代充完成充值),appName,appName);
         tip_tv.setText(tipContent);
-        countDown_tv.setText(String.format(Utils.getString(R.string.%d秒后将打开%s),countTime,appName));
+        countDown_tv.setText(String.format(Utils.getString(R.string.秒后将打开),countTime,appName));
     }
 
     @Override

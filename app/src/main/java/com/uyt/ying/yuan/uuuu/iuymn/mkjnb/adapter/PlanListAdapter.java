@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import com.uyt.ying.yuan.R;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.model.LotteryPlanList;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
 
 import java.util.List;
 
@@ -59,7 +60,7 @@ public class PlanListAdapter extends RecyclerView.Adapter<PlanListAdapter.VH> {
         vh.mTv3.setText(bean.getLotteryqishu3());
         if (bean.getIslottery()==1){
        //     vh.mTv3.setText(bean.getQishu());
-            vh.mTv4.setText(bean.getResult()+Utils.getString(R.string.中));
+            vh.mTv4.setText(bean.getResult()+Utils.getString(R.string.中奖));
         }else {
      //       vh.mTv3.setText("--");
             vh.mTv4.setText("--");

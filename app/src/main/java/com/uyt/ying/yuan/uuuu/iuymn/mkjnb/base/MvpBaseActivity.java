@@ -36,7 +36,7 @@ public abstract class MvpBaseActivity <T extends IBasePresenter> extends Abstrac
         mPresenter = createPresenter();
         if (mPresenter != null) {
             mPresenter.onAttachView(this);
-            Utils.logE(TAG,Utils.getString(R.string.---mPresenter 不为空) + mPresenter.getClass());
+            Utils.logE(TAG,".---mPresenter 不为空" + mPresenter.getClass());
         }
     }
 

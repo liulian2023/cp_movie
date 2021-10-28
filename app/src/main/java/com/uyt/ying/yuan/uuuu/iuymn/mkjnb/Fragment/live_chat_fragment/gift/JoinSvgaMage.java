@@ -56,7 +56,7 @@ public class JoinSvgaMage {
         svgaImageView.setCallback(new SVGACallback() {
             @Override
             public void onPause() {
-                Utils.logE(TAG, Utils.getString(R.string.onFinished: 动画暂停播放));
+                Utils.logE(TAG, "onFinished: 动画暂停播放");
 
             }
 
@@ -65,7 +65,7 @@ public class JoinSvgaMage {
              */
             @Override
             public void onFinished() {
-                Utils.logE(TAG, Utils.getString(R.string.onFinished: 动画播放结束));
+                Utils.logE(TAG, "onFinished: 动画播放结束");
                 if(svgaList!=null && svgaList.size()>0){
                     svgaList.remove(0);
                     liveMessageModelArrayList.remove(0);
@@ -152,7 +152,7 @@ public class JoinSvgaMage {
 
                         @Override
                         public void onError() {
-                            Utils.logE(TAG, Utils.getString(R.string.onError: 礼物特效播放失败) );
+                            Utils.logE(TAG, "onError: 礼物特效播放失败" );
                             //如果动画数组列表大于0,移除第一位的动画,继续循环解析
                             if (svgaList.size() > 0) {
                                 svgaList.remove(0);

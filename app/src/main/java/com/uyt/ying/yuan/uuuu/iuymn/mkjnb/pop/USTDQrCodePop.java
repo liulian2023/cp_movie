@@ -17,6 +17,7 @@ import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.QRCodeUtil;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.SavePhoto;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.ToastUtil;
 import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
 
 import java.text.ParseException;
 import java.util.List;
@@ -80,7 +81,7 @@ public class USTDQrCodePop  extends BasePopupWindow2 implements EasyPermissions.
             saveQrCode();
         }else {
             //没有权限,申请权限
-            EasyPermissions.requestPermissions(rechargeActivity,Utils.getString(R.string.需要获取您的读写权限),REQUEST_PERMISSONS_CODE,PERMISSIONS);
+            EasyPermissions.requestPermissions(rechargeActivity, Utils.getString(R.string.需要获取您的读写权限),REQUEST_PERMISSONS_CODE,PERMISSIONS);
         }
     }
     /*
@@ -105,7 +106,7 @@ public class USTDQrCodePop  extends BasePopupWindow2 implements EasyPermissions.
     }
     @Override
     public void onPermissionsDenied(int requestCode, @NonNull List<String> perms) {
-        ToastUtil. showToast(Utils.getString(R.string.为了您的使用体验,请同意相关权限,否则功能无法实现));
+        ToastUtil. showToast(Utils.getString(R.string.为了您的使用体验请同意相关权限否则功能无法实现));
         if (EasyPermissions.somePermissionPermanentlyDenied(rechargeActivity, perms)) {
             //在权限弹窗中，用户勾选了'不在提示'且拒绝权限的情况触发，可以进行相关dialog提示。
         }

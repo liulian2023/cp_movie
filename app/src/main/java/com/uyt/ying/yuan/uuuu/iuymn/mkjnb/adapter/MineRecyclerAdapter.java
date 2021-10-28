@@ -9,6 +9,7 @@ import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.model.MineInfoEntity;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.myView.MyTextView;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.viewholder.BaseViewHolder;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
 
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;

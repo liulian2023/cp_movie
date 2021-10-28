@@ -118,7 +118,7 @@ public class TodayWinLoseActivity extends BaseActivity implements View.OnClickLi
                 JSONObject jsonObject1 = JSONObject.parseObject(content);
                 String totalsize1 = jsonObject1.getString("totalsize");//总笔数
                 BigDecimal sumMoney = jsonObject1.getBigDecimal("sumMoney");//总输赢
-                betCountTv.setText(Utils.getString(R.string.总笔数:)+totalsize1);
+                betCountTv.setText(Utils.getString(R.string.总笔数)+totalsize1);
                 winloseAmountTvRight.setText(Utils.getString(R.string.总输赢)+sumMoney);
                 winloseAmountTvLeft.setText(Utils.getString(R.string.总输赢)+sumMoney);//左侧占位置的textview 保持和右侧总输赢的内容一样
                 JSONArray betorderlist = jsonObject1.getJSONArray("betorderlist");

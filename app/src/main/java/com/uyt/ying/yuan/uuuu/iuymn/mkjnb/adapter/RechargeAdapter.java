@@ -133,7 +133,7 @@ public class RechargeAdapter extends BaseDelegateMultiAdapter<Object, BaseViewHo
         }else {
             recharge_tip_linear.setVisibility(View.VISIBLE);
             TextView reward_tip_tv= baseViewHolder.getView(R.id.reward_tip_tv);
-            reward_tip_tv.setText(String.format(Utils.getString(R.string.充值奖励%s%%,最高送88888元!),czFdRate));
+            reward_tip_tv.setText(String.format(Utils.getString(R.string.充值奖励最高送88888元占位),czFdRate));
         }
 
         baseViewHolder.setText(R.id.address_tv,usdtEntity.getAccount());//收款地址
@@ -141,7 +141,7 @@ public class RechargeAdapter extends BaseDelegateMultiAdapter<Object, BaseViewHo
         baseViewHolder.setText(R.id.exchange_rate_tv, usdtRate);//存款汇率
         EditText usdt_id_etv = baseViewHolder.getView(R.id.usdt_id_etv);
         EditText currency_amount_etv = baseViewHolder.getView(R.id.currency_amount_etv);
-        currency_amount_etv.setHint(String.format(Utils.getString(R.string.充值数量范围:%s-%s),usdtEntity.getDown(),usdtEntity.getUp()));
+        currency_amount_etv.setHint(String.format(Utils.getString(R.string.充值数量范围),usdtEntity.getDown(),usdtEntity.getUp()));
         TextView transfer_amount_tv = baseViewHolder.getView(R.id.transfer_amount_etv);
         //收款地址
         usdt_id_etv.addTextChangedListener(new TextWatcher() {
@@ -314,7 +314,7 @@ public class RechargeAdapter extends BaseDelegateMultiAdapter<Object, BaseViewHo
         }else {
             recharge_tip_linear.setVisibility(View.VISIBLE);
             TextView reward_tip_tv= baseViewHolder.getView(R.id.reward_tip_tv);
-            reward_tip_tv.setText(String.format(Utils.getString(R.string.充值奖励%s%%,最高送88888元!),czFdRate));
+            reward_tip_tv.setText(String.format(Utils.getString(R.string.充值奖励最高送88888元占位),czFdRate));
         }
         EditText wx_amount_etv= baseViewHolder.getView(R.id.wx_amount_etv);
         EditText payer_etv= baseViewHolder.getView(R.id.payer_etv);
@@ -414,7 +414,7 @@ public class RechargeAdapter extends BaseDelegateMultiAdapter<Object, BaseViewHo
         initCustomAmountRecycler(baseViewHolder, rechargeCenterEntity,wx_amount_etv);
         payer_etv.setText("");
         wx_amount_etv.setText("");
-        wx_amount_etv.setHint(String.format(Utils.getString(R.string.请输入金额%s%s%s), rechargeCenterEntity.getMix(),"-", rechargeCenterEntity.getMax()));
+        wx_amount_etv.setHint(String.format(Utils.getString(R.string.请输入金额占位), rechargeCenterEntity.getMix(),"-", rechargeCenterEntity.getMax()));
         wx_amount_etv.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -469,7 +469,7 @@ public class RechargeAdapter extends BaseDelegateMultiAdapter<Object, BaseViewHo
         }else {
             recharge_tip_linear.setVisibility(View.VISIBLE);
             TextView reward_tip_tv= baseViewHolder.getView(R.id.reward_tip_tv);
-            reward_tip_tv.setText(String.format(Utils.getString(R.string.充值奖励%s%%,最高送88888元!),czFdRate));
+            reward_tip_tv.setText(String.format(Utils.getString(R.string.充值奖励最高送88888元占位),czFdRate));
         }
 //            recharge_amount_etv.setText("");
         baseViewHolder.setText(R.id.recharge_account_tv, manuaMabualRechargeCenterEntity.getRechargeAccount());

@@ -176,7 +176,7 @@ public class CusGiftPop extends PopupWindow {
                 CusGiftPop.this.dismiss();
                 return;
             }
-            LogUtils.e(Utils.getString(R.string.选择了礼物:)+position);
+            LogUtils.e(Utils.getString(R.string.选择了礼物)+position);
             giftListsBean = mList.get(position);
             for (int i=0;i<mList.size();i++){
                 mList.get(i).setSecect(false);
@@ -201,7 +201,7 @@ public class CusGiftPop extends PopupWindow {
                 if(mList.size()>=2){
                     giftListsBean= giftListsBean==null?mList.get(1):giftListsBean;
                 }else {
-                    ToastUtil.showToast(Utils.getString(R.string.礼物列表获取失败,请重试));
+                    ToastUtil.showToast(Utils.getString(R.string.礼物列表获取失败请重试));
                     return;
                 }
                 long giftId= giftListsBean.getId();
@@ -262,7 +262,7 @@ public class CusGiftPop extends PopupWindow {
                 if (position==0){
                     CusSetMaDialog cusSetMaDialog = new CusSetMaDialog.Builder(mActivity)
                             .setTitle(Utils.getString(R.string.输入赠送礼物数量))
-                            .setMessage(Utils.getString(R.string.礼物数量1-10000))
+                            .setMessage(Utils.getString(R.string.礼物数量1到10000))
                             .setNo(Utils.getString(R.string.取消), v -> {
                             })
                             .setYes(Utils.getString(R.string.确定), (View v, int value) -> {

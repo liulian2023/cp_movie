@@ -21,6 +21,7 @@ import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.request.StringMyUtil;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.GlideLoadViewUtil;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.ToastUtil;
 import com.scwang.smartrefresh.layout.SmartRefreshLayout;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
 
 import java.util.HashMap;
 
@@ -80,10 +81,10 @@ public class DiamondPayPop extends BasePopupWindow2 {
              * 未获得 useDays为0 显示永久
              */
             if(useDays.equals("0")){
-                mount_amount_tv.setText(String.format(Utils.getString(R.string.%s钻石/永久),medalConditionsBean.getBuyZhuanShi()));
+                mount_amount_tv.setText(String.format(Utils.getString(R.string.钻石永久),medalConditionsBean.getBuyZhuanShi()));
             }else {
                 if(medalConditionsBean!=null){
-                    mount_amount_tv.setText(String.format(Utils.getString(R.string.%s钻石/%s天),medalConditionsBean.getBuyZhuanShi(), useDays));
+                    mount_amount_tv.setText(String.format(Utils.getString(R.string.钻石天),medalConditionsBean.getBuyZhuanShi(), useDays));
                 }
             }
         }

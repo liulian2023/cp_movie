@@ -18,6 +18,8 @@ import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.CommonStr;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.GetJsonDataUtil;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.MyApplication;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.SharePreferencesUtil;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
+
 import java.util.ArrayList;
 
 public class ChooseAreaPop extends BasePopupWindow2 {

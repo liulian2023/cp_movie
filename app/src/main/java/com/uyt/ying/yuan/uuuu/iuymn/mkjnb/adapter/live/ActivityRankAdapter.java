@@ -8,6 +8,7 @@ import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.net.entity.RongcloudHBParameter;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.GlideLoadViewUtil;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.viewholder.BaseViewHolder;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
 
 import java.util.List;
 
@@ -28,10 +29,10 @@ public class ActivityRankAdapter extends BaseQuickAdapter<ActivityRankEntity.Dat
         String msg2 = "";
         String msg3 = "";
         if (activityType == 1) {
-            msg=Utils.getString(R.string.参与人数: 10000+);
-            msg2=Utils.getString(R.string.中奖几率: 100%);
+            msg= Utils.getString(R.string.参与人数10000);
+            msg2=Utils.getString(R.string.中奖几率100);
 //            msg3=Utils.getString(R.string.红包金额: )+ data.getQuYueHBTotalAmount();
-            msg3=Utils.getString(R.string.红包金额: 888+);
+            msg3=Utils.getString(R.string.红包金额888);
         } else if (activityType == 2) {
             msg="VIP"+data.getTjHBGrade()+Utils.getString(R.string.可抢玩家红包);
             msg2="VIP"+data.getTjHBPlatGrade()+Utils.getString(R.string.可抢官方红包);

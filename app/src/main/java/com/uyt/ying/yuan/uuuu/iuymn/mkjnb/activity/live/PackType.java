@@ -1,10 +1,13 @@
 package com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.live;
 
+import com.uyt.ying.yuan.R;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
+
 public enum PackType {
     /**
      * 红包类型 趣约  天降 专享
      */
-    QY(1,Utils.getString(R.string.趣约)),
+    QY(1, Utils.getString(R.string.趣约)),
     TJ(2,Utils.getString(R.string.天降)),
     ZX(3,Utils.getString(R.string.专享));
 

@@ -228,15 +228,15 @@ public class UserLevelFragment extends BaseFragment {
                 if(pointGrade.equals(lastItem.getGrade())){
                     //等级与列表中最后一个item的等级相同,即为最高等级
                     levelTouXian.setText(Utils.getString(R.string.头衔冒号)+lastItem.getTitle());
-                    gap.setText(Utils.getString(R.string.距离下一等级需要0分,每充值1元加1分));
+                    gap.setText(Utils.getString(R.string.距离下一等级需要0分每充值1元加1分));
                     levelPro.setProgress((0));
                     levelVip3.setText(Utils.getString(R.string.最高等级));
                 }else {
-                    gap.setText(Utils.getString(R.string.距离下一等级需要)+nextGradeNeedGrowthIntegral+Utils.getString(R.string.分,每充值1元加1分));
+                    gap.setText(Utils.getString(R.string.距离下一等级需要)+nextGradeNeedGrowthIntegral+Utils.getString(R.string.分每充值1元加1分));
                     int nextGrade = Integer.parseInt(pointGrade) + 1;
                     levelVip3.setText("vip"+ (nextGrade+1));
                     GradeEntity.MemberGradeMechanismListBean nextBean = memberGradeMechanismList.get(nextGrade);
-                    levelTouXian.setText(Utils.getString(R.string.头衔:)+ currentBean.getTitle());
+                    levelTouXian.setText(Utils.getString(R.string.头衔冒号)+ currentBean.getTitle());
                     // growthIntegral 自身成长积分  mineIntegral 当前等级需要的积分  nextGradeGrowthIntegral下一等级需要的积分
                     String format = df.format((float) (Double.parseDouble(growthIntegral)- Double.parseDouble(mineIntegral)) / (Double.parseDouble(nextGradeGrowthIntegra)-Double.parseDouble(mineIntegral)));
                     int v = (int) (Float.parseFloat(format) * 100);

@@ -16,6 +16,7 @@ import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.HttpUrlUtil;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.LoginIntentUtil;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.ProgressDialogUtil;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.SharePreferencesUtil;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
 
 import java.util.Map;
 
@@ -106,7 +107,7 @@ public class ShoppingWebViewActivity extends BaseActivity {
                     finish();//结束当前activity
                 }
                 if(url.contains("1")){
-                    showToast(Utils.getString(R.string.账户已过期,或账号被冻结,请联系客服处理));
+                    showToast(Utils.getString(R.string.账户已过期或账号被冻结请联系客服处理));
                     LoginIntentUtil.isLogin(ShoppingWebViewActivity.this);
                     finish();
                 }

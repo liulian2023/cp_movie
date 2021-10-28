@@ -671,7 +671,7 @@ public class LiveFragmentRepo extends BaseRepository {
                 if (!TextUtils.isEmpty(dataResult)) {
                     callBack.Success(dataResult);
                 } else {
-                    callBack.Faild(Utils.getString(R.string.初始化失败));
+                    callBack.Faild(Utils.getString(R.string.直播间初始化失败请退出重试));
                 }
 
             }

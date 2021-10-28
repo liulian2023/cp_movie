@@ -275,7 +275,7 @@ public class PhoneFindPasswordActivity extends BaseActivity {
             return false;
         }
         if(!password.equals(surePassword)){
-            showToast(Utils.getString(R.string.两次输入的密码不一致,请重新输入));
+            showToast(Utils.getString(R.string.两次输入的密码不一致请重新输入));
             return false;
         }
         if(StringMyUtil.isEmptyString(tencent_ticket)&&appSlidingCheck.equals("0")){

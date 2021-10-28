@@ -18,6 +18,7 @@ import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.adapter.mine_fragemnt_adapter.GameRepo
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.base.BaseActivity;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.CommonToolbarUtil;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.StatusBarUtils2;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
 
 import java.util.ArrayList;
 
@@ -45,7 +46,7 @@ public class GameReportActivity extends BaseActivity implements XTabLayout.OnTab
         viewById.setBackgroundColor(ContextCompat.getColor(this,R.color.transparent));//toolbar设置透明
         toolbar_back_iv.setImageResource(R.drawable.icon_arrow_back);//设置白色返回键
         toolbar_title_tv.setTextColor(Color.WHITE);
-        CommonToolbarUtil.initToolbar(this,Utils.getString(R.string.游戏详情));//标题
+        CommonToolbarUtil.initToolbar(this, Utils.getString(R.string.游戏详情));//标题
 
         //rootView第一个子view的图片顶入状态栏
         StatusBarUtils2.with(this)

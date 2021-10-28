@@ -54,7 +54,7 @@ public class CommissionWithdrawFragment extends BaseFragment implements TextWatc
     private TextView rate_tv;
     private TextView usdt_num_tv;
     int drawDirection=0;
-    static final  String  BIND_USDT=Utils.getString(R.string.USDT(点击绑定USDT));
+    static final  String  BIND_USDT=Utils.getString(R.string.USDT点击绑定USDT);
     private String usdtRate="0";
     private boolean canUseUSDT=false;
 

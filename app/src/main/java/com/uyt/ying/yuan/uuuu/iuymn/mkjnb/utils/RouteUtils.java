@@ -7,6 +7,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 
+import com.uyt.ying.yuan.R;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.Fragment.live_chat_fragment.rongyun.RongLibUtils;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.live.LiveActivity;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.live.PaihangActivity;
@@ -44,17 +45,17 @@ public class RouteUtils {
             context.startActivity(intent);
         }else {
             if(rongConnection ==RongIMClient.ConnectionStatusListener.ConnectionStatus.CONN_USER_BLOCKED){
-                ToastUtil.showToast(Utils.getString(R.string.您存在违规行为,已被封禁));
+                ToastUtil.showToast(Utils.getString(R.string.您存在违规行为已被封禁));
             }else if(rongConnection == RongIMClient.ConnectionStatusListener.ConnectionStatus.CONNECTING){
-                ToastUtil.showToast(Utils.getString(R.string.直播间连接中,请稍等));
+                ToastUtil.showToast(Utils.getString(R.string.直播间连接中请稍等));
             }else if(rongConnection == RongIMClient.ConnectionStatusListener.ConnectionStatus.NETWORK_UNAVAILABLE){
                 ToastUtil.showToast(Utils.getString(R.string.网络不可用));
             }else if(rongConnection == RongIMClient.ConnectionStatusListener.ConnectionStatus.TOKEN_INCORRECT){
-                ToastUtil.showToast(Utils.getString(R.string.直播间token不正确,重新登录或联系客服处理));
+                ToastUtil.showToast(Utils.getString(R.string.直播间token不正确重新登录或联系客服处理));
             }else if(rongConnection == RongIMClient.ConnectionStatusListener.ConnectionStatus.TIMEOUT){
-                connectRong(context, AnchorRoomBean, categoryId, area, pageNo, Utils.getString(R.string.直播间连接超时,正在尝试重新连接,请稍等));
+                connectRong(context, AnchorRoomBean, categoryId, area, pageNo, Utils.getString(R.string.直播间连接超时正在尝试重新连接请稍等));
             }else {
-                connectRong(context, AnchorRoomBean, categoryId, area, pageNo, Utils.getString(R.string.网络不给力,正在连接直播间,请稍等));
+                connectRong(context, AnchorRoomBean, categoryId, area, pageNo, Utils.getString(R.string.网络不给力正在连接直播间请稍等));
             }
         }
 
@@ -82,7 +83,7 @@ public class RouteUtils {
                 }
             });
         } else {
-            ToastUtil.showToast(Utils.getString(R.string.未能成功获取直播间配置信息,请退出APP重试!));
+            ToastUtil.showToast(Utils.getString(R.string.未能成功获取直播间配置信息请退出APP重试));
         }
     }
 

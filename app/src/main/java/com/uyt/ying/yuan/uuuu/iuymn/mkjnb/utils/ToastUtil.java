@@ -4,6 +4,7 @@ package com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils;
 import android.view.Gravity;
 
 import com.hjq.toast.ToastUtils;
+import com.uyt.ying.yuan.R;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.request.StringMyUtil;
 
 public class ToastUtil {

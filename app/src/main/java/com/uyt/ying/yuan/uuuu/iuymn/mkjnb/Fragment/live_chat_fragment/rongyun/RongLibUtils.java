@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import com.alibaba.fastjson.JSONObject;
+import com.uyt.ying.yuan.R;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.Fragment.live_chat_fragment.EditPanel;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.Fragment.live_chat_fragment.rongyun.message.CloseLiveMessage;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.Fragment.live_chat_fragment.rongyun.message.ForbiddenMessage;
@@ -97,13 +98,13 @@ public class RongLibUtils {
         RongIMClient.connect(token, new RongIMClient.ConnectCallback() {
             @Override
             public void onSuccess(String s) {
-                Utils.logE(TAG, Utils.getString(R.string.rongLog:  连接融云成功));
+                Utils.logE(TAG, "rongLog:  连接融云成功");
             }
 
             @Override
             public void onError(RongIMClient.ConnectionErrorCode connectionErrorCode) {
                 //消息数据库打开，可以进入到主页面
-                Utils.logE(TAG, Utils.getString(R.string.rongLog:  连接融云失败)+connectionErrorCode.getValue());
+                Utils.logE(TAG, "rongLog:  连接融云失败"+connectionErrorCode.getValue());
             }
 
             @Override
@@ -117,7 +118,7 @@ public class RongLibUtils {
         RongIMClient.connect(token, new RongIMClient.ConnectCallback() {
             @Override
             public void onSuccess(String s) {
-                Utils.logE(TAG, Utils.getString(R.string.rongLog:  连接融云成功));
+                Utils.logE(TAG, "rongLog:  连接融云成功");
                 ActivityUtil.getInstance().finishActivity(LiveActivity.class);
                 Intent intent = new Intent();
                 intent.setClass(context, LiveActivity.class);
@@ -133,7 +134,7 @@ public class RongLibUtils {
             @Override
             public void onError(RongIMClient.ConnectionErrorCode connectionErrorCode) {
                 //消息数据库打开，可以进入到主页面
-                Utils.logE(TAG, Utils.getString(R.string.rongLog:  连接融云失败)+connectionErrorCode.getValue());
+                Utils.logE(TAG, "rongLog:  连接融云失败"+connectionErrorCode.getValue());
             }
 
             @Override
@@ -217,7 +218,7 @@ public class RongLibUtils {
         Message msg = Message.obtain(currentRoomId, Conversation.ConversationType.CHATROOM, msgContent);
         //没有获取到聊天室id
         if (StringMyUtil.isEmptyString(currentRoomId)) {
-            ToastUtil.showToast(Utils.getString(R.string.直播间初始化失败,请退出重试));
+            ToastUtil.showToast(Utils.getString(R.string.直播间初始化失败请退出重试));
             return;
         }
         RongIMClient.getInstance().sendMessage(msg, null, null, new IRongCallback.ISendMessageCallback() {
@@ -232,7 +233,7 @@ public class RongLibUtils {
                     EditPanel.lastSendTime = new Date().getTime();
                 }
                 handleEvent(MESSAGE_SENT, message);
-                Utils.logE(TAG, Utils.getString(R.string.rongLog 消息发送成功  id= ) + currentRoomId);
+                Utils.logE(TAG, "rongLog 消息发送成功  id="+ currentRoomId);
               if(message.getContent() instanceof  LiveExitAndJoinMessage){
                   LiveExitAndJoinMessage liveExitAndJoinMessage = (LiveExitAndJoinMessage) message.getContent();
                   String status = liveExitAndJoinMessage.getStatus();
@@ -241,12 +242,12 @@ public class RongLibUtils {
                       RongLibUtils.quitChatRoom(currentRoomId, new RongIMClient.OperationCallback() {
                           @Override
                           public void onSuccess() {
-                              Utils.logE(TAG, Utils.getString(R.string. rongLog onSuccess:  退出聊天室成功 + roomId: ) + currentRoomId);
+                              Utils.logE(TAG, "rongLog onSuccess:  退出聊天室成功 + roomId:" + currentRoomId);
                           }
 
                           @Override
                           public void onError(RongIMClient.ErrorCode errorCode) {
-                              Utils.logE(TAG, Utils.getString(R.string.rongLog  onError:  退出聊天室失败 + roomId: ) + currentRoomId);
+                              Utils.logE(TAG,"rongLog  onError:  退出聊天室失败 + roomId: " + currentRoomId);
                           }
                       });
                   }
@@ -258,7 +259,7 @@ public class RongLibUtils {
             public void onError(Message message, RongIMClient.ErrorCode errorCode) {
                 handleEvent(MESSAGE_SEND_ERROR, errorCode.getValue(), 0, message);
 
-                Utils.logE(TAG, Utils.getString(R.string.rongLog 消息发送失败   id =) + currentRoomId + "  code=  " + errorCode.getValue());
+                Utils.logE(TAG, "rongLog 消息发送失败   id ="+ currentRoomId + "  code=  " + errorCode.getValue());
             }
         });
     }

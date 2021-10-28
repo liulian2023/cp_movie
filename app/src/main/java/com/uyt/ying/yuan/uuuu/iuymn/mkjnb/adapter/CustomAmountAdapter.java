@@ -8,6 +8,7 @@ import com.uyt.ying.yuan.R;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.model.CustomAmountEntity;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.viewholder.BaseViewHolder;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
 
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -31,7 +32,7 @@ public class CustomAmountAdapter extends BaseQuickAdapter<CustomAmountEntity, Ba
             custom_amount_tv.setBackgroundResource(R.drawable.recharge_head_item_un_check_shape);
             custom_amount_iv.setVisibility(View.GONE);
         }
-        custom_amount_tv.setText(customAmountEntity.getAmount()+Utils.getString(R.string.元));
+        custom_amount_tv.setText(customAmountEntity.getAmount()+ Utils.getString(R.string.元));
 
     }
 }

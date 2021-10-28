@@ -345,7 +345,7 @@ public class QuotaChangeActivity extends BaseActivity {
                 }else {
                     //棋牌列表中有余额可回收, 弹出pop
                     if(commonTipPop==null){
-                        commonTipPop=new CommonTipPop(QuotaChangeActivity.this, QuotaChangeActivity.this,Utils.getString(R.string.一键回收),Utils.getString(R.string.一键回收所有额度?));
+                        commonTipPop=new CommonTipPop(QuotaChangeActivity.this, QuotaChangeActivity.this,Utils.getString(R.string.一键回收),Utils.getString(R.string.一键回收所有额度));
                         commonTipPop.setOnClickLintener(new CommonTipPop.OnClickLintener() {
                             @Override
                             public void onSureClick(View view) {
@@ -375,7 +375,7 @@ public class QuotaChangeActivity extends BaseActivity {
                     if(checkBle){
                         RequestAutoChange();
                     }else {
-                        showToast(Utils.getString(R.string.开启自动余额转换失败,请手动回收所有金额));
+                        showToast(Utils.getString(R.string.开启自动余额转换失败请手动回收所有金额));
                         quota_change_swich.setChecked(false);
                     }
                 }
@@ -384,7 +384,7 @@ public class QuotaChangeActivity extends BaseActivity {
                 requestBalance("");
                 break;
             case R.id.toolbar_right_iv:
-                String tip=Utils.getString(R.string.切换至自动额度转换前,请先通过手动转换将额度转换为账户余额);
+                String tip=Utils.getString(R.string.切换至自动额度转换前请先通过手动转换将额度转换为账户余额);
                 CommonTipPop commonTipPop = new CommonTipPop(QuotaChangeActivity.this, QuotaChangeActivity.this, Utils.getString(R.string.说明), tip);
                 commonTipPop.showAtLocation(big_refresh_iv,Gravity.CENTER,0,0);
                 ProgressDialogUtil.darkenBackground(QuotaChangeActivity.this,0.6f);

@@ -141,7 +141,7 @@ public class ZhuangXiangRedActivity extends BaseActivity {
                 int grade = zxEntity.getGrade();
                 mine_grade_tv.setText("VIP"+ SharePreferencesUtil.getInt(MyApplication.getInstance(), CommonStr.GRADE,1));
 
-                zx_tip_tv.setText(Utils.getString(R.string.达到条件后投注推荐玩法即可享受投注金额的)+zxHBRate+Utils.getString(R.string.%专享回馈红包));
+                zx_tip_tv.setText(Utils.getString(R.string.达到条件后投注推荐玩法即可享受投注金额的)+zxHBRate+Utils.getString(R.string.专享回馈红包));
                 myHandler.sendEmptyMessage(1);
             }
 
@@ -180,7 +180,7 @@ public class ZhuangXiangRedActivity extends BaseActivity {
         zxHBGrade = rongcloudHBParameter.getZxHBGrade();    //专享红包领取等级
         double zxHBRate = rongcloudHBParameter.getZxHBRate();
         zx_target_grade_tv.setText(Utils.getString(R.string.等级达到VIP)+zxHBGrade);
-        zx_game_rule_tv.setText(Utils.getString(R.string.1.只要您等级达到VIP) + zxHBGrade + Utils.getString(R.string.，投注推荐玩法即可享受投注金额的)+zxHBRate+Utils.getString(R.string.%专享回馈红包\n 2.达到VIP) + zxHBGrade + Utils.getString(R.string.的会员请第二天晚上12点前登录领取此活动只有投注推荐玩法才能享受)+zxHBRate+Utils.getString(R.string.%专享红包。\n 5.没有达到等级的请抓紧时间提升自己的等级。));
+        zx_game_rule_tv.setText(Utils.getString(R.string.只要您等级达到VIP) + zxHBGrade + Utils.getString(R.string.投注推荐玩法即可享受投注金额的)+zxHBRate+Utils.getString(R.string.专享回馈红包达到VIP) + zxHBGrade + Utils.getString(R.string.的会员请第二天晚上12点前登录领取此活动只有投注推荐玩法才能享受)+zxHBRate+Utils.getString(R.string.专享红包没有达到等级的请抓紧时间提升自己的等级));
 
 
     }

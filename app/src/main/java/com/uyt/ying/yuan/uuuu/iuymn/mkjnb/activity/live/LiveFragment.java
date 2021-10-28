@@ -504,7 +504,7 @@ public class LiveFragment extends MvpBaseFragment /*implements Handler.Callback 
                 inputTv.setText(" vip" + isLevel + Utils.getString(R.string.及以上才能发言 ));
                 inputTv.setClickable(false);
             }*/else {
-                    inputTv.setText(Utils.getString(R.string. 来聊聊天吧 ~));
+                    inputTv.setText(Utils.getString(R.string.来聊聊天吧));
                     inputTv.setClickable(true);
                 }
                 mViewModel.initCpId(mLiveData.getCpId(),mLiveData.getLiveRoomId());
@@ -1041,7 +1041,7 @@ public class LiveFragment extends MvpBaseFragment /*implements Handler.Callback 
                  * 收到切换房间消息时请求失败,直接退出
                  */
                 if(!joinChatRoom){
-                    ToastUtil.showToast(Utils.getString(R.string.主播切换收费,请重新进入直播间付费观看));
+                    ToastUtil.showToast(Utils.getString(R.string.主播切换收费请重新进入直播间付费观看));
                     if(getActivity()!=null&&!getActivity().isFinishing()){
                         getActivity().finish();
                     }
@@ -1178,7 +1178,7 @@ public class LiveFragment extends MvpBaseFragment /*implements Handler.Callback 
         JSONObject jsonObject = JSONObject.parseObject(result);
         String imageUrl = jsonObject.getString("imageUrl");
         if(download_url_tv!=null){
-            download_url_tv.setText(Utils.getString(R.string.下载:)+imageUrl);
+            download_url_tv.setText(Utils.getString(R.string.下载)+imageUrl);
         }
 
     }
@@ -1213,7 +1213,7 @@ public class LiveFragment extends MvpBaseFragment /*implements Handler.Callback 
         if(null==data){
             return;
         }
-        invite_code_tv.setText(Utils.getString(R.string.邀请码:)+data.getString("inviteCode"));
+        invite_code_tv.setText(Utils.getString(R.string.邀请码)+data.getString("inviteCode"));
     }
     /**
      请求跑马灯内容
@@ -1552,12 +1552,12 @@ public class LiveFragment extends MvpBaseFragment /*implements Handler.Callback 
             RongLibUtils.quitChatRoom(joinChatroomId, new RongIMClient.OperationCallback() {
                 @Override
                 public void onSuccess() {
-                    Utils.logE(TAG, Utils.getString(R.string. rongLog onSuccess:  退出聊天室成功 + roomId: ) + joinChatroomId);
+                    Utils.logE(TAG, "rongLog onSuccess:  退出聊天室成功 roomId="  + joinChatroomId);
                 }
 
                 @Override
                 public void onError(RongIMClient.ErrorCode errorCode) {
-                    Utils.logE(TAG, Utils.getString(R.string.rongLog  onError:  退出聊天室失败 + roomId: ) + joinChatroomId);
+                    Utils.logE(TAG, "rongLog  onError:  退出聊天室失败 roomId="  + joinChatroomId);
                 }
             });
         }
@@ -1573,7 +1573,7 @@ public class LiveFragment extends MvpBaseFragment /*implements Handler.Callback 
             @Override
             public void onSuccess() {
                 SharePreferencesUtil.putString(MyApplication.getInstance(),"joinChatroomId", roomId);
-                Utils.logE(TAG, Utils.getString(R.string.rongLog: 加入聊天室成功 id ) + roomId);
+                Utils.logE(TAG, "rongLog: 加入聊天室成功 id" + roomId);
                 /*
                 发送一条进入直播间的message
                  */
@@ -1594,7 +1594,7 @@ public class LiveFragment extends MvpBaseFragment /*implements Handler.Callback 
             }
             @Override
             public void onError(RongIMClient.ErrorCode errorCode) {
-                Utils.logE(TAG, Utils.getString(R.string.rongLog: 加入聊天室失败 errorCode=  ) + errorCode.getValue());
+                Utils.logE(TAG, "rongLog: 加入聊天室失败 errorCode=" + errorCode.getValue());
             }
 
         });
@@ -2022,7 +2022,7 @@ public class LiveFragment extends MvpBaseFragment /*implements Handler.Callback 
                     if (aLong == 1) {
                         if(!isNeedToll){
                             myjzvd.startVideo();
-                            LogUtils.e(Utils.getString(R.string.直播地址：) + mLiveData.getLiveUrl());
+                            LogUtils.e(Utils.getString(R.string.直播地址) + mLiveData.getLiveUrl());
                         }
                         //播放五分钟后弹窗
                         initFollowPopTimer();
@@ -2758,7 +2758,7 @@ public class LiveFragment extends MvpBaseFragment /*implements Handler.Callback 
 
                     BetPopAllModel betPopAllModel = mViewModel.getBetPopAllData().getValue();
                     if(betPopAllModel==null){
-                        ToastUtil.showToast(Utils.getString(R.string.网络波动,数据初始化失败,请退出直播间重试!));
+                        ToastUtil.showToast(Utils.getString(R.string.网络波动数据初始化失败请退出直播间重试));
                         return;
                     }
                     List<BetPopAllModel.BetPopChildModel> betPopChildList = betPopAllModel.getBetPopChildModelList();
@@ -3644,7 +3644,7 @@ public class LiveFragment extends MvpBaseFragment /*implements Handler.Callback 
                                         /**
                                          被禁言
                                          */
-                                        ToastUtil.showToast(Utils.getString(R.string.您存在违规，在该聊天室中已被禁言));
+                                        ToastUtil.showToast(Utils.getString(R.string.您存在违规在该聊天室中已被禁言));
                                     }
                                 }
                                 break;

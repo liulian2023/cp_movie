@@ -2,6 +2,8 @@ package com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils;
 
 import androidx.annotation.NonNull;
 
+import com.uyt.ying.yuan.R;
+
 public class OwnUncaughtExceptionHandler  implements Thread.UncaughtExceptionHandler {
     @Override
     public void uncaughtException(@NonNull Thread t, @NonNull Throwable ex) {

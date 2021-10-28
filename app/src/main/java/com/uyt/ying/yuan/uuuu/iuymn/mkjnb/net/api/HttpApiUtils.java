@@ -24,6 +24,7 @@ import com.uyt.ying.rxhttp.net.common.BaseStringObserver;
 import com.uyt.ying.rxhttp.net.utils.RxUtil;
 import com.uyt.ying.rxhttp.sp.SharedPreferenceHelperImpl;
 
+import com.uyt.ying.yuan.R;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.base.BaseActivity;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.base.MvpBaseActivity;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.request.RequestUtil;
@@ -813,7 +814,7 @@ public class HttpApiUtils {
 
     public static void CpRequest(Activity activity,Fragment fragment,String url, HashMap<String, Object> data,  OnRequestLintener onRequestLintener) {
         if(null==activity){
-            ToastUtil.showToast(Utils.getString(R.string.数据错误,请重试));
+            ToastUtil.showToast(Utils.getString(R.string.数据错误请重试));
             return;
         }
         BaseStringObserver<ResponseBody> observer = new BaseStringObserver<ResponseBody>() {

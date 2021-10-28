@@ -52,7 +52,7 @@ public class AssetsSvgaManage {
         svgaImageView.setCallback(new SVGACallback() {
             @Override
             public void onPause() {
-                Utils.logE(TAG,Utils.getString(R.string.onFinished: 动画暂停播放));
+                Utils.logE(TAG,"onFinished: 动画暂停播放");
             }
 
             /**
@@ -60,7 +60,7 @@ public class AssetsSvgaManage {
              */
             @Override
             public void onFinished() {
-                Utils.logE(TAG, Utils.getString(R.string.onFinished: 动画播放结束));
+                Utils.logE(TAG, "onFinished: 动画播放结束");
                 if(liveMessageModelArrayList!=null && liveMessageModelArrayList.size()>0){
                     liveMessageModelArrayList.remove(0);
                     if(liveMessageModelArrayList!=null && liveMessageModelArrayList.size()>0){
@@ -151,7 +151,7 @@ public class AssetsSvgaManage {
 
                     @Override
                     public void onError() {
-                        Utils.logE(TAG, Utils.getString(R.string.onError: 礼物特效播放失败) );
+                        Utils.logE(TAG,"onError: 礼物特效播放失败" );
                         //如果动画数组列表大于0,移除第一位的动画,继续循环解析
                         if (liveMessageModelArrayList.size() > 0) {
                             liveMessageModelArrayList.remove(0);

@@ -461,7 +461,7 @@ public class SscOpenActivity extends BaseActivity implements View.OnClickListene
             }else if(name.equals(Utils.getString(R.string.号码))){
                     sscOpenResultModel.setNumList(sscOpenResultModel.getNumListCopy());
                     sscOpenResultModel.setGuanYa(false);
-            }else if(name.equals(Utils.getString(R.string.总和/形态))){
+            }else if(name.equals(Utils.getString(R.string.总和形态))){
               sscOpenResultModel.setGuanYa(true);
             }
         }
@@ -595,7 +595,7 @@ public class SscOpenActivity extends BaseActivity implements View.OnClickListene
                 initRadioClick(four);
 //                getDada(1,15,chooseTimeText.getText().toString(),type_id,false,false,false,true,false);
 //                getDada(1,15,chooseTimeText.getText().toString(),type_id,false,false,false,true,false);
-                initSwich(Utils.getString(R.string.总和/形态));
+                initSwich(Utils.getString(R.string.总和形态));
                 break;
             case R.id.time_choose_linear://点击弹出时间选择pop
                 popupWindow.showAsDropDown(chooseTimeLinear,0,0, Gravity.BOTTOM);

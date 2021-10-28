@@ -185,7 +185,7 @@ public class InviteCodeFragment extends BaseFragment implements View.OnClickList
                     Date date = new Date(createdDate);
                     String format = simpleDateFormat.format(date);
 //                    String inviteCode, String createdDate, String num, String codeUrl, String k3Rate, String happytenRate,
-                    inviteCodeArrayList.add(new InviteCode(Utils.getString(R.string.邀请码:)+inviteCode,format,Utils.getString(R.string.注册左括号)+num+")",url,k3Rate,happytenRate,sscaiRate,happy8Rate,xuanwuRate,farmRate,raceRate,sixRate,danRate));
+                    inviteCodeArrayList.add(new InviteCode(Utils.getString(R.string.邀请码)+inviteCode,format,Utils.getString(R.string.注册左括号)+num+")",url,k3Rate,happytenRate,sscaiRate,happy8Rate,xuanwuRate,farmRate,raceRate,sixRate,danRate));
                 }
                 inviteCodeRecylceAdapter.notifyDataSetChanged();
             }
@@ -308,7 +308,7 @@ public class InviteCodeFragment extends BaseFragment implements View.OnClickList
 
                 AlertDialog isExit = new AlertDialog.Builder(getContext()).create();
                 isExit.setTitle(Utils.getString(R.string.删除邀请码));
-                isExit.setMessage(Utils.getString(R.string.确定删除?));
+                isExit.setMessage(Utils.getString(R.string.确定删除));
                 isExit.setButton(DialogInterface.BUTTON_NEGATIVE, Utils.getString(R.string.取消), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {

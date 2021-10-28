@@ -145,7 +145,7 @@ public class RechargeActivity extends BaseActivity implements View.OnClickListen
     ManualRechargeActivity.SkipType skipType;
     String currentLoadUrl="";
     ManualRechargeTipPop manualRechargeTipPop;
-    private String manualTip=Utils.getString(R.string.温馨提示：\n1.代充只负责充值，如果您有其他问题，请联系我们在线客服处理，代充如果向您骚扰或者其他行为，欢迎向我们举报，举报有奖。2.代充人员不定期更换，为避免不必要的损失，每次支付请到平台提单，以官方为准，谢谢！3.代充时请向代充人员提供您的会员账号（会员账号可以在代充页面复制），以及金额！);
+    private String manualTip=Utils.getString(R.string.代充只负责充值);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -679,7 +679,7 @@ public class RechargeActivity extends BaseActivity implements View.OnClickListen
                 double max = Double.parseDouble(currentAisleEntity.getUp());
                 double mix = Double.parseDouble(currentAisleEntity.getDown());
                 if(parseFloat < mix || parseFloat > max){
-                    showToast(Utils.getString(R.string.货币数量超出区间,请重新输入));
+                    showToast(Utils.getString(R.string.货币数量超出区间请重新输入));
                     return  false;
                 }
             }
@@ -695,7 +695,7 @@ public class RechargeActivity extends BaseActivity implements View.OnClickListen
                 double max = Double.parseDouble(currentAisleEntity.getUp());
                 double mix = Double.parseDouble(currentAisleEntity.getDown());
                 if(parseFloat < mix || parseFloat > max){
-                    showToast(Utils.getString(R.string.充值金额超出区间,请重新输入));
+                    showToast(Utils.getString(R.string.充值金额超出区间请重新输入));
                     return  false;
                 }
                 if(StringMyUtil.isEmptyString(currentAisleEntity.getThirdPartyFlag())){

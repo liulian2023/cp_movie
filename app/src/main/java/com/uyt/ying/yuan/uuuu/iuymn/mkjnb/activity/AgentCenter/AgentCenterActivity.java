@@ -154,9 +154,9 @@ public class AgentCenterActivity extends BaseActivity implements View.OnClickLis
                 String todayCommission = jsonObject.getString("todayCommission");//今日返佣
                 String childAllRegisterPeopleNum = jsonObject.getString("childAllRegisterPeopleNum");//下级人数
                 String agentcommison = jsonObject.getString("agentcommison");//累计返佣
-                yestodayChild.setText(Utils.getString(R.string.昨天返佣:)+yesterdayCommission);
-                todayChild.setText(Utils.getString(R.string.今日返佣:)+todayCommission);
-                childNum.setText(Utils.getString(R.string.我的下级:)+childAllRegisterPeopleNum+Utils.getString(R.string.人));
+                yestodayChild.setText(Utils.getString(R.string.昨天返佣)+yesterdayCommission);
+                todayChild.setText(Utils.getString(R.string.今日返佣)+todayCommission);
+                childNum.setText(Utils.getString(R.string.我的下级)+childAllRegisterPeopleNum+Utils.getString(R.string.人));
                 if(appName.equals(Utils.getString(R.string.申博国际))||appName.equals(Utils.getString(R.string.盈众彩票))){
                     //显示个人中心的佣金
                     leiji.setText(SharePreferencesUtil.getString(AgentCenterActivity.this, CommonStr.COMMISION,agentcommison));

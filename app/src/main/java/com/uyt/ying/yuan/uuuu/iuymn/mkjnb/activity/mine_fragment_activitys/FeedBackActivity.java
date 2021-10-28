@@ -15,6 +15,7 @@ import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.CommonToolbarUtil;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.MemoryLeakUtil;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.StatusBarUtil;
 import com.google.android.material.tabs.TabLayout;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
 
 import java.util.ArrayList;
 
@@ -33,7 +34,7 @@ public class FeedBackActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_face_back);
         ButterKnife.bind(this);
-        CommonToolbarUtil.initToolbar(this,Utils.getString(R.string.意见反馈));
+        CommonToolbarUtil.initToolbar(this, Utils.getString(R.string.意见反馈));
         StatusBarUtil.setColor(this, ContextCompat.getColor(this,R.color.white));
         StatusBarUtil.setLightMode(this,true);
         getIntentData();

@@ -152,9 +152,9 @@ public class RegisterActivity extends BaseActivity /*implements View.OnClickList
         mobileNumSwitch =SharePreferencesUtil.getString(this,"mobileNumSwitch","0");
         yqm = SharePreferencesUtil.getString(this,"yqm","");
         if(yqm.equals("0")){
-            invite_code_etv.setHint(Utils.getString(R.string.请输入邀请码(必填)));
+            invite_code_etv.setHint(Utils.getString(R.string.请输入邀请码必填));
         }else {
-            invite_code_etv.setHint(Utils.getString(R.string.请输入邀请码(选填)));
+            invite_code_etv.setHint(Utils.getString(R.string.请输入邀请码选填));
         }
         if(mobileNumSwitch.equals("0")){
             //手机号注册样式
@@ -284,13 +284,13 @@ public class RegisterActivity extends BaseActivity /*implements View.OnClickList
                     HttpApiUtils.CpRequest(RegisterActivity.this, null,RequestUtil.CHECK_REGISTER, data, new HttpApiUtils.OnRequestLintener() {
                         @Override
                         public void onSuccess(String result, Headers headers) {
-                            Utils.logE(TAG,Utils.getString(R.string.onSuccess:  注册前校验成功 :));
+                            Utils.logE(TAG,"onSuccess:  注册前校验成功 :");
                             initSlideWebViewPop(true);
                         }
 
                         @Override
                         public void onFailed(String msg) {
-                            Utils.logE(TAG,Utils.getString(R.string.onFailed:  注册前校验失败 :));
+                            Utils.logE(TAG,"onFailed:  注册前校验失败 :");
                         }
                     });
 
@@ -380,7 +380,7 @@ public class RegisterActivity extends BaseActivity /*implements View.OnClickList
         HttpApiUtils.CpRequest(this, null,RequestUtil.REQUEST_06tb, data, new HttpApiUtils.OnRequestLintener() {
             @Override
             public void onSuccess(String result, Headers headers) {
-                showToast(Utils.getString(R.string.注册成功,正在登录));
+                showToast(Utils.getString(R.string.注册成功正在登录));
                 RegisterEntity registerEntity = JSONObject.parseObject(result, RegisterEntity.class);
                 RegisterEntity.MemberInfoBean memberInfo = registerEntity.getMemberInfo();
                 String message = registerEntity.getMessage();
@@ -443,7 +443,7 @@ public class RegisterActivity extends BaseActivity /*implements View.OnClickList
                 return false;
             }
             if(inviteStr.length()<6||inviteStr.length()>8){
-                showToast(Utils.getString(R.string.邀请码应为6-8位));
+                showToast(Utils.getString(R.string.邀请码应为6到8位));
                 return false;
             }
         }
@@ -464,7 +464,7 @@ public class RegisterActivity extends BaseActivity /*implements View.OnClickList
         }else {
             int accountLength = accountStr.length();
             if(/*accountLength<6||accountLength>11||*/!Utils.checkAccount(accountStr)){
-                showToast(Utils.getString(R.string.请输入字母开头6-11位字母加数字的账号));
+                showToast(Utils.getString(R.string.请输入字母开头6到11位字母加数字的账号));
                 return false;
             }
         }
@@ -472,7 +472,7 @@ public class RegisterActivity extends BaseActivity /*implements View.OnClickList
         String passwordStr = register_password_etv.getText().toString();
         int passwordLength = passwordStr.length();
         if(/*passwordLength<6||passwordLength>16||*/!Utils.checkPsw(passwordStr)){
-            showToast(Utils.getString(R.string.请输入6-16位字母加数字的密码));
+            showToast(Utils.getString(R.string.请输入6到16位字母加数字的密码));
             return false;
         }
         if(accountStr.equals(passwordStr)){

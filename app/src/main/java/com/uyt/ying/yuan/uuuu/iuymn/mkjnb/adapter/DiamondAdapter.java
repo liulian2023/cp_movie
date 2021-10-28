@@ -12,6 +12,7 @@ import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.model.DiamondEntity;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.request.StringMyUtil;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.viewholder.BaseViewHolder;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
 
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -33,13 +34,13 @@ public class DiamondAdapter extends BaseQuickAdapter<DiamondEntity.GainZhuanShiC
         String type = gainZhuanShiConditionsListBean.getType();
         boolean isGet=false;
         if (type.equals("0")){
-            item_title_tv.setText(String.format(Utils.getString(R.string.邀请%s人礼包),gainZhuanShiConditionsListBean.getPrice()));
+            item_title_tv.setText(String.format(Utils.getString(R.string.邀请人礼包),gainZhuanShiConditionsListBean.getPrice()));
         }else if(type.equals("1")){
-            item_title_tv.setText(String.format(Utils.getString(R.string.每日充值%s元礼包),gainZhuanShiConditionsListBean.getPrice()));
+            item_title_tv.setText(String.format(Utils.getString(R.string.每日充值元礼包),gainZhuanShiConditionsListBean.getPrice()));
         }else if(type.equals("2")){
-            item_title_tv.setText(String.format(Utils.getString(R.string.每日打码%s元礼包),gainZhuanShiConditionsListBean.getPrice()));
+            item_title_tv.setText(String.format(Utils.getString(R.string.每日打码元礼包),gainZhuanShiConditionsListBean.getPrice()));
         }else if(type.equals("3")){
-            item_title_tv.setText(String.format(Utils.getString(R.string.每日送礼%s元礼包),gainZhuanShiConditionsListBean.getPrice()));
+            item_title_tv.setText(String.format(Utils.getString(R.string.每日送礼元礼包),gainZhuanShiConditionsListBean.getPrice()));
         }
         String userGainSuccess = gainZhuanShiConditionsListBean.getUserGainSuccess();//用户是否获取(0否;1是)
         if(userGainSuccess.equals("0")){

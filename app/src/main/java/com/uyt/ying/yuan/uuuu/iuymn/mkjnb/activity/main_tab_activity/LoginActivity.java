@@ -176,9 +176,9 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
             ActivityUtil.getInstance().finishActivityWithoutLoginActivity();
         }
         if(BuildConfig.DEBUG){
-            login_version_name_tv.setText(String.format(Utils.getString(R.string.测试版 版本号:%s),BuildConfig.VERSION_NAME));
+            login_version_name_tv.setText(String.format(Utils.getString(R.string.测试版版本号),BuildConfig.VERSION_NAME));
         }else {
-            login_version_name_tv.setText(String.format(Utils.getString(R.string.版本号:%s),BuildConfig.VERSION_NAME));
+            login_version_name_tv.setText(String.format(Utils.getString(R.string.版本号占位),BuildConfig.VERSION_NAME));
         }
         initSharePreferencesData();
         initInvite();
@@ -656,10 +656,10 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
             return false;
         } */
         else if(account.length()<6){
-            showToast(Utils.getString(R.string.账号不符合规范,请重新输入));
+            showToast(Utils.getString(R.string.账号不符合规范请重新输入));
             return false;
         }else  if (!Utils.checkPsw(password)){
-            showToast(Utils.getString(R.string.请输入6-16位字母加数字的密码));
+            showToast(Utils.getString(R.string.请输入6到16位字母加数字的密码));
             return false;
         }
         return true;

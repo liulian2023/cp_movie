@@ -174,34 +174,34 @@ public class ChildOpenFragment extends BaseFragment implements View.OnClickListe
                 islimit = memberAgent.getString("islimit");  //是否限制
 
                 if ("1".equals(islimit)) {  //限制
-                    kuaisan.setHint(Utils.getString(R.string.自身返点) + initFloat(k3Rate) + Utils.getString(R.string.,可设置返点) + (k3Rate - max > 0 ? initFloat(k3Rate - max) : 0) +
+                    kuaisan.setHint(Utils.getString(R.string.自身返点) + initFloat(k3Rate) + Utils.getString(R.string.可设置返点) + (k3Rate - max > 0 ? initFloat(k3Rate - max) : 0) +
                             "-" +initFloat(k3Rate - min));
-                    ssc.setHint(Utils.getString(R.string.自身返点) + initFloat(sscaiRate) + Utils.getString(R.string.,可设置返点) + (sscaiRate - max > 0 ?initFloat(sscaiRate - max) : 0) +
+                    ssc.setHint(Utils.getString(R.string.自身返点) + initFloat(sscaiRate) + Utils.getString(R.string.可设置返点) + (sscaiRate - max > 0 ?initFloat(sscaiRate - max) : 0) +
                             "-" +initFloat(sscaiRate - min));
-                    race.setHint(Utils.getString(R.string.自身返点) + initFloat(raceRate) + Utils.getString(R.string.,可设置返点) + (raceRate - max > 0 ? initFloat(raceRate - max) : 0) +
+                    race.setHint(Utils.getString(R.string.自身返点) + initFloat(raceRate) + Utils.getString(R.string.可设置返点) + (raceRate - max > 0 ? initFloat(raceRate - max) : 0) +
                             "-" + initFloat(raceRate-min));
-                    six.setHint(Utils.getString(R.string.自身返点) + initFloat(sixRate) + Utils.getString(R.string.,可设置返点) + (sixRate - max > 0 ? initFloat(sixRate-max) : 0) +
+                    six.setHint(Utils.getString(R.string.自身返点) + initFloat(sixRate) + Utils.getString(R.string.可设置返点) + (sixRate - max > 0 ? initFloat(sixRate-max) : 0) +
                             "-" +initFloat(sixRate - min));
-                    happy8.setHint(Utils.getString(R.string.自身返点) + initFloat(happy8Rate) + Utils.getString(R.string.,可设置返点) + (happy8Rate - max > 0 ? initFloat(happy8Rate - max) : 0) +
+                    happy8.setHint(Utils.getString(R.string.自身返点) + initFloat(happy8Rate) + Utils.getString(R.string.可设置返点) + (happy8Rate - max > 0 ? initFloat(happy8Rate - max) : 0) +
                             "-" + initFloat(happy8Rate - min));
-                    farm.setHint(Utils.getString(R.string.自身返点) + initFloat(farmRate) + Utils.getString(R.string.,可设置返点) + (farmRate - max > 0 ? initFloat(farmRate - max ): 0) +
+                    farm.setHint(Utils.getString(R.string.自身返点) + initFloat(farmRate) + Utils.getString(R.string.可设置返点) + (farmRate - max > 0 ? initFloat(farmRate - max ): 0) +
                             "-" + initFloat(farmRate - min));
-                    happy10.setHint(Utils.getString(R.string.自身返点) + initFloat(happytenRate) + Utils.getString(R.string.,可设置返点) + (happytenRate - max > 0 ?initFloat(happytenRate - max ) : 0) +
+                    happy10.setHint(Utils.getString(R.string.自身返点) + initFloat(happytenRate) + Utils.getString(R.string.可设置返点) + (happytenRate - max > 0 ?initFloat(happytenRate - max ) : 0) +
                             "-" + initFloat(happytenRate - min));
-                    xuan5.setHint(Utils.getString(R.string.自身返点) + initFloat(xuanwuRate) + Utils.getString(R.string.,可设置返点) + (xuanwuRate - max > 0 ?initFloat(xuanwuRate - max) : 0) +
+                    xuan5.setHint(Utils.getString(R.string.自身返点) + initFloat(xuanwuRate) + Utils.getString(R.string.可设置返点) + (xuanwuRate - max > 0 ?initFloat(xuanwuRate - max) : 0) +
                             "-" +initFloat(xuanwuRate - min));
-                    dandan.setHint(Utils.getString(R.string.自身返点) + initFloat(danRate) + Utils.getString(R.string.,可设置返点) + (danRate - max > 0 ? initFloat(danRate - max) : 0) +
+                    dandan.setHint(Utils.getString(R.string.自身返点) + initFloat(danRate) + Utils.getString(R.string.可设置返点) + (danRate - max > 0 ? initFloat(danRate - max) : 0) +
                             "-" + initFloat(danRate - min));
                 } else {  //不限制
-                    kuaisan.setHint(Utils.getString(R.string.自身返点) + initFloat(k3Rate) + Utils.getString(R.string.,可设置返点0-) + initFloat(k3Rate));
-                    ssc.setHint(Utils.getString(R.string.自身返点) + initFloat(sscaiRate) + Utils.getString(R.string.,可设置返点0-) + initFloat(sscaiRate));
-                    race.setHint(Utils.getString(R.string.自身返点) + initFloat(raceRate) + Utils.getString(R.string.,可设置返点0-) + initFloat(raceRate));
-                    six.setHint(Utils.getString(R.string.自身返点) + initFloat(sixRate) + Utils.getString(R.string.,可设置返点0-) + initFloat(sixRate));
-                    happy8.setHint(Utils.getString(R.string.自身返点) + initFloat(happy8Rate) + Utils.getString(R.string.,可设置返点0-) + initFloat(happy8Rate));
-                    farm.setHint(Utils.getString(R.string.自身返点) + initFloat(farmRate) + Utils.getString(R.string.,可设置返点0-) + initFloat(farmRate));
-                    happy10.setHint(Utils.getString(R.string.自身返点) + initFloat(happytenRate) + Utils.getString(R.string.,可设置返点0-) + initFloat(happytenRate));
-                    xuan5.setHint(Utils.getString(R.string.自身返点) + initFloat(xuanwuRate) + Utils.getString(R.string.,可设置返点0-) + initFloat(xuanwuRate));
-                    dandan.setHint(Utils.getString(R.string.自身返点) + initFloat(danRate) + Utils.getString(R.string.,可设置返点0-) + initFloat(danRate));
+                    kuaisan.setHint(Utils.getString(R.string.自身返点) + initFloat(k3Rate) + Utils.getString(R.string.可设置返点0) + initFloat(k3Rate));
+                    ssc.setHint(Utils.getString(R.string.自身返点) + initFloat(sscaiRate) + Utils.getString(R.string.可设置返点0) + initFloat(sscaiRate));
+                    race.setHint(Utils.getString(R.string.自身返点) + initFloat(raceRate) + Utils.getString(R.string.可设置返点0) + initFloat(raceRate));
+                    six.setHint(Utils.getString(R.string.自身返点) + initFloat(sixRate) + Utils.getString(R.string.可设置返点0) + initFloat(sixRate));
+                    happy8.setHint(Utils.getString(R.string.自身返点) + initFloat(happy8Rate) + Utils.getString(R.string.可设置返点0) + initFloat(happy8Rate));
+                    farm.setHint(Utils.getString(R.string.自身返点) + initFloat(farmRate) + Utils.getString(R.string.可设置返点0) + initFloat(farmRate));
+                    happy10.setHint(Utils.getString(R.string.自身返点) + initFloat(happytenRate) + Utils.getString(R.string.可设置返点0) + initFloat(happytenRate));
+                    xuan5.setHint(Utils.getString(R.string.自身返点) + initFloat(xuanwuRate) + Utils.getString(R.string.可设置返点0) + initFloat(xuanwuRate));
+                    dandan.setHint(Utils.getString(R.string.自身返点) + initFloat(danRate) + Utils.getString(R.string.可设置返点0) + initFloat(danRate));
                 }
 
 

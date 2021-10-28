@@ -1,6 +1,9 @@
 package com.uyt.ying.yuan.uuuu.iuymn.mkjnb.request;
 
 
+import com.uyt.ying.yuan.R;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
+
 /**
  * WebServiceVariable.java 存放webservice使用的常量.
  * 
@@ -127,137 +130,109 @@ public class WebServiceConstant{
     /**
      * STATE_INFO_EMPTY:请求参数不能为空.
      */
-    public static String STATE_INFO_EMPTY=Utils.getString(R.string.请求参数不能为空);//请求参数不能为空
-    
+
     /**
      * STATE_INFO_IP_NOT_FOUND:请求参数不能为空.
      */
-    public static String STATE_INFO_IP_NOT_FOUND=Utils.getString(R.string.IP非可发送IP范围);//IP非可发送IP范围
-    
+
     /**
      * ERROR_CODE_TOKEN_WRONGFUL:token校验失败.
      */
-    public static String ERROR_CODE_TOKEN_ERROR=Utils.getString(R.string.token校验失败！);
-    
+
     /**
      * ERROR_CODE_SYSTEM_EXCEPTION:系统出现异常.
      */
-    public static String ERROR_CODE_SYSTEM_EXCEPTION=Utils.getString(R.string.系统出现异常！);//系统异常时信息
     /**
      * ERROR_CODE_REQUIRED_DATA_IS_NULL:非空参数有空值.
      */
-    public static String ERROR_CODE_REQUIRED_DATA_IS_NULL=Utils.getString(R.string.非空参数有空值！);//非空参数有空值
     /**
      * ERROR_CODE_NOT_FIND:数据不存在.
      */
-    public static String ERROR_CODE_NOT_FIND=Utils.getString(R.string.数据不存在！);
     /**
      * ERROR_TICKET_NOT_FOUND:票据不存在！
      */
-    public static String ERROR_TICKET_NOT_FOUND = Utils.getString(R.string.票据不存在！);
-    
+
     /**
      * ERROR_MESSAGE_BODY_IS_NULL:消息体不能为空.
      */
-    public static String ERROR_MESSAGE_BODY_CAN_NOT_NULL=Utils.getString(R.string.消息体不能为空！);
-    
+
     /**
      * ERROR_MESSAGE_TICKET_NOT_ENOUGH:剩余票数不足无法检票.
      */
-    public static String ERROR_MESSAGE_TICKET_NOT_ENOUGH=Utils.getString(R.string.剩余票数不足无法检票！);
-    
+
     /**
      * ERROR_MESSAGE_TICKET_NOT_ENOUGH:剩余票数不足无法冻结.
      */
-    public static String ERROR_MESSAGE_TICKET_CAN_NOT_LOCK=Utils.getString(R.string.剩余票数不足无法冻结！);
-    
+
     /**
      * ERROR_MESSAGE_TICKET_NOT_ENOUGH:票据状态为已检票，无法冻结.
      */
-    public static String ERROR_MESSAGE_TICKET_CAN_NOT_LOCK_BECAUSE_TICKET_IS_CHECKED=Utils.getString(R.string.票据状态为已检票，无法冻结！);
-    
+
     /**
      * ERROR_MESSAGE_TICKET_CAN_NOT_UNLOCK:冻结票数不足无法解冻.
      */
-    public static String ERROR_MESSAGE_TICKET_CAN_NOT_UNLOCK=Utils.getString(R.string.冻结票数不足无法解冻！);
-    
+
     /**
      * ERROR_MESSAGE_RODERS_NOT_FOUND:订单不存在
      */
-    public static String ERROR_MESSAGE_RODERS_NOT_FOUND = Utils.getString(R.string.订单不存在！);
-    
+
     /**
      * ERROR_MESSAGE_RESOURCECODE_NOT_FOUND:资源编码不存在
      */
-    public static String ERROR_MESSAGE_RESOURCECODE_NOT_FOUND = Utils.getString(R.string.资源编码不存在！);
-    
+
     /**
      * ERROR_MESSAGE_PRODUCT_NOT_IN_VALIDTIME:该产品不在可验票时间范围内
      */
-    public static String ERROR_MESSAGE_PRODUCT_NOT_IN_VALIDTIME = Utils.getString(R.string.该产品不在可验票时间范围内！);
-    
+
     /**
      * ERROR_MESSAGE_PRODUCT_NOT_IN_RESOURCE:查无与资源编码匹配的产品
      */
-    public static String ERROR_MESSAGE_PRODUCT_NOT_IN_RESOURCE = Utils.getString(R.string.查无与资源编码匹配的产品！);
-    
+
     /**
      * ERROR_MESSAGE_PRODUCT_NOT_EFFECTIVE:该产品未生效！
      */
-    public static String ERROR_MESSAGE_PRODUCT_NOT_EFFECTIVE = Utils.getString(R.string.该产品未生效！);
-    
+
     /**
      * ERROR_MESSAGE_PRODUCT_OVERDUE:该产品已过期
      */
-    public static String ERROR_MESSAGE_PRODUCT_OVERDUE = Utils.getString(R.string.该产品已过期！);
-    
+
     /**
      * ERROR_MESSAGE_TICKET_HAVEUSE:该票据已使用
      */
-    public static String ERROR_MESSAGE_TICKET_HAVEUSE = Utils.getString(R.string.该票据已使用！);
-    
+
     /**
      * ERROR_MESSAGE_TICKET_REFUND:票据已退票
      */
-    public static String ERROR_MESSAGE_TICKET_REFUND = Utils.getString(R.string.该票据已退票！);
-    
+
     /**
      * ERROR_MESSAGE_TICKET_OVERDUE:该票据已过期！
      */
-    public static String ERROR_MESSAGE_TICKET_OVERDUE = Utils.getString(R.string.该票据已过期！);
-    
+
     /**
      * ERROR_MESSAGE_TICKET_CODE_HAVEUSED:该串码已使用！
      */
-    public static String ERROR_MESSAGE_TICKET_CODE_HAVEUSED = Utils.getString(R.string.该串码已使用！);
-    
+
     /**
      * ERROR_MESSAGE_TICKET_CODE_OVERDUE:该串码已过期
      */
-    public static String ERROR_MESSAGE_TICKET_CODE_OVERDUE = Utils.getString(R.string.该串码已过期！);
-    
+
     /**
      * ERROR_MESSAGE_TICKET_CODE_NOTFOUND:该串码不存在
      */
-    public static String ERROR_MESSAGE_TICKET_CODE_NOTFOUND = Utils.getString(R.string.该串码不存在！);
-    
+
     /**
      * ERROR_MESSAGE_TICKET_CODE_INVALID:串码无效
      */
-    public static String ERROR_MESSAGE_TICKET_CODE_INVALID = Utils.getString(R.string.串码无效！);
     /**
      * ERROR_MESSAGE_PAY_FAIL:支付失败
      */
-    public static String ERROR_MESSAGE_PAY_FAIL = Utils.getString(R.string.支付失败！);
-    
+
     /**
      * ERROR_MESSAGE_IDCARD_NOTFOUND:
      */
-    public static String ERROR_MESSAGE_IDCARD_NOTFOUND = Utils.getString(R.string.无订单信息！);
-    
+
     /**
      * ERROR_MESSAGE_TICKET_NUMBER_INVALID:票据无效
      */
-    public static String ERROR_MESSAGE_TICKET_NUMBER_INVALID = Utils.getString(R.string.票据无效！);
 
 }

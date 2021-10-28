@@ -165,7 +165,7 @@ public class RaceChildAdapter extends RecyclerView.Adapter<RaceChildAdapter.VH> 
                             }
                         }
                     }
-                    if (Row==5&&list.get((int)v.getTag()).getDgroupname().equals(Utils.getString(R.string.1-10名))){
+                    if (Row==5&&list.get((int)v.getTag()).getDgroupname().equals(Utils.getString(R.string.一到10名))){
                         if (num<raceCount){
                             RaceGroupBean choiceBean = list.get((int)v.getTag());
                          //   if (!isClickMap.get(String.valueOf(choiceBean.getId()))){

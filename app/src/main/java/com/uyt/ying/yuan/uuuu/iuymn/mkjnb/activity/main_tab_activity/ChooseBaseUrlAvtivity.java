@@ -30,6 +30,7 @@ import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.listener.OnItemClickListener;
 import com.uber.autodispose.AutoDispose;
 import com.uber.autodispose.android.lifecycle.AndroidLifecycleScopeProvider;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -60,7 +61,7 @@ public class ChooseBaseUrlAvtivity extends BaseActivity {
         setContentView(R.layout.activity_choose_base_url_avtivity);
         StatusBarUtil.setColor(this, ContextCompat.getColor(this,R.color.white));
         StatusBarUtil.setLightMode(this,true);
-        CommonToolbarUtil.initToolbar(this,Utils.getString(R.string.选择线路));
+        CommonToolbarUtil.initToolbar(this, Utils.getString(R.string.选择线路));
         ButterKnife.bind(this);
         initRecycler();
     }

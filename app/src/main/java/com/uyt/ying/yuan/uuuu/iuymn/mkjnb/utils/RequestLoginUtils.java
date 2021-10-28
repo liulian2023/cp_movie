@@ -7,6 +7,7 @@ import android.widget.Button;
 
 import com.alibaba.fastjson.JSONObject;
 import com.uyt.ying.rxhttp.sp.SharedPreferenceHelperImpl;
+import com.uyt.ying.yuan.R;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.Fragment.live_chat_fragment.rongyun.RongLibUtils;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.MainActivity;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.base.BaseActivity;
@@ -36,7 +37,7 @@ public class RequestLoginUtils {
                 }
                connectRongYun(context,button);
         } else {
-            ToastUtil.showToast(Utils.getString(R.string.网络不给力,登录失败));
+            ToastUtil.showToast(Utils.getString(R.string.网络不给力登录失败));
             Intent intent = new Intent(context, MainActivity.class);
             intent.putExtra("showAtyPop",true);
             context.startActivity(intent);
@@ -60,7 +61,7 @@ public class RequestLoginUtils {
         HttpApiUtils.CpRequest((Activity)context,null, RequestUtil.REQUEST_Chat1, data, new HttpApiUtils.OnRequestLintener() {
             @Override
             public void onSuccess(String result, Headers headers) {
-                Utils.logE( TAG,Utils.getString(R.string.获取聊天室token成功  >>>>)+Utils.getString(R.string.连接融云服务器开始) );
+                Utils.logE( TAG,"获取聊天室token成功  >>>>"+"连接融云服务器开始" );
                 JSONObject jsonObject = JSONObject.parseObject(result);
                 String chatRoomId = jsonObject.getString("chatroomId");
                 String token = null;
@@ -102,7 +103,7 @@ public class RequestLoginUtils {
                 if(button!=null){
                     button.setClickable(true);
                 }
-                Utils.logE(TAG, Utils.getString(R.string.获取聊天室token失败: ) );
+                Utils.logE(TAG,"获取聊天室token失败:" );
 //                if(messageHead.getCode().equals("00")){
                 //获取聊天室token成功或者失败都默认登录成功,跳转首页(盈众和申博没有聊天室,无法获取到聊天室token)
                 Intent intent = new Intent(context, MainActivity.class);

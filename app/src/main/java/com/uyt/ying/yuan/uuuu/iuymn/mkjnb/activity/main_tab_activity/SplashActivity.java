@@ -130,11 +130,11 @@ public class SplashActivity extends BaseActivity implements View.OnClickListener
         rxPermissions.requestEachCombined(PERMISSIONS)
                 .subscribe(permission -> {
                     if (permission.granted) {
-                        Utils.logE(TAG, Utils.getString(R.string.init: 权限申请成功));
+                        Utils.logE(TAG,"init: 权限申请成功");
                         permissionSuccess();
 //        }
                     } else {
-                        Utils.logE(TAG, Utils.getString(R.string.init: 权限申请失败));
+                        Utils.logE(TAG, "init: 权限申请失败");
                         permissionFail();
                     }
                 });
@@ -145,7 +145,7 @@ public class SplashActivity extends BaseActivity implements View.OnClickListener
             //用户勾选了不再询问
             AlertDialog isExit = new AlertDialog.Builder(this).create();
             isExit.setTitle(Utils.getString(R.string.权限申请));
-            isExit.setMessage(Utils.getString(R.string.禁用权限会导致APP功能无法正常使用,是否前往手动授予该权限?));
+            isExit.setMessage(Utils.getString(R.string.禁用权限会导致APP功能无法正常使用是否前往手动授予该权限));
             isExit.setButton(DialogInterface.BUTTON_NEGATIVE, Utils.getString(R.string.取消), new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
@@ -239,7 +239,7 @@ public class SplashActivity extends BaseActivity implements View.OnClickListener
                                     if(mKProgressHUD!=null){
                                         mKProgressHUD.dismiss();
                                     }
-                                    Utils.logE(TAG, Utils.getString(R.string.onSuccess: 响应最快: )+appRequestDomainsBean1.getDomain() );
+                                    Utils.logE(TAG, "onSuccess: 响应最快: "+appRequestDomainsBean1.getDomain() );
                                     getSystemsData();
                                     requestAppStatistics();
                                     NetWorkPopwindow.initPop();
@@ -401,7 +401,7 @@ public class SplashActivity extends BaseActivity implements View.OnClickListener
             public void onSuccess(String result, Headers headers) {
                 //此接口一定要请求成功一次  只有请求成功后才视为不是第一次启动
                 mSharedPreferenceHelperImpl.setFirstInstall(false);
-                Utils.logE(TAG, Utils.getString(R.string.onSuccess: app安装统计成功) );
+                Utils.logE(TAG, "onSuccess: app安装统计成功" );
             }
 
             @Override
@@ -748,13 +748,13 @@ public class SplashActivity extends BaseActivity implements View.OnClickListener
                 skip_linear.setVisibility(View.GONE);
             }
             if(appAdImageDurationSeconds>0){
-                skip_tv.setText(Utils.getString(R.string.跳过()+appAdImageDurationSeconds+")S");
+                skip_tv.setText(Utils.getString(R.string.跳过)+appAdImageDurationSeconds+")S");
                 if(skip_tv.getVisibility()!=View.VISIBLE){
                     skip_tv.setVisibility(View.VISIBLE);
                     skip_linear.setVisibility(View.VISIBLE);
                 }
             }else {
-                skip_tv.setText(Utils.getString(R.string.跳过(0)S));
+                skip_tv.setText(Utils.getString(R.string.跳过)+"(0)S");
                 Message msg = Message.obtain();
                 msg.what = 3;
                 myHolder.sendMessage(msg);
@@ -804,7 +804,7 @@ public class SplashActivity extends BaseActivity implements View.OnClickListener
     private void initChooseBaseUrlPop() {
         if(commonTipPop== null){
 //            commonTipPop = new CommonTipPop(SplashActivity.this,SplashActivity.this,Utils.getString(R.string.系统提示),Utils.getString(R.string.线路访问出错,请尝试切换线路),Utils.getString(R.string.切换线路));
-            commonTipPop = new CommonTipPop(SplashActivity.this,SplashActivity.this,Utils.getString(R.string.系统提示),Utils.getString(R.string.网络出错，请尝试以下方法恢复网络！\n1.检查手机网络,点击切换线路\n2.划掉APP重新进入\n如果您长时间无法访问，请进入官网)+BuildConfig.OFFICIAL_WEBSITE+Utils.getString(R.string.重新下载！),Utils.getString(R.string.切换线路));
+            commonTipPop = new CommonTipPop(SplashActivity.this,SplashActivity.this,Utils.getString(R.string.系统提示),Utils.getString(R.string.网络出错请尝试以下方法恢复网络)+BuildConfig.OFFICIAL_WEBSITE+Utils.getString(R.string.重新下载),Utils.getString(R.string.切换线路));
             commonTipPop.setOnClickLintener(new CommonTipPop.OnClickLintener() {
                 @Override
                 public void onSureClick(View view) {
@@ -924,7 +924,7 @@ public class SplashActivity extends BaseActivity implements View.OnClickListener
                         if(StringMyUtil.isNotEmpty(cpapiUrl)){
                             mSharedPreferenceHelperImpl.setNewBaseUrl(cpapiUrl);
                         }
-                        maintainText= StringMyUtil.isEmptyString(maintainText)?Utils.getString(R.string.系统维护中,请稍后重试,有问题请联系客服):maintainText;
+                        maintainText= StringMyUtil.isEmptyString(maintainText)?Utils.getString(R.string.系统维护中请稍后重试有问题请联系客服):maintainText;
                         kefu = jsonObject.getString("kefu");//服务器崩溃时临时在线客服地址
                         if(maintainFlag==1){
                             String finalMaintainText = maintainText;

@@ -116,7 +116,7 @@ private String mobileNumSwitch;
                 SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
                 Date date = new Date(aLong);
                 String format1 = format.format(date);
-                loginTime.setText(Utils.getString(R.string.上次登录时间:)+format1);
+                loginTime.setText(Utils.getString(R.string.上次登录时间)+format1);
                 String paypassword = memberInfo.getString("paypassword");//安全密码
 //                String bankCard = memberInfo.getString("bankCard");//银行卡
                 List<UserInfoEntity.MemberInfoBean.memberBankInfoVoListBean> memberBankInfoVoList = userInfoEntity.getMemberInfo().getMemberBankInfoVoList();
@@ -220,7 +220,7 @@ private String mobileNumSwitch;
                     //提示先设置安全密码
                     AlertDialog isExit = new AlertDialog.Builder(this).create();
                     isExit.setTitle(Utils.getString(R.string.提示));
-                    isExit.setMessage(Utils.getString(R.string.未设置提款密码,前去设置!));
+                    isExit.setMessage(Utils.getString(R.string.未设置提款密码前去设置));
                     isExit.setButton(DialogInterface.BUTTON_NEGATIVE, Utils.getString(R.string.取消), new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
@@ -257,7 +257,7 @@ private String mobileNumSwitch;
                         }else {
                             AlertDialog isExit = new AlertDialog.Builder(this).create();
                             isExit.setTitle(Utils.getString(R.string.提示));
-                            isExit.setMessage(Utils.getString(R.string.您未设置密保手机,请前往设置));
+                            isExit.setMessage(Utils.getString(R.string.您未设置密保手机请前往设置));
                             isExit.setButton(DialogInterface.BUTTON_NEGATIVE, Utils.getString(R.string.取消), new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
@@ -280,7 +280,7 @@ private String mobileNumSwitch;
                     //提示先设置安全密码
                     AlertDialog isExit = new AlertDialog.Builder(this).create();
                     isExit.setTitle(Utils.getString(R.string.提示));
-                    isExit.setMessage(Utils.getString(R.string.未设置提款密码,前去设置!));
+                    isExit.setMessage(Utils.getString(R.string.未设置提款密码前去设置));
                     isExit.setButton(DialogInterface.BUTTON_NEGATIVE, Utils.getString(R.string.取消), new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {

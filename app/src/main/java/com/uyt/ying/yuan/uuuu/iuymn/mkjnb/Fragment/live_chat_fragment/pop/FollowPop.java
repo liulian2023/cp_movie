@@ -50,7 +50,7 @@ public class FollowPop extends PopupWindow implements View.OnClickListener, Comm
     String account;//主播账号
     String imageUrl; //封面图
     static  String CANEL_FOLLOW=Utils.getString(R.string.取消关注);
-    static  String FOLLOW=Utils.getString(R.string.+ 关注);
+    static  String FOLLOW=Utils.getString(R.string.加号关注);
     Context context;
     LiveEntity.AnchorMemberRoomListBean mLiveData;
     //不能获取主播名片的提示pop

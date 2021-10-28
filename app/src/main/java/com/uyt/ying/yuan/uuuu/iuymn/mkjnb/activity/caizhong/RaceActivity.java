@@ -320,7 +320,7 @@ public class RaceActivity extends BaseActivity implements CustomPopupWindow.OnIt
             race_tab_main.setVisibility(View.GONE);
             ll_caizhong_head1_parent.setVisibility(View.GONE);
             ll_reload.setVisibility(View.VISIBLE);
-            showToast(Utils.getString(R.string.网络不给力，请检查网络));
+            showToast(Utils.getString(R.string.网络不给力请检查网络));
         }
     }
 
@@ -458,7 +458,7 @@ public class RaceActivity extends BaseActivity implements CustomPopupWindow.OnIt
                                             JSONObject jsonObject = jsonArray.getJSONObject(j);
                                             RaceGroupBean bean = new RaceGroupBean();
 
-                                            bean.setDgroupname(Utils.getString(R.string.1-10名));
+                                            bean.setDgroupname(Utils.getString(R.string.一到10名));
                                             bean.setXgroupname(jsonObject.getString("groupname"));
                                             bean.setCode(jsonObject.getString("code"));
                                             bean.setCreatedDate(jsonObject.getLong("createdDate"));
@@ -488,7 +488,7 @@ public class RaceActivity extends BaseActivity implements CustomPopupWindow.OnIt
                                 raceGroupBeanAllList.addAll(raceGroupBeanList1);
                                 raceGroupBeanAllList.addAll(newlist);
                                 raceGroupBeanAllList.addAll(raceGroupBeanList3);  //总共171个了
-                                //处理完数据  分组 ： 两面  冠亚和  1-10名
+                                //处理完数据  分组 ： 两面  冠亚和  一到10名
                                 //     caizhong_head1_title.setText(Utils.getString(R.string.两面));
                                 //  isClickMap.clear();
                                 isClickList.clear();
@@ -750,7 +750,7 @@ public class RaceActivity extends BaseActivity implements CustomPopupWindow.OnIt
             if (!isOfficial) {  //TODO 信用顶部 popwindow
                 list.add(getString(R.string.两面));
                 list.add(getString(R.string.冠亚和));
-                list.add(Utils.getString(R.string.1-10名));
+                list.add(Utils.getString(R.string.一到10名));
             } else {
                 //TODO 官方顶部 popwindow
                 try {
@@ -1416,7 +1416,7 @@ public class RaceActivity extends BaseActivity implements CustomPopupWindow.OnIt
             titleList.clear();
             titleList.add(getString(R.string.两面));
             titleList.add(getString(R.string.冠亚和));
-            titleList.add(Utils.getString(R.string.1-10名));
+            titleList.add(Utils.getString(R.string.一到10名));
         } else {
             //TODO 官方
             titleList.clear();
@@ -1575,13 +1575,13 @@ public class RaceActivity extends BaseActivity implements CustomPopupWindow.OnIt
 
     }
 
-    //TODO 显示彩种  信用 3种两面 冠亚和 1-10名  官方6种
+    //TODO 显示彩种  信用 3种两面 冠亚和 一到10名  官方6种
     private void showcaizhong() {
         if (!isOfficial) {
             titleList.clear();
             titleList.add(getString(R.string.两面));
             titleList.add(getString(R.string.冠亚和));
-            titleList.add(Utils.getString(R.string.1-10名));
+            titleList.add(Utils.getString(R.string.一到10名));
             caizhong_head1_title.setText(titleList.get(index_xy));
 
             if (index_xy == 0) {

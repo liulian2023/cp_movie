@@ -56,7 +56,7 @@ public class InvestRecycleAdapter extends RecyclerView.Adapter<InvestRecycleAdap
             Glide.with(context)
                     .load(investModelArrayList.get(i).getImgUrl())
                     .into(myHolder.imgUrl);
-            myHolder.maxMix.setText(Utils.getString(R.string.单笔最低 )+ investModelArrayList.get(i).getMix()+Utils.getString(R.string. 元, )+Utils.getString(R.string.最高 )+ investModelArrayList.get(i).getMax()+Utils.getString(R.string. 元。));
+            myHolder.maxMix.setText(Utils.getString(R.string.单笔最低 )+ investModelArrayList.get(i).getMix()+Utils.getString(R.string. 元)+Utils.getString(R.string.最高 )+ investModelArrayList.get(i).getMax()+Utils.getString(R.string. 元));
         }
 
         myHolder.type.setText(investModelArrayList.get(i).getType());

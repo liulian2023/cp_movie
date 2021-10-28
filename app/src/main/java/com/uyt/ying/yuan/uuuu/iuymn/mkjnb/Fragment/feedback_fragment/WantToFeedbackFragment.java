@@ -202,9 +202,9 @@ public class WantToFeedbackFragment extends BaseFragment implements View.OnClick
         if(StringMyUtil.isEmptyString(str)){
             showToast(Utils.getString(R.string.请描述您遇到的问题));
         }else if(str.length()<10||str.length()>100){
-            showToast(Utils.getString(R.string.问题描述仅限10-100个字));
+            showToast(Utils.getString(R.string.问题描述仅限10到100个字));
         }else if(!isSelectorItem()){
-            showToast(Utils.getString(R.string.请选择问题分类,方便我们更快为您解决问题));
+            showToast(Utils.getString(R.string.请选择问题分类方便我们更快为您解决问题));
         }else {
                 //提交问题
             String uniqueId = DeviceUtils.getUniqueId(getContext());//设备号
@@ -217,7 +217,7 @@ public class WantToFeedbackFragment extends BaseFragment implements View.OnClick
 //                    data.put("movieId",feedBackActivity.movieId);
             data.put("problem",problemModel.getProblemStr());
             if(StringMyUtil.isEmptyString(realPath)&&havePhoto){
-                showToast(Utils.getString(R.string.图片上传中,请稍后));
+                showToast(Utils.getString(R.string.图片上传中请稍后));
                 return;
             }
             data.put("img_url",null==realPath?"":realPath);
@@ -287,10 +287,10 @@ public class WantToFeedbackFragment extends BaseFragment implements View.OnClick
         rxPermissions.requestEachCombined(PERMISSIONS)
                 .subscribe(permission -> {
                     if (permission.granted) {
-                        Utils.logE(TAG, Utils.getString(R.string.init: 权限申请成功));
+                        Utils.logE(TAG, "init: 权限申请成功");
                         goPhotoAlbum();
                     } else {
-                        Utils.logE(TAG, Utils.getString(R.string.init: 权限申请失败));
+                        Utils.logE(TAG, "init: 权限申请失败");
                         showToast(Utils.getString(R.string.拒绝必须权限后将无法正常使用app));
                     }
                 });
@@ -365,7 +365,7 @@ public class WantToFeedbackFragment extends BaseFragment implements View.OnClick
                 havePhoto=true;
                 uploadImg(s);
             }else {
-                showToast(Utils.getString(R.string.未知错误,请重试));
+                showToast(Utils.getString(R.string.未知错误请重试));
             }
         }
         //相册返回
@@ -381,11 +381,11 @@ public class WantToFeedbackFragment extends BaseFragment implements View.OnClick
                     uploadImg(s);
                 } else {
                     //压缩失败
-                    showToast(Utils.getString(R.string.系统出现错误,请重试));
+                    showToast(Utils.getString(R.string.系统出现错误请重试));
                 }
 
             }else {
-                showToast(Utils.getString(R.string.图片选取出错,请重试));
+                showToast(Utils.getString(R.string.图片选取出错请重试));
             }
         }
     }
@@ -434,7 +434,7 @@ public class WantToFeedbackFragment extends BaseFragment implements View.OnClick
 
     @Override
     public void onPermissionsDenied(int requestCode, @NonNull List<String> perms) {
-        showToast(Utils.getString(R.string.请同意权限,否则相关功能无法使用));
+        showToast(Utils.getString(R.string.请同意权限否则相关功能无法使用));
     }
 
     @Override

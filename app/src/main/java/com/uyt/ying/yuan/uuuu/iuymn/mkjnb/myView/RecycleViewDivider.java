@@ -11,6 +11,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 
+import com.uyt.ying.yuan.R;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
+
 public class RecycleViewDivider extends RecyclerView.ItemDecoration {
     private Paint mPaint;
     private Drawable mDivider;
@@ -26,7 +29,7 @@ public class RecycleViewDivider extends RecyclerView.ItemDecoration {
      */
     public RecycleViewDivider(Context context, int orientation) {
         if (orientation != LinearLayoutManager.VERTICAL && orientation != LinearLayoutManager.HORIZONTAL) {
-            throw new IllegalArgumentException(Utils.getString(R.string.请输入正确的参数！));
+            throw new IllegalArgumentException(Utils.getString(R.string.请输入正确的参数));
         }
         mOrientation = orientation;
 

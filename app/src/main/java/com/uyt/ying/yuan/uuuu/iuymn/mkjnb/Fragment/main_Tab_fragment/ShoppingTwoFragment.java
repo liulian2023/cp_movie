@@ -146,12 +146,12 @@ public class ShoppingTwoFragment extends BaseFragment implements CommonAdapter.O
             HttpApiUtils.CPnormalRequest(getActivity(), this, RequestUtil.WATCH_MINUTES, data, new HttpApiUtils.OnRequestLintener() {
                 @Override
                 public void onSuccess(String result, Headers headers) {
-                    Utils.logE(TAG, Utils.getString(R.string.onSuccess: 用户行为统计成功 page =)+page );
+                    Utils.logE(TAG, "onSuccess: 用户行为统计成功 page ="+page );
                 }
 
                 @Override
                 public void onFailed(String msg) {
-                    Utils.logE(TAG, Utils.getString(R.string.onSuccess: 用户行为统计失败 page =)+page+ msg );
+                    Utils.logE(TAG, "onSuccess: 用户行为统计失败 page ="+page+ msg );
                 }
             });
         }
@@ -299,7 +299,7 @@ public class ShoppingTwoFragment extends BaseFragment implements CommonAdapter.O
                     if(memberBankInfoVoList==null||memberBankInfoVoList.size()==0){
                         AlertDialog bindPhone = new AlertDialog.Builder(getContext()).create();
                         bindPhone.setTitle(Utils.getString(R.string.温馨提示));
-                        bindPhone.setMessage(Utils.getString(R.string.您的账号信息尚未完善,请前往完善!));
+                        bindPhone.setMessage(Utils.getString(R.string.您的账号信息尚未完善请前往完善));
                         bindPhone.setButton(DialogInterface.BUTTON_NEGATIVE, Utils.getString(R.string.取消), new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {

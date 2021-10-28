@@ -62,7 +62,7 @@ public class SetPayPasswordActivity extends BaseActivity implements View.OnClick
                     showToast(Utils.getString(R.string.提款密码不能与登录密码相同));
                 }
                 else if(!newPayPassword.getText().toString().equals(SurePayPassword.getText().toString())){
-                    showToast(Utils.getString(R.string.前后密码不一致,请重新输入));
+                    showToast(Utils.getString(R.string.前后密码不一致请重新输入));
                 }
                 else{
                     Map<String, Object> dataSetPayPassword = new HashMap<>();

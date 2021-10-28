@@ -1153,7 +1153,7 @@ public class SscBetActivity extends BaseActivity implements View.OnClickListener
                     odds = new BigDecimal(sscOfficialChooseMedolArrayList.get(0).getOdds()).divide(new BigDecimal("10")).setScale(2, RoundingMode.HALF_UP) + "";
                 }
 
-                String remarkStr = remark + Utils.getString(R.string.,最高奖金) + "<font color=\"#FF0000\">" + odds + "</font>" + Utils.getString(R.string.元);
+                String remarkStr = remark + Utils.getString(R.string.分号最高奖金) + "<font color=\"#FF0000\">" + odds + "</font>" + Utils.getString(R.string.元);
                 betShuoMingTv.setText(Html.fromHtml(remarkStr));
                 maxAmountTv.setText(Html.fromHtml(Utils.getString(R.string.最高可中) + "<font color=\"#FF0000\">" + new BigDecimal(odds).multiply(new BigDecimal(officialAmonnt + "")) + "</font>" + Utils.getString(R.string.元)));
 
@@ -1332,7 +1332,7 @@ public class SscBetActivity extends BaseActivity implements View.OnClickListener
 //                    fengpanPop.showAtLocation(actionBarBack, Gravity.CENTER, 0, 0);
                     stopTv.setVisibility(View.VISIBLE);
                     ProgressDialogUtil.darkenBackground(SscBetActivity.this, 0.7f);
-                    nowQishuText.setText(Utils.getString(R.string.-- -- -- 期));
+                    nowQishuText.setText(Utils.getString(R.string.期));
                     lastQiShuText.setText("-- -- -- "+Utils.getString(R.string.期开奖号码));
                     hourText.setText("--");
                     minutesText.setText("--");
@@ -1657,7 +1657,7 @@ public class SscBetActivity extends BaseActivity implements View.OnClickListener
                     maxAmountTv.setText(Html.fromHtml(str));
                 }
                 if (!StringMyUtil.isEmptyString(odds)) {
-                    String remarkStr = remark + Utils.getString(R.string.;最高奖金) + "<font color=\"#FF0000\">" + odds + "</font>" + Utils.getString(R.string.元);
+                    String remarkStr = remark + Utils.getString(R.string.分号最高奖金) + "<font color=\"#FF0000\">" + odds + "</font>" + Utils.getString(R.string.元);
                     betShuoMingTv.setText(Html.fromHtml(remarkStr));
                 }
                 //底部总投注金额
@@ -1684,7 +1684,7 @@ public class SscBetActivity extends BaseActivity implements View.OnClickListener
                 }
                 if (!StringMyUtil.isEmptyString(odds)) {
                     BigDecimal highAmount = bigDecimal1.multiply(new BigDecimal(odds + "").divide(new BigDecimal(10 + "")).setScale(2, RoundingMode.HALF_UP));
-                    String remarkStr = remark + Utils.getString(R.string.;最高奖金) + "<font color=\"#FF0000\">" + highAmount + "</font>" + Utils.getString(R.string.元);
+                    String remarkStr = remark + Utils.getString(R.string.分号最高奖金) + "<font color=\"#FF0000\">" + highAmount + "</font>" + Utils.getString(R.string.元);
                     betShuoMingTv.setText(Html.fromHtml(remarkStr));
                 }
                 //底部总投注金额

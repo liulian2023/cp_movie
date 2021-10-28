@@ -289,7 +289,7 @@ public class K3Activity extends BaseActivity implements CustomPopupWindow.OnItem
             k3_tab_main.setVisibility(View.GONE);
             ll_caizhong_head1_parent.setVisibility(View.GONE);
             ll_reload.setVisibility(View.VISIBLE);
-            showToast(Utils.getString(R.string.网络不给力，请检查网络));
+            showToast(Utils.getString(R.string.网络不给力请检查网络));
         }
     }
 
@@ -535,37 +535,37 @@ public class K3Activity extends BaseActivity implements CustomPopupWindow.OnItem
             case "5":
                 column = 2;
                 break;
-            case "6Utils.getString(R.string.:
+            case "6":
                 column = 4;
-                gf_titleStr = getString(R.string.猜3个开奖号相加的和) + odds_setscale + )倍";
+                gf_titleStr = getString(R.string.猜3个开奖号相加的和) + odds_setscale + "倍";
                 break;
-            case "7Utils.getString(R.string.:
+            case "7":
                 column = 1;
-                gf_titleStr = getString(R.string.对所有相同的三个号码) + odds_setscale + )倍";
+                gf_titleStr = getString(R.string.对所有相同的三个号码) + odds_setscale + "倍";
                 break;
-            case "8Utils.getString(R.string.:
+            case "8":
                 column = 3;
-                gf_titleStr = getString(R.string.对相同的三个号码) + odds_setscale + )倍";
+                gf_titleStr = getString(R.string.对相同的三个号码) + odds_setscale + "倍";
                 break;
-            case "9Utils.getString(R.string.:
+            case "9":
                 column = 1;
-                gf_titleStr = getString(R.string.对所有的3个相连号码) + odds_setscale + )倍";
+                gf_titleStr = getString(R.string.对所有的3个相连号码) + odds_setscale + "倍";
                 break;
-            case "10Utils.getString(R.string.:
+            case "10":
                 column = 3;
-                gf_titleStr = getString(R.string.所选号码与开奖号码的) + odds_setscale + )倍";
+                gf_titleStr = getString(R.string.所选号码与开奖号码的) + odds_setscale + "倍";
                 break;
-            case "11Utils.getString(R.string.:
+            case "11":
                 column = 3;
-                gf_titleStr = getString(R.string.选号与奖号) + odds_setscale + )倍";
+                gf_titleStr = getString(R.string.选号与奖号) + odds_setscale + "倍";
                 break;
-            case "12Utils.getString(R.string.:
+            case "12":
                 column = 6;
-                gf_titleStr = getString(R.string.选择1对相同号码和1个不同号码投注) + odds_setscale + )倍";
+                gf_titleStr = getString(R.string.选择1对相同号码和1个不同号码投注) + odds_setscale + "倍";
                 break;
-            case "13Utils.getString(R.string.:
+            case "13":
                 column = 3;
-                gf_titleStr = getString(R.string.所选号码与开奖号码任意2个号码相同) + odds_setscale + )倍";
+                gf_titleStr = getString(R.string.所选号码与开奖号码任意2个号码相同) + odds_setscale + "倍";
                 break;
             default:
                 column = 2;

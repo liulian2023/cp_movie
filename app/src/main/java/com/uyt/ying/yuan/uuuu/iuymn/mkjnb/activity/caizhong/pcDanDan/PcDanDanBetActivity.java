@@ -585,7 +585,7 @@ public class PcDanDanBetActivity extends BaseActivity implements View.OnClickLis
 //                    fengpanPop.showAtLocation(actionBarBack, Gravity.CENTER, 0, 0);
                     stopTv.setVisibility(View.VISIBLE);
                     ProgressDialogUtil.darkenBackground(PcDanDanBetActivity.this, 0.7f);
-                    nowQishuText.setText(Utils.getString(R.string.-- -- -- 期));
+                    nowQishuText.setText(Utils.getString(R.string.期));
                     lastQiShuText.setText("-- -- -- "+Utils.getString(R.string.期开奖号码));
                     hourText.setText("--");
                     minutesText.setText("--");
@@ -1387,7 +1387,7 @@ public class PcDanDanBetActivity extends BaseActivity implements View.OnClickLis
     @Override
     public void onNetChange(boolean netWorkState) {
         if (!netWorkState) {
-            showToast(Utils.getString(R.string.当前网络不可用,请检查网络));
+            showToast(Utils.getString(R.string.当前网络不可用请检查网络));
             findViewById(R.id.no_network).setVisibility(View.VISIBLE);
             ProgressDialogUtil.show(this);
             handler.removeCallbacks(runnableRandom);

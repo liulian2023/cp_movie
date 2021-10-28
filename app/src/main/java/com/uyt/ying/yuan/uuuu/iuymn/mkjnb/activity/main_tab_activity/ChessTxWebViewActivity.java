@@ -159,7 +159,7 @@ public class ChessTxWebViewActivity extends BaseActivity {
     private void rotationWebView() {
         AlertDialog isExit = new AlertDialog.Builder(ChessTxWebViewActivity.this).create();
         isExit.setTitle(Utils.getString(R.string.温馨提示));
-        isExit.setMessage(Utils.getString(R.string.此功能仅在无法正常游戏并提示旋转屏幕的情况使用，若要恢复竖屏需要退出重进));
+        isExit.setMessage(Utils.getString(R.string.此功能仅在无法正常游戏并提示旋转屏幕的情况使用若要恢复竖屏需要退出重进));
         isExit.setButton(DialogInterface.BUTTON_NEGATIVE, Utils.getString(R.string.取消), new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -203,7 +203,7 @@ public class ChessTxWebViewActivity extends BaseActivity {
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
             if(commonTipPop ==null){
-                commonTipPop =new CommonTipPop(this,this,Utils.getString(R.string.退出),Utils.getString(R.string.确定要退出吗?));
+                commonTipPop =new CommonTipPop(this,this,Utils.getString(R.string.退出),Utils.getString(R.string.确定要退出吗));
                 commonTipPop.setOnClickLintener(new CommonTipPop.OnClickLintener() {
                     @Override
                     public void onSureClick(View view) {

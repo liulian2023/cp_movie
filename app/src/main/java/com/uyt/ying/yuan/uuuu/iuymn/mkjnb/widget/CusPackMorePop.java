@@ -161,12 +161,12 @@ public class CusPackMorePop extends PopupWindow {
         list.add(initContentMap(Utils.getString(R.string.今日打码量),todayDm));
         list.add(initContentMap(Utils.getString(R.string.今日送礼金额),todaySl));
 
-        qyMsg.setText(Utils.getString(R.string.1.每邀请1人成功注册，可获得) + scoreByOnePerson + Utils.getString(R.string.积分，) + scoreByOnePerson + Utils.getString(R.string.积分可抽奖一次趣约红包，每包金额) + quYueHBMinAmount + "-" + quYueHBMaxAmount + Utils.getString(R.string.元。\n 2.必须积分达到) + quYueHBScore + Utils.getString(R.string.积分，等级达到VIP) + quYueHBGrade + Utils.getString(R.string.，才可以解锁趣约红包功能，解锁后可以连续抢) + times + Utils.getString(R.string.次以上红包。\n 3.抢到红包的金额高达100%，最高可抽) + quYueHBTotalAmount + Utils.getString(R.string.元。\n 4.此活动为限制活动，每人只能参与一次。相同IP地址、相同设备码均视为同一个人注册，如未真实注册，重复注册，等非法行为均会取消活动资格。));
+        qyMsg.setText(Utils.getString(R.string.每邀请1人成功注册可获得) + scoreByOnePerson + Utils.getString(R.string.积分) + scoreByOnePerson + Utils.getString(R.string.积分可抽奖一次趣约红包每包金额) + quYueHBMinAmount + "-" + quYueHBMaxAmount + Utils.getString(R.string.元必须积分达到) + quYueHBScore + Utils.getString(R.string.积分等级达到VIP) + quYueHBGrade + Utils.getString(R.string.才可以解锁趣约红包功能解锁后可以连续抢) + times + Utils.getString(R.string.次以上红包3抢到红包的金额高达100最高可抽) + quYueHBTotalAmount+Utils.getString(R.string.元) + Utils.getString(R.string.此活动为限制活动每人只能参与一次));
 
         zxHBGrade = RongcloudHBParameterBean.getZxHBGrade();
         int zxHBScore = RongcloudHBParameterBean.getZxHBScore();
         double zxHBRate = RongcloudHBParameterBean.getZxHBRate();
-        zxMsg.setText(Utils.getString(R.string.1.只要您等级达到VIP) + zxHBGrade + Utils.getString(R.string.投注限定玩法即可享受投注金额的)+zxHBRate+Utils.getString(R.string.%专享回馈红包\n 2.达到VIP) + zxHBGrade + Utils.getString(R.string.的会员请第二天晚上12点前登录领取，过期作废，没有领取的不累计。\n 3.此活动随时可能取消，千万回馈红包送完为止。\n 4.此活动只有投注限定玩法才能享受)+zxHBRate+Utils.getString(R.string.%专享红包。\n 5.没有达到等级的请抓紧时间提升自己的等级。));
+        zxMsg.setText(Utils.getString(R.string.只要您等级达到VIP) + zxHBGrade + Utils.getString(R.string.投注限定玩法即可享受投注金额的)+zxHBRate+Utils.getString(R.string.专享回馈红包达到VIP) + zxHBGrade + Utils.getString(R.string.的会员请第二天晚上12点前登录领取)+zxHBRate+Utils.getString(R.string.专享红包没有达到等级的请抓紧时间提升自己的等级));
 
         int tjHBGrade = RongcloudHBParameterBean.getTjHBGrade();
          tjHBPlatGrade = RongcloudHBParameterBean.getTjHBPlatGrade();
@@ -188,21 +188,21 @@ public class CusPackMorePop extends PopupWindow {
                 String content= (String) map.get("content");
                 if(content.contains(Utils.getString(R.string.昨日))){
                     if(!text.contains("A")){
-                        text+=String.format(Utils.getString(R.string.\n 参与条件\n \n A.等级达到VIP%d，),tjHBPlatGrade);
+                        text+=String.format(Utils.getString(R.string.参与条件A等级达到VIP),tjHBPlatGrade);
                     }
                 }else if(content.contains(Utils.getString(R.string.今日))){
                     if(!text.contains("B")){
                         if(text.contains(Utils.getString(R.string.昨日))){
                             if(!text.contains(Utils.getString(R.string.参与条件))){
-                                    text+=String.format(Utils.getString(R.string.,即可参与!\n 参与条件\n \n B.等级达到VIP%d，),tjHBPlatGrade);
+                                    text+=String.format(Utils.getString(R.string.即可参与参与条件等级达到VIP),tjHBPlatGrade);
                             }else {
-                                text+=String.format(Utils.getString(R.string.,即可参与!\n B.等级达到VIP%d，),tjHBPlatGrade);
+                                text+=String.format(Utils.getString(R.string.即可参与参与条件等级达到VIP),tjHBPlatGrade);
                             }
                         }else {
                             if(!text.contains(Utils.getString(R.string.参与条件))){
-                                text+=String.format(Utils.getString(R.string.\n参与条件\n \n B.等级达到VIP%d，),tjHBPlatGrade);
+                                text+=String.format(Utils.getString(R.string.参与条件B等级达到VIP),tjHBPlatGrade);
                             }else {
-                                text+=String.format(Utils.getString(R.string.\n B.等级达到VIP%d，),tjHBPlatGrade);
+                                text+=String.format(Utils.getString(R.string.B等级达到VIP),tjHBPlatGrade);
                             }
                         }
                     }
@@ -211,7 +211,7 @@ public class CusPackMorePop extends PopupWindow {
             }
         }
         if(list.size()!=0){
-            text+=Utils.getString(R.string.,即可参与!);
+            text+=Utils.getString(R.string.即可参与);
         }
 
         return text;
@@ -221,7 +221,7 @@ public class CusPackMorePop extends PopupWindow {
     private HashMap<String, Object> initContentMap(String content,int condition) {
         HashMap<String, Object> data = new HashMap<>();
         data.put("condition",condition);
-        data.put("content",String.format(Utils.getString(R.string.%s大于%d%s%s),content,condition,Utils.getString(R.string.元),","));
+        data.put("content",String.format(Utils.getString(R.string.大于),content,condition,Utils.getString(R.string.元),","));
         return data;
     }
 
@@ -250,7 +250,7 @@ public class CusPackMorePop extends PopupWindow {
                         break;
                     case ZX:
                             if(pointGrade==9){
-                                zx_tip_tv.setText(Utils.getString(R.string.您已达到最高等级VIP9,已达到要求等级));
+                                zx_tip_tv.setText(Utils.getString(R.string.您已达到最高等级VIP9已达到要求等级));
                                 tv_zx_searchmore_tisheng.setText(GET_RED);
                             }else {
                             getMoneyInfo();
@@ -306,7 +306,7 @@ public class CusPackMorePop extends PopupWindow {
                 if(membeyGradeObject!=null){
                     if(minePointGrade+1 <zxHBGrade){//没达到领取要求
                         BigDecimal needCharge = membeyGradeObject.getBigDecimal("growthIntegral").subtract(growthIntegral);
-                        zx_tip_tv.setText(Utils.getString(R.string.您已充值)+growthIntegral+Utils.getString(R.string.元,距离VIP)+zxHBGrade+Utils.getString(R.string.还需充值)+needCharge+Utils.getString(R.string.元));
+                        zx_tip_tv.setText(Utils.getString(R.string.您已充值)+growthIntegral+Utils.getString(R.string.元距离VIP)+zxHBGrade+Utils.getString(R.string.还需充值)+needCharge+Utils.getString(R.string.元));
                         tv_zx_searchmore_tisheng.setText(UP_LEVEL);
                     }else {
                         zx_tip_tv.setText(Utils.getString(R.string.您当前等级VIP)+ (minePointGrade+1) +Utils.getString(R.string.已达到要求等级));

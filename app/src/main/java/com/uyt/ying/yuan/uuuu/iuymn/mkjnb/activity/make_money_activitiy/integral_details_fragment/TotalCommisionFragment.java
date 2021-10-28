@@ -27,6 +27,7 @@ import com.scwang.smartrefresh.layout.api.RefreshLayout;
 import com.scwang.smartrefresh.layout.footer.ClassicsFooter;
 import com.scwang.smartrefresh.layout.header.ClassicsHeader;
 import com.scwang.smartrefresh.layout.listener.OnRefreshLoadMoreListener;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -102,7 +103,7 @@ public class TotalCommisionFragment extends BaseFragment {
         loadingLinear=view.findViewById(R.id.loading_linear);
         integral_num_tv=view.findViewById(R.id.integral_num_tv);
         num_type_tv=view.findViewById(R.id.num_type_tv);
-        num_type_tv.setText(integralType==IntegralType.TOTAL?Utils.getString(R.string.累计):Utils.getString(R.string.剩余));
+        num_type_tv.setText(integralType==IntegralType.TOTAL? Utils.getString(R.string.累计):Utils.getString(R.string.剩余));
     }
 
     public static TotalCommisionFragment newInstance(int position){

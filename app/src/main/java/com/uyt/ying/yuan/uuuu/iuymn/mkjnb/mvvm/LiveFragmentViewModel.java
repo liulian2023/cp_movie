@@ -168,7 +168,7 @@ public class LiveFragmentViewModel extends BaseViewModel<LiveFragmentRepo> {
 
                 @Override
                 public void Faild(String msg) {
-                    ToastUtil.showToast(Utils.getString(R.string.初始化失败));
+                    ToastUtil.showToast(Utils.getString(R.string.网络波动数据初始化失败请退出直播间重试));
                 }
             });
         } else {
@@ -545,7 +545,7 @@ public class LiveFragmentViewModel extends BaseViewModel<LiveFragmentRepo> {
             for (int i = 0; i < betJoinAllModel.getBetJoinMaModelList().size(); i++) {
                 boolean current = betJoinAllModel.getBetJoinMaModelList().get(i).isCurrent();
                 if(current){
-                    Utils.logE(TAG, Utils.getString(R.string.弹出投注rulePop时的的筹码 :) +betJoinAllModel.getBetJoinMaModelList().get(i).getDanjia() );
+                    Utils.logE(TAG, "弹出投注rulePop时的的筹码 :" +betJoinAllModel.getBetJoinMaModelList().get(i).getDanjia() );
                 }
             }
             betJoinAllLiveData.postValue(betJoinAllModel);
@@ -885,7 +885,7 @@ public class LiveFragmentViewModel extends BaseViewModel<LiveFragmentRepo> {
                         String lotteryqishu = lastLotteryEntity.getLotteryqishu();
                         if (Long.parseLong(lastqishu) == Long.parseLong(lotteryqishu.substring(lotteryqishu.length() - 2))) {
                             isWaitopen = false;
-                            LogUtils.e(Utils.getString(R.string.最后一期));
+                            LogUtils.e("最后一期");
                         } else {
                             if(StringMyUtil.isNotEmpty(qishu)){
                                 if (Long.parseLong(qishu) - 1 == Long.parseLong(lotteryqishu)) {
@@ -954,7 +954,7 @@ public class LiveFragmentViewModel extends BaseViewModel<LiveFragmentRepo> {
                 //  str_countdown.postValue(str_time);
                 //      liveLotteryEntity.setCurrCountTime(str_time);
                 if(timeCount<=1000){
-                    str_time=Utils.getString(R.string.封盘中);
+                    str_time=Utils.getString(R.string.已封盘);
                 }
                 countDownLiveData.postValue(str_time);
 
@@ -1138,7 +1138,7 @@ public class LiveFragmentViewModel extends BaseViewModel<LiveFragmentRepo> {
             betJoinMaModelList.get(i).setCurrent(false);
             if (betJoinMaModelList.get(i).isSelect()) {
                 betJoinMaModelList.get(i).setCurrent(true);
-                Utils.logE(TAG, Utils.getString(R.string.点击确定后的筹码: )+betJoinMaModelList.get(i).getDanjia() );
+                Utils.logE(TAG, "点击确定后的筹码: "+betJoinMaModelList.get(i).getDanjia() );
             }
         }
         betJoinAllModel.setBetJoinMaModelList(betJoinMaModelList);
@@ -1148,7 +1148,7 @@ public class LiveFragmentViewModel extends BaseViewModel<LiveFragmentRepo> {
         if(betPopAllModel!=null){
             List<BetPopAllModel.BetPopChildModel> betPopChildModelList = betPopAllModel.getBetPopChildModelList();
             for (int i = 0; i < betPopChildModelList.size(); i++) {
-                betPopChildModelList.get(i).setRubbish(Utils.getString(R.string.点击确定时,变动一下betPopAllLiveData的值,要不然投注页面的筹码不会更换,因为投注页面的筹码赋值写在betPopAllLiveData的观察回调中)+System.currentTimeMillis());
+                betPopChildModelList.get(i).setRubbish("点击确定时,变动一下betPopAllLiveData的值,要不然投注页面的筹码不会更换,因为投注页面的筹码赋值写在betPopAllLiveData的观察回调中"+System.currentTimeMillis());
             }
             betPopAllLiveData.postValue(betPopAllModel);;
         }
@@ -1282,9 +1282,9 @@ public class LiveFragmentViewModel extends BaseViewModel<LiveFragmentRepo> {
                 .doOnNext(aLong -> {
                     if(isShowingAmount){
                         requestIsZj();
-                        Utils.logE(TAG, Utils.getString(R.string.isZjTimer: 查询是否中奖,页面显示金额,请求接口));
+                        Utils.logE(TAG, "isZjTimer: 查询是否中奖,页面显示金额,请求接口");
                     }else {
-                        Utils.logE(TAG, Utils.getString(R.string.isZjTimer: 查询是否中奖,页面没显示金额,return));
+                        Utils.logE(TAG, "isZjTimer: 查询是否中奖,页面没显示金额 return)");
                     }
                 })
                 // .doOnComplete(()->Amount_disposable.dispose())

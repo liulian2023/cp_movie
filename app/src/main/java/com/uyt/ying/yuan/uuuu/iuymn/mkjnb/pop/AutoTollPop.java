@@ -120,7 +120,7 @@ public class AutoTollPop extends PopupWindow implements View.OnClickListener {
         if(popStatus == PopStatus.NORMAL){
             count_down_tv.setText(Utils.getString(R.string.该房间为收费房间));
             toll_amount_time_btn.setText(Utils.getString(R.string.付费));
-            live_price_tv.setText(liveFragment.getAnchorSubscribe()+Utils.getString(R.string.元/10分钟));
+            live_price_tv.setText(liveFragment.getAnchorSubscribe()+Utils.getString(R.string.元10分钟));
             liveFragment.drawerlayout.closeDrawer(GravityCompat.END);
 //            liveFragment.can_not_play_iv.setVisibility(View.VISIBLE);
             liveFragment.isNeedToll=true;
@@ -128,7 +128,7 @@ public class AutoTollPop extends PopupWindow implements View.OnClickListener {
         }else if(popStatus == PopStatus.SHOW_COUNTDOWN){
             //观看倒计时
             toll_amount_time_btn.setText(Utils.getString(R.string.继续观看));
-            live_price_tv.setText(liveFragment.getAnchorSubscribe()+Utils.getString(R.string.元/10分钟));
+            live_price_tv.setText(liveFragment.getAnchorSubscribe()+Utils.getString(R.string.元10分钟));
             subscribeCountdown();
 
         }else {
@@ -136,8 +136,8 @@ public class AutoTollPop extends PopupWindow implements View.OnClickListener {
             initPreviewTimesCache();
             //预览倒计时
             toll_amount_time_btn.setText(Utils.getString(R.string.付费));
-            live_price_tv.setText(liveFragment.getAnchorSubscribe()+Utils.getString(R.string.元/10分钟));
-            count_down_tv.setText(Utils.getString(R.string.该房间为收费房间,预览时间剩余)+previewTime+Utils.getString(R.string.秒));
+            live_price_tv.setText(liveFragment.getAnchorSubscribe()+Utils.getString(R.string.元10分钟));
+            count_down_tv.setText(Utils.getString(R.string.该房间为收费房间预览时间剩余)+previewTime+Utils.getString(R.string.秒));
             //右滑清屏效果
             liveFragment. drawerlayout.closeDrawer(GravityCompat.END);
             previewHanlder.postDelayed(previewRunnable,1000);
@@ -260,7 +260,7 @@ public class AutoTollPop extends PopupWindow implements View.OnClickListener {
                     continueCountDown=false;
                 }else {
                     previewTime--;
-                    count_down_tv.setText(Utils.getString(R.string.该房间为收费房间,预览时间剩余)+previewTime+Utils.getString(R.string.秒));
+                    count_down_tv.setText(Utils.getString(R.string.该房间为收费房间预览时间剩余)+previewTime+Utils.getString(R.string.秒));
                 }
                 if(continueCountDown){
                     previewHanlder.postDelayed(this,1000);
@@ -438,7 +438,7 @@ public class AutoTollPop extends PopupWindow implements View.OnClickListener {
                     autoAnchorSubscribe = tollEntity.getAutoAnchorSubscribe();
                     liveFragment.setAutoAnchorSubscribe(autoAnchorSubscribe);
                     toll_amount_time_btn.setText(Utils.getString(R.string.付费));
-                    live_price_tv.setText(anchorSubscribe +"/"+Utils.getString(R.string.10分钟));
+                    live_price_tv.setText(anchorSubscribe +"/"+Utils.getString(R.string.十分钟));
                     liveFragment.myjzvd.startVideo();
 
                     liveFragment.isNeedToll=false;

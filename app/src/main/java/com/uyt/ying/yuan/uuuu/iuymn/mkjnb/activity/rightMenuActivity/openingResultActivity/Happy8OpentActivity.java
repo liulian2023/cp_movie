@@ -307,7 +307,7 @@ public class Happy8OpentActivity extends BaseActivity implements View.OnClickLis
                 refreshLayout.resetNoMoreData();
 //                getDada(1, 15, chooseTimeText.getText().toString(), type_id, false, false);
 //                getDada(1,15,chooseTimeText.getText().toString(),type_id,true,false,false,false,false);
-                initSwich(Utils.getString(R.string.别管我是什么));
+                initSwich("别管我是什么");
                 break;
             case R.id.radio_button_zonghe://总和按钮
                 pageNum=1;

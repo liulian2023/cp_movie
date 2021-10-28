@@ -198,12 +198,12 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             HttpApiUtils.CPnormalRequest(this, null, RequestUtil.WATCH_MINUTES, data, new HttpApiUtils.OnRequestLintener() {
                 @Override
                 public void onSuccess(String result, Headers headers) {
-                    Utils.logE(TAG, Utils.getString(R.string.onSuccess: 是否安装微信等app统计成功));
+                    Utils.logE(TAG,"onSuccess: 是否安装微信等app统计成功");
                 }
 
                 @Override
                 public void onFailed(String msg) {
-                    Utils.logE(TAG, Utils.getString(R.string.onSuccess: 是否安装微信等app统计失败)+msg);
+                    Utils.logE(TAG, "onSuccess: 是否安装微信等app统计失败"+msg);
                 }
             });
         }
@@ -240,12 +240,12 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         rxPermissions.requestEachCombined(PERMISSIONS)
                 .subscribe(permission -> {
                     if (permission.granted) {
-                        Utils.logE(TAG, Utils.getString(R.string.init: 权限申请成功));
+                        Utils.logE(TAG,"init: 权限申请成功");
                         if (showAtyPop) {
                             requestAppUpdate();
                         }
                     } else {
-                        Utils.logE(TAG, Utils.getString(R.string.init: 权限申请失败));
+                        Utils.logE(TAG,"init: 权限申请失败");
                         showToast(Utils.getString(R.string.拒绝必须权限后将无法正常使用app));
                     }
                 });
@@ -277,7 +277,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                    当前为最新版本
                  */
                     if(versionCode==appVersionCode){
-                        Utils.logE(TAG, Utils.getString(R.string.onSuccess: 当前是最新版本) );
+                        Utils.logE(TAG, "onSuccess: 当前是最新版本" );
                     }else {
                         //下载地址为apk后缀,直接下载
                         if(StringMyUtil.isNotEmpty(downLoadUrl)&&downLoadUrl.endsWith("apk")){
@@ -321,7 +321,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
                     }
                 }else {
-                    Utils.logE(TAG, Utils.getString(R.string.onSuccess: 当前是最新版本));
+                    Utils.logE(TAG,"onSuccess: 当前是最新版本");
                 }
             }
 
@@ -343,7 +343,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 .create();
         isExit.setCancelable(cancelable);
         isExit.setTitle(Utils.getString(R.string.更新提示));
-        isExit.setMessage(Utils.getString(R.string.app有新版本,更新内容如下:\n) + description);
+        isExit.setMessage(Utils.getString(R.string.app有新版本更新内容如下n) + description);
         isExit.show();
         isExit.getButton(AlertDialog.BUTTON_POSITIVE).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -678,12 +678,12 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             HttpApiUtils.CPnormalRequest(this, null, RequestUtil.WATCH_MINUTES, data, new HttpApiUtils.OnRequestLintener() {
                 @Override
                 public void onSuccess(String result, Headers headers) {
-                    Utils.logE(TAG, Utils.getString(R.string.onSuccess: 用户行为统计成功 page =)+ page );
+                    Utils.logE(TAG, "onSuccess: 用户行为统计成功 page ="+ page );
                 }
 
                 @Override
                 public void onFailed(String msg) {
-                    Utils.logE(TAG, Utils.getString(R.string.onSuccess: 用户行为统计失败page =)+ page +msg );
+                    Utils.logE(TAG, "onSuccess: 用户行为统计失败page ="+ page +msg );
                 }
             });
         }

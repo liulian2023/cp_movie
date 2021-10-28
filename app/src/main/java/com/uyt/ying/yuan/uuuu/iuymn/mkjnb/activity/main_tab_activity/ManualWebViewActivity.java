@@ -40,6 +40,7 @@ import com.uyt.ying.yuan.R;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.base.BaseActivity;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.serevice.ChatHeadService;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.StatusBarUtil;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
 
 import java.io.File;
 import java.util.UUID;

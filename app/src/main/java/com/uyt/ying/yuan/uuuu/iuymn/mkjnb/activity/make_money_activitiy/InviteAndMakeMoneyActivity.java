@@ -234,7 +234,7 @@ public class InviteAndMakeMoneyActivity extends BaseActivity implements View.OnC
                     JSONObject jsonObject = bonusRecordList.getJSONObject(i);
                     String nickname = jsonObject.getString("nickname");
                     String yqRedPrice = jsonObject.getString("yqRedPrice");
-                    String info =Utils.getString(R.string.恭喜)+nickname+Utils.getString(R.string.成功邀请会员注册,获得红包)+yqRedPrice+Utils.getString(R.string.元。);
+                    String info =Utils.getString(R.string.恭喜)+nickname+Utils.getString(R.string.成功邀请会员注册获得红包)+yqRedPrice+Utils.getString(R.string.元);
                     SpannableString spannableString = new SpannableString(info);
                     ForegroundColorSpan span = new ForegroundColorSpan(Color.parseColor("#F46518"));
                     spannableString.setSpan(span,2,2+nickname.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
@@ -291,13 +291,13 @@ public class InviteAndMakeMoneyActivity extends BaseActivity implements View.OnC
         int times = scoreByOnePerson==0?0:(quYueHBScore/scoreByOnePerson);
         String cpTzFyRate = SharePreferencesUtil.getString(MyApplication.getInstance(), CommonStr.CP_TZ_FLY_RATE, "");
         cpTzFyRate = StringMyUtil.isEmptyString(cpTzFyRate)?"0":cpTzFyRate;
-        ruleModelArrayList.add(new RuleModel(Utils.getString(R.string.1.每邀请1人成功注册,可获得1个邀请红包,每包金额)+quYueHBMinAmount+"-"+quYueHBMaxAmount+Utils.getString(R.string.元。)));
-        ruleModelArrayList.add(new RuleModel(Utils.getString(R.string.2.有效邀请人数每满)+times+Utils.getString(R.string.人,即可拆一轮红包，等级要求必须达到VIP)+quYueHBGrade+Utils.getString(R.string.才能参与!)));
-        ruleModelArrayList.add(new RuleModel(Utils.getString(R.string.3.打开红包100%获得奖金,最高每包可以抢到)+quYueHBMaxAmount+Utils.getString(R.string.元。)));
-        ruleModelArrayList.add(new RuleModel(Utils.getString(R.string.4.相同IP地址、相同设备码均视为同一个人注册,如未真实注册,重复注册,等非法行为均会取消资格。)));
+        ruleModelArrayList.add(new RuleModel(Utils.getString(R.string.每邀请1人成功注册可获得1个邀请红包每包金额)+quYueHBMinAmount+"-"+quYueHBMaxAmount+Utils.getString(R.string.元)));
+        ruleModelArrayList.add(new RuleModel(Utils.getString(R.string.有效邀请人数每满)+times+Utils.getString(R.string.人即可拆一轮红包等级要求必须达到VIP)+quYueHBGrade+Utils.getString(R.string.才能参与)));
+        ruleModelArrayList.add(new RuleModel(Utils.getString(R.string.打开红包100获得奖金最高每包可以抢到)+quYueHBMaxAmount+Utils.getString(R.string.元)));
+        ruleModelArrayList.add(new RuleModel(Utils.getString(R.string.相同IP地相同设备码均视为同一个人注册如未真实注册重复注册等非法行为均会取消资格)));
         BigDecimal multiply = new BigDecimal(cpTzFyRate).multiply(new BigDecimal("10")).setScale(2,BigDecimal.ROUND_DOWN);
-        ruleModelArrayList.add(new RuleModel(String.format(Utils.getString(R.string.邀请朋友成为下级，将获得平台给您的返佣，下级投注后，) +
-                Utils.getString(R.string.您可以获得%s%%独家返佣,(朋友每下注1000元平台返您%s元）！)),cpTzFyRate, multiply)));
+        ruleModelArrayList.add(new RuleModel(String.format(Utils.getString(R.string.邀请朋友成为下级将获得平台给您的返佣下级投注后) +
+                Utils.getString(R.string.您可以获得独家返佣朋友每下注1000元平台返您元),cpTzFyRate, multiply)));
     }
 
     private void requestHBParameter() {

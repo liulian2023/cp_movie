@@ -137,7 +137,7 @@ public class VisitorSafeCenterActivity extends BaseActivity {
         }
         String passwordStr = login_password_etv.getText().toString();
         if(!Utils.checkPsw(passwordStr)){
-            showToast(Utils.getString(R.string.请输入6-16位字母加数字的密码));
+            showToast(Utils.getString(R.string.请输入6到16位字母加数字的密码));
             return false;
         }
         String payPassword = pay_password_etv.getText().toString();

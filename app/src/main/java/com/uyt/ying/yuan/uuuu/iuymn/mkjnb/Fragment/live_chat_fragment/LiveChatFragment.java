@@ -35,6 +35,7 @@ import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.MyApplication;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.ProgressDialogUtil;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.SharePreferencesUtil;
 import com.chad.library.adapter.base.BaseQuickAdapter;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -323,7 +324,7 @@ public class LiveChatFragment extends BaseFragment implements BasePopupWindow2.O
                 unReadCount++;
                 liveMessageModelArrayList.add(liveMessageModel);
                 un_read_tv.setVisibility(View.VISIBLE);
-                un_read_tv.setText(Utils.getString(R.string.未读消息:)+unReadCount);
+                un_read_tv.setText(Utils.getString(R.string.未读消息)+unReadCount);
                 liveChatAdapter.notifyDataSetChanged();
             }
         }

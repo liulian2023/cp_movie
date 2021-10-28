@@ -32,6 +32,7 @@ import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.RefreshUtil;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.SaveChessLotteryUtil;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.StatusBarUtil;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.ToBetAtyUtils;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
@@ -69,7 +70,7 @@ public class ChessSearchActivity extends BaseActivity implements CommonAdapter.O
     TextView reload_tv;
     ChessSearchAdapter chessSearchAdapter;
     ArrayList<ChessSearchEntity.DataBean>chessSearchEntityArrayList = new ArrayList<>();
-    static String SEARCH=Utils.getString(R.string.搜索);
+    static String SEARCH= Utils.getString(R.string.搜索);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

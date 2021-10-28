@@ -9,6 +9,7 @@ import com.uyt.ying.yuan.R;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.model.MineFeedbackModel;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.request.StringMyUtil;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.CommonHolder;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -21,14 +22,14 @@ public class MineFeedbackRecycleAdapter extends CommonAdapter<MineFeedbackRecycl
         String time = itemModel.getTime();
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String format = simpleDateFormat.format(new Date(Long.parseLong(time)));
-        commonHolder.timeTv.setText(Utils.getString(R.string.反馈时间:)+ format);
-        commonHolder.typeTv.setText(Utils.getString(R.string.反馈类型:)+itemModel.getType());
-        commonHolder.contentTv.setText(Utils.getString(R.string.反馈内容:)+itemModel.getContent());
+        commonHolder.timeTv.setText(Utils.getString(R.string.反馈时间)+ format);
+        commonHolder.typeTv.setText(Utils.getString(R.string.反馈类型)+itemModel.getType());
+        commonHolder.contentTv.setText(Utils.getString(R.string.反馈内容)+itemModel.getContent());
         String reply = itemModel.getReply();
         if(StringMyUtil.isEmptyString(reply)){
-            commonHolder.replyTv.setText(Utils.getString(R.string.官方回复:暂无回复));
+            commonHolder.replyTv.setText(Utils.getString(R.string.官方回复暂无回复));
         }else {
-            commonHolder.replyTv.setText(Utils.getString(R.string.官方回复:)+reply);
+            commonHolder.replyTv.setText(Utils.getString(R.string.官方回复)+reply);
 
         }
     }

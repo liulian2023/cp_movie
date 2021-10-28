@@ -136,7 +136,7 @@ public class EveryDayRewardActivity extends BaseActivity implements View.OnClick
                     }
                     upLevelRewardModelArrayList.add(new UpLevelRewardModel("VIP"+(grade1+1),rateA+"%",rateB+"%",rateC+"%"));
                 }
-                upLevelRewardModelArrayList.add(0,new UpLevelRewardModel(Utils.getString(R.string.等级/投注额),amountA+"+",amountB+"+",amountC+"+"));
+                upLevelRewardModelArrayList.add(0,new UpLevelRewardModel(Utils.getString(R.string.等级投注额),amountA+"+",amountB+"+",amountC+"+"));
                 upLevelRewardRecycleAdapter.notifyDataSetChanged();
             }
 

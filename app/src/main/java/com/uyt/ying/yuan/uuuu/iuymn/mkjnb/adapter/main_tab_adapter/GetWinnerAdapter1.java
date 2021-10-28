@@ -16,6 +16,7 @@ import com.bumptech.glide.load.resource.bitmap.CircleCrop;
 import com.bumptech.glide.request.RequestOptions;
 import com.uyt.ying.yuan.R;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.model.Reward;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
 
 import java.util.ArrayList;
 
@@ -78,7 +79,7 @@ public class GetWinnerAdapter1 extends RecyclerView.Adapter<GetWinnerAdapter1.My
                 holder.name.setText(rewardArrayList.get(position).getName());
                 holder.time.setText(rewardArrayList.get(position).getTime());
                 String money = rewardArrayList.get(position).getMoney();
-                String finalStr1=Utils.getString(R.string.我在)+rewardArrayList.get(position).getLotteryName()+Utils.getString(R.string.喜中了)+"<font color=\"#FF0000\">"+money+"</font>"+Utils.getString(R.string.元！);
+                String finalStr1= Utils.getString(R.string.我在)+rewardArrayList.get(position).getLotteryName()+Utils.getString(R.string.喜中了)+"<font color=\"#FF0000\">"+money+"</font>"+Utils.getString(R.string.元);
                 holder.money.setText(Html.fromHtml(finalStr1));
                 holder.itemView.setTag(position);
         }

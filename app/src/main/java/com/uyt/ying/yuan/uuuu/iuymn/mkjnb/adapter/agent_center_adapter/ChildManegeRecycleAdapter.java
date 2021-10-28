@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import com.uyt.ying.yuan.R;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.model.ChildManageModel;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -51,7 +52,7 @@ public class ChildManegeRecycleAdapter extends RecyclerView.Adapter<ChildManegeR
     String format1 = format.format(l);
     long l1 = Long.parseLong(childManageModelArrayList.get(i).getRegisterDate());
     String format2 = format.format(l1);
-    myHolder.ljfy.setText(childManageModelArrayList.get(i).getCommission()+Utils.getString(R.string.元));
+    myHolder.ljfy.setText(childManageModelArrayList.get(i).getCommission()+ Utils.getString(R.string.元));
     myHolder.dqye.setText(childManageModelArrayList.get(i).getAmount()+Utils.getString(R.string.元));
     myHolder.zcsj.setText(format2);
     myHolder.zhdl.setText(format1);

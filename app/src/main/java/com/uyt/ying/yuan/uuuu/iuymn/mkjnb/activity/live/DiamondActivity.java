@@ -14,6 +14,7 @@ import com.androidkun.xtablayout.XTabLayout;
 import com.uyt.ying.yuan.R;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.adapter.DiamondTabAdapter;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.base.BaseActivity;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
 
 import java.util.ArrayList;
 

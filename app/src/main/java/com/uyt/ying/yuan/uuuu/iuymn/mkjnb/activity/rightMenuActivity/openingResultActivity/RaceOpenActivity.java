@@ -210,7 +210,7 @@ public class RaceOpenActivity extends BaseActivity implements View.OnClickListen
                 needString = needString.substring(0, needString.length()-1);
                 beiJInOpenResultModel.setNumList(needString);
                 beiJInOpenResultModel.setGuanYa(false);
-            }else if(name.equals(Utils.getString(R.string.亚冠/龙虎))){
+            }else if(name.equals(Utils.getString(R.string.亚冠龙虎))){
                 String needString = "";
                 needString+=sum+",";
                 needString=needString+markdx+",";
@@ -460,7 +460,7 @@ public class RaceOpenActivity extends BaseActivity implements View.OnClickListen
                 initRadioClick(four);
 //                getDada(1,15,chooseTimeText.getText().toString(),type_id,false,false,false,true,false);
 //                getDada(1,15,chooseTimeText.getText().toString(),type_id,false,false,false,true,false);
-                initSwich(Utils.getString(R.string.亚冠/龙虎));
+                initSwich(Utils.getString(R.string.亚冠龙虎));
                 break;
             case R.id.time_choose_linear://点击弹出时间选择pop
                 popupWindow.showAsDropDown(chooseTimeLinear,0,0,Gravity.BOTTOM);

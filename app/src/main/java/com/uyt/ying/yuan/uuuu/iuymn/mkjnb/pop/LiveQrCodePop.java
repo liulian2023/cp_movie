@@ -216,7 +216,7 @@ public class LiveQrCodePop extends BasePopupWindow2 implements EasyPermissions.P
     }
     @Override
     public void onPermissionsDenied(int requestCode, @NonNull List<String> perms) {
-       ToastUtil. showToast(Utils.getString(R.string.为了您的使用体验,请同意相关权限,否则功能无法实现));
+       ToastUtil. showToast(Utils.getString(R.string.为了您的使用体验请同意相关权限否则功能无法实现));
         if (EasyPermissions.somePermissionPermanentlyDenied(fragment, perms)) {
             //在权限弹窗中，用户勾选了'不在提示'且拒绝权限的情况触发，可以进行相关dialog提示。
         }

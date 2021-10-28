@@ -1,8 +1,11 @@
 package com.uyt.ying.yuan.uuuu.iuymn.mkjnb.activity.live;
 
+import com.uyt.ying.yuan.R;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
+
 public enum RankTypeEnum  {
 
-    GIFT(1,Utils.getString(R.string.礼物榜)),
+    GIFT(1, Utils.getString(R.string.礼物榜)),
     CHOCK(2,Utils.getString(R.string.中奖榜)),
     QY(3,Utils.getString(R.string.邀请榜)),
     ZX(4,Utils.getString(R.string.专享榜));

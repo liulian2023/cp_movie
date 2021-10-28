@@ -329,7 +329,7 @@ public class XuanwuActivity extends BaseActivity implements CustomPopupWindow.On
             xuanwu_tab_main.setVisibility(View.GONE);
             ll_caizhong_head1_parent.setVisibility(View.GONE);
             ll_reload.setVisibility(View.VISIBLE);
-            showToast(Utils.getString(R.string.网络不给力，请检查网络));
+            showToast(Utils.getString(R.string.网络不给力请检查网络));
         }
     }
 

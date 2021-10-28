@@ -10,6 +10,7 @@ import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.request.StringMyUtil;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.DateUtil;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.viewholder.BaseViewHolder;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
 
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -46,7 +47,7 @@ public class ForbiddenAdapter extends BaseQuickAdapter<Object, BaseViewHolder> {
                 recharge_marquee_view.setText(memberKillMemberListBean.getKilledUserNickName());
             }else {
                 //拉黑的是主播
-                recharge_marquee_view.setText(String.format(Utils.getString(R.string.%s(主播)),memberKillMemberListBean.getKilledAnchorUserNickName()));
+                recharge_marquee_view.setText(String.format(Utils.getString(R.string.主播),memberKillMemberListBean.getKilledAnchorUserNickName()));
             }
             operating_tv.setText(Utils.getString(R.string.解封));
         }

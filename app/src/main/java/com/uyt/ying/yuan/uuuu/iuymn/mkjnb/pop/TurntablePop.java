@@ -72,9 +72,9 @@ public class TurntablePop extends BasePopupWindow2 implements View.OnClickListen
             , Utils.getString(R.string.推 广 至 尊 称 号 * 30 天), Utils.getString(R.string.VIP 发 言 权 限* 7 天), Utils.getString(R.string.188 元 现 金 劵 * 1),
             Utils.getString(R.string.入 场 特 效 * 7 天),Utils.getString(R.string.魅 力 新 秀 荣 誉 称 号 * 30 天)};  //转盘显示的list*/
 
-    String[] dataRemarkList = new String[]{Utils.getString(R.string.18 元 现 金 劵*1), Utils.getString(R.string.188 元 现 金 劵 * 1), Utils.getString(R.string.主 播 名 片 * 1)
-            , Utils.getString(R.string.入 场 特 效 * 7 天), Utils.getString(R.string.VIP 发 言 权 限* 7 天), Utils.getString(R.string.推 广 新 秀 称 号 * 30 天),
-            Utils.getString(R.string.推 广 至 尊 称 号 * 30 天),Utils.getString(R.string. 苹 果 手 机 * 1)};
+    String[] dataRemarkList = new String[]{Utils.getString(R.string.十元现金劵1), Utils.getString(R.string.一百八十八元现金劵1), Utils.getString(R.string.主播名片1)
+            , Utils.getString(R.string.入场特效7天), Utils.getString(R.string.VIP发言权限7天), Utils.getString(R.string.推广新秀称号30天),
+            Utils.getString(R.string.推广至尊称号30天),Utils.getString(R.string. 苹果手机1)};
     private List<TurntableEntity.ZjListBean> zjList;
 
     public TurntablePop(Context context, boolean focusable,LiveFragment liveFragment) {

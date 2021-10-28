@@ -111,7 +111,7 @@ public class InYueBaoActivity extends BaseActivity implements View.OnClickListen
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(Utils.getString(R.string.MM月dd日));
         Date tomorrowDate = DateUtil.getTomorrowDate();
         String format = simpleDateFormat.format(tomorrowDate);
-        spanTv.setText(Utils.getString(R.string.现在转入,预计)+format+Utils.getString(R.string.收益到账,1万元1天可享收益,¥)+ add +Utils.getString(R.string. 收益规则));
+        spanTv.setText(Utils.getString(R.string.现在转入预计)+format+Utils.getString(R.string.收益到账1万元1天可享收益)+ add +Utils.getString(R.string. 收益规则));
         actionBarTv=findViewById(R.id.action_bar_text);
         actionBarTv.setText(Utils.getString(R.string.转入余额宝));
     }

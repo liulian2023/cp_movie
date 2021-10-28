@@ -33,6 +33,7 @@ import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.CommonStr;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.MyApplication;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.SharePreferencesUtil;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.StatusBarUtil;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -95,7 +96,7 @@ public class LiveTabFragment extends BaseFragment implements XTabLayout.OnTabSel
 
     public void initTab() {
         titleList.clear();
-        titleList.add(addCategoryListBean("-1",Utils.getString(R.string.关注)));
+        titleList.add(addCategoryListBean("-1", Utils.getString(R.string.关注)));
         titleList.add(addCategoryListBean("-2",Utils.getString(R.string.推荐)));
         titleList.add(addCategoryListBean("-3",Utils.getString(R.string.最新)));
         titleList.add(addCategoryListBean("",Utils.getString(R.string.附近)));

@@ -5,6 +5,9 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import com.uyt.ying.yuan.R;
+import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils.Utils;
+
 
 public class GiftView extends LinearLayout {
     GifManager gifManager1;
@@ -24,7 +27,7 @@ public class GiftView extends LinearLayout {
 
     public void setViewCount(int viewCount) {
         if (viewCount < 1) {
-            throw new IllegalArgumentException(Utils.getString(R.string.viewCount 不能小于1));
+            throw new IllegalArgumentException("viewCount不能小于");
         }
         this.viewCount = viewCount;
     }

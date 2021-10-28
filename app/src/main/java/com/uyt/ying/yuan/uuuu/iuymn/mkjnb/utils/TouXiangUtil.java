@@ -2,6 +2,7 @@ package com.uyt.ying.yuan.uuuu.iuymn.mkjnb.utils;
 
 import android.content.Context;
 
+import com.uyt.ying.yuan.R;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.request.StringMyUtil;
 
 public class TouXiangUtil {

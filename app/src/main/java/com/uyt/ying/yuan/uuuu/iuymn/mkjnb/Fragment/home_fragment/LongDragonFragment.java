@@ -123,7 +123,7 @@ public class LongDragonFragment extends BaseFragment implements View.OnClickList
     }
     public void showToast(){
         if(mViewPager.getCurrentItem()==0){
-            showToast(Utils.getString(R.string.长龙列表已更新,下拉获取最新长龙列表));
+            showToast(Utils.getString(R.string.长龙列表已更新下拉获取最新长龙列表));
         }
     }
     @Override

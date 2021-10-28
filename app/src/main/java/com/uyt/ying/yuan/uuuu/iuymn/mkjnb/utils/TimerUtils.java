@@ -6,6 +6,7 @@ import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.style.ForegroundColorSpan;
 
+import com.uyt.ying.yuan.R;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.common.KJCountDownTimer;
 import com.uyt.ying.yuan.uuuu.iuymn.mkjnb.common.MyCountDownTimer;
 
@@ -20,8 +21,6 @@ public class TimerUtils {
 
     public static final String TIME_STYLE_ONE = "HH:mm:ss";
     public static final String TIME_STYLE_TWO = "yyyy-MM-dd HH:mm:ss";
-    public static final String TIME_STYLE_THREE = Utils.getString(R.string.dd天HH时mm分ss秒);
-    public static final String TIME_STYLE_FOUR = Utils.getString(R.string.dd天HH时mm分);
 
     public static MyCountDownTimer getTimer(int style, Context mContext, long mGapTime, String mTimePattern, int mDrawableId){
         MyCountDownTimer mCountDownTimer = null;

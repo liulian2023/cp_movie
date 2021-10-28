@@ -152,7 +152,7 @@ public class MineQRCodeActivity extends BaseActivity implements View.OnClickList
         invite_code_tv.setText(codeListBean.getInviteCode()); //二维码下方的邀请码
         commison_plan_tv.setText(codeListBean.getInviteCode());//推广计划中的邀请码
         inviteShareUrl= inviteCodeShareUrl;//直接分享和复制链接需要的邀请码
-        down_url_tv.setText(Utils.getString(R.string.app下载地址:)+appDownloadUrl.replace("http://","").replace("https://",""));
+        down_url_tv.setText(Utils.getString(R.string.app下载地址)+appDownloadUrl.replace("http://","").replace("https://",""));
     }
     @Override
     public void onClick(View v) {
@@ -222,7 +222,7 @@ public class MineQRCodeActivity extends BaseActivity implements View.OnClickList
     }
     @Override
     public void onPermissionsDenied(int requestCode, @NonNull List<String> perms) {
-        showToast(Utils.getString(R.string.为了您的使用体验,请同意相关权限,否则功能无法实现));
+        showToast(Utils.getString(R.string.为了您的使用体验请同意相关权限否则功能无法实现));
         if (EasyPermissions.somePermissionPermanentlyDenied(this, perms)) {
             //在权限弹窗中，用户勾选了'不在提示'且拒绝权限的情况触发，可以进行相关dialog提示。
         }

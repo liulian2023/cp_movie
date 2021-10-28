@@ -38,7 +38,7 @@ public class ActivityUtil {
             activityStack=new Stack<Activity>();
         }
         activityStack.add(activity);
-        LogUtils.e(Utils.getString(R.string.activity入栈size:)+activityStack.size());
+        LogUtils.e("activity入栈size:"+activityStack.size());
         for (int i =0;i<activityStack.size();i++){
             LogUtils.e("activity_name:"+activityStack.get(i).getLocalClassName()+
                     "\n __taskId:"+activityStack.get(i).getTaskId()+" \n __Id:"+activityStack.get(i).toString());
@@ -70,7 +70,7 @@ public class ActivityUtil {
             activityStack.remove(activity);
             activity.finish();
             activity=null;
-            LogUtils.e(Utils.getString(R.string.activity出栈size:)+activityStack.size());
+            LogUtils.e("activity出栈size:"+activityStack.size());
             for (int i =0;i<activityStack.size();i++){
                 LogUtils.e("activity_name:"+activityStack.get(i).getLocalClassName()+
                         "\n __taskId:"+activityStack.get(i).getTaskId()+" \n __Id:"+activityStack.get(i).toString());

@@ -427,7 +427,7 @@ public class MarksixChildAdapter extends RecyclerView.Adapter<MarksixChildAdapte
                     }
                 } else if (index == 10) {
                     switch (list.get(0).getXgroupname()) {
-                        case Utils.getString(R.string.三中二):
+                        case "三中二":
                             if (num_lm < 3) {
                                 MarksixBean choiceBean = list.get((int) v.getTag());
                                 //   if (!isClickMap.get(String.valueOf(choiceBean.getId()))) {
@@ -459,7 +459,7 @@ public class MarksixChildAdapter extends RecyclerView.Adapter<MarksixChildAdapte
 
                             }
                             break;
-                        case Utils.getString(R.string.三全中):
+                        case "三全中":
                             if (num_lm < 3) {
                                 initClick(v);
 
@@ -479,7 +479,7 @@ public class MarksixChildAdapter extends RecyclerView.Adapter<MarksixChildAdapte
 
                             }
                             break;
-                        caseUtils.getString(R.string.二全中):
+                        case "二全中":
                             if (num_lm < 2) {
                                 MarksixBean choiceBean = list.get((int) v.getTag());
                                 //  if (!isClickMap.get(String.valueOf(choiceBean.getId()))) {
@@ -513,7 +513,7 @@ public class MarksixChildAdapter extends RecyclerView.Adapter<MarksixChildAdapte
 
                             }
                             break;
-                        case Utils.getString(R.string.二中特):
+                        case "二中特":
                             if (num_lm < 2) {
                                 MarksixBean choiceBean = list.get((int) v.getTag());
                                 //   if (!isClickMap.get(String.valueOf(choiceBean.getId()))) {
@@ -547,7 +547,7 @@ public class MarksixChildAdapter extends RecyclerView.Adapter<MarksixChildAdapte
 
                             }
                             break;
-                        case Utils.getString(R.string.特串):
+                        case "特串":
                             if (num_lm < 2) {
                                 MarksixBean choiceBean = list.get((int) v.getTag());
                                 //   if (!isClickMap.get(String.valueOf(choiceBean.getId()))) {
@@ -582,7 +582,7 @@ public class MarksixChildAdapter extends RecyclerView.Adapter<MarksixChildAdapte
 
                             }
                             break;
-                        case Utils.getString(R.string.四全中):
+                        case "四全中":
                             if (num_lm < 4) {
                                 MarksixBean choiceBean = list.get((int) v.getTag());
                                 //  if (!isClickMap.get(String.valueOf(choiceBean.getId()))) {

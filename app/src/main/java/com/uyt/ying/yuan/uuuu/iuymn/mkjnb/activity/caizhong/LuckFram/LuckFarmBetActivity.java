@@ -930,7 +930,7 @@ public class LuckFarmBetActivity extends BaseActivity implements View.OnClickLis
 //                    fengpanPop.showAtLocation(actionBarBack, Gravity.CENTER,0,0);
                     stopTv.setVisibility(View.VISIBLE);
                     ProgressDialogUtil.darkenBackground(LuckFarmBetActivity.this, 0.7f);
-                    nowQishuText.setText(Utils.getString(R.string.-- -- -- 期));
+                    nowQishuText.setText(Utils.getString(R.string.期));
                     lastQiShuText.setText("-- -- -- " + Utils.getString(R.string.期开奖号码));
                     hourText.setText("--");
                     minutesText.setText("--");
@@ -1796,7 +1796,7 @@ public class LuckFarmBetActivity extends BaseActivity implements View.OnClickLis
         if (lianmaGroup.getVisibility() == View.VISIBLE) {
             if (lianmaOneBtn.isChecked() || lianmaTwoBtn.isChecked()) {
                 if (size > 2) {
-                    showToast(Utils.getString(R.string.不允许超出2个选项));
+                    showToast(Utils.getString(R.string.不允许超过2个选项));
                     Happy10Model happy8Model = happy10ModelList.get(position);
                     happy8Model.setStatus(0);
                     betNum.setText("1");
@@ -1810,7 +1810,7 @@ public class LuckFarmBetActivity extends BaseActivity implements View.OnClickLis
                 }
             } else if (lianmaThreeBtn.isChecked()) {
                 if (size > 3) {
-                    showToast(Utils.getString(R.string.不允许超出3个选项));
+                    showToast(Utils.getString(R.string.不允许超过3个选项));
                     Happy10Model happy8Model = happy10ModelList.get(position);
                     happy8Model.setStatus(0);
                     betNum.setText("1");
@@ -1824,7 +1824,7 @@ public class LuckFarmBetActivity extends BaseActivity implements View.OnClickLis
                 }
             } else if (lianmaFourBtn.isChecked()) {
                 if (size > 4) {
-                    showToast(Utils.getString(R.string.不允许超出4个选项));
+                    showToast(Utils.getString(R.string.不允许超过4个选项));
                     Happy10Model happy8Model = happy10ModelList.get(position);
                     happy8Model.setStatus(0);
                     betNum.setText("1");
@@ -1838,7 +1838,7 @@ public class LuckFarmBetActivity extends BaseActivity implements View.OnClickLis
                 }
             } else {
                 if (size > 5) {
-                    showToast(Utils.getString(R.string.不允许超出5个选项));
+                    showToast(Utils.getString(R.string.不允许超过5个选项));
                     Happy10Model happy8Model = happy10ModelList.get(position);
                     happy8Model.setStatus(0);
                     betNum.setText("1");
@@ -1975,7 +1975,7 @@ public class LuckFarmBetActivity extends BaseActivity implements View.OnClickLis
     @Override
     public void onNetChange(boolean netWorkState) {
         if (!netWorkState) {
-            showToast(Utils.getString(R.string.当前网络不可用,请检查网络));
+            showToast(Utils.getString(R.string.当前网络不可用请检查网络));
             findViewById(R.id.no_network).setVisibility(View.VISIBLE);
             ProgressDialogUtil.show(this);
             handler.removeCallbacks(runnableRandom);

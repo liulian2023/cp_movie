@@ -145,7 +145,7 @@ public class ChildManageActivity extends BaseActivity implements View.OnClickLis
                     /*
                     没有下级,显示没有数据
                      */
-                    if(childManageModelArrayList.get(position).getChildNUm().equals(Utils.getString(R.string.0人))){
+                    if(childManageModelArrayList.get(position).getChildNUm().equals(Utils.getString(R.string.零人))){
                         childManageModelArrayList.clear();
                         nothing.setVisibility(View.VISIBLE);
                         childManegeRecycleAdapter.notifyDataSetChanged();
