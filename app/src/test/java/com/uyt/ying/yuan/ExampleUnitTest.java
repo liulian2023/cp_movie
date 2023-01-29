@@ -13,7 +13,6 @@ public class ExampleUnitTest {
     @Test
     public void addition_isCorrect() throws MalformedURLException {
 
-
     }
     @Test
     public  void checkAccount() throws MalformedURLException {

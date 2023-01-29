@@ -42,7 +42,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:textColor="@color/white"
-            android:text="@string/余额:"
+            android:text="@string/余额"
             />
 
         <TextView

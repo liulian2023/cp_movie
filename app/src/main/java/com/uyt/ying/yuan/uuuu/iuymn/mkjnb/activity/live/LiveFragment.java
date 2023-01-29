@@ -2094,8 +2094,9 @@ public class LiveFragment extends MvpBaseFragment /*implements Handler.Callback 
             }
             String openQishu = liveLotteryEntity.getOpenQishu();
             String currentQishu = liveLotteryEntity.getCurrentQishu();
+
             if (openQishu != null&&currentQishu!=null) {
-                String subOpenQishu = openQishu.substring(0, openQishu.length() - 3);
+                String subOpenQishu = openQishu.substring(0, openQishu.length() - 4);
                 String subCurrentQiShu = currentQishu.substring(0, currentQishu.length() - 1);
                 tv_lottery_qishu.setText(openQishu);
 //                long l = Long.parseLong(subOpenQishu);

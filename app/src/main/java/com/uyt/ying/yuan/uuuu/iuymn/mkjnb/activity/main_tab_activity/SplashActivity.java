@@ -111,6 +111,7 @@ public class SplashActivity extends BaseActivity implements View.OnClickListener
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+
         /*防止首次安装点击home键重新实例化*/
         if (!this.isTaskRoot()) {
             Intent intent = getIntent();
@@ -187,7 +188,7 @@ public class SplashActivity extends BaseActivity implements View.OnClickListener
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode == REQUEST_PERMISSION_SETTING){
-            //从权限设置页面返回
+            //从权限设置页面返回f
             checkPermissions();
         }
     }
@@ -796,8 +797,6 @@ public class SplashActivity extends BaseActivity implements View.OnClickListener
         }
         return Long.parseLong(StringMyUtil.isEmptyString(delay)?"100000":delay);
     }
-
-
     /**
      * 切换线路pop
      */

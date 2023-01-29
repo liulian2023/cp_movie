@@ -86,7 +86,7 @@ public class MineQRCodeActivity extends BaseActivity implements View.OnClickList
     }
 
     private void initClick() {
-         appName = SharePreferencesUtil.getString(MyApplication.getInstance(), "appName", "");
+        appName = SharePreferencesUtil.getString(MyApplication.getInstance(), "appName", "");
         app_name_tv.setText(appName);
         backIv.setOnClickListener(this);
         commison_plan_tv.setOnClickListener(this);

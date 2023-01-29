@@ -7,7 +7,7 @@ buildscript {
         google()
         mavenCentral()
         jcenter()
-        maven { url 'https://dl.bintray.com/umsdk/release' }
+//        maven { url 'https://dl.bintray.com/umsdk/release' }
     }
     apply from: 'thirdparty-lib/config.gradle'
     dependencies {

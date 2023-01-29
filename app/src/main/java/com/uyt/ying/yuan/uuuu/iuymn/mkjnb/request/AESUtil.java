@@ -44,7 +44,7 @@ public class AESUtil {
      * @return
      */
     public static String encrypt(byte[] cleartext){
-        IvParameterSpec zeroIv = new IvParameterSpec(OFFSET.getBytes());
+            IvParameterSpec zeroIv = new IvParameterSpec(OFFSET.getBytes());
         SecretKeySpec key = new SecretKeySpec(KEY.getBytes(), ALGORITHM);
         Cipher cipher = null;
         try {

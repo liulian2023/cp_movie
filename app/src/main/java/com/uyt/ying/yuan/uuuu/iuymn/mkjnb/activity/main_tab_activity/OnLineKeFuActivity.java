@@ -100,30 +100,30 @@ public class OnLineKeFuActivity extends BaseActivity {
     }
 
 
-    private void initProgressBar() {
-        mProgressBar.setMax(100);
-    }
+        private void initProgressBar() {
+            mProgressBar.setMax(100);
+        }
 
-    private void initWebView() {
+        private void initWebView() {
 
-        mWebView.getSettings().setJavaScriptEnabled(true);
-        mWebView.getSettings().setDomStorageEnabled(true);
-        mWebView.setWebViewClient(new WebViewClient() {
-            @Override
-            public void onPageFinished(WebView view, String url) {
-                super.onPageFinished(view, url);
-            }
+            mWebView.getSettings().setJavaScriptEnabled(true);
+            mWebView.getSettings().setDomStorageEnabled(true);
+            mWebView.setWebViewClient(new WebViewClient() {
+                @Override
+                public void onPageFinished(WebView view, String url) {
+                    super.onPageFinished(view, url);
+                }
 
-            @Override
-            public void onPageStarted(WebView view, String url, Bitmap favicon) {
-                super.onPageStarted(view, url, favicon);
-            }
+                @Override
+                public void onPageStarted(WebView view, String url, Bitmap favicon) {
+                    super.onPageStarted(view, url, favicon);
+                }
 
 
-        });
-        mWebView.setWebChromeClient(new WebChromeClient() {
-            @Override
-            public void onProgressChanged(WebView view, int newProgress) {
+            });
+            mWebView.setWebChromeClient(new WebChromeClient() {
+                @Override
+                public void onProgressChanged(WebView view, int newProgress) {
                 super.onProgressChanged(view, newProgress);
                 mProgressBar.setProgress(newProgress);
                 if (newProgress == 100) {

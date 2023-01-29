@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/ANDROID/cp_movie/app/src/main/res/drawable/main_bitmap_splash_bg.xml" value="0.25416666666666665" />
         <entry key="..\:/ANDROID/cp_movie/app/src/main/res/layout/about_us_popupwindow.xml" value="0.16485507246376813" />
         <entry key="..\:/ANDROID/cp_movie/app/src/main/res/layout/action_bar_layout.xml" value="0.2" />
         <entry key="..\:/ANDROID/cp_movie/app/src/main/res/layout/activity_account_find_password.xml" value="0.1" />
@@ -19,6 +20,7 @@
         <entry key="..\:/ANDROID/cp_movie/app/src/main/res/layout/activity_child_manage.xml" value="0.121875" />
         <entry key="..\:/ANDROID/cp_movie/app/src/main/res/layout/activity_child_open.xml" value="0.4" />
         <entry key="..\:/ANDROID/cp_movie/app/src/main/res/layout/activity_forget_password2.xml" value="0.1838768115942029" />
+        <entry key="..\:/ANDROID/cp_movie/app/src/main/res/layout/activity_game_report.xml" value="0.16" />
         <entry key="..\:/ANDROID/cp_movie/app/src/main/res/layout/activity_get_winner_web_view.xml" value="0.1897644927536232" />
         <entry key="..\:/ANDROID/cp_movie/app/src/main/res/layout/activity_happy10_bet.xml" value="0.2" />
         <entry key="..\:/ANDROID/cp_movie/app/src/main/res/layout/activity_happy_cai.xml" value="0.264" />
@@ -29,6 +31,7 @@
         <entry key="..\:/ANDROID/cp_movie/app/src/main/res/layout/activity_login2.xml" value="0.13489583333333333" />
         <entry key="..\:/ANDROID/cp_movie/app/src/main/res/layout/activity_login3.xml" value="0.13489583333333333" />
         <entry key="..\:/ANDROID/cp_movie/app/src/main/res/layout/activity_luck_farm_open.xml" value="0.13489583333333333" />
+        <entry key="..\:/ANDROID/cp_movie/app/src/main/res/layout/activity_marksix.xml" value="0.4" />
         <entry key="..\:/ANDROID/cp_movie/app/src/main/res/layout/activity_mine_bet_acitivity.xml" value="0.176" />
         <entry key="..\:/ANDROID/cp_movie/app/src/main/res/layout/activity_mine_bet_fragment.xml" value="0.1838768115942029" />
         <entry key="..\:/ANDROID/cp_movie/app/src/main/res/layout/activity_mine_bet_more.xml" value="0.2" />
@@ -67,6 +70,8 @@
         <entry key="..\:/ANDROID/cp_movie/app/src/main/res/layout/betjoinold_pop_layout.xml" value="0.10885416666666667" />
         <entry key="..\:/ANDROID/cp_movie/app/src/main/res/layout/bjpcdd_game_rule_popwindow.xml" value="0.10885416666666667" />
         <entry key="..\:/ANDROID/cp_movie/app/src/main/res/layout/bjpcdd_game_rule_popwindow2.xml" value="0.1838768115942029" />
+        <entry key="..\:/ANDROID/cp_movie/app/src/main/res/layout/caizhong_head1.xml" value="0.12907608695652173" />
+        <entry key="..\:/ANDROID/cp_movie/app/src/main/res/layout/caizhong_head2.xml" value="0.4" />
         <entry key="..\:/ANDROID/cp_movie/app/src/main/res/layout/changlong_recycle_foot.xml" value="0.12239583333333333" />
         <entry key="..\:/ANDROID/cp_movie/app/src/main/res/layout/changlong_recycle_item.xml" value="0.2" />
         <entry key="..\:/ANDROID/cp_movie/app/src/main/res/layout/changlong_shuoming_pop.xml" value="0.176" />
@@ -150,7 +155,7 @@
         <entry key="..\:/ANDROID/cp_movie/app/src/main/res/layout/manul_recharge_center_layout.xml" value="0.176" />
         <entry key="..\:/ANDROID/cp_movie/app/src/main/res/layout/manul_recharge_center_layout2.xml" value="0.14166666666666666" />
         <entry key="..\:/ANDROID/cp_movie/app/src/main/res/layout/manul_recharge_center_layout3.xml" value="0.14166666666666666" />
-        <entry key="..\:/ANDROID/cp_movie/app/src/main/res/layout/marksix_head3.xml" value="0.4" />
+        <entry key="..\:/ANDROID/cp_movie/app/src/main/res/layout/marksix_head3.xml" value="0.12" />
         <entry key="..\:/ANDROID/cp_movie/app/src/main/res/layout/mine_bet_recycle_item.xml" value="0.264" />
         <entry key="..\:/ANDROID/cp_movie/app/src/main/res/layout/mine_feedback_recycle_item.xml" value="0.1897644927536232" />
         <entry key="..\:/ANDROID/cp_movie/app/src/main/res/layout/mine_fragment_head.xml" value="0.4" />
@@ -201,6 +206,7 @@
         <entry key="..\:/ANDROID/cp_movie/app/src/main/res/layout/xuanwu_head3.xml" value="0.264" />
         <entry key="..\:/ANDROID/cp_movie/app/src/main/res/layout/yestoday_rank_head.xml" value="0.14166666666666666" />
         <entry key="..\:/ANDROID/cp_movie/app/src/main/res/layout/yuebao_list_recycle_item.xml" value="0.14166666666666666" />
+        <entry key="..\:/ANDROID/cp_movie/app/src/miaomi/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>

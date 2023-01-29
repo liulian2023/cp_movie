@@ -42,6 +42,7 @@ public class ShoppingFragment extends BaseFragment implements View.OnClickListen
 
     public static ShoppingFragment newInstance() {
         Bundle args = new Bundle();
+
         ShoppingFragment fragment = new ShoppingFragment();
         fragment.setArguments(args);
         return fragment;
